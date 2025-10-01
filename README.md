@@ -182,3 +182,10 @@ https://liberliber.it/autori/autori-z/giggi-zanazzo/novelle-favole-e-leggende-ro
 file:///C:/Users/cinqu/Downloads/er-teatro-de-prosa-13394.pdf
 
 https://archive.org/details/limaganzesiromao00zana/page/14/mode/2up
+
+## NAPOLETANO
+
+### Link napoletano
+
+https://dumps.wikimedia.org/napwiki/
+

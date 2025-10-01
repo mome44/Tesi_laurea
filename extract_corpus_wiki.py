@@ -8,13 +8,13 @@ from tqdm import tqdm
 import re
 
 header = {"User-Agent": "TesimagistraleMNLP/1.0 (mailto:lagana.1946083@studenti.uniroma1.it)"}
-language ="scn"
-#URL = f"https://{language}.wikipedia.org/w/api.php"
-URL = f"https://{language}.wikisource.org/w/api.php"
-input_file_path = "scnwiki-latest-all-titles"
+language ="nap"
+URL = f"https://{language}.wikipedia.org/w/api.php"
+#URL = f"https://{language}.wikisource.org/w/api.php"
+input_file_path = "napwiki-latest-all-titles"
 
-NAME = "sicilian_wikisource"
-FOLDER = "sicilian"
+NAME = "neapolitan_wikisource"
+FOLDER = "neapolitan"
 
 
 def parse_text_sicilian_wiki(html_text):
@@ -33,9 +33,9 @@ def parse_text_sicilian_wiki(html_text):
     text = re.sub(r"\{\s*\\displaystyle\s+[^}]+\}", "", text)
     return text
 
-def parse_text_sicilian_wikisource(html_text):
-
-    return text
+#def parse_text_sicilian_wikisource(html_text):
+#
+#    return text
 
 
 def safe_get(session, url, params=None, max_retries=5, base_wait=2):
@@ -93,9 +93,8 @@ def get_wikidata(url,title, language):
     data = response.json().get("parse", {})
     html_text = data.get("text", {}).get("*", "")
     
-    if language == "scn":
-        text = parse_text_sicilian_wiki(html_text)
-    
+    text = parse_text_sicilian_wiki(html_text)
+     
     return text
 
 
@@ -110,7 +109,7 @@ if __name__ == "__main__":
         for idx, row in df.iterrows():
             title = row['page_title']
             #I compute the result
-            result= executor.submit(get_wikidata, title, language)
+            result= executor.submit(get_wikidata, URL, title, language)
             #I append it in the list
             result_list.append(result)
 
