@@ -61,6 +61,15 @@ https://archive.org/details/ilvolgodiromarac01sabauoft/page/160/mode/2up
 (stesso di sopra)
 https://it.wikisource.org/wiki/Il_volgo_di_Roma
 
+https://www.fmboschetto.it/divertenti/Totti.htm
+
+https://romanaccio.blogspot.com/2008/03/battute-in-dialetto-romanesco.html
+
+https://blog.libero.it/giggimarforio/commenti.php?msgid=6466867#commento_25092645
+
+vedere questo sito interessante
+https://www.rugantino.it/
+
 Versi
 Er favoliere cerca su google
 
