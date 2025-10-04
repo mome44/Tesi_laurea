@@ -1,4 +1,8 @@
-https://casanatense.contentdm.oclc.org/digital/collection/teatro/id/22634
+## Estratti
+
+https://www.academia.edu/39289250/Meo_Patacca_er_Greve_e_Marco_Pepe_la_Crapetta_di_Filippo_Tacconi
+
+## Da estrarre
 
 https://it.wikisource.org/wiki/Categoria:Testi_in_romanesco
 
@@ -38,14 +42,37 @@ https://copioni.corrierespettacolo.it/wp-content/uploads/2016/12/MAGNI%20Luigi__
 
 https://www.gttempo.it/copioni.htm ANNETTA Ester er tassinaro
 
+https://www.rugantino.it/wp-content/uploads/bsk-pdf-manager/rugantino12846_276.pdf
+
+https://www.reddit.com/r/romanesco/
+
+https://www.laboratorioroma.it/er-fattaccio.html
+
+https://www.facebook.com/ersalustro?locale=it_IT
+
+approfondire questo
+https://www.scuolissima.com/2014/11/traduttore-italiano-romano-online.html
+
+https://web.archive.org/web/20191221032744/http://dialettoderoma.iobloggo.com/
+
+https://archive.org/details/bub_gb_Qfe6_LTqzx4C/page/n107/mode/2up
+
+https://archive.org/details/ilvolgodiromarac01sabauoft/page/160/mode/2up
+(stesso di sopra)
+https://it.wikisource.org/wiki/Il_volgo_di_Roma
+
 Versi
+Er favoliere cerca su google
 
 https://copioni.corrierespettacolo.it/wp-content/uploads/2016/12/PASOLINI%20Pier%20Paolo__Il%20vantone%20di%20Plauto__null__(13)__Commedia__5a.pdf
 
 trilussa, belli, quelli si trovano
 
-
 Testi non completamente in romanesco
 https://www.pendolareinbottiglia.it/tag/romanesco/
 
 https://pasolinilepaginecorsare.blogspot.com/2021_02_10_archive.html
+
+## Grammatica e vocabolario
+http://roma.andreapollett.com/S8/dialett3.htm
+
