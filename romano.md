@@ -8,20 +8,35 @@ https://liberliber.it/autori/autori-z/giggi-zanazzo/novelle-favole-e-leggende-ro
 
 file:///C:/Users/cinqu/Downloads/er-teatro-de-prosa-13394.pdf
 
-## Da estrarre
 
+
+## processare
+?? vedere se è esattamente uguale a quella di zanazzo
 http://www.alaaddin.it/_TESORO_FIABE/FD_Lazio_Romanesco_Rana_rana.html
 
-https://archive.org/details/limaganzesiromao00zana/page/14/mode/2up
+Trovare un modo per riempire gli accenti mancanti, fare un dizionario con le parole monosillabiche che hanno l'accento es. c'è, più già ecc..
 
-https://it.wikisource.org/wiki/Dal_dialetto_alla_lingua/Appendice/Versione_romanesca
+Le parole che terminano per consonante vuol dire che hanno l'accento (a parte alcune che sono scritte nel file), aggiungere alla parte finale un simbolo speciale in modo che si possa fare masking utilizzando un trasformer.
+
+Le parti tra parentesi sono in italiano e vanno tolte
 
 https://www.ateatro.info/copioni/romani-de-roma/
 
 https://www.ateatro.info/copioni/stelle-de-roma/
 
+https://www.ateatro.info/copioni/a-bottega-de-lo-scarparo/
+
+https://www.ateatro.info/copioni/spirito-romano/
+
+https://www.ateatro.info/copioni/amori-de-notte/
+
+https://www.ateatro.info/copioni/benedetto-fra-le-donne/
+
+https://www.ateatro.info/copioni/macchiette/
+
 https://www.labandadeimisci.it/index.php?option=com_content&view=article&id=278:teatri-e-compagnie-dintorni-la-cara-salma-19&catid=16&Itemid=196
 
+## Da estrarre
 https://www.festivalgadpesaro.it/index.php/circolo-di-lettura/copioni/item/152-il-cappello-di-carta
 
 https://www.adlactingstudio.com/_files/ugd/83b280_8eef98f3087d4bb38068bb04ddaa9e58.pdf
@@ -72,6 +87,8 @@ https://www.rugantino.it/
 
 Versi
 Er favoliere cerca su google
+
+https://archive.org/details/limaganzesiromao00zana/page/14/mode/2up
 
 https://copioni.corrierespettacolo.it/wp-content/uploads/2016/12/PASOLINI%20Pier%20Paolo__Il%20vantone%20di%20Plauto__null__(13)__Commedia__5a.pdf
 
