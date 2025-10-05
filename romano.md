@@ -2,13 +2,13 @@
 
 https://www.academia.edu/39289250/Meo_Patacca_er_Greve_e_Marco_Pepe_la_Crapetta_di_Filippo_Tacconi
 
-## Da estrarre
-
-https://it.wikisource.org/wiki/Categoria:Testi_in_romanesco
+https://it.wikisource.org/wiki/Dal_dialetto_alla_lingua/Appendice/Versione_romanesca
 
 https://liberliber.it/autori/autori-z/giggi-zanazzo/novelle-favole-e-leggende-romanesche/
 
 file:///C:/Users/cinqu/Downloads/er-teatro-de-prosa-13394.pdf
+
+## Da estrarre
 
 http://www.alaaddin.it/_TESORO_FIABE/FD_Lazio_Romanesco_Rana_rana.html
 
@@ -76,6 +76,7 @@ Er favoliere cerca su google
 https://copioni.corrierespettacolo.it/wp-content/uploads/2016/12/PASOLINI%20Pier%20Paolo__Il%20vantone%20di%20Plauto__null__(13)__Commedia__5a.pdf
 
 trilussa, belli, quelli si trovano
+https://it.wikisource.org/wiki/Categoria:Testi_in_romanesco   -> controllare poesie e sonetti in caso
 
 Testi non completamente in romanesco
 https://www.pendolareinbottiglia.it/tag/romanesco/
