@@ -1,6 +1,6 @@
 from pdfminer.high_level import extract_text
 
-NAME ="Benedetto-fra-le-donne-Copioni"
+NAME ="CLEMENTI-IL-CAPPELLO-DI-CARTA_marzo11"
 
 pdf_path = f"{NAME}.pdf"
 text = extract_text(pdf_path)

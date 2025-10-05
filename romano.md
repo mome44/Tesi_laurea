@@ -36,7 +36,6 @@ https://www.ateatro.info/copioni/macchiette/
 
 https://www.labandadeimisci.it/index.php?option=com_content&view=article&id=278:teatri-e-compagnie-dintorni-la-cara-salma-19&catid=16&Itemid=196
 
-## Da estrarre
 https://www.festivalgadpesaro.it/index.php/circolo-di-lettura/copioni/item/152-il-cappello-di-carta
 
 https://www.adlactingstudio.com/_files/ugd/83b280_8eef98f3087d4bb38068bb04ddaa9e58.pdf
@@ -45,15 +44,17 @@ https://www.rionegarbatella.it/racconti-garbati/item/215-parla-meno-in-romanesco
 
 https://foodandbeverage2.altervista.org/conijo-a-la-cacciatora-racconto-romanesco-2-2/
 
+https://copioni.corrierespettacolo.it/wp-content/uploads/2016/12/GORINI%20Lucia%20Rosa__Ieri%20oggi%E2%80%A6%20romani__null__null__Musical__7q.pdf
+
+https://copioni.corrierespettacolo.it/wp-content/uploads/2016/12/MAGNI%20Luigi__I%20sette%20re%20di%20Roma__null__U(26)-D(7)__Unavailable__1a.pdf
+
+## Da estrarre
+
 https://it.wikisource.org/wiki/Favole_romanesche
 
 https://it.wikiquote.org/wiki/Strappare_lungo_i_bordi
 
 https://it.wikiquote.org/wiki/Questo_mondo_non_mi_render%C3%A0_cattivo
-
-https://copioni.corrierespettacolo.it/wp-content/uploads/2016/12/GORINI%20Lucia%20Rosa__Ieri%20oggi%E2%80%A6%20romani__null__null__Musical__7q.pdf
-
-https://copioni.corrierespettacolo.it/wp-content/uploads/2016/12/MAGNI%20Luigi__I%20sette%20re%20di%20Roma__null__U(26)-D(7)__Unavailable__1a.pdf
 
 https://www.gttempo.it/copioni.htm ANNETTA Ester er tassinaro
 
