@@ -2,10 +2,31 @@ import re
 import json
 pattern = r"[A-Za-z]+\. [A-Za-z]+"
 
-NAME = "er-teatro-de-prosa-13394"
+NAME = "favole_romanesche"
 
 with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
     testo = f.read()
+
+def process_testo_parentesi(testo):
+
+    testo = re.sub(r"\[.*?\]|\(.*?\)", "", testo, flags=re.DOTALL)
+    data = process_testo_generico(testo)
+    return data
+
+def process_testo_dialoghi(testo):
+    chunks = re.split(r'(?:[<‹]\s*)?«(.*?)»', testo, flags=re.DOTALL)
+    data = []
+    for i, chunk in enumerate(chunks):
+        if len(chunk.strip())>1:
+            data.append({'text': chunk.strip()})
+    return data
+
+def process_testo_semplice(testo):
+    testo= testo.split('\n')
+    data = []
+    for t in testo:
+        data.append({"text": t.strip()})
+    return data
 
 
 def process_testo_zanazzo(testo):
@@ -79,7 +100,7 @@ def process_testo_wikisource(testo):
                 })
     return data
 
-data =process_testo_generico(testo)
+data =process_testo_dialoghi(testo)
 #data = process_testo_zanazzo(testo)
 
 with open(f"../code_e_corpus_tesi/romanesco/{NAME}_processed.json", "w", encoding="utf-8") as out:
