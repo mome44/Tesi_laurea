@@ -2,7 +2,7 @@ import re
 import json
 pattern = r"[A-Za-z]+\. [A-Za-z]+"
 
-NAME = "favole_romanesche"
+NAME = "rugantino_monica_bartolini"
 
 with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
     testo = f.read()
@@ -100,7 +100,7 @@ def process_testo_wikisource(testo):
                 })
     return data
 
-data =process_testo_dialoghi(testo)
+data =process_testo_generico(testo)
 #data = process_testo_zanazzo(testo)
 
 with open(f"../code_e_corpus_tesi/romanesco/{NAME}_processed.json", "w", encoding="utf-8") as out:
