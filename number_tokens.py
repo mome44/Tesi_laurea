@@ -2,13 +2,13 @@ import os
 import json
 from transformers import AutoTokenizer
 
+
 cartella = "code_e_corpus_tesi/romanesco"
 
 #tokenizer
-MODEL_NAME = "roberta-base"
-tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, use_fast=True)
+tokenizer = AutoTokenizer.from_pretrained("sapienzanlp/Minerva-7B-base-v1.0", use_fast=True)
 
-total_text = []
+total_text_num = []
 
 
 for filename in os.listdir(cartella):
@@ -20,17 +20,16 @@ for filename in os.listdir(cartella):
                 
                 for item in data:
                     if "text" in item:
-                        total_text.append(item["text"])
+                        tokens = tokenizer.encode(
+                            item["text"],
+                            add_special_tokens=False
+                        )
+                        total_text_num.append(len(tokens))
             except json.JSONDecodeError:
                 print(f"The file is not a JSON")
 
+print(total_text_num)
+#tokens = tokenizer.encode(testo_completo)
+num_tokens = sum(total_text_num)
 
-testo_completo = "\n".join(total_text)
-
-token_ids_corpus = tokenizer.encode(
-    testo_completo,
-    add_special_tokens=False
-)
-tot_token_corpus = len(token_ids_corpus)
-
-print(f"Numero totale di token: {tot_token_corpus}")
+print(f"Numero totale di token: {num_tokens}")

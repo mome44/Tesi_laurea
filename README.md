@@ -1,18 +1,18 @@
 # Tesi_laurea
 Tesi di laurea magistrale in Engineering in computer science
 
-Cose da fare:
+## CORPUS
+ - Vedere quanto corpus serve basandosi su llamantino la versione di llama che ha anche l'italiano
+ - Proseguire con la raccolta dei tre corpus e dividere i testi trovati in PROSA PURA, TEATRO, SONETTI, facendo il parsing che già esiste per la prosa pura e il teatro.
+ - implementare un API di chatgpt o di gemini o altre cose, in modo che riesca a fare parafrasi nei dialetti.
 
-## Cercare corpuss
-in tre dialetti tra cui il romanesco
 ### ROMANESCO
-- wikisource
-- wikipedia
-- wikidictionary
-- progetto manuzio
-- liber liber gutemberg tor vpn
+ - Cercare "Quer fattaccio brutto de via merulana" di Gadda essendo un libro scritto in romanesco
+ - Scaricare le poesie
+ - Finire il preprocessing dei testi rimanenti
+ - Calcolare le percentuali e statistiche di questi testi "PURI"
 
-## SICILIANO
+### SICILIANO
 wikipedia (fatto)
 Corpus di Testi Siciliani Medievali (CTSM)
  – XML/TEI, testi della Scuola Poetica Siciliana (però medioevali, non moderni).
@@ -94,10 +94,7 @@ surlalunefairytales.com
 
 Offre versioni digitali in HTML (anche con EPUB/MOBI) delle fiabe popolari italiane, incluse quelle di Gonzenbach in tedesco e tradotte in inglese. Uno dei primi esempi di raccolte dedicate alle fiabe siciliane era proprio questa. 
 mirrorservice.org
-
-4. "Catarina the Wise and Other Wondrous Sicilian Folk and Fairy Tales"
-
-Una raccolta moderna (2008) delle fiabe di Pitrè tradotte in inglese da Joseph Russo, disponibile online in preview PDF tramite la piattaforma Dokumen.pub. 
+ 
 Dokumen
 
 5. Wikipedia – “Snow-White-Fire-Red” (Bianca-comu-nivi-russa-comu-focu)
@@ -170,18 +167,6 @@ Credenziali reddit
 
 V1d1FA2Pc77JBo3YBsQ12g
 d6jg7gHDIeK8Gw6aBcOAowoEgRlrmw
-
-## ROMANESCO
-
-https://casanatense.contentdm.oclc.org/digital/collection/teatro/id/22634
-
-https://it.wikisource.org/wiki/Categoria:Testi_in_romanesco
-
-https://liberliber.it/autori/autori-z/giggi-zanazzo/novelle-favole-e-leggende-romanesche/
-
-file:///C:/Users/cinqu/Downloads/er-teatro-de-prosa-13394.pdf
-
-https://archive.org/details/limaganzesiromao00zana/page/14/mode/2up
 
 ## NAPOLETANO
 

@@ -59,7 +59,7 @@ def parse_commedia_teatro_romano_2(testo):
 
     testo = re.sub(r"(?m)^\s*[0-9][0-9\s/:,.\-]*\s*$", "", testo)
 
-    # 4) Pulisci spazi doppi e righe vuote multiple
+    #Pulisci spazi doppi e righe vuote multiple
     testo = re.sub(r"[ \t]+", " ", testo)
     testo = re.sub(r"\n{3,}", "", testo).strip()
     data=[]
@@ -88,7 +88,7 @@ def parse_commedia_teatro_romano_3(testo):
     testo = re.sub(r'-\s*\n\s*', '', testo)
     testo = re.sub(r'\n+', ' ', testo)
 
-    # 4) Pulisci spazi doppi e righe vuote multiple
+    #Pulisci spazi doppi e righe vuote multiple
     testo = re.sub(r"[ \t]+", " ", testo)
     testo = re.sub(r"\n{3,}", "", testo).strip()
     data=[]
