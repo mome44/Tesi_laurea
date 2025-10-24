@@ -4,16 +4,18 @@ Tesi di laurea magistrale in Engineering in computer science
 ## CORPUS
  - Vedere quanto corpus serve basandosi su llamantino la versione di llama che ha anche l'italiano
  - Proseguire con la raccolta dei tre corpus e dividere i testi trovati in PROSA PURA, TEATRO, SONETTI, facendo il parsing che già esiste per la prosa pura e il teatro.
- - implementare un API di chatgpt o di gemini o altre cose, in modo che riesca a fare parafrasi nei dialetti.
+ - implementare un API di chatgpt o di gemini o altre cose, in modo che riesca a fare parafrasi nei dialetti. Meglio gemini
+ - Per calcolare il numero di token bisogna farlo su tutto il corpus e anche verificare di quanto aumenta il loro numero quando si aggiunge un testo (non quantità ma qualità) e ci sono delle metriche per misurare questo
 
 ### ROMANESCO
  - Cercare "Quer fattaccio brutto de via merulana" di Gadda essendo un libro scritto in romanesco
  - Scaricare le poesie
- - Finire il preprocessing dei testi rimanenti
  - Calcolare le percentuali e statistiche di questi testi "PURI"
+ - Fare API con gemini per effettuare la parafrasi di questi testi (sonetti e teatro) con prompt engineering (dato che riesce a farlo)
+ - Vedere se si tratta di un corpus sufficiente utilizzando varie metriche per misurare Quantità e qualità
 
 ### SICILIANO
-wikipedia (fatto)
+ - wikipedia (fatto)
 Corpus di Testi Siciliani Medievali (CTSM)
  – XML/TEI, testi della Scuola Poetica Siciliana (però medioevali, non moderni).
 

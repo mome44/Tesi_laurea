@@ -3,7 +3,7 @@ import json
 from transformers import AutoTokenizer
 
 
-cartella = "code_e_corpus_tesi/romanesco"
+cartella = "code_e_corpus_tesi/siciliano"
 
 #tokenizer
 tokenizer = AutoTokenizer.from_pretrained("sapienzanlp/Minerva-7B-base-v1.0", use_fast=True)

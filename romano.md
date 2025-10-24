@@ -43,7 +43,7 @@ https://copioni.corrierespettacolo.it/wp-content/uploads/2016/12/GORINI%20Lucia%
 https://copioni.corrierespettacolo.it/wp-content/uploads/2016/12/MAGNI%20Luigi__I%20sette%20re%20di%20Roma__null__U(26)-D(7)__Unavailable__1a.pdf
 
 https://it.wikisource.org/wiki/Favole_romanesche
-## processare
+
 ?? vedere se è esattamente uguale a quella di zanazzo
 http://www.alaaddin.it/_TESORO_FIABE/FD_Lazio_Romanesco_Rana_rana.html
 
@@ -59,15 +59,17 @@ vedere questo sito interessante
 https://www.rugantino.it/ -> monica bartolini fino a Tori sur vaticano (esclusa) pag 2.
 
 https://archive.org/details/bub_gb_Qfe6_LTqzx4C/page/n107/mode/2up
-## Da estrarre
 
 https://it.wikiquote.org/wiki/Strappare_lungo_i_bordi
 
-https://it.wikiquote.org/wiki/Questo_mondo_non_mi_render%C3%A0_cattivo
-
-https://www.gttempo.it/copioni.htm ANNETTA Ester er tassinaro
+https://it.wikiquote.org/wiki/Questo_mondo_non_mi_render%C3%A0_cattivo  messo dentro strappare lungo i bordi
+## processare
+https://docs.google.com/document/d/1_80UZippfgAm9zVr11i5kBQ9pCjn1af-0XVgOm2cSH0/edit?tab=t.0#heading=h.agftyaktsfhw
 
 https://www.reddit.com/r/romanesco/
+## Da estrarre
+
+https://www.gttempo.it/copioni.htm ANNETTA Ester er tassinaro
 
 https://www.facebook.com/ersalustro?locale=it_IT
 

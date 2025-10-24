@@ -8,6 +8,15 @@ https://it.wikisource.org/wiki/Lo_cunto_de_li_cunti
 
 https://nap.wikisource.org/wiki/Ennece:Scalo_marittimo_-_Raffaele_Viviani_-_10_commedie.pdf
 
+https://lazzaronapoletano.it/category/0003/0003-0012/
+
+https://www.quicampiflegrei.it/2023/12/10/favole-napoletane/
+
+https://www.gttempo.it/copioni.htm   	AGNELLO Salvatore Angela Paraguai in Bellezza, quelle di ANDOLFI Colomba Rosaria
+
+https://pulcinella291.forumfree.it/?f=11062089
+
+https://www.unasolacosa.it/category/scritti-in-dialetto-napoletano/
 
 https://nap.wikisource.org/wiki/Paggena:Altavilla_-_La_sposa_co_la_maschera.djvu
 
@@ -35,8 +44,7 @@ https://nap.wikisource.org/wiki/Ennece:Teatro_-_Menotti_Bianchi.djvu
 
 https://nap.wikisource.org/wiki/Ennece:Tutti_avvelenati_o_vi_che_m%27ha_fatto_Pulicenella_%E2%80%93_P_Petito_(1917).pdf
 
-https://lazzaronapoletano.it/category/0003/0003-0012/
 
-https://www.quicampiflegrei.it/2023/12/10/favole-napoletane/
+Cercare commedie in napoletano
 
-https://www.gttempo.it/copioni.htm   	AGNELLO Salvatore Angela Paraguai in Bellezza, quelle di ANDOLFI Colomba Rosaria
+Trovare un modo per standardizzare l'ortografia

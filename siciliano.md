@@ -13,7 +13,6 @@ https://liberliber.it/autori/autori-p/giuseppe-pitre/fiabe-novelle-e-racconti-po
 
 https://liberliber.it/autori/autori-p/giuseppe-pitre/fiabe-novelle-e-racconti-popolari-siciliani-volume-4/
 
-
 ## da fare
 https://it.wikisource.org/wiki/Dal_dialetto_alla_lingua/Appendice/Versione_siciliana
 

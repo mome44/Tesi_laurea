@@ -2,7 +2,7 @@ import re
 import json
 pattern = r"[A-Za-z]+\. [A-Za-z]+"
 
-NAME = "GORINI Lucia Rosa__Ieri oggi… romani__null__null__Musical__7q"
+NAME = "didone_abbandonata"
 
 with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
     testo = f.read()
@@ -112,7 +112,7 @@ def parse_commedia_teatro_romano_3(testo):
 
 
 
-data = parse_commedia_teatro_romano_3(testo)
+data = parse_commedia_simple(testo)
 #data = parse_commedia_simple(testo)
 with open(f"../code_e_corpus_tesi/romanesco/{NAME}_processed.json", "w", encoding="utf-8") as out:
     json.dump(data, out, ensure_ascii=False, indent=2)

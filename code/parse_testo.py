@@ -2,7 +2,7 @@ import re
 import json
 pattern = r"[A-Za-z]+\. [A-Za-z]+"
 
-NAME = "parladimenoinromanesco"
+NAME = "pitre_fiabe_novelle_e_racconti_2"
 
 with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
     testo = f.read()
@@ -14,6 +14,7 @@ def process_testo_parentesi(testo):
     return data
 
 def process_testo_dialoghi(testo):
+    testo = testo.replace("...", "")
     chunks = re.split(r'(?:[<‹]\s*)?«(.*?)»', testo, flags=re.DOTALL)
     data = []
     for i, chunk in enumerate(chunks):
@@ -84,6 +85,16 @@ def process_testo_generico(testo):
                 })
     return data
 
+def process_altro(testo):
+    testo = testo.split("\n")
+    data =[]
+    for i in testo:
+        i = i.strip('\"')
+        if len(i.strip()) > 0:
+                data.append({
+                    "text": i.strip()
+                })
+    return data
 
 def process_testo_wikisource(testo):
     #print(testo)
@@ -100,10 +111,10 @@ def process_testo_wikisource(testo):
                 })
     return data
 
-data =process_testo_generico(testo)
+data =process_testo_zanazzo(testo)
 #data = process_testo_zanazzo(testo)
 
-with open(f"../code_e_corpus_tesi/romanesco/{NAME}_processed.json", "w", encoding="utf-8") as out:
+with open(f"../code_e_corpus_tesi/siciliano/{NAME}_processed.json", "w", encoding="utf-8") as out:
     json.dump(data, out, ensure_ascii=False, indent=2)
     
     
