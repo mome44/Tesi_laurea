@@ -1,4 +1,4 @@
-## Estratti
+## Fonti estratte dei testi
 
 https://www.academia.edu/39289250/Meo_Patacca_er_Greve_e_Marco_Pepe_la_Crapetta_di_Filippo_Tacconi
 
@@ -12,7 +12,7 @@ Trovare un modo per riempire gli accenti mancanti, fare un dizionario con le par
 
 Le parole che terminano per consonante vuol dire che hanno l'accento (a parte alcune che sono scritte nel file), aggiungere alla parte finale un simbolo speciale in modo che si possa fare masking utilizzando un trasformer.
 
-Le parti tra parentesi sono in italiano e vanno tolte
+Le parti tra parentesi sono in italiano e vanno tolte [NON SERVE PIU PERCHE VANNO PARAFRASATE]
 
 https://www.ateatro.info/copioni/romani-de-roma/
 
@@ -63,37 +63,26 @@ https://archive.org/details/bub_gb_Qfe6_LTqzx4C/page/n107/mode/2up
 https://it.wikiquote.org/wiki/Strappare_lungo_i_bordi
 
 https://it.wikiquote.org/wiki/Questo_mondo_non_mi_render%C3%A0_cattivo  messo dentro strappare lungo i bordi
-## processare
-https://docs.google.com/document/d/1_80UZippfgAm9zVr11i5kBQ9pCjn1af-0XVgOm2cSH0/edit?tab=t.0#heading=h.agftyaktsfhw
-
-https://www.reddit.com/r/romanesco/
-## Da estrarre
-
-https://www.gttempo.it/copioni.htm ANNETTA Ester er tassinaro
-
-https://www.facebook.com/ersalustro?locale=it_IT
-
-approfondire questo
-https://www.scuolissima.com/2014/11/traduttore-italiano-romano-online.html
-
-https://web.archive.org/web/20191221032744/http://dialettoderoma.iobloggo.com/
-
-https://archive.org/details/ilvolgodiromarac01sabauoft/page/160/mode/2up
-(stesso di sopra)
-https://it.wikisource.org/wiki/Il_volgo_di_Roma
-
-https://blog.libero.it/giggimarforio/commenti.php?msgid=6466867#commento_25092645
-
-
-
-Versi
-Er favoliere cerca su google
-
-https://archive.org/details/limaganzesiromao00zana/page/14/mode/2up
 
 https://copioni.corrierespettacolo.it/wp-content/uploads/2016/12/PASOLINI%20Pier%20Paolo__Il%20vantone%20di%20Plauto__null__(13)__Commedia__5a.pdf
 
-trilussa, belli, quelli si trovano
+https://www.reddit.com/r/romanesco/
+
+https://docs.google.com/document/d/1_80UZippfgAm9zVr11i5kBQ9pCjn1af-0XVgOm2cSH0/edit?tab=t.0#heading=h.agftyaktsfhw
+
+https://blog.libero.it/giggimarforio/commenti.php?msgid=6466867#commento_25092645
+
+## processare
+
+## Versi
+https://liberliber.it/autori/autori-b/giuseppe-gioachino-belli/duecento-sonetti-in-dialetto-romanesco/
+
+https://liberliber.it/autori/autori-j/augusto-jandolo/nojantri/
+
+https://liberliber.it/autori/autori-t/trilussa/tutte-le-poesie/
+
+### in caso vedere anche questi
+
 https://it.wikisource.org/wiki/Categoria:Testi_in_romanesco   -> controllare poesie e sonetti in caso
 
 Testi non completamente in romanesco

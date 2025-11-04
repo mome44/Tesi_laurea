@@ -22,6 +22,8 @@ https://nap.wikisource.org/wiki/Paggena:Altavilla_-_La_sposa_co_la_maschera.djvu
 
 https://nap.wikisource.org/wiki/Paggena:Cucina_teorico-pratica.djvu
 
+
+
 Miste italiano e napoletano (es. un solo personaggio parla in nap.)
 
 https://nap.wikisource.org/wiki/Paggena:Core_nuosto.djvu
@@ -46,5 +48,11 @@ https://nap.wikisource.org/wiki/Ennece:Tutti_avvelenati_o_vi_che_m%27ha_fatto_Pu
 
 
 Cercare commedie in napoletano
+https://www.vesuvioweb.com/it/wp-content/uploads/Salvatore-Argenziano-A-Lenga-Turrese-A-B-C-vesuvioweb-2016.pdf
+i dialoghi sono in napoletano
+
+https://liberliber.it/autori/autori-b/libero-bovio/so-diece-anne/
+
+https://liberliber.it/autori/autori-b/libero-bovio/vicenzella/
 
 Trovare un modo per standardizzare l'ortografia
