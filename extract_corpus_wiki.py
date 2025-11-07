@@ -13,8 +13,8 @@ URL = f"https://{language}.wikipedia.org/w/api.php"
 #URL = f"https://{language}.wikisource.org/w/api.php"
 input_file_path = "napwiki-latest-all-titles"
 
-NAME = "neapolitan_wikisource"
-FOLDER = "neapolitan"
+NAME = "neapolitan_wikitext"
+FOLDER = "corpus_tesi/napoletano/wikipedia"
 
 
 def parse_text_sicilian_wiki(html_text):
@@ -94,49 +94,89 @@ def get_wikidata(url,title, language):
     html_text = data.get("text", {}).get("*", "")
     
     text = parse_text_sicilian_wiki(html_text)
-     
+    print(text)
     return text
+def get_wikipedia_url(title, language):
+    # Replace spaces with underscores and URL-encode special characters
+    from urllib.parse import quote
+    base = f"https://{language}.wikipedia.org/wiki/"
+    return base + quote(title.replace(" ", "_"))
 
-
+#if __name__ == "__main__":
+#    df = pd.read_csv(input_file_path, sep="\t")
+#
+#    i = 0
+#    result_list=[]
+#    corpus_dictionary = dict()
+#    with ThreadPoolExecutor(max_workers=1) as executor:
+#        #I do a loop throughout all the rows
+#        for idx, row in df.iterrows():
+#            title = row['page_title']
+#            page_url = get_wikipedia_url(title, language)
+#            print("Checking:", page_url)
+#            #I compute the result
+#            result= executor.submit(get_wikidata, URL, title, language)
+#            #I append it in the list
+#            result_list.append(result)
+#
+#        with tqdm(total=len(result_list),
+#                  desc="Processing Wikipedia pages",
+#                  dynamic_ncols=True,
+#                  miniters=1,
+#                  disable=False) as pbar:         # forza la visualizzazione
+#            for fut in as_completed(result_list):
+#                try:
+#                    r = fut.result()
+#                except Exception:
+#                    r = ""
+#
+#                if pbar.n not in corpus_dictionary:
+#                    corpus_dictionary[pbar.n] = r
+#
+#                pbar.update(1)                    
+#
+#                # checkpoint ogni 100 completamenti
+#                if pbar.n % 500 == 0:
+#                    with open(f'{FOLDER}/{NAME}_index_{pbar.n}.json', "w", encoding="utf-8") as f:
+#                        json.dump(corpus_dictionary, f, ensure_ascii=False, indent=2)
+#
+#                time.sleep(0.25)  
+#
+#    with open(f'{FOLDER}/{NAME}.json', "w", encoding="utf-8") as file:
+#        json.dump(corpus_dictionary, f, ensure_ascii=False, indent=2)
+   
 if __name__ == "__main__":
     df = pd.read_csv(input_file_path, sep="\t")
 
-    i = 0
-    result_list=[]
     corpus_dictionary = dict()
-    with ThreadPoolExecutor(max_workers=12) as executor:
-        #I do a loop throughout all the rows
+
+    with tqdm(total=len(df),
+              desc="Processing Wikipedia pages (sequential)",
+              dynamic_ncols=True,
+              miniters=1,
+              disable=False) as pbar:
         for idx, row in df.iterrows():
-            title = row['page_title']
-            #I compute the result
-            result= executor.submit(get_wikidata, URL, title, language)
-            #I append it in the list
-            result_list.append(result)
+            title = row["page_title"]
+            page_url = get_wikipedia_url(title, language)
+            print("Checking:", page_url)
+            
+            try:
+                text = get_wikidata(URL, title, language)
+            except Exception as e:
+                print(f"Errore nella pagina '{title}': {e}")
+                text = ""
 
-        with tqdm(total=len(result_list),
-                  desc="Processing Wikipedia pages",
-                  dynamic_ncols=True,
-                  miniters=1,
-                  disable=False) as pbar:         # forza la visualizzazione
-            for fut in as_completed(result_list):
-                try:
-                    r = fut.result()
-                except Exception:
-                    r = ""
+            corpus_dictionary[idx] = text
+            pbar.update(1)
+            
 
-                if pbar.n not in corpus_dictionary:
-                    corpus_dictionary[pbar.n] = r
+            # checkpoint ogni 500 pagine
+            if (idx + 1) % 500 == 0:
+                with open(f'{FOLDER}/{NAME}_index_{idx+1}.json', "w", encoding="utf-8") as f:
+                    json.dump(corpus_dictionary, f, ensure_ascii=False, indent=2)
+            
+            time.sleep(0.5)  # per non sovraccaricare Wikipedia
 
-                pbar.update(1)                    
-
-                # checkpoint ogni 100 completamenti
-                if pbar.n % 500 == 0:
-                    with open(f'{FOLDER}/{NAME}_index_{pbar.n}.json', "w", encoding="utf-8") as f:
-                        json.dump(corpus_dictionary, f, ensure_ascii=False, indent=2)
-
-                time.sleep(0.25)  
-
-
-    with open(f'{FOLDER}/{NAME}.json', "w", encoding="utf-8") as file:
+    # salvataggio finale
+    with open(f'{FOLDER}/{NAME}.json', "w", encoding="utf-8") as f:
         json.dump(corpus_dictionary, f, ensure_ascii=False, indent=2)
-    

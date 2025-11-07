@@ -1,6 +1,6 @@
 from pdfminer.high_level import extract_text
 
-NAME ="PASOLINI Pier Paolo__Il vantone di Plauto__null__(13)__Commedia__5a"
+NAME ="pitre_fiabe_novelle_e_racconti_2"
 
 pdf_path = f"{NAME}.pdf"
 text = extract_text(pdf_path)

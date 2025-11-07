@@ -2,10 +2,89 @@ import re
 import json
 pattern = r"[A-Za-z]+\. [A-Za-z]+"
 
-NAME = "Come_ve_va_de_ingarellavve_su_sta_cosa_il_romanesc"
+NAME = "pitre_fiabe_novelle_4"
 
 with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
     testo = f.read()
+
+
+def remove_numbered_notes(testo, max_blank_after_note=2):
+    """
+    Rimuove blocchi di note che iniziano con un numero all'inizio di riga.
+    Se la riga finale della nota termina con '-' (sillabazione), rimuove anche
+    la riga successiva non vuota come continuazione, anche se separata da
+    fino a `max_blank_after_note` righe vuote.
+    """
+    text = testo
+    lines = text.splitlines(keepends=True)
+
+    def is_note_start(line):
+        # una riga è inizio nota se comincia con 1-4 cifre
+        return re.match(r'^\s*\d{1,4}\b', line) is not None
+
+    out_lines = []
+    i = 0
+    n = len(lines)
+
+    while i < n:
+        line = lines[i]
+        if is_note_start(line):
+            # siamo all'inizio di una nota: salta la riga numerata
+            last_note_line = line
+            i += 1
+
+            # scarta le righe successive della nota finché non troviamo
+            # una nuova riga che inizia con numero (nuova nota) o
+            # finché non decidiamo di fermarci
+            blank_count = 0
+            while i < n:
+                nxt = lines[i]
+                # se inizia un nuovo numero -> fine nota
+                if is_note_start(nxt):
+                    break
+                # se riga vuota -> potenzialmente parte dei blank dopo nota
+                if nxt.strip() == '':
+                    blank_count += 1
+                    # non superare il massimo di blank da consumare qui (ma li saltiamo)
+                    if blank_count > max_blank_after_note:
+                        # non vogliamo saltare più di max_blank_after_note;
+                        # quindi ci fermiamo lasciando il resto del testo intatto
+                        break
+                    i += 1
+                    continue
+                # riga non vuota
+                # se c'erano blank lines prima di questa riga non vuota,
+                # la consideriamo continuazione SOLO se la nota precedente
+                # terminava con una sillabazione (es. endswith('-'))
+                if blank_count > 0:
+                    if last_note_line.rstrip().endswith('-'):
+                        # è continuazione: consumala e continua a cercare eventuali altre righe
+                        last_note_line = nxt
+                        i += 1
+                        blank_count = 0
+                        continue
+                    else:
+                        # non è continuazione, fermati QUI (mantieni la riga non vuota)
+                        break
+                else:
+                    # nessun blank tra le righe: riga non vuota immediata dopo la numerata
+                    # la consideriamo come parte della nota; consumala
+                    last_note_line = nxt
+                    i += 1
+                    continue
+            # fine: abbiamo saltato la nota (e al massimo max_blank_after_note blank lines e
+            # possibili continuazioni dovute a sillabazione)
+            continue
+        else:
+            out_lines.append(line)
+            i += 1
+
+    # ricostruisci testo
+    cleaned = ''.join(out_lines)
+    # evita troppi newline consecutivi residui (>2 -> 2)
+    cleaned = re.sub(r'\n{3,}', '\n\n', cleaned)
+    
+    return cleaned
 
 def process_testo_parentesi(testo):
 
@@ -67,6 +146,77 @@ def process_testo_zanazzo(testo):
                         "title": titolo.strip(),
                     })
     return data
+
+
+def process_testo_liber(testo):
+    testo = testo.replace('\x0c', '\n')
+    pattern = (
+        r'(?m)^\s*\d{1,3}\s*$'                    # riga con solo il numero di pagina
+        r'(?:\n(?:Fiabe novelle e racconti popolari siciliani\s*[–-]\s*Vol\. IV)\s*' # titolo (– o -)
+        r'\n\s*Giuseppe Pitrè\s*)?'                # autore (opzionale)
+    )
+    testo = re.sub(pattern, '\n', testo, flags=re.IGNORECASE)
+    testo = remove_numbered_notes(testo)
+    pattern = r'(?m)(?:\r?\n|\f)+\s*[IVXLCDM]{1,7}\.\s*(?:\r?\n|\f)+'
+    testo = testo.replace("\r\n", "\n").replace("\r", "\n")
+    #removes the pages number
+    testo = re.sub(r'(?m)^\s*\d+\s*\n', '', testo)
+    data = []
+    blocchi = re.split(pattern, testo)
+    for racconto in blocchi:
+        racconto=racconto.strip()
+        racconto = re.sub(r'\d+', '', racconto)
+        racconto = re.split(r'\bVARIANTI\s+E\s+RISCONTRI', racconto, flags=re.IGNORECASE)[0].strip()
+        
+        print("--------------------------------------")
+        
+        # divide alla prima frase (terminata da . ! o ?)
+        parts = re.split(r'[.!?]|\n{1,2}', racconto, maxsplit=1)
+
+        titolo = parts[0].strip()
+        testo_racconto = parts[1].strip() if len(parts) > 1 else ""
+        #remove the \n and the - characters, as well as \n\n and double/triple spaces
+        testo_racconto = re.sub(r'-\s*\n\s*', '', testo_racconto)
+        testo_racconto = re.sub(r'\n+', ' ', testo_racconto)
+        testo_racconto = re.sub(r'\s{2,}', ' ', testo_racconto)
+        print(testo_racconto)
+
+        if len(testo_racconto.strip())>2:
+            data.append({
+                "text": testo_racconto.strip(),
+                "title": titolo.strip(),
+            })
+    return data
+
+def process_testo_liber_2(testo):
+    testo = testo.replace('\x0c', '\n')
+    pattern = (
+        r'(?m)^\s*\d{1,3}\s*$'                    # riga con solo il numero di pagina
+        r'(?:\n(?:Fiabe novelle e racconti popolari siciliani\s*[–-]\s*Vol\. II)\s*' # titolo (– o -)
+        r'\n\s*Giuseppe Pitrè\s*)?'                # autore (opzionale)
+    )
+    testo = re.sub(pattern, '\n', testo, flags=re.IGNORECASE)
+    testo = remove_numbered_notes(testo)
+    pattern = r'(?m)(?:\r?\n|\f)+\s*[IVXLCDM]{1,7}\.\s*(?:\r?\n|\f)+'
+    testo = testo.replace("\r\n", "\n").replace("\r", "\n")
+    #removes the pages number
+    testo = re.sub(r'(?m)^\s*\d+\s*\n', '', testo)
+    fulltext = ""
+    blocchi = re.split(pattern, testo)
+    for racconto in blocchi:
+        racconto=racconto.strip()
+        racconto = re.sub(r'\d+', '', racconto)
+        
+        
+        racconto = re.split(r'\bVARIANTI\s+E\s+RISCONTRI', racconto, flags=re.IGNORECASE)[0].strip()
+        racconto = "\n--------------------------------------\n" + racconto
+        fulltext += racconto
+        print("--------------------------------------")
+        
+
+    with open("pitre_fiabe_novelle_e_racconti_1_nuovo.txt", "w", encoding="utf-8") as f:
+        f.write(fulltext)
+
 
 def process_poesie_liber(testo):
     testo = re.sub(r'7474\s*$', '', testo).strip()
@@ -148,10 +298,10 @@ def process_testo_wikisource(testo):
                 })
     return data
 
-data =process_testo_virgolette(testo)
+data =process_testo_liber(testo)
 #data = process_testo_zanazzo(testo)
 
-with open(f"../corpus_tesi/romanesco/{NAME}_processed.json", "w", encoding="utf-8") as out:
+with open(f"../corpus_tesi/siciliano/prosa/{NAME}_processed.json", "w", encoding="utf-8") as out:
     json.dump(data, out, ensure_ascii=False, indent=2)
     
     
