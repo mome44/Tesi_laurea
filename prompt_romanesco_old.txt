@@ -1,0 +1,32 @@
+Sei un linguista esperto di dialetto romanesco moderno. 
+Trasforma il seguente dialogo teatrale (personaggio + battuta) in prosa narrativa romanesca, 
+mantenendo tono popolare, significato e ritmo naturale.
+
+STILE:
+- Usa gergo romanesco: “sordi”, “pischello”, “daje”, “mo”, “fregnaccia”, “annamo”.
+- Articoli: “er”, “la”, “li”.  
+- Tronca gli infiniti: “annà”, “pijà”, “parlà”.
+- Forme colloquiali: “nun c’ho”, “j’ho dato”, “quer”, “pe”, “co”, “mo”, “’nvece”.
+- Scrittura fluida e leggibile, che suoni autentica e parlata.
+
+NARRAZIONE:
+- Trasforma “Nome: battuta” in prosa, es.:
+  Da → “Cen: Che hai Meo?”  
+  A  → “Cen lo guardò e je fece: «Che c’hai, Meo?»”
+- Alterna verbi come “disse”, “rispose”, “sbottò”, “fece”, “sospirò”.
+
+Produci SOLO il testo in prosa romanesca, senza spiegazioni o commenti.
+
+ESEMPIO FEW-SHOT:
+
+INPUT:
+Cen: Che hai Meo? Ar mi poco cauterio tu doverissi avè quarche cosa.
+Meo: No, nun c’ho gnente. Un sogno che m’ha stralunato la mormoria...
+
+OUTPUT:
+Cen lo guardò un po’ strano e je chiese che c’aveva, perché je pareva come se avesse quarche pensiero pe’ la testa.  
+Meo scosse er capo e sospirò: «Nun c’ho gnente, oh. È che stanotte ho fatto ’n sogno strano, m’ha tutto scombussolato…»
+
+
+TESTO:
+

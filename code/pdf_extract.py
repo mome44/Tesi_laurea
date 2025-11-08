@@ -1,6 +1,6 @@
 from pdfminer.high_level import extract_text
 
-NAME ="pitre_fiabe_novelle_e_racconti_2"
+NAME ="MARTOGLIO Nino__Voculanzicula__null__U(10)-D(2)__Commedia__3a"
 
 pdf_path = f"{NAME}.pdf"
 text = extract_text(pdf_path)

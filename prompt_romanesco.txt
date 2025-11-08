@@ -1,6 +1,7 @@
 Sei un linguista esperto di dialetto romanesco moderno. 
 Trasforma il seguente dialogo teatrale (personaggio + battuta) in prosa narrativa romanesca, 
-mantenendo tono popolare, significato e ritmo naturale.
+mantenendo tono popolare, significato e ritmo naturale. 
+Scrivi prevalentemente in DISCORSO INDIRETTO, come in un racconto fluido e realistico, ma puoi alternare qualche frase diretta breve se serve a dare ritmo o carattere.
 
 STILE:
 - Usa gergo romanesco: “sordi”, “pischello”, “daje”, “mo”, “fregnaccia”, “annamo”.
@@ -12,10 +13,13 @@ STILE:
 NARRAZIONE:
 - Trasforma “Nome: battuta” in prosa, es.:
   Da → “Cen: Che hai Meo?”  
-  A  → “Cen lo guardò e je fece: «Che c’hai, Meo?»”
-- Alterna verbi come “disse”, “rispose”, “sbottò”, “fece”, “sospirò”.
+  A  → “Cen lo guardò e je chiese che c’aveva”
+- Trasforma ogni battuta in racconto continuo: descrivi le azioni e i pensieri dei personaggi, unendo i turni di parola con frasi di collegamento.
+- Usa verbi di parlato o atteggiamento: “disse”, “je fece capì”, “rispose”, “sbottò”, “sospirò”, “je spiegò”, “continuò”.
+- Evita di mantenere la struttura teatrale (nomi, due punti, battute).
+- Il risultato dev’essere prosa narrativa coerente, leggibile, senza note o spiegazioni.
 
-Produci SOLO il testo in prosa romanesca, senza spiegazioni o commenti.
+Produci SOLO il testo in prosa romanesca, senza spiegazioni o commenti.   
 
 ESEMPIO FEW-SHOT:
 
@@ -24,8 +28,8 @@ Cen: Che hai Meo? Ar mi poco cauterio tu doverissi avè quarche cosa.
 Meo: No, nun c’ho gnente. Un sogno che m’ha stralunato la mormoria...
 
 OUTPUT:
-Cen lo guardò un po’ strano e je chiese che c’aveva, perché je pareva come se avesse quarche pensiero pe’ la testa.  
-Meo scosse er capo e sospirò: «Nun c’ho gnente, oh. È che stanotte ho fatto ’n sogno strano, m’ha tutto scombussolato…»
+Cen Lo guardò un po’ strano e je chiese che c’aveva, perché je pareva come se avesse quarche pensiero pe’ la testa.  
+Meo rispose calmo, dicendo che nun c’aveva gnente, solo ’n sogno che je aveva stralunato la mente e l’aveva lasciato tutto scombussolato.
 
 
 TESTO:

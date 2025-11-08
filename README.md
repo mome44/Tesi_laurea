@@ -8,14 +8,15 @@ Tesi di laurea magistrale in Engineering in computer science
 
 ### ROMANESCO
  - Calcolare le percentuali e statistiche di questi testi "PURI"
- - rivedere il parsing dei seguenti testi: GORINI lucia rosa iero oggi .. romani; Hollywood tutta n'antra cosa; La macchinazione
+ - (fatto) rivedere il parsing dei seguenti testi: GORINI lucia rosa ieri oggi .. romani; Hollywood tutta n'antra cosa; La macchinazione
  - creare la funzione per fare il parsing con le poesie +  prompt
- - creare il prompt e la funzione per tradurre i malavoglia di verga in romanesco
+ - creare il prompt e la funzione per tradurre i malavoglia di verga in romanesco (OPZIONALE)
  - Vedere se si tratta di un corpus sufficiente utilizzando varie metriche per misurare Quantità e qualità
 
 ### SICILIANO
  - wikipedia (fatto)  fare il parsing dei testi di wikipedia, come rimuovere [2]
  - testi wikisource
+ - reddit (fatto)
  - Estrarre testi e fare parafrasi così come napoletano e romano
  - vedere i testi 
 

@@ -116,7 +116,7 @@ for filename in os.listdir(PATH):
 
         if response is None:
             print(f"Errore a step {num_api_call}")
-            with open(f"{OUTPUT_PATH}/{nome_file}paraphrased_partial_{num_api_call}.json", "w", encoding="utf-8") as out:
+            with open(f"{OUTPUT_PATH}/{nome_file}paraphrased_partial_{num_api_call}_2.json", "w", encoding="utf-8") as out:
                 json.dump(result_data, out, ensure_ascii=False, indent=2)
 
             break
@@ -127,11 +127,11 @@ for filename in os.listdir(PATH):
     print(f"finished with {nome_file}\n")
     
     #saving the paraphrasis
-    with open(f"{OUTPUT_PATH}/{nome_file}paraphrased.json", "w", encoding="utf-8") as out:
+    with open(f"{OUTPUT_PATH}/{nome_file}paraphrased_2.json", "w", encoding="utf-8") as out:
         json.dump(result_data, out, ensure_ascii=False, indent=2)
     
     #renaming the old file
-    os.rename(full_path, f"{PATH}/{nome_file}finished.json")
+    os.rename(full_path, f"{PATH}/{nome_file}finished_2.json")
     
     
     

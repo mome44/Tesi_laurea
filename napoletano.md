@@ -22,6 +22,7 @@ https://nap.wikisource.org/wiki/Paggena:Altavilla_-_La_sposa_co_la_maschera.djvu
 
 https://nap.wikisource.org/wiki/Paggena:Cucina_teorico-pratica.djvu
 
+https://www.dialettando.com/regioni/pages/hitlist.lasso?sito_sezione=racconti&regione=Campania
 
 
 Miste italiano e napoletano (es. un solo personaggio parla in nap.)
