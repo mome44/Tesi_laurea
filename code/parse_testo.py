@@ -2,7 +2,7 @@ import re
 import json
 pattern = r"[A-Za-z]+\. [A-Za-z]+"
 
-NAME = "pitre_fiabe_novelle_4"
+NAME = "wikisource_testo_siciliano_bozza"
 
 with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
     testo = f.read()
@@ -105,9 +105,32 @@ def process_testo_semplice(testo):
     testo= testo.split('\n')
     data = []
     for t in testo:
-        data.append({"text": t.strip()})
+        if len(t.strip())> 2:
+            data.append({"text": t.strip()})
     return data
 
+def process_testo_arbasicula(testo):
+    testo = re.sub(r'^(?=.*(?:Arba\s*Sicula|AsbaSicula|AtbaSicula|iso\s*\d+\s*PM|sso\s*\d+\s*PM|Eugene\s+Mirabelli|Macpherson\s*&\s*Company|pp\.|[Ee]\s*%.*[A-Za-z]{2,}.*V)).*$', '', testo, flags=re.M)
+    testo = re.sub(r'(?m)^\s*\d+\s*\n', '', testo)
+    testo = re.sub(r'[©@]', '', testo)
+    print(testo.strip())
+    return process_testo_generico(testo)
+
+def process_testo_dialettando(testo):
+    data = []
+
+    parti = testo.split("---")
+    for racconto in parti:
+        racconto=racconto.lstrip("\n\n")
+        sezioni = racconto.split("\n\n",1)
+        titolo = sezioni[0]
+        testo = sezioni[1]
+        if len(testo.strip()) > 2:
+            data.append({
+                "text": testo.strip(),
+                "title": titolo.strip(),
+            })
+    return data
 
 def process_testo_zanazzo(testo):
     pattern = r'(?m)(?:\n|\f)+(?=\s*[IVXLCDM]{1,7}\.\s)'
@@ -254,9 +277,9 @@ def process_testo_generico(testo):
     testo = testo.split(". ")
 
     for l in testo:
-        ls =l.split("–")
+        ls =l.split("—")
         for i in ls:
-            if len(i.strip()) > 0:
+            if len(i.strip()) > 2:
                 data.append({
                     "text": i.strip()
                 })
@@ -298,7 +321,7 @@ def process_testo_wikisource(testo):
                 })
     return data
 
-data =process_testo_liber(testo)
+data =process_testo_generico(testo)
 #data = process_testo_zanazzo(testo)
 
 with open(f"../corpus_tesi/siciliano/prosa/{NAME}_processed.json", "w", encoding="utf-8") as out:

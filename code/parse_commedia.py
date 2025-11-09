@@ -2,7 +2,7 @@ import re
 import json
 pattern = r"[A-Za-z]+\. [A-Za-z]+"
 
-NAME = "Hollywood...tutta n'antra cosa"
+NAME = "leggiri_e_capiri_sicilianu_commedia_1"
 
 with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
     testo = f.read()
@@ -104,7 +104,8 @@ def parse_commedia_romana_multiline(testo):
     if current_speaker is not None:
         utterance = " ".join(p.strip() for p in current_parts if p is not None)
         utterance = re.sub(r'\s+', ' ', utterance).strip()
-        data.append({"character": current_speaker, "text": utterance})
+        if len(utterance.strip()) > 2:
+            data.append({"character": current_speaker, "text": utterance})
 
     return data
 
@@ -166,11 +167,24 @@ def parse_commedia_teatro_romano_3(testo):
         data.append({"character": speaker, "text": line})
     return data
 
+def parse_commedia_semplice(testo):
+    data =[]
+    pattern = re.compile(r'^\s*([A-Za-zÀ-ÖØ-öø-ÿ]{3})\.\s*(.+)$', flags=re.M)
 
+    for m in pattern.finditer(testo):
+        personaggio = m.group(1)
+        battuta = m.group(2)
 
-data = parse_commedia_teatro_romano_3(testo)
+        if len(battuta.strip()) > 2:
+            data.append({
+                "text": battuta.strip(),
+                "character": personaggio.strip(),
+            })
+    return data
+
+data = parse_commedia_semplice(testo)
 #data = parse_commedia_simple(testo)
-with open(f"../corpus_tesi/romanesco/commedia/{NAME}_processed.json", "w", encoding="utf-8") as out:
+with open(f"../corpus_tesi/siciliano/commedia/{NAME}_processed.json", "w", encoding="utf-8") as out:
     json.dump(data, out, ensure_ascii=False, indent=2)
     
     

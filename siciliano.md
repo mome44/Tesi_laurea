@@ -8,13 +8,7 @@ https://liberliber.it/autori/autori-p/giuseppe-pitre/fiabe-novelle-e-racconti-po
 
 https://liberliber.it/autori/autori-p/giuseppe-pitre/fiabe-novelle-e-racconti-popolari-siciliani-volume-4/
 
-## estratto
-Wikipedia dump pagine
-https://dumps.wikimedia.org/scnwiki/
-
 https://it.wikisource.org/wiki/Dal_dialetto_alla_lingua/Appendice/Versione_siciliana
-
-https://copioni.corrierespettacolo.it/wp-content/uploads/2016/12/MARTOGLIO%20Nino__Voculanzicula__null__U(10)-D(2)__Commedia__3a.pdf
 
 http://www.alaaddin.it/_TESORO_FIABE/FD_Sicilia_Lu_figgiu_di_re.html
 
@@ -26,10 +20,12 @@ http://www.alaaddin.it/_TESORO_FIABE/FD_Calabria_L_acqua_degli_occhi.html
 
 http://www.alaaddin.it/_TESORO_FIABE/FD_Sicilia_Ntontoronto.html
 
-https://www.dialettando.com/regioni/pages/hitlist.lasso?sito_sezione=racconti&regione=Sicilia
+https://copioni.corrierespettacolo.it/wp-content/uploads/2016/12/MARTOGLIO%20Nino__Voculanzicula__null__U(10)-D(2)__Commedia__3a.pdf
 
 https://arbasicula.org/sc/
 scaricare il testo di tutte le pagine html in siciliano
+
+https://www.dialettando.com/regioni/pages/hitlist.lasso?sito_sezione=racconti&regione=Sicilia
 
 https://web.archive.org/web/20210125220941/http://jurnalidisicilia.ilcannocchiale.it/
 
@@ -54,6 +50,18 @@ https://wikisource.org/wiki/Index:La_storia_di_li_Nurmanni_%27n_Sicilia,_cuntata
 
 https://wikisource.org/wiki/Page:Curiosit%C3%A0_popolari_tradizionali.djvu/39
 
+## estratto
+Wikipedia dump pagine
+https://dumps.wikimedia.org/scnwiki/
+
+https://wikisource.org/wiki/%27a_vilanza
+
+https://wikisource.org/wiki/Cappiddazzu_paga_tuttu
+
+https://wikisource.org/wiki/San_Giuvanni_Decullatu
+
+https://wikisource.org/wiki/Sua_Eccellenza
+
 
 ## da fare
 
@@ -77,7 +85,6 @@ Su wikisource:
 - A vilanza
 - Cappiddazzu paga tuttu
 - San giuvanni Decullatu
-- Scuru
 - Sua eccellenza
 
 ## tabelle comparazione

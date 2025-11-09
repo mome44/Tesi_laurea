@@ -1,80 +1,22 @@
-VOCULANZICULA 
 
-(L'ALTALENA) 
-
-Commedia in tre atti 
-
-PERSONAGGI 
-
-NELI, barbiere 
-MARIDDU, suo fratellastro 
-FLAVIA, madre di questi e matrigna di Neli 
-AJTINA 
-NINU, lavorante barbiere 
-PITIRRU, C. S. 
-LA ZA SARA 
-'GNAZIU 
-UN AVVENTORE 
-LA MOGLIE DI NINU - non parla 
-NUNZIATA 
-
-Rappresentate per la prima volta il 22 marzo 1909, al teatro Paganinl di 
-
-Genova, dalla Compagnia del Cav.  Uff . Giovanni Grasso.  Tradotta e 
-rappresentata in dialetto romanesco, sotto il titolo- “l La Canofiena". 
-
-La scena si svolge in Catania.  Epoca presente. 
-
-HTTP://COPIONI.CORRIERESPETTACOLO.IT 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-ATTO PRIMO 
-
-Bottega da barbiere.  In fondo comune a due battenti, a vetri, a traverso i 
-quali si vede la strada e si vedono le botteghe dirimpetto, parate a lampioncini 
-alla veneziana.  A destra e a sinistra grandi specchiere e, accanto a quella di 
-destra, porticina mascherata dalla carta da parato.  Mensole sotto gli specchi e 
-sedie giranti, come usano i barbieri.  Nella strada via vai di popolani in festa.  
-Si odono 
-i  clamori  dei  venditori  ambulanti,  che  passano  coi  carrettini.    Ai  tanti  di 
-febbraio, in Catania. 
-
-SCENA I 
-
-Flavia e 'Gnaziu. 
-
-'GNAZIU - Dunca, signora, comu 'a mittemu, 'ssa facenna? 
+GNAZIU - Dunca, signora, comu 'a mittemu, 'ssa facenna? 
 FLAVIA - (intenta a lavorare ad uncinetto, non si dà per intesa della 
 
 domanda di 'Gnazíu) 
 
-'GNAZIU - (stanco) D'accussí 'a pigghiati?... Viditi ca peggiu ppi vui è! ... 
+GNAZIU - (stanco) D'accussí 'a pigghiati?... Viditi ca peggiu ppi vui è! ... 
 
 Non nn'aviti ciatu, ppi rispumúri?... 
 
 FLAVIA - Non nn'haju di perdiri! 
-'GNAZIU - A si?... Bravu!... Videmu si sugnu bonu a faravillu nèsciri ju,a vui 
+GNAZIU - A si?... Bravu!... Videmu si sugnu bonu a faravillu nèsciri ju,a vui 
 
-'GNAZIU - No, ppi comora non vogghiu diri nenti... ma... carta mi canta 'n 
+GNAZIU - No, ppi comora non vogghiu diri nenti... ma... carta mi canta 'n 
 cannolu, cara signuta, e vui badati e' fatti vostri, pirchí vi pò finiri a 
 briscula!... 
 
 FLAVIA - A mia chi m'ha a finiri?... Aria netta non àvi paura di trona. 
-'GNAZIU - Megghiu accussì!... Dunca, ju sugnu omu di paci e vi dícu chistu 
+GNAZIU - Megghiu accussì!... Dunca, ju sugnu omu di paci e vi dícu chistu 
 
 sulu... Me' ziu parrinu, a vostro figghiu, ci lassò trimila unzi e a 
 nuautri nenti... Chiddu ca non fici iddu 'u facissi vostru figghíu.  Ccu 
@@ -91,7 +33,7 @@ FLAVIA - (spalmando la mano e stendendola) Eh, caru miu, è inutili
 
 c'amminazzati!... Non ci chiovi, cca sutta!... 
 
-'GNAZIU - Bon pruri e saluti!... iu chiddu ca v'avía a diri v' 'u dissi... Vostru 
+GNAZIU - Bon pruri e saluti!... iu chiddu ca v'avía a diri v' 'u dissi... Vostru 
 
 figghiu 'a me' casa 'a sapi... L'aspettu 'n autri quinnici jorna... Si dintra 
 quinnici iorna non è vinutu pp'aggiustari 'sta partita, ju mi sentu libiru 
@@ -107,15 +49,15 @@ figghiu!...
 
 e a vostru figghiu. 
 
-'GNAZIU - Ca si sapi fari 'u so' doviri, non nni vusca... Nn'avemu saputu 
+GNAZIU - Ca si sapi fari 'u so' doviri, non nni vusca... Nn'avemu saputu 
 
 FLAVIA - Lassàtilu stari, a me' figghiu, ca non c'entra!... 
-'GNAZIU - Non c'entra?  E cu' c'entra, allura, me' soru 'a monica? 
+GNAZIU - Non c'entra?  E cu' c'entra, allura, me' soru 'a monica? 
 FLAVIA - Ma guardati chi c'è cca, 'stu cristianu!... Chi pritinniti, di me' 
 
 figghiu, si pò sapiri?... 
 
-'GNAZIU - Comu, si pò sapiri, diciti?... Si àvi dicerott'anni va v' 'u dicu, a vui 
+GNAZIU - Comu, si pò sapiri, diciti?... Si àvi dicerott'anni va v' 'u dicu, a vui 
 
 e ad íddu!... 
 
@@ -123,7 +65,7 @@ FLAVIA - Pritinníti ca vi dassi chiddu ca ci lassò so' patrozzu?  E ccu quali
 
 dríttu?... 
 
-'GNAZIU - Prima di tuttu non facemu questioni di drittu, vasinnò nni 
+GNAZIU - Prima di tuttu non facemu questioni di drittu, vasinnò nni 
 
 Pmpirugghiamu chíú assai... ju non pritennu chiddu chi diciti... 'U 
 pinseri di me' ziu parrinu, lassànnuci tuttu cosi a so' figghiozzo, e 
@@ -141,7 +83,7 @@ SCENA II
 
 Neli e detti, poi Ajtina. 
 
-NELI - Salutamu, don 'Gnaziu. 
+NELI - Salutamu, don GNAZIU. 
 
 HTTP://COPIONI.CORRIERESPETTACOLO.IT 
  
@@ -164,34 +106,34 @@ HTTP://COPIONI.CORRIERESPETTACOLO.IT
 
 avvia per la porticina di destra). 
 
-'GNAZIU - Perciò, signura, ristamu 'ntisi!... 
+GNAZIU - Perciò, signura, ristamu 'ntisi!... 
 FLAVIA - V'haju 'ntisu!... 
-'GNAZIU - Dicìtaccillu, a vostru figghiu!... 
+GNAZIU - Dicìtaccillu, a vostru figghiu!... 
 FLAVIA - (richiude la porticina con fracasso, senza rispondere). 
-'GNAZIU - E non faciti tantu 'a superba, ca taluni vòti 'n aggiuva, parola 
+GNAZIU - E non faciti tantu 'a superba, ca taluni vòti 'n aggiuva, parola 
 
 d'onuri!... 
 
 NELI - Cc'aviti, ccu me' matrastra?... 
-'GNAZIU - Nenti, don Neli, certi cunti in suspisu, di supra l'eredità di me' ziu 
+GNAZIU - Nenti, don Neli, certi cunti in suspisu, di supra l'eredità di me' ziu 
 
 parrinu... 
 
 NELI - Ah!... Cosi ca non mi riguardano... 
-'GNAZIU - 'U sacciu, ed ju pirchissu a vui non vi nn'haju dittu mai nenti... 
+GNAZIU - 'U sacciu, ed ju pirchissu a vui non vi nn'haju dittu mai nenti... 
 AJTINA - (apre pian pianino la vetrata della comune, spia dentro la bottega, 
 
 irresoluta, poi si decide ed entra) Buon gíornu, don Neli... (va ad 
 accovacciarsi in un angolo. E’ smunta e mal vestita, con le occhiaie 
 profonde). 
 
-NELI - (la guarda senza dirle nulla, poi a 'Gnaziu, cbe si è fermato) Parrati... 
-'GNAZIU - E non haju chi diri.  Chiddu c'avía a diri ci 'u dissi a' signura. 
+NELI - (la guarda senza dirle nulla, poi a GNAZIU, cbe si è fermato) Parrati... 
+GNAZIU - E non haju chi diri.  Chiddu c'avía a diri ci 'u dissi a' signura. 
 
 Spiramu ca si nni persuari!... 
 
 NELI - Mariddu non v'ha datu nenti?... 
-'GNAZIU - Nenti... E si mi cridití, auannu non haju unni càdíri e unni 
+GNAZIU - Nenti... E si mi cridití, auannu non haju unni càdíri e unni 
 
 muríri!... Arrivederci, don Neli!... 
 
@@ -1454,12 +1396,12 @@ scattari a vucca 'n sangu, a 'stu vilunazzu ca si nn'apprufitta ca è sutta
 'a maschira, ppi 'nsultari 'i genti!... 
 
 NELI - (sta per inveire ancb'egli contro la Maschera quando) 
-'GNAZIU - (togliendosi la maschera) Auh!... ju 'a maschira m' 'a le,,,u, e 
+GNAZIU - (togliendosi la maschera) Auh!... ju 'a maschira m' 'a le,,,u, e 
 
 vogghiu vídiri comu mi fa' scattari 'a vucca 'n sangu! 
 
 TUTTI -(compreso Mario, restano allibiti). 
-'GNAZIU - E ti dicu 'na cosa, cca, avanti o' to' fratastru e a tutti chisti, ca ju 'a 
+GNAZIU - E ti dicu 'na cosa, cca, avanti o' to' fratastru e a tutti chisti, ca ju 'a 
 
 maschíra m' 'a pozzu livari pirchí è di cartuni, ma tu 'a to' non t'a pò 
 livari pirchí t' 'a misi to' matri mittennuti o munnu. Grannissimu 
@@ -1475,7 +1417,7 @@ MARIDDU - (svincolandosi, afferra un rasoio da su una mensola e si
 
 precipita) Nesci!... 
 
-'GNAZIU - (cava il coltello di tasca ed esce) Cca sugnu, ca ju apposta vinni 
+GNAZIU - (cava il coltello di tasca ed esce) Cca sugnu, ca ju apposta vinni 
 
 mascaratu!... 
 
@@ -1560,7 +1502,7 @@ FLAVIA - (conturbata) ... Chi nni sacciu ju?... Cu' t'ha 'nfrucícatu, so'
 
 Chi dirittu hai, supra di mia?  Chi si' me' maritu, tu?... 
 
-niputi?... Chi ti dissi, dda facci di mal culuri di mastru 'Gnaziu?... 
+niputi?... Chi ti dissi, dda facci di mal culuri di mastru GNAZIU?... 
 
 NELI - Bonu, bonu, non vi riscaldati!... Comu? non mi riscaldu ju!?... Dunca 
 
@@ -1572,7 +1514,7 @@ FLAVIA - Affari soi, sunnu, e di 'dda vuccazza vilinusa ca àvi, botta di
 
 sangu!... 
 
-NELI - Ppi 'ssa cosa 'a vucca vilínusa l'hannu tutti... Pirchí mastru 'Gnaziu mi 
+NELI - Ppi 'ssa cosa 'a vucca vilínusa l'hannu tutti... Pirchí mastru GNAZIU mi 
 
 dissi chiddu ca sannu e dicinu tutti... 
 
@@ -1684,13 +1626,13 @@ NINU – E’ firita...
 NELI - Firita?...  E unni?... E di cui? 
 NINU - Cosa di nenti... E’, firita a' manu!... Mariddu, non putennu sfuari ccu 
 
-mastru 'Gnaziu, 'ncuntrannu a 'dda criatura, ca stava vinennu cca, si ci 
+mastru GNAZIU, 'ncuntrannu a 'dda criatura, ca stava vinennu cca, si ci 
 allanzau, ppi tagghiàricci 'a facci!... 
 
 NELI - Eh, vigliaccu!  E chi, nuddu c'era? 
 NINU - Uh, c'era menzu Catania!... Ma tutti pinsavunu a divídiri a mastru 
 
-'Gnaziu e Mariddu, nenti pinsannu ca chistu puteva sfugarasfila ccu 
+GNAZIU e Mariddu, nenti pinsannu ca chistu puteva sfugarasfila ccu 
 'na povira fimmina 'nnuccentí... 
 
 NELI - Avanti, avanti! 
