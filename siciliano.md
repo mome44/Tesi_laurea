@@ -50,12 +50,15 @@ https://www.reddit.com/user/Narkku/   scaricare i testi lunghi in siciliano
 
 https://www.reddit.com/r/Sicilianu/
 
+https://wikisource.org/wiki/Index:La_storia_di_li_Nurmanni_%27n_Sicilia,_cuntata_di_lu_Griddu.djvu
+
+https://wikisource.org/wiki/Page:Curiosit%C3%A0_popolari_tradizionali.djvu/39
+
+
 ## da fare
-altro testo di wikisource che è in bozza
+
 
 https://www.gttempo.it/copioni.htm  U Passiu Santu, 	quelle di AMATO Umberto e di 	ALLOTTA Giovanni
-
-https://www.fairitaly.eu/joomla/Fabulando/Animmulu/mobile/index.html -> già estratto
 
 Nino martoglio cercare su progetto gutemberg  cappidazzu paga tuttu
 https://cademiasiciliana.org/?lang=it NO
@@ -69,7 +72,18 @@ d6jg7gHDIeK8Gw6aBcOAowoEgRlrmw
 
 ## misto italiano siciliano
 
+## Commedie
+Su wikisource:
+- A vilanza
+- Cappiddazzu paga tuttu
+- San giuvanni Decullatu
+- Scuru
+- Sua eccellenza
+
 ## tabelle comparazione
 
+Estrarre testi e vedere se sono nuovi o già usati
 OPUS
 https://opus.nlpl.eu/results/scn&en/corpus-result-table
+
+vedere se ci sono frasi ripetute e salvare tutti le parole opus in un unico file

@@ -24,6 +24,21 @@ https://nap.wikisource.org/wiki/Paggena:Cucina_teorico-pratica.djvu
 
 https://www.dialettando.com/regioni/pages/hitlist.lasso?sito_sezione=racconti&regione=Campania
 
+https://www.pontelandolfonews.com/napoletanita/1867-lu-trovatore-giornale-spassatiempo/
+
+https://www.eleaml.org/ne/stampa2s/1866-02-LU-TROVATORE-N-001-100-editoriali-gennaio-2018.html#LL%E2%80%99ITALIA_A_PAVAMlENTO
+
+https://www.vesuviolive.it/cultura/54256-storie-leggende-partenopee-rubrica-in-lingua-napoletana/
+
+https://m.dialettando.com/poesie-racconti/?regione=Campania&sito_sezione=Articoli
+
+https://www.filastrocche.it/contenuti/t/dialetto-napoletano/
+
+http://www.isaporidelmediterraneo.it/2012/03/rucule-nfarinat-e-fritt.html?m=1
+
+https://napulapp.it/#/Categorie/Documenti
+
+
 
 Miste italiano e napoletano (es. un solo personaggio parla in nap.)
 
