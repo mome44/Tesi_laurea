@@ -5,15 +5,17 @@
 ## estratto
 https://it.wikisource.org/wiki/Dal_dialetto_alla_lingua/Appendice/Versione_napoletana
 
+https://www.mercaba.es/renacimiento/cuentos_de_basile.pdf
+
+https://it.wikisource.org/wiki/Lo_cunto_de_li_cunti
+
 ## da fare
 
 https://dumps.wikimedia.org/napwiki/
 
+https://nap.wikisource.org/wiki/
 
-
-https://it.wikisource.org/wiki/Lo_cunto_de_li_cunti
-
-https://nap.wikisource.org/wiki/Ennece:Scalo_marittimo_-_Raffaele_Viviani_-_10_commedie.pdf
+Ennece:Scalo_marittimo_-_Raffaele_Viviani_-_10_commedie.pdf
 
 https://lazzaronapoletano.it/category/0003/0003-0012/
 
