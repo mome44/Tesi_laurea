@@ -50,10 +50,6 @@ https://wikisource.org/wiki/Index:La_storia_di_li_Nurmanni_%27n_Sicilia,_cuntata
 
 https://wikisource.org/wiki/Page:Curiosit%C3%A0_popolari_tradizionali.djvu/39
 
-## estratto
-Wikipedia dump pagine
-https://dumps.wikimedia.org/scnwiki/
-
 https://wikisource.org/wiki/%27a_vilanza
 
 https://wikisource.org/wiki/Cappiddazzu_paga_tuttu
@@ -61,6 +57,10 @@ https://wikisource.org/wiki/Cappiddazzu_paga_tuttu
 https://wikisource.org/wiki/San_Giuvanni_Decullatu
 
 https://wikisource.org/wiki/Sua_Eccellenza
+
+## estratto
+Wikipedia dump pagine
+https://dumps.wikimedia.org/scnwiki/
 
 
 ## da fare

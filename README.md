@@ -27,6 +27,8 @@ Tesi di laurea magistrale in Engineering in computer science
  - Parafrasare le commedie in prosa
  - Parafrasare le poesie in prosa
  - Trovare un modo per parafrasare lo cunto de' li cunti in napoletano moderno
+ - Vedere corpus OPUS come il siciliano
+ - Provare a sfruttare il traduttore
 
 ### Link napoletano
 

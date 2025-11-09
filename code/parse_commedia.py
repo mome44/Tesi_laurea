@@ -2,7 +2,7 @@ import re
 import json
 pattern = r"[A-Za-z]+\. [A-Za-z]+"
 
-NAME = "leggiri_e_capiri_sicilianu_commedia_1"
+NAME = "sua_eccellenza_wikisource"
 
 with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
     testo = f.read()
@@ -182,7 +182,96 @@ def parse_commedia_semplice(testo):
             })
     return data
 
-data = parse_commedia_semplice(testo)
+def parse_commedia_semplice_2(testo):
+    data =[]
+    pattern = re.compile(r'^([A-Z .]+)\n\n(.*?)(?=(?:\n[A-Z .]+\n\n)|\Z)', re.S | re.M)
+
+    for m in pattern.finditer(testo):
+        personaggio = m.group(1)
+        battuta = m.group(2)
+        battuta = re.sub(r"\[.*?\]|\(.*?\)", "", battuta, flags=re.DOTALL)
+
+        if len(battuta.strip()) > 2:
+            data.append({
+                "text": battuta.strip(),
+                "character": personaggio.strip(),
+            })
+    return data
+
+def parse_commedia_semplice_3(testo):
+    data =[]
+    pattern = re.compile(r'([A-ZÀ-Ü\s]+)\n\s*(.+?)(?=\n[A-ZÀ-Ü\s]+\n|\Z)', re.DOTALL)
+
+    for m in pattern.finditer(testo):
+        personaggio = m.group(1)
+        battuta = m.group(2)
+        battuta = re.sub(r"\[.*?\]|\(.*?\)", "", battuta, flags=re.DOTALL)
+
+        if len(battuta.strip()) > 2:
+            data.append({
+                "text": battuta.strip(),
+                "character": personaggio.strip(),
+            })
+    return data
+
+def parse_commedia_semplice_5(testo):
+    data =[]
+    pattern = re.compile(
+    r"^([A-ZÀ-Ü][\w’'`\-àèéìòùÀÈÉÌÒÙḍḍîûçÇ]+)\s*\n(.+?)(?=\n[A-ZÀ-Ü][\w’'`\-àèéìòùÀÈÉÌÒÙḍḍîûçÇ]+\s*\n|^Scena|^Attu|\Z)",
+    re.MULTILINE | re.DOTALL
+)
+
+    for m in pattern.finditer(testo):
+        personaggio = m.group(1)
+        battuta = m.group(2)
+        battuta = re.sub(r"\[.*?\]|\(.*?\)", "", battuta, flags=re.DOTALL)
+
+        if len(battuta.strip()) > 2:
+            data.append({
+                "text": battuta.strip(),
+                "character": personaggio.strip(),
+            })
+    return data
+import re
+
+def parse_commedia_semplice_6(testo):
+    data =[]
+    pattern = re.compile(
+    r"^([A-ZÀ-Ü\s']+)\n\s*(.+?)(?=\n[A-ZÀ-Ü\s']+\n|\Z)",
+    re.MULTILINE | re.DOTALL
+)
+
+    for m in pattern.finditer(testo):
+        personaggio = m.group(1)
+        battuta = m.group(2)
+        battuta = re.sub(r"\[.*?\]|\(.*?\)", "", battuta, flags=re.DOTALL)
+
+        if len(battuta.strip()) > 2:
+            data.append({
+                "text": battuta.strip(),
+                "character": personaggio.strip(),
+            })
+    return data
+
+
+def parse_commedia_semplice_4(testo):
+    data =[]
+    elenco_batt = testo.split("\n\n")
+
+    for batt in elenco_batt:
+        parti = batt.split("\n",1)
+        personaggio = parti[0]
+        battuta = parti[1]
+        #battuta = re.sub(r"\[.*?\]|\(.*?\)", "", battuta, flags=re.DOTALL)
+
+        if len(battuta.strip()) > 2:
+            data.append({
+                "text": battuta.strip(),
+                "character": personaggio.strip(),
+            })
+    return data
+
+data = parse_commedia_semplice_6(testo)
 #data = parse_commedia_simple(testo)
 with open(f"../corpus_tesi/siciliano/commedia/{NAME}_processed.json", "w", encoding="utf-8") as out:
     json.dump(data, out, ensure_ascii=False, indent=2)

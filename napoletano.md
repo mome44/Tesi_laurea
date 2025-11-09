@@ -1,8 +1,15 @@
 ## Link napoletano
 
+## processato
+
+## estratto
+https://it.wikisource.org/wiki/Dal_dialetto_alla_lingua/Appendice/Versione_napoletana
+
+## da fare
+
 https://dumps.wikimedia.org/napwiki/
 
-https://it.wikisource.org/wiki/Dal_dialetto_alla_lingua/Appendice/Versione_napoletana
+
 
 https://it.wikisource.org/wiki/Lo_cunto_de_li_cunti
 

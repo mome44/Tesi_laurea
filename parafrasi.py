@@ -6,7 +6,9 @@ import json
 import os
 
 
-API_KEY = "AIzaSyDAM3VU2O7RClzARfcjVr-WFtO-oEWsZTE"
+#API_KEY = "AIzaSyDAM3VU2O7RClzARfcjVr-WFtO-oEWsZTE" #prima
+#API_KEY = "AIzaSyCKynyTujWmvIYiOaLxnpuuvUevgFUx5fQ" #Seconda
+API_KEY = "AIzaSyA5aGoN_UAs6QznnGP8Jpa4bh3vqEV8XYk" #TERZA
 # --- Configurazioni ---
 MODEL_NAME = "gemini-2.5-flash"
 
@@ -39,6 +41,9 @@ def format_input(data, type):
             i+=1
         return result
     else:
+        result = []
+        for item in data:
+            result.append(item["text"])
         return data
 
 
