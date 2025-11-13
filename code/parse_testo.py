@@ -2,7 +2,7 @@ import re
 import json
 pattern = r"[A-Za-z]+\. [A-Za-z]+"
 
-NAME = "wikisource_testo_siciliano_bozza"
+NAME = "dal_dialetto_alla_linguanap"
 
 with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
     testo = f.read()
@@ -175,9 +175,14 @@ def process_testo_liber(testo):
     testo = testo.replace('\x0c', '\n')
     pattern = (
         r'(?m)^\s*\d{1,3}\s*$'                    # riga con solo il numero di pagina
-        r'(?:\n(?:Fiabe novelle e racconti popolari siciliani\s*[–-]\s*Vol\. IV)\s*' # titolo (– o -)
-        r'\n\s*Giuseppe Pitrè\s*)?'                # autore (opzionale)
+        r'(?:\n(?:Letteratura italiana Einaudi\s)\s*' # titolo (– o -)
+        r'\n\s*Giovan Battista Basile - Lo cunto de li cunti*)?'                # autore (opzionale)
     )
+    #pattern = (
+    #    r'(?m)^\s*\d{1,3}\s*$'                    # riga con solo il numero di pagina
+    #    r'(?:\n(?:Fiabe novelle e racconti popolari siciliani\s*[–-]\s*Vol\. IV)\s*' # titolo (– o -)
+    #    r'\n\s*Giuseppe Pitrè\s*)?'                # autore (opzionale)
+    #)
     testo = re.sub(pattern, '\n', testo, flags=re.IGNORECASE)
     testo = remove_numbered_notes(testo)
     pattern = r'(?m)(?:\r?\n|\f)+\s*[IVXLCDM]{1,7}\.\s*(?:\r?\n|\f)+'
@@ -208,6 +213,37 @@ def process_testo_liber(testo):
             data.append({
                 "text": testo_racconto.strip(),
                 "title": titolo.strip(),
+            })
+    return data
+
+def process_testo_liber_nap(testo):
+    testo = testo.replace('\x0c', '')
+    pattern = (
+        r'(?m)^\s*\d{1,3}\s*$'                    # riga con solo il numero di pagina               # autore (opzionale)
+    )
+    data=[]
+    testo = re.sub(pattern, '', testo, flags=re.IGNORECASE)
+
+    frase = "Letteratura italiana Einaudi"  # <-- sostituisci con la frase che vuoi
+    pattern = rf".*{re.escape(frase)}.*\n?"
+    testo = re.sub(pattern, '', testo, flags=re.IGNORECASE)
+    frase = "Giovan Battista Basile - Lo cunto de li cunti"  # <-- sostituisci con la frase che vuoi
+    pattern = rf".*{re.escape(frase)}.*\n?"
+    testo = re.sub(pattern, '', testo, flags=re.IGNORECASE)
+
+
+    blocchi = testo.split("\n\n\n")
+    
+    for racconto in blocchi:
+        racconto=racconto.strip()
+        #remove the \n and the - characters, as well as \n\n and double/triple spaces
+        testo_racconto = re.sub(r'-\s*\n\s*', '', racconto)
+        testo_racconto = re.sub(r'\n+', ' ', testo_racconto)
+        testo_racconto = re.sub(r'\s{2,}', ' ', testo_racconto)
+        
+        if len(testo_racconto) > 2:
+            data.append({
+                "text": testo_racconto,
             })
     return data
 
@@ -324,7 +360,7 @@ def process_testo_wikisource(testo):
 data =process_testo_generico(testo)
 #data = process_testo_zanazzo(testo)
 
-with open(f"../corpus_tesi/siciliano/prosa/{NAME}_processed.json", "w", encoding="utf-8") as out:
+with open(f"../corpus_tesi/napoletano/prosa/{NAME}_processed.json", "w", encoding="utf-8") as out:
     json.dump(data, out, ensure_ascii=False, indent=2)
     
     
