@@ -7,20 +7,29 @@ Tesi di laurea magistrale in Engineering in computer science
  - Per calcolare il numero di token bisogna farlo su tutto il corpus e anche verificare di quanto aumenta il loro numero quando si aggiunge un testo (non quantità ma qualità) e ci sono delle metriche per misurare questo
 
 ### ROMANESCO
- - Calcolare le percentuali e statistiche di questi testi "PURI"
- - (fatto) rivedere il parsing dei seguenti testi: GORINI lucia rosa ieri oggi .. romani; Hollywood tutta n'antra cosa; La macchinazione
+#### fatto
+ - (fatto) rivedere il parsing dei seguenti testi: GORINI lucia rosa ieri oggi .. romani; Hollywood tutta n'antra cosa; La macchinazione 
  - creare la funzione per fare il parsing con le poesie +  prompt
+#### da fare
+ - Calcolare le percentuali e statistiche di questi testi "PURI"
  - creare il prompt e la funzione per tradurre i malavoglia di verga in romanesco (OPZIONALE)
  - Vedere se si tratta di un corpus sufficiente utilizzando varie metriche per misurare Quantità e qualità
+ - provare a sfruttare il traduttore online
 
 ### SICILIANO
- - wikipedia (fatto)  fare il parsing dei testi di wikipedia, come rimuovere [2]
+#### fatto
+ - wikipedia
  - testi wikisource
- - reddit (fatto)
- - Estrarre testi e fare parafrasi così come napoletano e romano
+ - reddit
+#### da fare
+ - fare il parsing dei testi di wikipedia, come rimuovere [2]
+ - vedere il corpus OPUS
+ - fare parafrasi così come napoletano e romano
  - vedere i testi 
 
-## NAPOLETANO
+### NAPOLETANO
+#### fatto
+#### da fare
  - Estrarre wikipedia e fare il parsing dei testi
  - Wikisource
  - Estrarre i link e i testi trovati online
@@ -29,8 +38,3 @@ Tesi di laurea magistrale in Engineering in computer science
  - Trovare un modo per parafrasare lo cunto de' li cunti in napoletano moderno
  - Vedere corpus OPUS come il siciliano
  - Provare a sfruttare il traduttore
-
-### Link napoletano
-
-https://dumps.wikimedia.org/napwiki/
-

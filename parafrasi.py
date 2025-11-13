@@ -6,19 +6,19 @@ import json
 import os
 
 
-#API_KEY = "AIzaSyDAM3VU2O7RClzARfcjVr-WFtO-oEWsZTE" #prima
+API_KEY = "AIzaSyDAM3VU2O7RClzARfcjVr-WFtO-oEWsZTE" #prima
 #API_KEY = "AIzaSyCKynyTujWmvIYiOaLxnpuuvUevgFUx5fQ" #Seconda
-API_KEY = "AIzaSyA5aGoN_UAs6QznnGP8Jpa4bh3vqEV8XYk" #TERZA
+#API_KEY = "AIzaSyA5aGoN_UAs6QznnGP8Jpa4bh3vqEV8XYk" #TERZA
 # --- Configurazioni ---
 MODEL_NAME = "gemini-2.5-flash"
 
 DIALECT = "romanesco"
-TIPO = "commedia"
+TIPO = "poesia"
 PATH = f"corpus_tesi/{DIALECT}/{TIPO}"
 OUTPUT_PATH = f"corpus_tesi/{DIALECT}/parafrasi"
 LAST_FILE = ""
 
-with open(f"prompt_{DIALECT}.txt", "r", encoding = "utf-8") as p:
+with open(f"prompt_{DIALECT}_{TIPO}.txt", "r", encoding = "utf-8") as p:
     prompt = p.read()
 
 def format_input(data, type):
@@ -44,7 +44,7 @@ def format_input(data, type):
         result = []
         for item in data:
             result.append(item["text"])
-        return data
+        return result
 
 
 def gemini_api_call(prompt, model_name):
@@ -132,11 +132,11 @@ for filename in os.listdir(PATH):
     print(f"finished with {nome_file}\n")
     
     #saving the paraphrasis
-    with open(f"{OUTPUT_PATH}/{nome_file}paraphrased_2.json", "w", encoding="utf-8") as out:
+    with open(f"{OUTPUT_PATH}/{nome_file}paraphrased.json", "w", encoding="utf-8") as out:
         json.dump(result_data, out, ensure_ascii=False, indent=2)
     
     #renaming the old file
-    os.rename(full_path, f"{PATH}/{nome_file}finished_2.json")
+    os.rename(full_path, f"{PATH}/{nome_file}finished.json")
     
     
     

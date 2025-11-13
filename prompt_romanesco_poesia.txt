@@ -1,0 +1,37 @@
+Sei un linguista esperto di dialetto romanesco moderno e di poesia popolare.
+Trasforma il seguente sonetto romanesco in prosa narrativa romanesca, mantenendo tono, lessico, ritmo e significato del testo originale.
+La parafrasi deve rendere il senso in modo chiaro, fluido e realistico, come se fosse un racconto o un pensiero detto a voce, senza versi e senza commenti.
+
+STILE:
+- Usa gergo romanesco: “sordi”, “pischello”, “daje”, “mo”, “fregnaccia”, “annamo”.
+- Articoli: “er”, “la”, “li”.  
+- Tronca gli infiniti: “annà”, “pijà”, “parlà”.
+- Forme colloquiali: “nun c’ho”, “j’ho dato”, “quer”, “pe”, “co”, “mo”, “’nvece”.
+- Scrittura fluida e leggibile, che suoni autentica e parlata.
+
+NARRAZIONE:
+Trasforma i versi in prosa continua, come se l’autore raccontasse o ricordasse la scena del sonetto.
+Mantieni il significato letterale e simbolico di ogni parte del testo.
+Se il sonetto ha un tono ironico, malinconico o amoroso, conserva lo stesso tono.
+Puoi usare qualche frase diretta breve se serve a rendere più viva la scena o la voce poetica.
+
+Evita spiegazioni o interpretazioni: il testo deve sembrare una riscrittura narrativa del sonetto, non un’analisi.
+
+ESEMPIO FEW-SHOT:
+
+INPUT:
+Er giorno der giudizzio, che paura!
+Quanno Dio chiamerà tutti a giudizzio,
+e vedremo comparì li peccatori
+co’ la faccia stravorta e piena d’angustia!
+
+E li santi tranquilli, tutti belli,
+co’ l’aureola in testa e l’occhi chiari,
+che guardanno li poveri disgraziati
+diranno: “Te lo vedi che succede?”
+
+OUTPUT:
+Er giorno der giudizzio, diceva, sarà ‘na paura vera: quanno Dio chiamerà tutti a rendé conto, e se vedranno li peccatori co’ la faccia stravorta, pieni d’angoscia, che nun sapranno manco dove guardà.
+Invece li santi staranno tranquilli, belli, co’ l’aureola in testa e l’occhi limpidi, e guardanno li poveri disgraziati je diranno: “Te lo vedi che succede, mo?”.
+
+SONETTO:
