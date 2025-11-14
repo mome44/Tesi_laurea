@@ -6,9 +6,9 @@ import json
 import os
 
 
-API_KEY = "AIzaSyDAM3VU2O7RClzARfcjVr-WFtO-oEWsZTE" #prima
+#API_KEY = "AIzaSyDAM3VU2O7RClzARfcjVr-WFtO-oEWsZTE" #prima
 #API_KEY = "AIzaSyCKynyTujWmvIYiOaLxnpuuvUevgFUx5fQ" #Seconda
-#API_KEY = "AIzaSyA5aGoN_UAs6QznnGP8Jpa4bh3vqEV8XYk" #TERZA
+API_KEY = "AIzaSyA5aGoN_UAs6QznnGP8Jpa4bh3vqEV8XYk" #TERZA
 # --- Configurazioni ---
 MODEL_NAME = "gemini-2.5-flash"
 
@@ -16,7 +16,7 @@ DIALECT = "romanesco"
 TIPO = "poesia"
 PATH = f"corpus_tesi/{DIALECT}/{TIPO}"
 OUTPUT_PATH = f"corpus_tesi/{DIALECT}/parafrasi"
-LAST_FILE = ""
+LAST_FILE = 124
 
 with open(f"prompt_{DIALECT}_{TIPO}.txt", "r", encoding = "utf-8") as p:
     prompt = p.read()
@@ -50,9 +50,9 @@ def format_input(data, type):
 def gemini_api_call(prompt, model_name):
     max_retries = 5
     response = None
-    for attempt in range(max_retries):
+    for attempt in range(1, max_retries):
         try:
-            time.sleep(random.uniform(6, 8))  #controling our request rate
+            time.sleep(random.uniform(7, 8))  #controling our request rate
             try:
                 client = genai.Client(api_key=API_KEY)
             except Exception as e:
@@ -76,7 +76,7 @@ def gemini_api_call(prompt, model_name):
             
             return response.text
         except APIError as e:
-            wait_time = 2 ** attempt  # Esponezially più lungo
+            wait_time = 3 ** attempt  # Esponezially più lungo
             print(f"ERRORE: {e}. Riprovo in {wait_time} secondi...")
             if attempt < max_retries - 1:
                 time.sleep(wait_time)
@@ -91,6 +91,7 @@ def gemini_api_call(prompt, model_name):
             return None
 
 num_api_call=0
+errore = False
 for filename in os.listdir(PATH):
     full_path = os.path.join(PATH,filename)
     #skipping the paraphrased files
@@ -108,8 +109,11 @@ for filename in os.listdir(PATH):
 
     result_data = []
     
-    for part in result:
-        print(f"processing {num_api_call}")
+    for index in range(len(result)):
+        if index < LAST_FILE:
+            continue
+        part = result[index]
+        print(f"processing {num_api_call} - {nome_file}: file index {index}")
         prompt_input = prompt + part
 
         response = gemini_api_call(prompt_input, MODEL_NAME)
@@ -121,12 +125,13 @@ for filename in os.listdir(PATH):
 
         if response is None:
             print(f"Errore a step {num_api_call}")
-            with open(f"{OUTPUT_PATH}/{nome_file}paraphrased_partial_{num_api_call}_2.json", "w", encoding="utf-8") as out:
+            with open(f"{OUTPUT_PATH}/{nome_file}paraphrased_partial_{index}.json", "w", encoding="utf-8") as out:
                 json.dump(result_data, out, ensure_ascii=False, indent=2)
-
+            errore=True
             break
         num_api_call+=1
-    
+    if errore:
+        break
     if num_api_call == 250:
         break
     print(f"finished with {nome_file}\n")
