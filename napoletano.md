@@ -9,15 +9,17 @@ https://it.wikisource.org/wiki/Lo_cunto_de_li_cunti
 ## estratto
 https://nap.wikisource.org/wiki/Ennece:Scalo_marittimo_-_Raffaele_Viviani_-_10_commedie.pdf
 
+https://lazzaronapoletano.it/category/0003/0003-0012/
+
+https://www.quicampiflegrei.it/2023/12/10/favole-napoletane/
+
 ## da fare
 
 https://dumps.wikimedia.org/napwiki/
 
 https://nap.wikisource.org/wiki/
 
-https://lazzaronapoletano.it/category/0003/0003-0012/
 
-https://www.quicampiflegrei.it/2023/12/10/favole-napoletane/
 
 https://www.gttempo.it/copioni.htm   	AGNELLO Salvatore Angela Paraguai in Bellezza, quelle di ANDOLFI Colomba Rosaria
 

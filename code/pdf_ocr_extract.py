@@ -12,7 +12,7 @@ NAME ="arba_pdf_testo"
 
 testo_completo = ""
 
-for i in range(1, 45):
+for i in range(1, 6):
     page = Image.open(f"arba_{i}.png")
 
 #for page_number, page in enumerate(pages):

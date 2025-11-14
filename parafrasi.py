@@ -16,7 +16,7 @@ DIALECT = "romanesco"
 TIPO = "poesia"
 PATH = f"corpus_tesi/{DIALECT}/{TIPO}"
 OUTPUT_PATH = f"corpus_tesi/{DIALECT}/parafrasi"
-LAST_FILE = 124
+LAST_FILE = 126
 
 with open(f"prompt_{DIALECT}_{TIPO}.txt", "r", encoding = "utf-8") as p:
     prompt = p.read()
@@ -81,6 +81,15 @@ def gemini_api_call(prompt, model_name):
             if attempt < max_retries - 1:
                 time.sleep(wait_time)
             else:
+                if hasattr(e, 'status_code') and e.status_code == 503:
+                    # Questo è il codice 503 specifico che vuoi intercettare
+                    print("Errore 503 rilevato dopo il max di tentativi.")
+                    return 0 
+                # 2. SE IL CODICE NON È DISPONIBILE, USA LA RAPPRESENTAZIONE STRINGA CON PRUDENZA
+                # Controlla solo se il codice 503 è presente nella stringa dell'errore
+                elif "503 UNAVAILABLE" in str(e): 
+                    print("Errore 503 rilevato tramite stringa dopo il max di tentativi.")
+                    return 0
                 print("Raggiunto il numero massimo di tentativi. Impossibile completare la richiesta.")
                 print("Controlla i tuoi limiti di utilizzo sulla dashboard di Google AI Studio.")
                 return None
@@ -108,27 +117,33 @@ for filename in os.listdir(PATH):
     print(f"starting with {nome_file}\n")
 
     result_data = []
-    
-    for index in range(len(result)):
+    index = 0
+    while index < len(result):
         if index < LAST_FILE:
+            index=LAST_FILE
             continue
         part = result[index]
-        print(f"processing {num_api_call} - {nome_file}: file index {index}")
+        print(f"processing {num_api_call} - {nome_file}: file index {index}/{len(result)}")
         prompt_input = prompt + part
 
         response = gemini_api_call(prompt_input, MODEL_NAME)
+        if response == 0:
+            print("Retrying due to server issues")
+            continue
 
         if response:
             result_data.append({
                 "text": response.strip()
             })
+            index +=1
 
         if response is None:
             print(f"Errore a step {num_api_call}")
-            with open(f"{OUTPUT_PATH}/{nome_file}paraphrased_partial_{index}.json", "w", encoding="utf-8") as out:
+            with open(f"{OUTPUT_PATH}/{nome_file}paraphrased_partial_{index-1}.json", "w", encoding="utf-8") as out:
                 json.dump(result_data, out, ensure_ascii=False, indent=2)
             errore=True
             break
+
         num_api_call+=1
     if errore:
         break
