@@ -4,7 +4,7 @@ import pytesseract
 from PIL import Image
 
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-NAME ="arba_pdf_testo"
+NAME ="favole_nap"
 
 
 # Converte le pagine del PDF in immagini
@@ -13,7 +13,7 @@ NAME ="arba_pdf_testo"
 testo_completo = ""
 
 for i in range(1, 6):
-    page = Image.open(f"arba_{i}.png")
+    page = Image.open(f"nap{i}.png")
 
 #for page_number, page in enumerate(pages):
     # Applica OCR alla pagina

@@ -1,6 +1,6 @@
 from pdfminer.high_level import extract_text
 
-NAME ="lo_cunto_deli_cunti"
+NAME ="Salvatore-Argenziano-A-Lenga-Turrese-A-B-C-vesuvioweb-2016"
 
 pdf_path = f"{NAME}.pdf"
 text = extract_text(pdf_path)

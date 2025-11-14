@@ -6,22 +6,12 @@ https://it.wikisource.org/wiki/Dal_dialetto_alla_lingua/Appendice/Versione_napol
 https://www.mercaba.es/renacimiento/cuentos_de_basile.pdf
 
 https://it.wikisource.org/wiki/Lo_cunto_de_li_cunti
-## estratto
+
 https://nap.wikisource.org/wiki/Ennece:Scalo_marittimo_-_Raffaele_Viviani_-_10_commedie.pdf
 
 https://lazzaronapoletano.it/category/0003/0003-0012/
 
 https://www.quicampiflegrei.it/2023/12/10/favole-napoletane/
-
-## da fare
-
-https://dumps.wikimedia.org/napwiki/
-
-https://nap.wikisource.org/wiki/
-
-
-
-https://www.gttempo.it/copioni.htm   	AGNELLO Salvatore Angela Paraguai in Bellezza, quelle di ANDOLFI Colomba Rosaria
 
 https://pulcinella291.forumfree.it/?f=11062089
 
@@ -29,7 +19,6 @@ https://www.unasolacosa.it/category/scritti-in-dialetto-napoletano/
 
 https://nap.wikisource.org/wiki/Paggena:Altavilla_-_La_sposa_co_la_maschera.djvu
 
-https://nap.wikisource.org/wiki/Paggena:Cucina_teorico-pratica.djvu
 
 https://www.dialettando.com/regioni/pages/hitlist.lasso?sito_sezione=racconti&regione=Campania
 
@@ -47,34 +36,85 @@ http://www.isaporidelmediterraneo.it/2012/03/rucule-nfarinat-e-fritt.html?m=1
 
 https://napulapp.it/#/Categorie/Documenti
 
+https://nap.wikisource.org/wiki/Divina_Commedia_%28Napulitano%29%2FArgomiento
+https://nap.wikisource.org/wiki/Divina_Commedia_%28Napulitano%29%2FVita_de_Dante
+
+https://www.vesuvioweb.com/it/wp-content/uploads/Salvatore-Argenziano-A-Lenga-Turrese-A-B-C-vesuvioweb-2016.pdf
+i dialoghi sono in napoletano
+https://nap.wikisource.org/wiki/Chiacchiareata_seconna_nfra_lu_Cuorpo_de_Napole_e_lu_Sebeto
 
 
-Miste italiano e napoletano (es. un solo personaggio parla in nap.)
+WIKISOURCE
+https://nap.wikisource.org/wiki/%27A_Morte
+https://nap.wikisource.org/wiki/%27A_musica_d%27_%27e_cecate
+https://nap.wikisource.org/wiki/%27E_ddoje_catene
+https://nap.wikisource.org/wiki/%27E_guarattelle
+https://nap.wikisource.org/wiki/%27E_piscature%2FAtto_primo
+https://nap.wikisource.org/wiki/%27E_piscature%2FAtto_secondo
+https://nap.wikisource.org/wiki/%27E_piscature%2FAtto_terzo
+https://nap.wikisource.org/wiki/%27O_figlio_%27e_Don_Nicola
+https://nap.wikisource.org/wiki/%27O_funneco_verde
+https://nap.wikisource.org/wiki/%27O_gallo_e_%27a_gallina
+https://nap.wikisource.org/wiki/Altavilla_-_La_sposa_co_la_maschera
+https://nap.wikisource.org/wiki/Arrivo_de_Pulecenella_a_Casalenuovo
+https://nap.wikisource.org/wiki/Chi_%C3%A8_nepoteme
+https://nap.wikisource.org/wiki/Circo_equestre_Sgueglia
+https://nap.wikisource.org/wiki/Circo_equestre_Sgueglia%2FAtto_1
+https://nap.wikisource.org/wiki/Circo_equestre_Sgueglia%2FAtto_2
+https://nap.wikisource.org/wiki/Circo_equestre_Sgueglia%2FAtto_3
+https://nap.wikisource.org/wiki/Il_mastro_di_forgia
+https://nap.wikisource.org/wiki/Il_mastro_di_forgia%2FAtto_1
+https://nap.wikisource.org/wiki/Il_mastro_di_forgia%2FAtto_2
+https://nap.wikisource.org/wiki/Il_mastro_di_forgia%2FAtto_3
+https://nap.wikisource.org/wiki/No_turco_napolitano
+https://nap.wikisource.org/wiki/No_turco_napolitano%2FAtto_I
+https://nap.wikisource.org/wiki/No_turco_napolitano%2FAtto_II
+https://nap.wikisource.org/wiki/No_turco_napolitano%2FAtto_III
+https://nap.wikisource.org/wiki/Duje_matremmonie_a_surpresa%21
+https://nap.wikisource.org/wiki/%27O_Scarfalietto
 
-https://nap.wikisource.org/wiki/Paggena:Core_nuosto.djvu
+https://nap.wikisource.org/wiki/L%27Ombra
 
-https://nap.wikisource.org/wiki/Paggena:%C3%88_buscia_o_%C3%A8_verit%C3%A0.djvu
+https://nap.wikisource.org/wiki/Core_cattive_e_core_liberale
+https://nap.wikisource.org/wiki/Cucina_teorico-pratica
 
-https://nap.wikisource.org/wiki/Ennece:Il_mastro_di_forgia_-_Raffaele_Viviani_-_10_commedie.djvu
 
-https://nap.wikisource.org/wiki/Paggena:No_brigantaggio_de_femmene_(1867).djvu
+## estratto
 
-https://nap.wikisource.org/wiki/Ennece:Nu_guaglione_%27e_mala_vita.djvu
+https://nap.wikisource.org/wiki/%27A_storia_nova
 
-https://nap.wikisource.org/wiki/Ennece:Nu_mbruoglio_%27e_doie_lettere.djvu
 
-https://nap.wikisource.org/wiki/Ennece:Pasca%27_si%27_puorco.djvu
+https://nap.wikisource.org/wiki/%27E_lluce-luce
 
-https://nap.wikisource.org/wiki/Ennece:Pulcinella_-_Dramma_in_un_atto.djvu
 
-https://nap.wikisource.org/wiki/Ennece:Teatro_-_Menotti_Bianchi.djvu
 
-https://nap.wikisource.org/wiki/Ennece:Tutti_avvelenati_o_vi_che_m%27ha_fatto_Pulicenella_%E2%80%93_P_Petito_(1917).pdf
+https://nap.wikisource.org/wiki/L%27avvocato_Ninetta
+https://nap.wikisource.org/wiki/Miseria_e_nobilt%C3%A0
+https://nap.wikisource.org/wiki/La_Buccoleca
+https://nap.wikisource.org/wiki/No_brigantaggio_de_femmene
+
+https://nap.wikisource.org/wiki/So_muorto_e_m%27hanno_fatto_torn%C3%A0_a_nascere
+https://nap.wikisource.org/wiki/So_muorto_e_m%27hanno_fatto_torn%C3%A0_a_nascere%2FPrima_parte
+https://nap.wikisource.org/wiki/Tutti_avvelenati_o_vi_che_m%27ha_fatto_Pulicenella
+https://nap.wikisource.org/wiki/Pasca%27_si%27_puorco
+https://nap.wikisource.org/wiki/Viaggio_di_Parnaso%2FLo_Poeta_a_li_Leieture
+https://nap.wikisource.org/wiki/Vita_de_Vergilejo_Marone
+https://nap.wikisource.org/wiki/Pulcinella_-_Diego_Petriccione
+https://nap.wikisource.org/wiki/Notte
+https://nap.wikisource.org/wiki/Nu_guaglione_%27e_mala_vita
+https://nap.wikisource.org/wiki/Nu_mbruoglio_%27e_doie_lettere
+
+## da fare
+
+https://dumps.wikimedia.org/napwiki/
+
+https://nap.wikisource.org/wiki/
+
+https://www.gttempo.it/copioni.htm   	AGNELLO Salvatore Angela Paraguai in Bellezza, quelle di ANDOLFI Colomba Rosaria
 
 
 Cercare commedie in napoletano
-https://www.vesuvioweb.com/it/wp-content/uploads/Salvatore-Argenziano-A-Lenga-Turrese-A-B-C-vesuvioweb-2016.pdf
-i dialoghi sono in napoletano
+
 
 https://liberliber.it/autori/autori-b/libero-bovio/so-diece-anne/
 

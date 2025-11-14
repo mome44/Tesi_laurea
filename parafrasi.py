@@ -6,9 +6,10 @@ import json
 import os
 
 
-#API_KEY = "AIzaSyDAM3VU2O7RClzARfcjVr-WFtO-oEWsZTE" #prima
+API_KEY = "AIzaSyDAM3VU2O7RClzARfcjVr-WFtO-oEWsZTE" #prima
 #API_KEY = "AIzaSyCKynyTujWmvIYiOaLxnpuuvUevgFUx5fQ" #Seconda
-API_KEY = "AIzaSyA5aGoN_UAs6QznnGP8Jpa4bh3vqEV8XYk" #TERZA
+#API_KEY = "AIzaSyA5aGoN_UAs6QznnGP8Jpa4bh3vqEV8XYk" #TERZA
+#API_KEY = "AIzaSyAay0PJStTeZxxcuTn97RwmJzifefQEHS8" #QUARTA CAR
 # --- Configurazioni ---
 MODEL_NAME = "gemini-2.5-flash"
 
@@ -16,7 +17,7 @@ DIALECT = "romanesco"
 TIPO = "poesia"
 PATH = f"corpus_tesi/{DIALECT}/{TIPO}"
 OUTPUT_PATH = f"corpus_tesi/{DIALECT}/parafrasi"
-LAST_FILE = 126
+LAST_FILE = 408
 
 with open(f"prompt_{DIALECT}_{TIPO}.txt", "r", encoding = "utf-8") as p:
     prompt = p.read()

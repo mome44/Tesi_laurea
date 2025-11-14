@@ -2,7 +2,7 @@ import re
 import json
 pattern = r"[A-Za-z]+\. [A-Za-z]+"
 
-NAME = "dal_dialetto_alla_linguanap"
+NAME = "La_Buccoleca"
 
 with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
     testo = f.read()
@@ -307,6 +307,7 @@ def process_poesie(testo):
 def process_testo_generico(testo):
     testo = re.sub(r'\n+', ' ', testo)
     testo = re.sub(r'\.{2,}', '.', testo)
+    testo= re.sub(r'\d+', '', testo)
 
     data=[]
 
@@ -315,7 +316,7 @@ def process_testo_generico(testo):
     for l in testo:
         ls =l.split("—")
         for i in ls:
-            if len(i.strip()) > 2:
+            if len(i.strip()) > 4:
                 data.append({
                     "text": i.strip()
                 })
@@ -357,6 +358,48 @@ def process_testo_wikisource(testo):
                 })
     return data
 
+def pulisci_blocco(blocco):
+    righe = blocco.splitlines()
+    pulite = []
+
+    for r in righe:
+        linea = r.strip()
+
+        # 1. elimina righe tipo "parola:"
+        if re.match(r"^[A-Za-zÀ-ÿ'\-]+:$", linea):
+            continue
+        
+        # 2. elimina righe di definizioni tipo "s. f.", "s. m.", "v. tr.", "v. intr."
+        if re.match(r"^(s\.\s*[fm]\.|v\.\s*(tr|intr)\.)", linea):
+            continue
+
+        # 3. elimina righe vuote multiple (opzionale)
+        # if linea == "":
+        #     continue
+
+        pulite.append(r)
+
+    return "\n".join(pulite)
+
+
+def process_testo_torrese(testo):
+    data =[]
+    pattern = r"\*\*\*.*?(?=(?:\*\*\*)|$)"
+
+    # re.S makes . match newlines
+    blocchi = re.findall(pattern, testo, flags=re.S)
+
+    # Stampa per controllo
+    for i, b in enumerate(blocchi, 1):
+        blocco = pulisci_blocco(b) 
+        pulito = re.sub(r'\n\n.*$', '', blocco, flags=re.DOTALL)
+        pulito = re.sub(r'^\*\*\*[A-Z]{1,4}\.\s*', '', pulito)
+        pulito = pulito.strip("***")
+        if len(pulito.strip()) > 2:
+            data.append({
+                "text": pulito.strip()
+            })
+    return data
 data =process_testo_generico(testo)
 #data = process_testo_zanazzo(testo)
 

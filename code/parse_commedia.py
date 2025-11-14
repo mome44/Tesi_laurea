@@ -2,10 +2,48 @@ import re
 import json
 pattern = r"[A-Za-z]+\. [A-Za-z]+"
 
-NAME = "sua_eccellenza_wikisource"
+NAME = "L&#39;Ombra"
 
 with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
     testo = f.read()
+
+
+def parse_commedia_wikisourcenap_1(testo):
+    parti = testo.split("\n\n")
+    data =[]
+    for p in parti:
+        if "—" in p:
+            sezione = p.split("—")
+            character = sezione[0].strip()
+            racconto = sezione[1].strip()
+            character = re.sub(r"\[.*?\]|\(.*?\)", "", character, flags=re.DOTALL)
+            racconto = re.sub(r"\[.*?\]|\(.*?\)", "", racconto, flags=re.DOTALL)
+            print(character, "\n", racconto)
+            if len(racconto.strip())>3:
+                data.append({
+                    "character": character.strip(),
+                    "text": racconto.strip()
+                })
+    return data
+
+def parse_commedia_wikisourcenap_2(testo):
+    parti = testo.split("\n\n")
+    data =[]
+    for p in parti:
+        if "." in p:
+            sezione = p.split(".",1)
+            character = sezione[0].strip()
+            racconto = sezione[1].strip()
+            character = re.sub(r"\[.*?\]|\(.*?\)", "", character, flags=re.DOTALL)
+            racconto = re.sub(r"\[.*?\]|\(.*?\)", "", racconto, flags=re.DOTALL)
+            print(character, "\n", racconto)
+            if len(racconto.strip())>3:
+                data.append({
+                    "character": character.strip(),
+                    "text": racconto.strip()
+                })
+    return data
+ 
 
 def parse_commedia_simple(testo):
     #print(testo)
@@ -174,7 +212,8 @@ def parse_commedia_semplice(testo):
     for m in pattern.finditer(testo):
         personaggio = m.group(1)
         battuta = m.group(2)
-
+        battuta = re.sub(r"\[.*?\]|\(.*?\)", "", battuta, flags=re.DOTALL)
+        personaggio = re.sub(r"\[.*?\]|\(.*?\)", "", personaggio, flags=re.DOTALL)
         if len(battuta.strip()) > 2:
             data.append({
                 "text": battuta.strip(),
@@ -271,9 +310,9 @@ def parse_commedia_semplice_4(testo):
             })
     return data
 
-data = parse_commedia_semplice_6(testo)
+data = parse_commedia_wikisourcenap_1(testo)
 #data = parse_commedia_simple(testo)
-with open(f"../corpus_tesi/siciliano/commedia/{NAME}_processed.json", "w", encoding="utf-8") as out:
+with open(f"../corpus_tesi/napoletano/commedia/{NAME}_processed.json", "w", encoding="utf-8") as out:
     json.dump(data, out, ensure_ascii=False, indent=2)
     
     
