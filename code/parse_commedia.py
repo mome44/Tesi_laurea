@@ -2,7 +2,7 @@ import re
 import json
 pattern = r"[A-Za-z]+\. [A-Za-z]+"
 
-NAME = "L&#39;Ombra"
+NAME = "Miseria_e_nobiltà"
 
 with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
     testo = f.read()
@@ -310,7 +310,7 @@ def parse_commedia_semplice_4(testo):
             })
     return data
 
-data = parse_commedia_wikisourcenap_1(testo)
+data = parse_commedia_wikisourcenap_2(testo)
 #data = parse_commedia_simple(testo)
 with open(f"../corpus_tesi/napoletano/commedia/{NAME}_processed.json", "w", encoding="utf-8") as out:
     json.dump(data, out, ensure_ascii=False, indent=2)

@@ -77,20 +77,9 @@ https://nap.wikisource.org/wiki/L%27Ombra
 
 https://nap.wikisource.org/wiki/Core_cattive_e_core_liberale
 https://nap.wikisource.org/wiki/Cucina_teorico-pratica
-
-
-## estratto
-
-https://nap.wikisource.org/wiki/%27A_storia_nova
-
-
-https://nap.wikisource.org/wiki/%27E_lluce-luce
-
-
-
 https://nap.wikisource.org/wiki/L%27avvocato_Ninetta
 https://nap.wikisource.org/wiki/Miseria_e_nobilt%C3%A0
-https://nap.wikisource.org/wiki/La_Buccoleca
+https://nap.wikisource.org/wiki/La_Buccoleca 
 https://nap.wikisource.org/wiki/No_brigantaggio_de_femmene
 
 https://nap.wikisource.org/wiki/So_muorto_e_m%27hanno_fatto_torn%C3%A0_a_nascere
@@ -103,6 +92,12 @@ https://nap.wikisource.org/wiki/Pulcinella_-_Diego_Petriccione
 https://nap.wikisource.org/wiki/Notte
 https://nap.wikisource.org/wiki/Nu_guaglione_%27e_mala_vita
 https://nap.wikisource.org/wiki/Nu_mbruoglio_%27e_doie_lettere
+
+## estratto
+dentro poesie
+https://nap.wikisource.org/wiki/%27A_storia_nova
+https://nap.wikisource.org/wiki/%27E_lluce-luce
+
 
 ## da fare
 

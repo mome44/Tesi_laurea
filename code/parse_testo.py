@@ -2,7 +2,7 @@ import re
 import json
 pattern = r"[A-Za-z]+\. [A-Za-z]+"
 
-NAME = "La_Buccoleca"
+NAME = "Vita_de_Vergilejo_Marone"
 
 with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
     testo = f.read()

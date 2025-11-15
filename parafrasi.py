@@ -33,8 +33,8 @@ DIALECT = "romanesco"
 TIPO = "poesia"
 PATH = f"corpus_tesi/{DIALECT}/{TIPO}"
 OUTPUT_PATH = f"corpus_tesi/{DIALECT}/parafrasi"
-LAST_FILE = 700
-api_idx = 5
+LAST_FILE = 408
+api_idx = 1
 with open(f"prompt_{DIALECT}_{TIPO}.txt", "r", encoding = "utf-8") as p:
     prompt = p.read()
 
