@@ -5,11 +5,27 @@ import random
 import json
 import os
 
-
-API_KEY = "AIzaSyDAM3VU2O7RClzARfcjVr-WFtO-oEWsZTE" #prima
+API_KEY_LIST = [
+    "AIzaSyDAM3VU2O7RClzARfcjVr-WFtO-oEWsZTE", #prima
+    "AIzaSyCKynyTujWmvIYiOaLxnpuuvUevgFUx5fQ", #Seconda
+    "AIzaSyA5aGoN_UAs6QznnGP8Jpa4bh3vqEV8XYk", #TERZA
+    "AIzaSyAay0PJStTeZxxcuTn97RwmJzifefQEHS8", #QUARTA CAR
+    "AIzaSyAf8vqpLY1mvNf03gvNQ8NDyP8drwXTP6s", #mich
+    "AIzaSyAyS0Or4He8_ByQpINlDWXNKw6yMpdpJ7o",
+    "AIzaSyC9fknqBf7ogCScgSDNRsW0VDGH91PNFLg",
+    "AIzaSyDa0mJS5Bcx-qF3pYQ9mvb2ICTu0BsoPiU",
+    "AIzaSyDMyQo3NAh0DYKEparoxSxtuFO17-kJoZc"
+]
+#API_KEY = "AIzaSyDAM3VU2O7RClzARfcjVr-WFtO-oEWsZTE" #prima
 #API_KEY = "AIzaSyCKynyTujWmvIYiOaLxnpuuvUevgFUx5fQ" #Seconda
 #API_KEY = "AIzaSyA5aGoN_UAs6QznnGP8Jpa4bh3vqEV8XYk" #TERZA
 #API_KEY = "AIzaSyAay0PJStTeZxxcuTn97RwmJzifefQEHS8" #QUARTA CAR
+#API_KEY = "AIzaSyAf8vqpLY1mvNf03gvNQ8NDyP8drwXTP6s" #mich
+#API_KEY = "AIzaSyAyS0Or4He8_ByQpINlDWXNKw6yMpdpJ7o"
+#API_KEY = "AIzaSyC9fknqBf7ogCScgSDNRsW0VDGH91PNFLg"
+#API_KEY = "AIzaSyDa0mJS5Bcx-qF3pYQ9mvb2ICTu0BsoPiU"
+#API_KEY = "AIzaSyDMyQo3NAh0DYKEparoxSxtuFO17-kJoZc"
+
 # --- Configurazioni ---
 MODEL_NAME = "gemini-2.5-flash"
 
@@ -17,8 +33,8 @@ DIALECT = "romanesco"
 TIPO = "poesia"
 PATH = f"corpus_tesi/{DIALECT}/{TIPO}"
 OUTPUT_PATH = f"corpus_tesi/{DIALECT}/parafrasi"
-LAST_FILE = 408
-
+LAST_FILE = 700
+api_idx = 5
 with open(f"prompt_{DIALECT}_{TIPO}.txt", "r", encoding = "utf-8") as p:
     prompt = p.read()
 
@@ -48,7 +64,7 @@ def format_input(data, type):
         return result
 
 
-def gemini_api_call(prompt, model_name):
+def gemini_api_call(prompt, model_name, API_KEY):
     max_retries = 5
     response = None
     for attempt in range(1, max_retries):
@@ -102,6 +118,7 @@ def gemini_api_call(prompt, model_name):
 
 num_api_call=0
 errore = False
+
 for filename in os.listdir(PATH):
     full_path = os.path.join(PATH,filename)
     #skipping the paraphrased files
@@ -120,14 +137,15 @@ for filename in os.listdir(PATH):
     result_data = []
     index = 0
     while index < len(result):
+        api_key = API_KEY_LIST[api_idx]
         if index < LAST_FILE:
             index=LAST_FILE
             continue
         part = result[index]
-        print(f"processing {num_api_call} - {nome_file}: file index {index}/{len(result)}")
+        print(f"processing {num_api_call} api {api_idx} - {nome_file}: file index {index}/{len(result)}")
         prompt_input = prompt + part
 
-        response = gemini_api_call(prompt_input, MODEL_NAME)
+        response = gemini_api_call(prompt_input, MODEL_NAME, API_KEY=api_key)
         if response == 0:
             print("Retrying due to server issues")
             continue
@@ -142,10 +160,16 @@ for filename in os.listdir(PATH):
             print(f"Errore a step {num_api_call}")
             with open(f"{OUTPUT_PATH}/{nome_file}paraphrased_partial_{index-1}.json", "w", encoding="utf-8") as out:
                 json.dump(result_data, out, ensure_ascii=False, indent=2)
-            errore=True
-            break
+            api_idx +=1
+            continue
 
         num_api_call+=1
+
+        if index % 20 == 0:
+            print("saving checkpoint")
+            with open(f"{OUTPUT_PATH}/{nome_file}paraphrased_partial_{index}.json", "w", encoding="utf-8") as out:
+                json.dump(result_data, out, ensure_ascii=False, indent=2)
+
     if errore:
         break
     if num_api_call == 250:
