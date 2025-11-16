@@ -145,38 +145,38 @@ def get_wikipedia_url(title, language):
 #    with open(f'{FOLDER}/{NAME}.json', "w", encoding="utf-8") as file:
 #        json.dump(corpus_dictionary, f, ensure_ascii=False, indent=2)
    
-if __name__ == "__main__":
-    df = pd.read_csv(input_file_path, sep="\t")
-
-    corpus_dictionary = dict()
-
-    with tqdm(total=len(df),
-              desc="Processing Wikipedia pages (sequential)",
-              dynamic_ncols=True,
-              miniters=1,
-              disable=False) as pbar:
-        for idx, row in df.iterrows():
-            title = row["page_title"]
-            page_url = get_wikipedia_url(title, language)
-            print("Checking:", page_url)
-            
-            try:
-                text = get_wikidata(URL, title, language)
-            except Exception as e:
-                print(f"Errore nella pagina '{title}': {e}")
-                text = ""
-
-            corpus_dictionary[idx] = text
-            pbar.update(1)
-            
-
-            # checkpoint ogni 500 pagine
-            if (idx + 1) % 500 == 0:
-                with open(f'{FOLDER}/{NAME}_index_{idx+1}.json', "w", encoding="utf-8") as f:
-                    json.dump(corpus_dictionary, f, ensure_ascii=False, indent=2)
-            
-            time.sleep(0.5)  # per non sovraccaricare Wikipedia
-
-    # salvataggio finale
-    with open(f'{FOLDER}/{NAME}.json', "w", encoding="utf-8") as f:
-        json.dump(corpus_dictionary, f, ensure_ascii=False, indent=2)
+#if __name__ == "__main__":
+#    df = pd.read_csv(input_file_path, sep="\t")
+#
+#    corpus_dictionary = dict()
+#
+#    with tqdm(total=len(df),
+#              desc="Processing Wikipedia pages (sequential)",
+#              dynamic_ncols=True,
+#              miniters=1,
+#              disable=False) as pbar:
+#        for idx, row in df.iterrows():
+#            title = row["page_title"]
+#            page_url = get_wikipedia_url(title, language)
+#            print("Checking:", page_url)
+#            
+#            try:
+#                text = get_wikidata(URL, title, language)
+#            except Exception as e:
+#                print(f"Errore nella pagina '{title}': {e}")
+#                text = ""
+#
+#            corpus_dictionary[idx] = text
+#            pbar.update(1)
+#            
+#
+#            # checkpoint ogni 500 pagine
+#            if (idx + 1) % 500 == 0:
+#                with open(f'{FOLDER}/{NAME}_index_{idx+1}.json', "w", encoding="utf-8") as f:
+#                    json.dump(corpus_dictionary, f, ensure_ascii=False, indent=2)
+#            
+#            time.sleep(0.5)  # per non sovraccaricare Wikipedia
+#
+#    # salvataggio finale
+#    with open(f'{FOLDER}/{NAME}.json', "w", encoding="utf-8") as f:
+#        json.dump(corpus_dictionary, f, ensure_ascii=False, indent=2)

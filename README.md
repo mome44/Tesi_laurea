@@ -29,10 +29,10 @@ Tesi di laurea magistrale in Engineering in computer science
 
 ### NAPOLETANO
 #### fatto
-#### da fare
  - Estrarre wikipedia e fare il parsing dei testi
  - Wikisource
  - Estrarre i link e i testi trovati online
+#### da fare
  - Parafrasare le commedie in prosa
  - Parafrasare le poesie in prosa
  - Trovare un modo per parafrasare lo cunto de' li cunti in napoletano moderno
