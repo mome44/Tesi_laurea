@@ -30,13 +30,14 @@ API_KEY_LIST = [
 MODEL_NAME = "gemini-2.5-flash"
 
 DIALECT = "romanesco"
-TIPO = "poesia"
+TIPO = "verga"
 PATH = f"corpus_tesi/{DIALECT}/{TIPO}"
 OUTPUT_PATH = f"corpus_tesi/{DIALECT}/parafrasi"
-LAST_FILE = 408
+LAST_FILE = 0
 api_idx = 1
 with open(f"prompt_{DIALECT}_{TIPO}.txt", "r", encoding = "utf-8") as p:
     prompt = p.read()
+    print(prompt)
 
 def format_input(data, type):
     if type == "commedia":
@@ -143,7 +144,7 @@ for filename in os.listdir(PATH):
             continue
         part = result[index]
         print(f"processing {num_api_call} api {api_idx} - {nome_file}: file index {index}/{len(result)}")
-        prompt_input = prompt + part
+        prompt_input = prompt + "\n" + part
 
         response = gemini_api_call(prompt_input, MODEL_NAME, API_KEY=api_key)
         if response == 0:

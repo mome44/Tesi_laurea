@@ -1,6 +1,7 @@
 import json
 import pandas as pd
 
+
 with open("sicilian/wiki_index_55500.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 

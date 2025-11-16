@@ -2,7 +2,7 @@ import re
 import json
 pattern = r"[A-Za-z]+\. [A-Za-z]+"
 
-NAME = "Vita_de_Vergilejo_Marone"
+NAME = "verga_i_malavoglia"
 
 with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
     testo = f.read()
@@ -216,6 +216,96 @@ def process_testo_liber(testo):
             })
     return data
 
+def dividi_testo_per_frase(testo: str, max_parole: int) -> list[str]:
+    """
+    Divide un testo in blocchi più piccoli.
+    
+    Ogni blocco non supera il numero massimo di parole e il taglio avviene
+    sempre alla fine dell'ultima frase completa inclusa.
+
+    Args:
+        testo: La stringa di testo completa da dividere.
+        max_parole: La lunghezza massima (in parole) desiderata per ogni blocco.
+
+    Returns:
+        Una lista di stringhe (i blocchi di testo).
+    """
+    
+    # 1. Definizione della punteggiatura che segna la fine di una frase.
+    # Pattern per: punto, punto interrogativo o punto esclamativo, seguiti da spazio
+    delimitatori_frase = r'(?<=[.?!])\s+'
+    
+    # 2. Dividere il testo in una lista di frasi complete
+    frasi = re.split(delimitatori_frase, testo)
+    
+    # Pulizia: rimuove spazi iniziali/finali e frasi vuote
+    frasi = [f.strip() for f in frasi if f.strip()]
+
+    blocchi = []
+    blocco_corrente = []
+    conteggio_parole = 0
+    
+    for frase in frasi:
+        # Contiamo le parole della frase corrente.
+        parole_frase = len(frase.split())
+        
+        # Se includendo questa frase si supera il limite E il blocco corrente non è vuoto...
+        if conteggio_parole + parole_frase > max_parole and blocco_corrente:
+            # 1. Chiudiamo il blocco precedente.
+            blocchi.append(" ".join(blocco_corrente))
+            
+            # 2. Iniziamo un nuovo blocco con la frase corrente.
+            blocco_corrente = [frase]
+            conteggio_parole = parole_frase
+            
+        # Altrimenti, aggiungiamo la frase al blocco corrente.
+        else:
+            blocco_corrente.append(frase)
+            conteggio_parole += parole_frase
+
+    # 3. Aggiungere l'ultimo blocco rimanente (se non è vuoto)
+    if blocco_corrente:
+        blocchi.append(" ".join(blocco_corrente))
+        
+    return blocchi
+
+def process_malavoglia(testo):
+    testo = testo.replace('\x0c', '')
+    pattern = (r'(?m)^\s*\d{1,3}\s*$')
+    testo = re.sub(pattern, '\n', testo, flags=re.IGNORECASE)
+
+    pattern = r'(\s*CAPITOLO\s+[IVXLCDM]+)'
+
+    capitoli = re.split(pattern, testo)
+    data = []
+    lunghezza_frasi = 200
+
+    for capitolo in capitoli:
+        if "CAPITOLO" in capitolo:
+            continue
+        lungh = []
+        capitolo=capitolo.strip()
+        #remove the \n and the - characters, as well as \n\n and double/triple spaces
+        testo_racconto = re.sub(r'-\s*\n\s*', '', capitolo)
+        testo_racconto = re.sub(r'\n+', ' ', testo_racconto)
+        testo_racconto = re.sub(r'\s{2,}', ' ', testo_racconto)
+
+        LIMITE_MASSIMO_PAROLE = 150
+
+        risultato = dividi_testo_per_frase(testo_racconto, LIMITE_MASSIMO_PAROLE)
+        #frasi_racconto = testo_racconto.split(". ")
+        for f in risultato:
+            print(f)
+            print("\n\n\n---------------------------------------------------\n\n\n")
+            if len(testo_racconto) > 2:
+                data.append({
+                    "text":f,
+                })
+        
+    return data
+
+
+
 def process_testo_liber_nap(testo):
     testo = testo.replace('\x0c', '')
     pattern = (
@@ -400,10 +490,10 @@ def process_testo_torrese(testo):
                 "text": pulito.strip()
             })
     return data
-data =process_testo_generico(testo)
+data =process_malavoglia(testo)
 #data = process_testo_zanazzo(testo)
 
-with open(f"../corpus_tesi/napoletano/prosa/{NAME}_processed.json", "w", encoding="utf-8") as out:
+with open(f"../corpus_tesi/{NAME}_processed.json", "w", encoding="utf-8") as out:
     json.dump(data, out, ensure_ascii=False, indent=2)
     
     
