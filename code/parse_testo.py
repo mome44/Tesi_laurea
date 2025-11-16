@@ -4,8 +4,29 @@ pattern = r"[A-Za-z]+\. [A-Za-z]+"
 
 NAME = "verga_i_malavoglia"
 
-with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
-    testo = f.read()
+#with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
+#    testo = f.read()
+
+with open(f"{NAME}.json", "r", encoding="utf-8") as f:
+    data = json.load(f)
+
+def parse_wikipedia_sic(data):
+    data_2 =[]
+    for item in data:
+        testo = item["text"]
+        #rimuove le citazioni di wikipedia
+        testo = re.sub(r"\[.*?\]|", "", testo, flags=re.DOTALL)
+        #rimuove le frasi che sono presenti moltissime volte
+        patterns = [r"^Lu\s+\d+\s*\([IVXLCDM]+\s+a nùmmaru rumanu\)\s+è n'annu\b", r"^L'\d+\s*\([IVXLCDM]+\s+a nùmmaru rumanu\)\s+è n'annu", 
+            r"Pì arrìpurtari cchìu immediatamenti i diffìrenzi tra li diversi ordini di grannizza, chista paggina cunteni",
+            r"Pì arrìpurtari cchìu immediatamenti i diffìrenzi tra li diversi ordini di grannizza, chista pàggina cunteni",
+            r"^\.[a-z]{2}\s+è lu duminiu di Internet assignatu"]
+        
+
+    return data_2
+
+def parse_wikipedia_nap(data):
+    return data_2
 
 
 def remove_numbered_notes(testo, max_blank_after_note=2):
@@ -170,7 +191,6 @@ def process_testo_zanazzo(testo):
                     })
     return data
 
-
 def process_testo_liber(testo):
     testo = testo.replace('\x0c', '\n')
     pattern = (
@@ -304,8 +324,6 @@ def process_malavoglia(testo):
         
     return data
 
-
-
 def process_testo_liber_nap(testo):
     testo = testo.replace('\x0c', '')
     pattern = (
@@ -365,7 +383,6 @@ def process_testo_liber_2(testo):
 
     with open("pitre_fiabe_novelle_e_racconti_1_nuovo.txt", "w", encoding="utf-8") as f:
         f.write(fulltext)
-
 
 def process_poesie_liber(testo):
     testo = re.sub(r'7474\s*$', '', testo).strip()
@@ -471,7 +488,6 @@ def pulisci_blocco(blocco):
 
     return "\n".join(pulite)
 
-
 def process_testo_torrese(testo):
     data =[]
     pattern = r"\*\*\*.*?(?=(?:\*\*\*)|$)"
@@ -490,8 +506,8 @@ def process_testo_torrese(testo):
                 "text": pulito.strip()
             })
     return data
+
 data =process_malavoglia(testo)
-#data = process_testo_zanazzo(testo)
 
 with open(f"../corpus_tesi/{NAME}_processed.json", "w", encoding="utf-8") as out:
     json.dump(data, out, ensure_ascii=False, indent=2)

@@ -1,5 +1,58 @@
 import json
 import pandas as pd
+import os
+
+
+DIALECT = "romanesco"
+TIPO = "parafrasi"
+PATH = f"corpus_tesi/{DIALECT}/{TIPO}"
+OUTPUT_PATH = f"corpus_tesi/{DIALECT}/parafrasi_standard"
+
+def refine_siciliano(testo):
+    testo_standardizzato = testo
+    return testo_standardizzato
+
+def refine_romano(testo):
+    testo_standardizzato = testo
+    return testo_standardizzato
+
+def refine_napoletano(testo):
+    testo_standardizzato = testo
+    return testo_standardizzato
+
+def refine(Dialetto, testo):
+    if Dialetto == "napoletano":
+        return refine_napoletano(testo)
+    elif Dialetto == "siciliano":
+        return refine_siciliano(testo)
+    elif Dialetto == "romanesco":
+        return refine_romano(testo)
+    else:
+        return ""
+    
+
+for filename in os.listdir(PATH):
+    full_path = os.path.join(PATH,filename)
+    print("processing ", filename)
+
+    if os.path.isfile(full_path):
+        with open(full_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    errore = False
+    data_refined = []
+    for item in data:
+        testo = item["text"]
+        testo_nuovo = refine(Dialetto = DIALECT, testo=testo)
+        if testo_nuovo == "":
+            print("errore dialetto non trovato o altro")
+            errore = True
+            break
+        data_refined.append({
+            "text": testo_nuovo
+        })
+    if not errore:
+        with open(f"{OUTPUT_PATH}/{filename}_refined.json", "w", encoding="utf-8") as out:
+            json.dump(data_refined, out, ensure_ascii=False, indent=2)
 
 
 with open("sicilian/wiki_index_55500.json", "r", encoding="utf-8") as f:
