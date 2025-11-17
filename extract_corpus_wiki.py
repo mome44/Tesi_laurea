@@ -94,7 +94,7 @@ def get_wikidata(url,title, language):
     html_text = data.get("text", {}).get("*", "")
     
     text = parse_text_sicilian_wiki(html_text)
-    print(text)
+    #print(text)
     return text
 def get_wikipedia_url(title, language):
     # Replace spaces with underscores and URL-encode special characters
@@ -102,22 +102,77 @@ def get_wikipedia_url(title, language):
     base = f"https://{language}.wikipedia.org/wiki/"
     return base + quote(title.replace(" ", "_"))
 
+
+if __name__ == "__main__":
+    df = pd.read_csv(input_file_path, sep="\t")
+
+    corpus_dictionary = []
+
+    futures = []
+    with ThreadPoolExecutor(max_workers=5) as executor:
+
+        # CREO SOLO LA LISTA DEI FUTURE
+        for idx, row in df.iterrows():
+            title = row["page_title"]
+            fut = executor.submit(get_wikidata, URL, title, language)
+            # salvo l'indice separatamente, NON dentro la lista dei futuri
+            futures.append((idx, title, fut))
+
+        # tqdm funziona SOLO qui, NON durante la creazione dei future
+        with tqdm(total=len(futures),
+                  desc="Processing Wikipedia pages",
+                  dynamic_ncols=True,
+                  miniters=1,
+                  disable=False) as pbar:
+
+            # Ricorda: as_completed vuole SOLO la lista dei future puri
+            for fut in as_completed([f for (_, _, f) in futures]):
+
+                # Trovo l'indice corretto del future
+                for idx, title, f_check in futures:
+                    if f_check == fut:
+                        break
+
+                try:
+                    text = fut.result()
+                except Exception:
+                    text = ""
+                if len(text.strip())>3:
+                    corpus_dictionary.append({
+                        "text": text.strip()
+                    })
+                pbar.update(1)
+
+                # checkpoint ogni 200
+                if pbar.n % 200 == 0:
+                    with open(f"{FOLDER}/{NAME}_index_{pbar.n}.json", "w", encoding="utf-8") as f:
+                        json.dump(corpus_dictionary, f, ensure_ascii=False, indent=2)
+
+                time.sleep(0.05)
+
+    # SALVATAGGIO FINALE CORRETTO
+    with open(f"{FOLDER}/{NAME}.json", "w", encoding="utf-8") as f:
+        json.dump(corpus_dictionary, f, ensure_ascii=False, indent=2)
+
+    print("FINITO!")
+#
 #if __name__ == "__main__":
 #    df = pd.read_csv(input_file_path, sep="\t")
 #
 #    i = 0
 #    result_list=[]
 #    corpus_dictionary = dict()
-#    with ThreadPoolExecutor(max_workers=1) as executor:
+#    with ThreadPoolExecutor(max_workers=12) as executor:
 #        #I do a loop throughout all the rows
-#        for idx, row in df.iterrows():
-#            title = row['page_title']
-#            page_url = get_wikipedia_url(title, language)
-#            print("Checking:", page_url)
-#            #I compute the result
-#            result= executor.submit(get_wikidata, URL, title, language)
-#            #I append it in the list
-#            result_list.append(result)
+#        with tqdm(total=len(df), desc="Processing pages", dynamic_ncols=True) as pbar:
+#            for idx, row in df.iterrows():
+#                title = row['page_title']
+#                page_url = get_wikipedia_url(title, language)
+#                #print("Checking:", page_url)
+#                #I compute the result
+#                result= executor.submit(get_wikidata, URL, title, language)
+#                #I append it in the list
+#                result_list.append(result)
 #
 #        with tqdm(total=len(result_list),
 #                  desc="Processing Wikipedia pages",
@@ -136,13 +191,13 @@ def get_wikipedia_url(title, language):
 #                pbar.update(1)                    
 #
 #                # checkpoint ogni 100 completamenti
-#                if pbar.n % 500 == 0:
+#                if pbar.n % 100 == 0:
 #                    with open(f'{FOLDER}/{NAME}_index_{pbar.n}.json', "w", encoding="utf-8") as f:
 #                        json.dump(corpus_dictionary, f, ensure_ascii=False, indent=2)
 #
 #                time.sleep(0.25)  
 #
-#    with open(f'{FOLDER}/{NAME}.json', "w", encoding="utf-8") as file:
+#    with open(f'{FOLDER}/{NAME}.json', "w", encoding="utf-8") as f:
 #        json.dump(corpus_dictionary, f, ensure_ascii=False, indent=2)
    
 #if __name__ == "__main__":
