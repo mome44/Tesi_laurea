@@ -10,12 +10,16 @@ cartella = f"corpus_tesi/{LINGUA}"
 tokenizer = AutoTokenizer.from_pretrained("sapienzanlp/Minerva-7B-base-v1.0", use_fast=True)
 
 
-sottocartelle = ["commedia", "parafrasi", "prosa", "poesia"]
+sottocartelle = ["commedia", "parafrasi", "prosa", "poesia", "wikipedia", "opus"]
 
 result = {}
 totale = 0
 totale_prosa = 0
 for cart in sottocartelle:
+    if cart == "opus" and LINGUA == "romanesco":
+        continue
+    if cart == "wikipedia" and LINGUA == "romanesco":
+        continue
     total_text_num = []
     cartelladet = cartella + "/" + cart
     for filename in os.listdir(cartelladet):
@@ -41,7 +45,7 @@ for cart in sottocartelle:
 
     totale+=num_tokens
 
-    if cart ==  "parafrasi" or cart == "prosa":
+    if cart ==  "parafrasi" or cart == "prosa" or cart == "wikipedia" or cart == "opus":
         totale_prosa+=num_tokens
 #tokens = tokenizer.encode(testo_completo)
 

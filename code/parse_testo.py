@@ -2,13 +2,13 @@ import re
 import json
 pattern = r"[A-Za-z]+\. [A-Za-z]+"
 
-NAME = "verga_i_malavoglia"
+NAME = "neapolitan_wikitext"
 
 #with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
 #    testo = f.read()
 
 with open(f"{NAME}.json", "r", encoding="utf-8") as f:
-    data = json.load(f)
+    testo = json.load(f)
 
 def parse_wikipedia_sic(data):
     data_2 =[]
@@ -20,12 +20,36 @@ def parse_wikipedia_sic(data):
         patterns = [r"^Lu\s+\d+\s*\([IVXLCDM]+\s+a nùmmaru rumanu\)\s+è n'annu\b", r"^L'\d+\s*\([IVXLCDM]+\s+a nùmmaru rumanu\)\s+è n'annu", 
             r"Pì arrìpurtari cchìu immediatamenti i diffìrenzi tra li diversi ordini di grannizza, chista paggina cunteni",
             r"Pì arrìpurtari cchìu immediatamenti i diffìrenzi tra li diversi ordini di grannizza, chista pàggina cunteni",
-            r"^\.[a-z]{2}\s+è lu duminiu di Internet assignatu"]
+            r"^\.[a-z]{2}\s+è lu duminiu di Internet assignatu",
+            r"è un cumuni talianu dâ pruvincia",
+            r"è nu cumuni talianu dâ pruvincia",
+            r"Pi favuri, agghiunci na lijami a sta pàggina e scancella st'abbisu.\nPâ lista cumpleta dî pàggini òrfani, vidi a pàggina dâ catigurìa."]
         
-
+        for p in patterns:
+            testo = re.sub(p, "", testo)
+        lunghezza = testo.split(" ")
+        if len(lunghezza) > 5:
+            data_2.append({
+                "text": testo
+            })
     return data_2
 
 def parse_wikipedia_nap(data):
+    data_2 =[]
+    for item in data:
+        testo = item["text"]
+        #rimuove le citazioni di wikipedia
+        testo = re.sub(r"\[.*?\]|", "", testo, flags=re.DOTALL)
+        patterns = [r"Chist'articulo è sulo na bozza (stub). Si ce puó ddà na mano, p’’o fà addeventà nu poco meglio, spriemme ccà. Pe' ssapé comm’’e 'a fà, guarda ncopp’’e ccunvenziune 'e Wikipedia.\n",
+                    r"Pe' ssapé quale so' tutte quant’’e stub, vaje a vedé 'a categoria stub.\n"]
+        
+        for p in patterns:
+            testo = re.sub(p, "", testo)
+        lunghezza = testo.split(" ")
+        if len(lunghezza) > 5:
+            data_2.append({
+                "text": testo
+            })
     return data_2
 
 
@@ -507,9 +531,9 @@ def process_testo_torrese(testo):
             })
     return data
 
-data =process_malavoglia(testo)
+data =parse_wikipedia_nap(testo)
 
-with open(f"../corpus_tesi/{NAME}_processed.json", "w", encoding="utf-8") as out:
+with open(f"../corpus_tesi/siciliano/opus/{NAME}_processed.json", "w", encoding="utf-8") as out:
     json.dump(data, out, ensure_ascii=False, indent=2)
     
     

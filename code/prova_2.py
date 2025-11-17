@@ -1,6 +1,6 @@
 from collections import Counter
+import json
 
-from collections import Counter
 
 def top_char_sequences(text, length=5, top_k=20):
     seqs = [text[i:i+length] for i in range(len(text)-length+1)]
@@ -46,8 +46,13 @@ def top_ngrams(text, n=3, top_k=20):
     counter = Counter(ngrams)
     return counter.most_common(top_k)
 
-with open ("../corpus_tesi/siciliano/output.txt", "r", encoding="utf-8") as f:
-    testo = f.read()
+with open ("../corpus_tesi/napoletano/wikipedia/neapolitan_wikitext.json", "r", encoding="utf-8") as f:
+    data = json.load(f)
+
+testo = ""
+
+for item in data:
+    testo += item["text"] + "\n"
 
 results = top_ngrams(testo)
 print(results)

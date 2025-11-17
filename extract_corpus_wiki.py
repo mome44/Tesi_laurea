@@ -8,13 +8,13 @@ from tqdm import tqdm
 import re
 
 header = {"User-Agent": "TesimagistraleMNLP/1.0 (mailto:lagana.1946083@studenti.uniroma1.it)"}
-language ="nap"
+language ="scn"
 URL = f"https://{language}.wikipedia.org/w/api.php"
 #URL = f"https://{language}.wikisource.org/w/api.php"
-input_file_path = "napwiki-latest-all-titles"
+input_file_path = "scnwiki-latest-all-titles"
 
-NAME = "neapolitan_wikitext"
-FOLDER = "corpus_tesi/napoletano/wikipedia"
+NAME = "sicilian_wikitext"
+FOLDER = "corpus_tesi/siciliano/wikipedia"
 
 
 def parse_text_sicilian_wiki(html_text):
