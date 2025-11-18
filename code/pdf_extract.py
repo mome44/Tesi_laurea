@@ -1,6 +1,6 @@
 from pdfminer.high_level import extract_text
 
-NAME ="verga_i_malavoglia"
+NAME ="pascarella_prose"
 
 pdf_path = f"{NAME}.pdf"
 text = extract_text(pdf_path)

@@ -2,13 +2,13 @@ import re
 import json
 pattern = r"[A-Za-z]+\. [A-Za-z]+"
 
-NAME = "neapolitan_wikitext"
+NAME = "177750.PL1-Ragazzi-di-vita-di-Pier-Paolo-Pasolini-1955-Letteratura-italiana-Einaudi"
 
-#with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
-#    testo = f.read()
+with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
+    testo = f.read()
 
-with open(f"{NAME}.json", "r", encoding="utf-8") as f:
-    testo = json.load(f)
+#with open(f"{NAME}.json", "r", encoding="utf-8") as f:
+#    testo = json.load(f)
 
 def parse_wikipedia_sic(data):
     data_2 =[]
@@ -313,6 +313,89 @@ def dividi_testo_per_frase(testo: str, max_parole: int) -> list[str]:
         
     return blocchi
 
+def process_pasolini(testo):
+    testo = testo.replace('\x0c', '')
+
+    pattern = (
+        r'(?m)^\s*\d{1,3}\s*$'                    # riga con solo il numero di pagina
+        r'(?:\n(?:Letteratura italiana Einaudi\s)\s*' # titolo (– o -)
+        r'\n\s*Pier Paolo Pasolini - Ragazzi di vita*)?'                # autore (opzionale)
+    )
+    testo = re.sub(pattern, '\n', testo, flags=re.IGNORECASE)
+
+    pattern = r'(?m)(?:\r?\n|\f)+\s*[IVXLCDM]{1,7}\.\s*(?:\r?\n|\f)+'
+
+    capitoli = re.split(pattern, testo)
+    data = []
+
+    for capitolo in capitoli:
+        if "CAPITOLO" in capitolo:
+            continue
+        lungh = []
+        capitolo=capitolo.strip()
+        #remove the \n and the - characters, as well as \n\n and double/triple spaces
+        testo_racconto = re.sub(r'-\s*\n\s*', '', capitolo)
+        testo_racconto = re.sub(r'\n+', ' ', testo_racconto)
+        testo_racconto = re.sub(r'\s{2,}', ' ', testo_racconto)
+
+        LIMITE_MASSIMO_PAROLE = 150
+
+        risultato = dividi_testo_per_frase(testo_racconto, LIMITE_MASSIMO_PAROLE)
+        #frasi_racconto = testo_racconto.split(". ")
+        for f in risultato:
+            print(len(f))
+            print("\n---------------------------------------------------\n")
+            
+            if len(testo_racconto) > 2:
+                data.append({
+                    "text":f,
+                })
+        
+    return data
+
+
+def process_pascarella(testo):
+    testo = testo.replace('\x0c', '')
+    testo = re.sub(r"\[.*?\]|\(.*?\)", "", testo, flags=re.DOTALL)
+    pattern = (
+        r'(?m)^\s*\d{1,3}\s*$'                    # riga con solo il numero di pagina
+        r'(?:\n(?:Letteratura italiana Einaudi\s)\s*' # titolo (– o -)
+        r'\n\s*Pier Paolo Pasolini - Ragazzi di vita*)?'
+        r"\[.*?\]|\(.*?\)" 
+        r"\*"            # autore (opzionale)
+    )
+    testo = re.sub(pattern, '', testo, flags=re.IGNORECASE)
+
+    pattern = r'(?m)(?:\r?\n|\f)+\s*[IVXLCDM]{1,7}\.\s*(?:\r?\n|\f)+'
+
+    capitoli = re.split(pattern, testo)
+    data = []
+
+    for capitolo in capitoli:
+        if "CAPITOLO" in capitolo:
+            continue
+        lungh = []
+        capitolo=capitolo.strip()
+        #remove the \n and the - characters, as well as \n\n and double/triple spaces
+        testo_racconto = re.sub(r'-\s*\n\s*', '', capitolo)
+        testo_racconto = re.sub(r'\n+', ' ', testo_racconto)
+        testo_racconto = re.sub(r'\s{2,}', ' ', testo_racconto)
+
+        LIMITE_MASSIMO_PAROLE = 150
+
+        risultato = dividi_testo_per_frase(testo_racconto, LIMITE_MASSIMO_PAROLE)
+        #frasi_racconto = testo_racconto.split(". ")
+        for f in risultato:
+            print(len(f))
+            print("\n---------------------------------------------------\n")
+            
+            if len(testo_racconto) > 2:
+                data.append({
+                    "text":f,
+                })
+        
+    return data
+
 def process_malavoglia(testo):
     testo = testo.replace('\x0c', '')
     pattern = (r'(?m)^\s*\d{1,3}\s*$')
@@ -531,9 +614,9 @@ def process_testo_torrese(testo):
             })
     return data
 
-data =parse_wikipedia_nap(testo)
+data =process_pasolini(testo)
 
-with open(f"../corpus_tesi/siciliano/opus/{NAME}_processed.json", "w", encoding="utf-8") as out:
+with open(f"../corpus_tesi/romanesco/verga/{NAME}_processed.json", "w", encoding="utf-8") as out:
     json.dump(data, out, ensure_ascii=False, indent=2)
     
     

@@ -1,3 +1,10 @@
+## libri tradotti con LLMs
+I malavoglia di verga
+Ragazzi di vita di pasolini
+Le prose di pascarella
+
+https://get2024.com/wp-content/uploads/2024/10/177750.PL1-Ragazzi-di-vita-di-Pier-Paolo-Pasolini-1955-Letteratura-italiana-Einaudi.pdf
+
 ## Fonti estratte dei testi
 
 https://www.academia.edu/39289250/Meo_Patacca_er_Greve_e_Marco_Pepe_la_Crapetta_di_Filippo_Tacconi
