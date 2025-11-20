@@ -2,7 +2,7 @@ import re
 import json
 pattern = r"[A-Za-z]+\. [A-Za-z]+"
 
-NAME = "177750.PL1-Ragazzi-di-vita-di-Pier-Paolo-Pasolini-1955-Letteratura-italiana-Einaudi"
+NAME = "saint_exupery_il_piccolo_principe_pari"
 
 with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
     testo = f.read()
@@ -338,12 +338,12 @@ def process_pasolini(testo):
         testo_racconto = re.sub(r'\n+', ' ', testo_racconto)
         testo_racconto = re.sub(r'\s{2,}', ' ', testo_racconto)
 
-        LIMITE_MASSIMO_PAROLE = 150
+        LIMITE_MASSIMO_PAROLE = 130
 
         risultato = dividi_testo_per_frase(testo_racconto, LIMITE_MASSIMO_PAROLE)
         #frasi_racconto = testo_racconto.split(". ")
         for f in risultato:
-            print(len(f))
+            print(f)
             print("\n---------------------------------------------------\n")
             
             if len(testo_racconto) > 2:

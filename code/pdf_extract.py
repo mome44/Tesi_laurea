@@ -1,6 +1,6 @@
 from pdfminer.high_level import extract_text
 
-NAME ="pascarella_prose"
+NAME ="saint_exupery_il_piccolo_principe"
 
 pdf_path = f"{NAME}.pdf"
 text = extract_text(pdf_path)
