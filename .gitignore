@@ -1,13 +1,28 @@
-corpus_tesi/napoletano
+corpus_tesi/napoletano/commedia
+corpus_tesi/napoletano/opus
+corpus_tesi/napoletano/parafrasi
+corpus_tesi/napoletano/poesia
+corpus_tesi/napoletano/prosa
+corpus_tesi/napoletano/verga
+corpus_tesi/napoletano/wikipedia
+corpus_tesi/napoletano/testi_originali
 
-corpus_tesi/romanesco
 
-corpus_tesi/siciliano
+corpus_tesi/romanesco/commedia
+corpus_tesi/romanesco/opus
+corpus_tesi/romanesco/parafrasi
+corpus_tesi/romanesco/poesia
+corpus_tesi/romanesco/prosa
+corpus_tesi/romanesco/verga
+corpus_tesi/romanesco/testi_originali
 
-code/fatto_siciliano
-
-code/fatto_napoletano
-
-code_e_corpus_tesi
+corpus_tesi/siciliano/commedia
+corpus_tesi/siciliano/opus
+corpus_tesi/siciliano/parafrasi
+corpus_tesi/siciliano/poesia
+corpus_tesi/siciliano/prosa
+corpus_tesi/siciliano/verga
+corpus_tesi/siciliano/wikipedia
+corpus_tesi/siciliano/testi_originali
 
 .venv/

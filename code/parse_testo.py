@@ -2,7 +2,7 @@ import re
 import json
 pattern = r"[A-Za-z]+\. [A-Za-z]+"
 
-NAME = "varaldo_le_scarpette_rosse"
+NAME = "nap_4"
 
 with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
     testo = f.read()
@@ -614,9 +614,9 @@ def process_testo_torrese(testo):
             })
     return data
 
-data =process_pasolini(testo)
+data =process_testo_semplice(testo)
 
-with open(f"../corpus_tesi/romanesco/verga/{NAME}_processed.json", "w", encoding="utf-8") as out:
+with open(f"../corpus_tesi/napoletano/opus/{NAME}_processed.json", "w", encoding="utf-8") as out:
     json.dump(data, out, ensure_ascii=False, indent=2)
     
     
