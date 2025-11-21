@@ -100,6 +100,13 @@ https://nap.wikisource.org/wiki/%27E_lluce-luce
 
 
 ## da fare
+https://www.torreomnia.it/Testi/falanga.htm
+
+https://incubator.wikimedia.org/wiki/Special:PrefixIndex/Wn/nap
+
+https://incubator.wikimedia.org/wiki/Special:PrefixIndex/Wq/nap
+
+https://incubator.wikimedia.org/wiki/Wb/nap/%27O_cunto_d%27_%27auciello_grifone
 
 https://dumps.wikimedia.org/napwiki/
 
