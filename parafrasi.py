@@ -17,25 +17,16 @@ API_KEY_LIST = [
     "AIzaSyDMyQo3NAh0DYKEparoxSxtuFO17-kJoZc", #p4
     "AIzaSyCJQZiXj85Ti3JJOdNHKTQbeURaknnVVqA"  #fedoe
 ]
-#API_KEY = "AIzaSyDAM3VU2O7RClzARfcjVr-WFtO-oEWsZTE" #prima
-#API_KEY = "AIzaSyCKynyTujWmvIYiOaLxnpuuvUevgFUx5fQ" #Seconda
-#API_KEY = "AIzaSyA5aGoN_UAs6QznnGP8Jpa4bh3vqEV8XYk" #TERZA
-#API_KEY = "AIzaSyAay0PJStTeZxxcuTn97RwmJzifefQEHS8" #QUARTA CAR
-#API_KEY = "AIzaSyAf8vqpLY1mvNf03gvNQ8NDyP8drwXTP6s" #mich
-#API_KEY = "AIzaSyAyS0Or4He8_ByQpINlDWXNKw6yMpdpJ7o"
-#API_KEY = "AIzaSyC9fknqBf7ogCScgSDNRsW0VDGH91PNFLg"
-#API_KEY = "AIzaSyDa0mJS5Bcx-qF3pYQ9mvb2ICTu0BsoPiU"
-#API_KEY = "AIzaSyDMyQo3NAh0DYKEparoxSxtuFO17-kJoZc"
 
 # --- Configurazioni ---
 MODEL_NAME = "gemini-2.5-flash"
 
 DIALECT = "romanesco"
-TIPO = "verga"
+TIPO = "poesia"
 PATH = f"corpus_tesi/{DIALECT}/{TIPO}"
 OUTPUT_PATH = f"corpus_tesi/{DIALECT}/parafrasi"
 LAST_FILE = 0
-api_idx = 2
+api_idx = 0
 
 with open(f"prompt/prompt_{DIALECT}_{TIPO}.txt", "r", encoding = "utf-8") as p:
     prompt = p.read()

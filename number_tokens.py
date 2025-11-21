@@ -2,7 +2,7 @@ import os
 import json
 from transformers import AutoTokenizer
 
-LINGUA = "romanesco"
+LINGUA = "siciliano"
 
 cartella = f"corpus_tesi/{LINGUA}"
 

@@ -2,7 +2,7 @@ import re
 import json
 pattern = r"[A-Za-z]+\. [A-Za-z]+"
 
-NAME = "Miseria_e_nobiltà"
+NAME = "bovio_libero_so_diece_anne"
 
 with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
     testo = f.read()
@@ -104,7 +104,7 @@ def parse_commedia_romana_multiline(testo):
 
     # regex che riconosce una linea-inizio battuta:
     # es. "NANDO:" oppure "NANDO - testo" o "VECCHIO:    Testo iniziale"
-    header_re = re.compile(r'^\s*(?P<attore>[A-ZÀ-ÖØ-Þ][A-ZÀ-ÖØ-Þ0-9\'\.\(\) \-]+?)\s*[:\-]\s*(?P<rest>.*)$')
+    header_re = re.compile(r'^\s*(?P<attore>[A-ZÀ-ÖØ-Þ][A-ZÀ-ÖØ-Þ0-9\'\.\(\) \-]+?)\s*[.\-]\s*(?P<rest>.*)$')
 
     for raw_line in testo.splitlines():
         line = raw_line.rstrip()
@@ -121,7 +121,12 @@ def parse_commedia_romana_multiline(testo):
             if current_speaker is not None:
                 utterance = " ".join(p.strip() for p in current_parts if p is not None)
                 utterance = re.sub(r'\s+', ' ', utterance).strip()
-                data.append({"character": current_speaker, "text": utterance})
+                utterance = utterance.strip("—")
+                utterance = utterance.strip("-")
+                utterance = utterance.strip(".")
+
+                if len(utterance.strip()) > 4:
+                    data.append({"character": current_speaker, "text": utterance})
             # nuova battuta
             current_speaker = m.group("attore").strip()
             rest = m.group("rest").strip()
@@ -142,8 +147,12 @@ def parse_commedia_romana_multiline(testo):
     if current_speaker is not None:
         utterance = " ".join(p.strip() for p in current_parts if p is not None)
         utterance = re.sub(r'\s+', ' ', utterance).strip()
-        if len(utterance.strip()) > 2:
-            data.append({"character": current_speaker, "text": utterance})
+        utterance = utterance.strip("—")
+        utterance = utterance.strip("-")
+        utterance = utterance.strip(".")
+        
+        if len(utterance.strip()) > 4:
+            data.append({"character": current_speaker, "text": utterance.strip()})
 
     return data
 
@@ -271,7 +280,6 @@ def parse_commedia_semplice_5(testo):
                 "character": personaggio.strip(),
             })
     return data
-import re
 
 def parse_commedia_semplice_6(testo):
     data =[]
@@ -292,7 +300,6 @@ def parse_commedia_semplice_6(testo):
             })
     return data
 
-
 def parse_commedia_semplice_4(testo):
     data =[]
     elenco_batt = testo.split("\n\n")
@@ -310,7 +317,7 @@ def parse_commedia_semplice_4(testo):
             })
     return data
 
-data = parse_commedia_wikisourcenap_2(testo)
+data = parse_commedia_romana_multiline(testo)
 #data = parse_commedia_simple(testo)
 with open(f"../corpus_tesi/napoletano/commedia/{NAME}_processed.json", "w", encoding="utf-8") as out:
     json.dump(data, out, ensure_ascii=False, indent=2)

@@ -13,6 +13,7 @@ Tesi di laurea magistrale in Engineering in computer science
  - creare la funzione per fare il parsing con le poesie +  prompt
  - creare il prompt e la funzione per tradurre i malavoglia di verga in romanesco
 #### da fare
+ - parafrasare altre poesie e sonetti in romanesco
  - Calcolare le percentuali e statistiche di questi testi "PURI"
  - Vedere se si tratta di un corpus sufficiente utilizzando varie metriche per misurare Quantità e qualità
 
@@ -25,7 +26,7 @@ Tesi di laurea magistrale in Engineering in computer science
  - vedere il corpus OPUS
 #### da fare
  - fare parafrasi così come napoletano e romano
- - vedere i testi 
+ - aggiungere delle poesie in siciliano
 
 ### NAPOLETANO
 #### fatto
@@ -35,9 +36,10 @@ Tesi di laurea magistrale in Engineering in computer science
  - Parafrasare le commedie in prosa
  - Trovare un modo per parafrasare lo cunto de' li cunti in napoletano moderno
  - Vedere corpus OPUS come il siciliano
-
 #### da fare
- - Parafrasare le poesie in prosa quindi fare il prompt per poter ottenere il risultato migliore
- - tradurre verga
+ - Parafrasare le poesie in prosa
+ - estrarre le altre poesie di wikisource e parafrasarle
+ - togliere le emoji dall'opus
+ - tradurre verga e le novelle napoletane di monnier
 
 

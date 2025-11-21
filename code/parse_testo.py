@@ -2,7 +2,7 @@ import re
 import json
 pattern = r"[A-Za-z]+\. [A-Za-z]+"
 
-NAME = "nap_4"
+NAME = "wiki_citazioni"
 
 with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
     testo = f.read()
@@ -51,7 +51,6 @@ def parse_wikipedia_nap(data):
                 "text": testo
             })
     return data_2
-
 
 def remove_numbered_notes(testo, max_blank_after_note=2):
     """
@@ -353,14 +352,13 @@ def process_pasolini(testo):
         
     return data
 
-
 def process_pascarella(testo):
     testo = testo.replace('\x0c', '')
     testo = re.sub(r"\[.*?\]|\(.*?\)", "", testo, flags=re.DOTALL)
     pattern = (
         r'(?m)^\s*\d{1,3}\s*$'                    # riga con solo il numero di pagina
-        r'(?:\n(?:Letteratura italiana Einaudi\s)\s*' # titolo (– o -)
-        r'\n\s*Pier Paolo Pasolini - Ragazzi di vita*)?'
+        r'(?:\n(?:Novelle napoletane\s)\s*' # titolo (– o -)
+        r'\n\s*Marco Monnier*)?'
         r"\[.*?\]|\(.*?\)" 
         r"\*"            # autore (opzionale)
     )
@@ -386,7 +384,7 @@ def process_pascarella(testo):
         risultato = dividi_testo_per_frase(testo_racconto, LIMITE_MASSIMO_PAROLE)
         #frasi_racconto = testo_racconto.split(". ")
         for f in risultato:
-            print(len(f))
+            print(f)
             print("\n---------------------------------------------------\n")
             
             if len(testo_racconto) > 2:
@@ -492,16 +490,17 @@ def process_testo_liber_2(testo):
         f.write(fulltext)
 
 def process_poesie_liber(testo):
+    testo = testo.replace('\x0c', '')
     testo = re.sub(r'7474\s*$', '', testo).strip()
 
     parts = re.split(r'\n\s*\b\d{1,3}\b\s*\n', testo)
     data =[]
 
     for p in parts:
-
-        data.append({
-            'text': p.strip()
-        })
+        if re.search(r"[a-zàèéìòóù]", p.strip()):
+            data.append({
+                'text': p.strip()
+            })
         
     return data
 
@@ -614,9 +613,44 @@ def process_testo_torrese(testo):
             })
     return data
 
-data =process_testo_semplice(testo)
+def process_poesie(testo):
+    testo = testo.replace('\x0c', '')
+    data =[]
+    parts = re.split(r'\b[IVXLCDM]{1,7}\b', testo)
+    for p in parts:
+        if len(p.strip()) >2:
+            data.append({
+                "text": p.strip()
+            })
+    return data
 
-with open(f"../corpus_tesi/napoletano/opus/{NAME}_processed.json", "w", encoding="utf-8") as out:
+def process_poesie_23(testo):
+    testo = testo.replace('\x0c', '')
+    data =[]
+    parts = re.split(r'\b[IVXLCDM]{1,7}\b', testo)
+    for p in parts:
+        if len(p.strip()) >2:
+            data.append({
+                "text": p.strip()
+            })
+    return data
+
+def process_poesie_tre(testo):
+    testo = testo.replace('\x0c', '')
+    data =[]
+    pattern = r"^(?=[A-ZÀ-Ý0-9 '’.,;:!?()-]+$).*$"
+    parts = re.split(pattern, testo)
+    for p in parts:
+        p=p.strip(".\n\n\n\n\n\n")
+        if len(p.strip()) >2:
+            data.append({
+                "text": p.strip()
+            })
+    return data
+
+data =process_testo_dialettando(testo)
+
+with open(f"../corpus_tesi/napoletano/prosa/{NAME}_processed.json", "w", encoding="utf-8") as out:
     json.dump(data, out, ensure_ascii=False, indent=2)
     
     

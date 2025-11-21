@@ -1,6 +1,6 @@
 from pdfminer.high_level import extract_text
 
-NAME ="pirandello_uno_nessuno"
+NAME ="ER_FAVOLISTA"
 
 pdf_path = f"{NAME}.pdf"
 text = extract_text(pdf_path)

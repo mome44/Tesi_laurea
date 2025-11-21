@@ -79,14 +79,19 @@ https://docs.google.com/document/d/1_80UZippfgAm9zVr11i5kBQ9pCjn1af-0XVgOm2cSH0/
 
 https://blog.libero.it/giggimarforio/commenti.php?msgid=6466867#commento_25092645
 
-## processare
 
-## Versi
 https://liberliber.it/autori/autori-b/giuseppe-gioachino-belli/duecento-sonetti-in-dialetto-romanesco/
 
 https://liberliber.it/autori/autori-j/augusto-jandolo/nojantri/
 
 https://liberliber.it/autori/autori-t/trilussa/tutte-le-poesie/
+
+https://www.academia.edu/42201526/ER_FAVOLISTA
+
+## processare
+
+## Versi
+
 
 ### in caso vedere anche questi
 

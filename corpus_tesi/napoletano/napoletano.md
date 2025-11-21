@@ -92,21 +92,33 @@ https://nap.wikisource.org/wiki/Pulcinella_-_Diego_Petriccione
 https://nap.wikisource.org/wiki/Notte
 https://nap.wikisource.org/wiki/Nu_guaglione_%27e_mala_vita
 https://nap.wikisource.org/wiki/Nu_mbruoglio_%27e_doie_lettere
-
-## estratto
 dentro poesie
 https://nap.wikisource.org/wiki/%27A_storia_nova
 https://nap.wikisource.org/wiki/%27E_lluce-luce
 
-
-## da fare
+https://liberliber.it/autori/autori-g/battista-guarini/il-pastor-fido/
 https://www.torreomnia.it/Testi/falanga.htm
 
 https://incubator.wikimedia.org/wiki/Special:PrefixIndex/Wn/nap
-
 https://incubator.wikimedia.org/wiki/Special:PrefixIndex/Wq/nap
 
 https://incubator.wikimedia.org/wiki/Wb/nap/%27O_cunto_d%27_%27auciello_grifone
+## estratto
+
+
+## da fare
+
+## testi tradotti in prosa
+
+https://liberliber.it/autori/autori-m/marco-monnier/novelle-napoletane/
+
+https://liberliber.it/autori/autori-b/libero-bovio/so-diece-anne/
+
+https://liberliber.it/autori/autori-b/libero-bovio/vicenzella/
+
+
+
+
 
 https://dumps.wikimedia.org/napwiki/
 
@@ -114,12 +126,3 @@ https://nap.wikisource.org/wiki/
 
 https://www.gttempo.it/copioni.htm   	AGNELLO Salvatore Angela Paraguai in Bellezza, quelle di ANDOLFI Colomba Rosaria
 
-
-Cercare commedie in napoletano
-
-
-https://liberliber.it/autori/autori-b/libero-bovio/so-diece-anne/
-
-https://liberliber.it/autori/autori-b/libero-bovio/vicenzella/
-
-Trovare un modo per standardizzare l'ortografia
