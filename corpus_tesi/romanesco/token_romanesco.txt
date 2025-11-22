@@ -1,6 +1,6 @@
 commedia : 216752
-parafrasi : 1875644
+parafrasi : 1918055
 prosa : 194077
 poesia : 1027228
-totale : 3313701
-totale prosa : 2069721
+totale : 3356112
+totale prosa : 2112132

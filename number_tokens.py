@@ -2,62 +2,60 @@ import os
 import json
 from transformers import AutoTokenizer
 
-LINGUA = "siciliano"
-
-cartella = f"corpus_tesi/{LINGUA}"
-
+LISTA_LINGUE = ["romanesco", "napoletano", "siciliano"]
 #tokenizer
 tokenizer = AutoTokenizer.from_pretrained("sapienzanlp/Minerva-7B-base-v1.0", use_fast=True)
-
-
 sottocartelle = ["commedia", "parafrasi", "prosa", "poesia", "wikipedia", "opus"]
 
-result = {}
-totale = 0
-totale_prosa = 0
-for cart in sottocartelle:
-    if cart == "opus" and LINGUA == "romanesco":
-        continue
-    if cart == "wikipedia" and LINGUA == "romanesco":
-        continue
-    total_text_num = []
-    cartelladet = cartella + "/" + cart
-    for filename in os.listdir(cartelladet):
-        if filename.endswith(".json"):
-            percorso_file = os.path.join(cartelladet, filename)
-            with open(percorso_file, "r", encoding="utf-8") as f:
-                try:
-                    data = json.load(f)
+for lingua in LISTA_LINGUE:
+    LINGUA = lingua
+    cartella = f"corpus_tesi/{LINGUA}"
+    result = {}
+    totale = 0
+    totale_prosa = 0
+    for cart in sottocartelle:
+        if cart == "opus" and LINGUA == "romanesco":
+            continue
+        if cart == "wikipedia" and LINGUA == "romanesco":
+            continue
+        total_text_num = []
+        cartelladet = cartella + "/" + cart
+        for filename in os.listdir(cartelladet):
+            if filename.endswith(".json"):
+                percorso_file = os.path.join(cartelladet, filename)
+                with open(percorso_file, "r", encoding="utf-8") as f:
+                    try:
+                        data = json.load(f)
 
-                    for item in data:
-                        if "text" in item:
-                            tokens = tokenizer.encode(
-                                item["text"],
-                                add_special_tokens=False
-                            )
-                            total_text_num.append(len(tokens))
-                except json.JSONDecodeError:
-                    print(f"The file is not a JSON")
-    num_tokens = sum(total_text_num)
-    
-    result[cart] = num_tokens  # <-- salva nel dict
-    print(f"Numero totale di token {cart}: {num_tokens}")
+                        for item in data:
+                            if "text" in item:
+                                tokens = tokenizer.encode(
+                                    item["text"],
+                                    add_special_tokens=False
+                                )
+                                total_text_num.append(len(tokens))
+                    except json.JSONDecodeError:
+                        print(f"The file is not a JSON")
+        num_tokens = sum(total_text_num)
 
-    totale+=num_tokens
+        result[cart] = num_tokens  # <-- salva nel dict
+        print(f"Numero totale di token {cart}: {num_tokens}")
 
-    if cart ==  "parafrasi" or cart == "prosa" or cart == "wikipedia" or cart == "opus":
-        totale_prosa+=num_tokens
-#tokens = tokenizer.encode(testo_completo)
+        totale+=num_tokens
+
+        if cart ==  "parafrasi" or cart == "prosa" or cart == "wikipedia" or cart == "opus":
+            totale_prosa+=num_tokens
+    #tokens = tokenizer.encode(testo_completo)
 
 
 
-with open (f"{cartella}/token_{LINGUA}.txt", "w", encoding="utf-8") as f:
-    for categoria, count in result.items():
-        f.write(f"{categoria} : {count}\n")
-    
-    f.write(f"totale : {totale}\n")
+    with open (f"{cartella}/token_{LINGUA}.txt", "w", encoding="utf-8") as f:
+        for categoria, count in result.items():
+            f.write(f"{categoria} : {count}\n")
 
-    f.write(f"totale prosa : {totale_prosa}\n")
+        f.write(f"totale : {totale}\n")
+
+        f.write(f"totale prosa : {totale_prosa}\n")
 
 
 
