@@ -144,6 +144,8 @@ def refine_romano(testo):
     testo = re.sub(r"\b([A-Za-z]{3,})arvi\b", r"\1avve", testo)
     testo = re.sub(r"\b([A-Za-z]{3,})ervi\b", r"\1evve", testo)
     testo = re.sub(r"\b([A-Za-z]{3,})irvi\b", r"\1ivve", testo)
+    testo = re.sub(r"\bsono\b", "so'", testo)
+    testo = re.sub(r"uo", "o", testo)
 
     print(testo)
     testo_standardizzato = testo
