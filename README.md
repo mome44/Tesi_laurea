@@ -6,14 +6,14 @@ Tesi di laurea magistrale in Engineering in computer science
  - Proseguire con la raccolta dei tre corpus e dividere i testi trovati in PROSA PURA, TEATRO, SONETTI, facendo il parsing che già esiste per la prosa pura e il teatro.
  - Vedere se bisogna fare in modo che tutti e tre i corpus siano di dimensioni comparabili
  - Trovare un modo per togliere le scritte di gemini prima delle risposte quando sono presenti
-
+ - Scrivere i progressi fino ad adesso
 ### ROMANESCO
 #### fatto
  - (fatto) rivedere il parsing dei seguenti testi: GORINI lucia rosa ieri oggi .. romani; Hollywood tutta n'antra cosa; La macchinazione 
  - creare la funzione per fare il parsing con le poesie +  prompt
  - creare il prompt e la funzione per tradurre i malavoglia di verga in romanesco
-#### da fare
  - parafrasare altre poesie e sonetti in romanesco
+#### da fare
  - Calcolare le percentuali e statistiche di questi testi "PURI"
  - Vedere se si tratta di un corpus sufficiente utilizzando varie metriche per misurare Quantità e qualità
 
@@ -36,10 +36,11 @@ Tesi di laurea magistrale in Engineering in computer science
  - Parafrasare le commedie in prosa
  - Trovare un modo per parafrasare lo cunto de' li cunti in napoletano moderno
  - Vedere corpus OPUS come il siciliano
-#### da fare
  - Parafrasare le poesie in prosa
+ - tradurre verga e le novelle napoletane di monnier
+#### da fare
  - estrarre le altre poesie di wikisource e parafrasarle
  - togliere le emoji dall'opus
- - tradurre verga e le novelle napoletane di monnier
+
 
 
