@@ -2,7 +2,7 @@ import json
 import pandas as pd
 import os
 import re
-
+import unicodedata
 DIALECT = "siciliano"
 
 List_TIPO = ["wikipedia","prosa", "parafrasi", "opus"]
@@ -16,6 +16,7 @@ segnali = [
     ]
 
 def refine_siciliano(testo):
+    testo = re.sub(r"[`´‘’‚‛ʾʼʻ᾿ʹˊˋ＇]", "'", testo)
     testo = re.sub(r"ʃ(?=[bcdfghjklmnpqrstvwxyz])", "s", testo)
     testo = re.sub(r"š(?=[bcdfghjklmnpqrstvwxyz])", "s", testo)
     testo = re.sub(r"ʃ|š", "ç", testo)
@@ -51,23 +52,29 @@ def refine_siciliano(testo):
     #continuare
 
     #articoli
-    testo = re.sub(r"\b(lo|il|el|er|lu|'o|’o|u)\b", "lu", testo)
-    testo = re.sub(r"\b(Lo|Il|El|Er|Lu|'O|’O|u)\b", "Lu", testo)
-    testo = re.sub(r"\b(la|’a)\b", "la", testo)
-    testo = re.sub(r"\b(La|’A)\b", "La", testo)
+    testo = re.sub(r"\b(lo|il|el|er|lu|'o|u|'u)\b", "lu", testo)
+    testo = re.sub(r"\b(Lo|Il|El|Er|Lu|'O|U|'U)\b", "Lu", testo)
+    testo = re.sub(r"\b(la)\b", "la", testo)
+    testo = re.sub(r"\b(La)\b", "La", testo)
 
-    testo = re.sub(r"\b(uno|un|nu|'no|'nu|’no|’nu)\b", "un", testo)
-    testo = re.sub(r"\b(Uno|Un|Nu|'No|'Nu|’No|’Nu)\b", "Un", testo)
-    testo = re.sub(r"\b(una|na|'na|’na)\b", "na", testo)
-    testo = re.sub(r"\b(Una|Na|'Na|’Na)\b", "Na", testo)
+    testo = re.sub(r"\b(uno|un|nu|'no|'nu)\b", "un", testo)
+    testo = re.sub(r"\b(Uno|Un|Nu|'No|'Nu)\b", "Un", testo)
+    testo = re.sub(r"\b(una|na|'na)\b", "na", testo)
+    testo = re.sub(r"\b(Una|Na|'Na)\b", "Na", testo)
 
-    testo = re.sub(r"\b(li|le|'e|’e|’i)\b", "li", testo)
-    testo = re.sub(r"\b(Li|Le|'E|’E|’I)\b", "Li", testo)
+    testo = re.sub(r"\b(li|le|'e)\b", "li", testo)
+    testo = re.sub(r"\b(Li|Le|'E)\b", "Li", testo)
 
-    testo = re.sub(r"nd", "nn", testo)
-    testo = re.sub(r"mb", "mm", testo)
+    testo = re.sub(r"nd(?!r)", "nn", testo)
+    testo = re.sub(r"(mb|nv)(?!r)", "mm", testo)
+
+    testo = re.sub(r"(ddh|ddr|ddhr|ḍḍ)", "ddh", testo)
+
+    testo = re.sub(r"\b(haju|aiu|ho|haiu|aju)\b", "aiu", testo)
+    testo = re.sub(r"\b(havi|avi|ha)\b", "avi", testo)
 
     testo = re.sub(r"gli(?=[aeou])", "gghi", testo)
+
 
     testo = re.sub(r"\bcinque", "cincu", testo)
     testo = re.sub(r"qu(?=[e,i])", "ch", testo)
@@ -80,12 +87,15 @@ def refine_siciliano(testo):
     return testo_standardizzato
 
 def refine_romano(testo):
+    testo = re.sub(r"[`´‘’‚‛ʾʼʻ᾿ʹˊˋ＇]", "'", testo)
+
     testo = re.sub(r"\b(del|di er|di el|de er|de il)\b", "der", testo)
     testo = re.sub(r"\b(della|di la|dela)\b", "de la", testo)
     testo = re.sub(r"\b(delle|di le|dele)\b", "de le", testo)
     testo = re.sub(r"\b(dei|deli|di li)\b", "de li", testo)
     testo = re.sub(r"\b(degli|dell')", "dell'", testo)
-    testo = re.sub(r"\bdi\b", "de", testo)    
+    testo = re.sub(r"\bdi\b", "de", testo)
+
     testo = re.sub(r"\b(allo)\b", "a lo", testo)
     testo = re.sub(r"\b(alla)\b", "a la", testo)
     testo = re.sub(r"\b(alle)\b", "a le", testo)
@@ -103,7 +113,8 @@ def refine_romano(testo):
     testo = re.sub(r"\b(negli|nell')", "nell'", testo)    
     testo = re.sub(r"\b(il|el)\b", "er", testo)
     testo = re.sub(r"\b(i)\b", "li", testo)
-    testo = re.sub(r"l\b", "r", testo)
+    #testo = re.sub(r"l\b", "r", testo)
+
     testo = re.sub(r"\bdi\b", "de", testo)
     testo = re.sub(r"\bmi\b", "me", testo)
     testo = re.sub(r"\bti\b", "te", testo)
@@ -116,8 +127,11 @@ def refine_romano(testo):
     testo = re.sub(r"\b(essi)\b", "loro", testo)
     testo = re.sub(r"\b(Essi)\b", "Loro", testo)
     testo = re.sub(r"\bper\b", "pe'", testo)
-    testo = re.sub(r"\bcaldo\b", "callo", testo)
-    testo = re.sub(r"\bandat(?=[aeio])\b", "it", testo)
+    testo = re.sub(r"\bsul\b", "sur", testo)
+    testo = re.sub(r"\b(bel)\b", "ber", testo)
+
+    testo = re.sub(r"\bcald([aeio])\b", r"call\1", testo)
+    testo = re.sub(r"\bartr([aeio])\b", r"antr\1", testo)
     testo = re.sub(r"gli(?=[aeou])", "j", testo)
     testo = re.sub(r"\br'(?=[aeoiu])", "l'", testo)
     
@@ -129,9 +143,9 @@ def refine_romano(testo):
     testo = re.sub(r"ng(?=[ie])", "gn", testo)
 
     testo = re.sub(r"l(?=[bcdfghjkmnpqrstvwxyz])", "r", testo)
-    testo = re.sub(r"nd", "nn", testo)
-    testo = re.sub(r"mb", "mm", testo)
-    testo = re.sub(r"(rsi|rse|rci)\b", "sse", testo)
+    testo = re.sub(r"nd(?!r)", "nn", testo)
+
+    testo = re.sub(r"\b([A-Za-z]{3,})(rsi|rse|rci)\b", r"\1sse", testo)
     testo = re.sub(r"(rgli|rle)\b", "je", testo)
     testo = re.sub(r"\b([A-Za-z]{3,})armi\b", r"\1amme", testo)
     testo = re.sub(r"\b([A-Za-z]{3,})ermi\b", r"\1emme", testo)
@@ -145,13 +159,21 @@ def refine_romano(testo):
     testo = re.sub(r"\b([A-Za-z]{3,})ervi\b", r"\1evve", testo)
     testo = re.sub(r"\b([A-Za-z]{3,})irvi\b", r"\1ivve", testo)
     testo = re.sub(r"\bsono\b", "so'", testo)
-    testo = re.sub(r"uo", "o", testo)
+
+    testo = re.sub(r"\buo", "o", testo)
+    testo = re.sub(r"(?<!\b[qts])uo", "o", testo)
+
+    testo = re.sub(r"\b(UO|Uo)", "O", testo)
+    testo = re.sub(r"(?<!\b[tsq])(UO|Uo)", "O", testo) 
 
     #print(testo)
     testo_standardizzato = testo
     return testo_standardizzato
 
 def refine_napoletano(testo):
+    testo = re.sub(r"[`´‘’‚‛ʾʼʻ᾿ʹˊˋ＇]", "'", testo)
+
+    #vedere le vocali con il cappelletto 
     #vocali
     testo = re.sub(r"ə|ë", "e", testo)
     testo = re.sub(r"ʃ(?=[bcdfghjklmnpqrstvwxyz])", "s", testo)
@@ -166,9 +188,9 @@ def refine_napoletano(testo):
     testo = re.sub(r"ü", "u", testo)
 
     #preposizioni articolate
-    testo = re.sub(r"\b(de lo|delo|del|di lo)\b", "d''o", testo)
-    testo = re.sub(r"\b(de la|della|dela|di la)\b", "d''a", testo)
-    testo = re.sub(r"\b(de le|delle|dele|di le|de li|delli|deli|di li|dei)\b", "d''e", testo)
+    testo = re.sub(r"\b(de lo|delo|del|di lo|d'o|d' o)\b", "d''o", testo)
+    testo = re.sub(r"\b(de la|della|dela|di la|d'a|d' a)\b", "d''a", testo)
+    testo = re.sub(r"\b(de le|delle|dele|di le|de li|delli|deli|di li|dei|d'e|d' e)\b", "d''e", testo)
     testo = re.sub(r"\b(de ll'|dell'|de l'|degli)\b", "'e ll'", testo)
     testo = re.sub(r"\b(de|di)\b", "'e", testo)
 
@@ -179,30 +201,35 @@ def refine_napoletano(testo):
 
     testo = re.sub(r"\b(con il|col)\b", "cu 'o", testo)
     testo = re.sub(r"\b(coll'|cogli)", "cu ll'", testo)
+    testo = re.sub(r'\b(c"(?=[aouei])\b)', "cu '", testo)
     testo = re.sub(r"\b(co|cu|con)\b", "cu", testo)
 
-    testo = re.sub(r"\b('Ind'|Ind|Ind'|Int'|Int|'Int')\b", "Dint'", testo)
-    testo = re.sub(r"\b('ind'|ind|ind'|int'|int|'int')\b", "dint'", testo)
-    testo = re.sub(r"\b(nel|ne lo)\b", "dint''o", testo)
-    testo = re.sub(r"\b(nella|ne la)\b", "dint''a", testo)
-    testo = re.sub(r"\b(nelle|ne le|ne li|nei)\b", "dint''e", testo)
-    testo = re.sub(r"\b(negli|nell')", "dint'a ll'", testo)
+    testo = re.sub(r"\b(Dint|'Ind'|Ind|Ind'|Int'|Int|'Int')\b", "'Int'", testo)
+    testo = re.sub(r"\b(dint|'ind'|ind|ind'|int'|int|'int')\b", "'int'", testo)
+    testo = re.sub(r"\b(nel|ne lo)\b", "'int''o", testo)
+    testo = re.sub(r"\b(nella|ne la)\b", "'int''a", testo)
+    testo = re.sub(r"\b(nelle|ne le|ne li|nei)\b", "'int''e", testo)
+    testo = re.sub(r"\b(negli|nell')", "'int'a ll'", testo)
+
+    testo = re.sub(r"\bsopra\b", "'ncoppa", testo)
+    testo = re.sub(r'copp"(?=[aeiou])', "copp''", testo)
+
 
     #continuare
 
     #articoli
-    testo = re.sub(r"\b(lo|il|el|er|lu|'o|’o|u)\b", "'o", testo)
-    testo = re.sub(r"\b(Lo|Il|El|Er|Lu|'O|’O|u)\b", "'O", testo)
-    testo = re.sub(r"\b(la|’a)\b", "'a", testo)
-    testo = re.sub(r"\b(La|’A)\b", "'A", testo)
+    testo = re.sub(r"\b(lo|il|el|er|lu|'o|u)\b", "'o", testo)
+    testo = re.sub(r"\b(Lo|Il|El|Er|Lu|'O|u)\b", "'O", testo)
+    testo = re.sub(r"\b(la)\b", "'a", testo)
+    testo = re.sub(r"\b(La)\b", "'A", testo)
 
-    testo = re.sub(r"\b(uno|un|nu|'no|'nu|’no|’nu)\b", "nu", testo)
-    testo = re.sub(r"\b(Uno|Un|Nu|'No|'Nu|’No|’Nu)\b", "Nu", testo)
-    testo = re.sub(r"\b(una|na|'na|’na)\b", "na", testo)
-    testo = re.sub(r"\b(Una|Na|'Na|’Na)\b", "Na", testo)
+    testo = re.sub(r"\b(uno|un|nu|'no|'nu)\b", "nu", testo)
+    testo = re.sub(r"\b(Uno|Un|Nu|'No|'Nu)\b", "Nu", testo)
+    testo = re.sub(r"\b(una|na|'na)\b", "na", testo)
+    testo = re.sub(r"\b(Una|Na|'Na)\b", "Na", testo)
 
-    testo = re.sub(r"\b(li|le|'e|’e|’i)\b", "'e", testo)
-    testo = re.sub(r"\b(Li|Le|'E|’E|’I)\b", "'e", testo)
+    testo = re.sub(r"\b(li|le|'i)\b", "'e", testo)
+    testo = re.sub(r"\b(Li|Le|'I)\b", "'E", testo)
 
     testo = re.sub(r"nd(?!r)", "nn", testo)
     testo = re.sub(r"mb(?!r)", "mm", testo)
@@ -219,11 +246,16 @@ def refine_napoletano(testo):
 
     testo = re.sub(r"ngi(?=[aou])", "gn", testo)
     testo = re.sub(r"ng(?=[ie])", "gn", testo)
+    testo = re.sub(r"([ctvmpds])\"([aeiou]\b)", r"\1''\2", testo)
+
+    testo = re.sub(r"'{3,}", "''", testo)
+    testo = re.sub(r"('\"|\"')", "''", testo)
     # D. Convertire apostrofo standard
     testo_standardizzato = testo
     return testo_standardizzato
 
 def general_refine(testo):
+    testo = unicodedata.normalize("NFC", testo)
     emoji_pattern = re.compile(
     r"[\U0001F600-\U0001F64F"  # emoticon
     r"\U0001F300-\U0001F5FF"   # simboli e pittogrammi

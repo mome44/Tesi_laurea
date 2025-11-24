@@ -5,8 +5,9 @@ Tesi di laurea magistrale in Engineering in computer science
  - Vedere quanto corpus serve basandosi su llamantino la versione di llama che ha anche l'italiano
  - Proseguire con la raccolta dei tre corpus e dividere i testi trovati in PROSA PURA, TEATRO, SONETTI, facendo il parsing che già esiste per la prosa pura e il teatro.
  - Vedere se bisogna fare in modo che tutti e tre i corpus siano di dimensioni comparabili
- - Trovare un modo per togliere le scritte di gemini prima delle risposte quando sono presenti
  - Scrivere i progressi fino ad adesso
+ - Calcolare le percentuali e statistiche di questi testi "PURI"
+ - Vedere se si tratta di un corpus sufficiente utilizzando varie metriche per misurare Quantità e qualità
 
 ### ROMANESCO
 #### fatto
@@ -14,9 +15,8 @@ Tesi di laurea magistrale in Engineering in computer science
  - creare la funzione per fare il parsing con le poesie +  prompt
  - creare il prompt e la funzione per tradurre i malavoglia di verga in romanesco
  - parafrasare altre poesie e sonetti in romanesco
+ - Trovare un modo per togliere le scritte di gemini prima delle risposte quando sono presenti
 #### da fare
- - Calcolare le percentuali e statistiche di questi testi "PURI"
- - Vedere se si tratta di un corpus sufficiente utilizzando varie metriche per misurare Quantità e qualità
  - rivedere ortografia e standardizzazione romanesco
 
 ### SICILIANO
@@ -26,8 +26,9 @@ Tesi di laurea magistrale in Engineering in computer science
  - reddit 
  - fare il parsing dei testi di wikipedia, come rimuovere [2]
  - vedere il corpus OPUS
-#### da fare
  - rivedere estrazione reddit totu44 e salvarli in un file json normale
+#### da fare
+ - estrarre commedie e poesie in siciliano dal link del sito web
  - vedere ortografia e standardizzazione del siciliano
  - fare parafrasi così come napoletano e romano
  - aggiungere delle poesie in siciliano

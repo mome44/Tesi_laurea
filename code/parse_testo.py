@@ -87,8 +87,8 @@ def parse_wikipedia_nap(data):
                     r"Pe' ssapé quale so' tutte quant’’e stub, vaje a vedé 'a categoria stub.\n",
                     r"Elenco aggiornato alla stagione agonistica 2024/2025\n\nReal Puglianello", r'\n.*?\|', r'\d{1,3}°\d{1,2}(\'|′)\d{1,2}(\.\d{1,2})?(\"|″)[NSECW](,)? \d{1,3}°\d{1,2}(\'|′)\d{1,2}(\.\d{1,2})?(\"|″)[NSECW]',r"Mustra 'int' 'a mappa",
                     r"'O\s\d{1,2}\s'e\s[\wàèéìòù'’\s]+\sè\s'o\s\d+°\sjuorno\s'e\sll'anno\ssecunno\s'o\scalannario\sgreguriano(\s\('o\s\d+°\sint’’e\sl'anne\sbisestile\))?(\.\s*Ammancano\s\d+\sjourne\sp’’a\sfine\s'e\sll'anno(\s\('o\s\d+\s'int’’e\sl'anne\sbisestile\))?)?",
-                    r"(?:'O\s\d{1,2}\s'e\s[\wàèéìòù'’\s]+\sè\s'o\s\d+°\sjuorno\s'e\sll'anno\ssecunno\s'o\scalannario\sgreguriano(\s\('o\s\d+°\sint’’e\sll'anne\sbisestile\))?\.)?\s*Ammancano\s\d+\sjourne\sp’’a\sfine\s'e\sll'anno\s*(?:\s\(('o|o)\s\d+\s'int’’e\sll'anne\sbisestile\))?"
-                    ]
+                    r"(?:'O\s\d{1,2}\s'e\s[\wàèéìòù'’\s]+\sè\s'o\s\d+°\sjuorno\s'e\sll'anno\ssecunno\s'o\scalannario\sgreguriano(\s\('o\s\d+°\sint’’e\sll'anne\sbisestile\))?\.)?\s*Ammancano\s\d+\sjourne\sp’’a\sfine\s'e\sll'anno\s*(?:\s\(('o|o)\s\d+\s'int’’e\sll'anne\sbisestile\))?",
+                    r"· Comune d''a pruvincia 'e"]
         for p in patterns:
             testo = re.sub(p, "", testo)
         lunghezza = testo.split()
