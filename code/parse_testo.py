@@ -65,8 +65,10 @@ def parse_wikipedia_sic(data):
             r"è un cumuni talianu dâ pruvincia",
             r"è nu cumuni talianu dâ pruvincia",
             r"Pi favuri, agghiunci na lijami a sta pàggina e scancella st'abbisu.\nPâ lista cumpleta dî pàggini òrfani, vidi a pàggina dâ catigurìa.",
-            r'Elencu in òrdini (alfabbèticu|crunulòggicu) di li pirsunalità (?:ca foru )?primiati cu lu Nobel pi']
-        
+            r'Elencu in òrdini (alfabbèticu|crunulòggicu) di li pirsunalità (?:ca foru )?primiati cu lu Nobel pi',
+            r"{{Coord}}Categoria:P37 differente su WikidataCategoria:P38 (differente|uguale) su WikidataCategoria:P78 (differente|uguale) su WikidataCategoria:P85 (uguale|differente) su WikidataCategoria:P395 letta da WikidataCategoria:P474 differente su Wikidata",
+            r"{{Coord}}Categoria:P37 letta da WikidataCategoria:P38 letta da WikidataCategoria:P78 letta da WikidataCategoria:P85 letta da WikidataCategoria:P395 letta da WikidataCategoria:P474 letta da Wikidata"
+            r"uguale su WikidataCategoria:P474 uguale su Wikidata\n"]
         for p in patterns:
             testo = re.sub(p, "", testo)
         lunghezza = testo.split()

@@ -65,6 +65,19 @@ https://dumps.wikimedia.org/scnwiki/
 
 ## da fare
 
+https://www.identitasiciliana.eu/wp-content/uploads/2022/09/meli00.pdf
+
+https://www.salviamoilsiciliano.com/raccolte/poesie/
+
+https://www.trapaninostra.it/Libri_New///Poesie_Siciliane.pdf
+
+https://www.francescochianese.it/commedie-in-vernacolo-siciliano/
+
+https://www.labandadeimisci.it/index.php/pino-giambrone
+
+https://www.ateatro.info/copioni/taspettu-n-paradisu/
+
+
 
 https://www.gttempo.it/copioni.htm  U Passiu Santu, 	quelle di AMATO Umberto e di 	ALLOTTA Giovanni
 
