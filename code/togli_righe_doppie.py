@@ -1,5 +1,5 @@
-input_file = "saint_exupery_il_piccolo_principe.txt"
-output_file = "saint_exupery_il_piccolo_principe_pari.txt"
+input_file = "ferri_le_fiabe.txt"
+output_file = "ferri_le_fiabe_pari.txt"
 
 with open(input_file, "r", encoding="utf-8") as f_in, \
      open(output_file, "w", encoding="utf-8") as f_out:

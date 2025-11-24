@@ -17,6 +17,7 @@ Tesi di laurea magistrale in Engineering in computer science
 #### da fare
  - Calcolare le percentuali e statistiche di questi testi "PURI"
  - Vedere se si tratta di un corpus sufficiente utilizzando varie metriche per misurare Quantità e qualità
+ - rivedere ortografia e standardizzazione romanesco
 
 ### SICILIANO
 #### fatto
@@ -26,6 +27,8 @@ Tesi di laurea magistrale in Engineering in computer science
  - fare il parsing dei testi di wikipedia, come rimuovere [2]
  - vedere il corpus OPUS
 #### da fare
+ - rivedere estrazione reddit totu44 e salvarli in un file json normale
+ - vedere ortografia e standardizzazione del siciliano
  - fare parafrasi così come napoletano e romano
  - aggiungere delle poesie in siciliano
 
@@ -40,10 +43,11 @@ Tesi di laurea magistrale in Engineering in computer science
  - Parafrasare le poesie in prosa
  - tradurre verga e le novelle napoletane di monnier
  - estrarre le altre poesie di wikisource e parafrasarle
-#### da fare
  - dal file di testo completo, bisogna togliere tutte le righe di una parola 
  - togliere le emoji dall'opus
- - vedere se tradurre anche altri testi
+#### da fare
+ - tradurre anche altri testi, già in italiano
+ - rivedere ortografia e standardizzazione napoletano
 
 
 

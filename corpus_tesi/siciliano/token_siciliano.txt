@@ -2,7 +2,7 @@ commedia : 157826
 parafrasi : 0
 prosa : 995768
 poesia : 0
-wikipedia : 26354664
-opus : 1313786
-totale : 28822044
-totale prosa : 28664218
+wikipedia : 4788487
+opus : 1295545
+totale : 7237626
+totale prosa : 7079800

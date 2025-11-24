@@ -2,20 +2,61 @@ import re
 import json
 pattern = r"[A-Za-z]+\. [A-Za-z]+"
 
-NAME = "wiki_citazioni"
+NAME = "neapolitan_wikitext"
 
-with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
-    testo = f.read()
+#with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
+#    testo = f.read()
 
-#with open(f"{NAME}.json", "r", encoding="utf-8") as f:
-#    testo = json.load(f)
+with open(f"../corpus_tesi/napoletano/wikipedia/originale/{NAME}.json", "r", encoding="utf-8") as f:
+    testo = json.load(f)
+
+def process_opus(testo):
+    data =[]
+    emoji_pattern = re.compile(
+    r"[\U0001F600-\U0001F64F"  # emoticon
+    r"\U0001F300-\U0001F5FF"   # simboli e pittogrammi
+    r"\U0001F680-\U0001F6FF"   # trasporti e simboli vari
+    r"\U0001F700-\U0001F77F"   # simboli alchemici
+    r"\U0001F780-\U0001F7FF"   # simboli geometrici estesi
+    r"\U0001F800-\U0001F8FF"   # frecce supplementari
+    r"\U0001F900-\U0001F9FF"   # emoji supplementari
+    r"\U0001FA00-\U0001FA6F"   # simboli estesi A
+    r"\U0001FA70-\U0001FAFF"   # simboli estesi B
+    r"\U00002700-\U000027BF"   # dingbats
+    r"\U0001F1E0-\U0001F1FF"   # bandiere
+    r"]+",
+    flags=re.UNICODE
+    )
+    testo = re.sub(emoji_pattern, "", testo)
+    testo = re.sub(r"[:;%•●▪►◄■□◆◇…–—|*$£&]", " ", testo)
+    testo = re.sub(r"[^\S\r\n]+", " ", testo)
+    testo = re.sub(r"\[[\s\d]+\]", "", testo)
+    testo = re.sub(r"\{.*?\}", "", testo, flags=re.DOTALL)
+    #testo = re.sub(r"\[.*?\]", "", testo, flags=re.DOTALL)
+    testo = re.sub(r"\{|\}", "", testo, flags=re.DOTALL)
+    testo = re.sub(r"\[|\]", "", testo, flags=re.DOTALL)
+    testo = re.sub(r" +", " ", testo)
+    testo = re.sub(r"\n{3,}", "\n\n", testo)
+
+    
+    lines = testo.split("\n")
+    for line in lines:
+        lunghezza = len(line.strip().split())
+        if lunghezza >= 4:
+            data.append({
+                "text": line.strip()
+            })
+        else:
+            print(line)
+    return data
 
 def parse_wikipedia_sic(data):
     data_2 =[]
+    visti = set()
     for item in data:
         testo = item["text"]
         #rimuove le citazioni di wikipedia
-        testo = re.sub(r"\[.*?\]|", "", testo, flags=re.DOTALL)
+        testo = re.sub(r"\[.*?\]", "", testo, flags=re.DOTALL)
         #rimuove le frasi che sono presenti moltissime volte
         patterns = [r"^Lu\s+\d+\s*\([IVXLCDM]+\s+a nùmmaru rumanu\)\s+è n'annu\b", r"^L'\d+\s*\([IVXLCDM]+\s+a nùmmaru rumanu\)\s+è n'annu", 
             r"Pì arrìpurtari cchìu immediatamenti i diffìrenzi tra li diversi ordini di grannizza, chista paggina cunteni",
@@ -23,15 +64,17 @@ def parse_wikipedia_sic(data):
             r"^\.[a-z]{2}\s+è lu duminiu di Internet assignatu",
             r"è un cumuni talianu dâ pruvincia",
             r"è nu cumuni talianu dâ pruvincia",
-            r"Pi favuri, agghiunci na lijami a sta pàggina e scancella st'abbisu.\nPâ lista cumpleta dî pàggini òrfani, vidi a pàggina dâ catigurìa."]
+            r"Pi favuri, agghiunci na lijami a sta pàggina e scancella st'abbisu.\nPâ lista cumpleta dî pàggini òrfani, vidi a pàggina dâ catigurìa.",
+            r'Elencu in òrdini (alfabbèticu|crunulòggicu) di li pirsunalità (?:ca foru )?primiati cu lu Nobel pi']
         
         for p in patterns:
             testo = re.sub(p, "", testo)
-        lunghezza = testo.split(" ")
-        if len(lunghezza) > 5:
+        lunghezza = testo.split()
+        if len(lunghezza) > 5 and testo not in visti:
             data_2.append({
                 "text": testo
             })
+            visti.add(testo)
     return data_2
 
 def parse_wikipedia_nap(data):
@@ -39,13 +82,16 @@ def parse_wikipedia_nap(data):
     for item in data:
         testo = item["text"]
         #rimuove le citazioni di wikipedia
-        testo = re.sub(r"\[.*?\]|", "", testo, flags=re.DOTALL)
-        patterns = [r"Chist'articulo è sulo na bozza (stub). Si ce puó ddà na mano, p’’o fà addeventà nu poco meglio, spriemme ccà. Pe' ssapé comm’’e 'a fà, guarda ncopp’’e ccunvenziune 'e Wikipedia.\n",
-                    r"Pe' ssapé quale so' tutte quant’’e stub, vaje a vedé 'a categoria stub.\n"]
-        
+        testo = re.sub(r"\[.*?\]", "", testo, flags=re.DOTALL)
+        patterns = [r"Chist'articulo è sulo na bozza \(stub\). Si ce puó ddà na mano, p’’o fà addeventà nu poco meglio, spriemme ccà. Pe' ssapé comm’’e 'a fà, guarda ncopp’’e ccunvenziune 'e Wikipedia.\n",
+                    r"Pe' ssapé quale so' tutte quant’’e stub, vaje a vedé 'a categoria stub.\n",
+                    r"Elenco aggiornato alla stagione agonistica 2024/2025\n\nReal Puglianello", r'\n.*?\|', r'\d{1,3}°\d{1,2}(\'|′)\d{1,2}(\.\d{1,2})?(\"|″)[NSECW](,)? \d{1,3}°\d{1,2}(\'|′)\d{1,2}(\.\d{1,2})?(\"|″)[NSECW]',r"Mustra 'int' 'a mappa",
+                    r"'O\s\d{1,2}\s'e\s[\wàèéìòù'’\s]+\sè\s'o\s\d+°\sjuorno\s'e\sll'anno\ssecunno\s'o\scalannario\sgreguriano(\s\('o\s\d+°\sint’’e\sl'anne\sbisestile\))?(\.\s*Ammancano\s\d+\sjourne\sp’’a\sfine\s'e\sll'anno(\s\('o\s\d+\s'int’’e\sl'anne\sbisestile\))?)?",
+                    r"(?:'O\s\d{1,2}\s'e\s[\wàèéìòù'’\s]+\sè\s'o\s\d+°\sjuorno\s'e\sll'anno\ssecunno\s'o\scalannario\sgreguriano(\s\('o\s\d+°\sint’’e\sll'anne\sbisestile\))?\.)?\s*Ammancano\s\d+\sjourne\sp’’a\sfine\s'e\sll'anno\s*(?:\s\(('o|o)\s\d+\s'int’’e\sll'anne\sbisestile\))?"
+                    ]
         for p in patterns:
             testo = re.sub(p, "", testo)
-        lunghezza = testo.split(" ")
+        lunghezza = testo.split()
         if len(lunghezza) > 5:
             data_2.append({
                 "text": testo
@@ -648,9 +694,9 @@ def process_poesie_tre(testo):
             })
     return data
 
-data =process_testo_dialettando(testo)
+data =parse_wikipedia_nap(testo)
 
-with open(f"../corpus_tesi/napoletano/prosa/{NAME}_processed.json", "w", encoding="utf-8") as out:
+with open(f"../corpus_tesi/napoletano/wikipedia/{NAME}_processed.json", "w", encoding="utf-8") as out:
     json.dump(data, out, ensure_ascii=False, indent=2)
     
     

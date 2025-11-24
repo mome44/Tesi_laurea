@@ -22,11 +22,11 @@ API_KEY_LIST = [
 MODEL_NAME = "gemini-2.5-flash"
 
 DIALECT = "napoletano"
-TIPO = "poesia"
+TIPO = "verga"
 PATH = f"corpus_tesi/{DIALECT}/{TIPO}"
 OUTPUT_PATH = f"corpus_tesi/{DIALECT}/parafrasi"
 LAST_FILE = 0
-api_idx = 0
+api_idx = 5
 
 with open(f"prompt/prompt_{DIALECT}_{TIPO}.txt", "r", encoding = "utf-8") as p:
     prompt = p.read()
