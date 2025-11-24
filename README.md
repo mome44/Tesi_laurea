@@ -7,6 +7,7 @@ Tesi di laurea magistrale in Engineering in computer science
  - Vedere se bisogna fare in modo che tutti e tre i corpus siano di dimensioni comparabili
  - Trovare un modo per togliere le scritte di gemini prima delle risposte quando sono presenti
  - Scrivere i progressi fino ad adesso
+
 ### ROMANESCO
 #### fatto
  - (fatto) rivedere il parsing dei seguenti testi: GORINI lucia rosa ieri oggi .. romani; Hollywood tutta n'antra cosa; La macchinazione 
@@ -38,9 +39,12 @@ Tesi di laurea magistrale in Engineering in computer science
  - Vedere corpus OPUS come il siciliano
  - Parafrasare le poesie in prosa
  - tradurre verga e le novelle napoletane di monnier
-#### da fare
  - estrarre le altre poesie di wikisource e parafrasarle
+#### da fare
+ - dal file di testo completo, bisogna togliere tutte le righe di una parola 
  - togliere le emoji dall'opus
+ - vedere se tradurre anche altri testi
+
 
 
 
