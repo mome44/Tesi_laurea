@@ -2,12 +2,12 @@ import re
 import json
 pattern = r"[A-Za-z]+\. [A-Za-z]+"
 
-NAME = "neapolitan_wikitext"
+NAME = "sicilian_wikitext"
 
 #with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
 #    testo = f.read()
 
-with open(f"../corpus_tesi/napoletano/wikipedia/originale/{NAME}.json", "r", encoding="utf-8") as f:
+with open(f"../corpus_tesi/siciliano/wikipedia/originale/{NAME}.json", "r", encoding="utf-8") as f:
     testo = json.load(f)
 
 def process_opus(testo):
@@ -696,9 +696,9 @@ def process_poesie_tre(testo):
             })
     return data
 
-data =parse_wikipedia_nap(testo)
+data =parse_wikipedia_sic(testo)
 
-with open(f"../corpus_tesi/napoletano/wikipedia/{NAME}_processed.json", "w", encoding="utf-8") as out:
+with open(f"../corpus_tesi/siciliano/wikipedia/{NAME}_processed.json", "w", encoding="utf-8") as out:
     json.dump(data, out, ensure_ascii=False, indent=2)
     
     
