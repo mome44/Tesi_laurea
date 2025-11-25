@@ -8,6 +8,7 @@ Tesi di laurea magistrale in Engineering in computer science
  - Scrivere i progressi fino ad adesso
  - Calcolare le percentuali e statistiche di questi testi "PURI"
  - Vedere se si tratta di un corpus sufficiente utilizzando varie metriche per misurare Quantità e qualità
+ - VEDERE SE MANCANO PARTI DELLE TRADUZIONI/PARAFRASI IN ROMANESCO E NAPOLETANO (SONO PARTITE DA UN CERTO NUMERO) 
 
 ### ROMANESCO
 #### fatto
