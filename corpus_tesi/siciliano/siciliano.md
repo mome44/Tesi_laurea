@@ -58,13 +58,6 @@ https://wikisource.org/wiki/San_Giuvanni_Decullatu
 
 https://wikisource.org/wiki/Sua_Eccellenza
 
-## estratto
-Wikipedia dump pagine
-https://dumps.wikimedia.org/scnwiki/
-
-
-## da fare
-
 https://www.identitasiciliana.eu/wp-content/uploads/2022/09/meli00.pdf
 
 https://www.salviamoilsiciliano.com/raccolte/poesie/
@@ -77,7 +70,11 @@ https://www.labandadeimisci.it/index.php/pino-giambrone
 
 https://www.ateatro.info/copioni/taspettu-n-paradisu/
 
+Wikipedia dump pagine
+https://dumps.wikimedia.org/scnwiki/
+## estratto
 
+## da fare
 
 https://www.gttempo.it/copioni.htm  U Passiu Santu, 	quelle di AMATO Umberto e di 	ALLOTTA Giovanni
 

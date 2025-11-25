@@ -2,7 +2,7 @@ import re
 import json
 pattern = r"[A-Za-z]+\. [A-Za-z]+"
 
-NAME = "bovio_libero_so_diece_anne"
+NAME = "VILLA DEGLI OLMI"
 
 with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
     testo = f.read()
@@ -104,7 +104,7 @@ def parse_commedia_romana_multiline(testo):
 
     # regex che riconosce una linea-inizio battuta:
     # es. "NANDO:" oppure "NANDO - testo" o "VECCHIO:    Testo iniziale"
-    header_re = re.compile(r'^\s*(?P<attore>[A-ZÀ-ÖØ-Þ][A-ZÀ-ÖØ-Þ0-9\'\.\(\) \-]+?)\s*[.\-]\s*(?P<rest>.*)$')
+    header_re = re.compile(r'^\s*(?P<attore>[A-ZÀ-ÖØ-Þ][A-ZÀ-ÖØ-Þ0-9\'\.\(\) \-]+?)\s*[:\-]\s*(?P<rest>.*)$')
 
     for raw_line in testo.splitlines():
         line = raw_line.rstrip()
@@ -305,21 +305,22 @@ def parse_commedia_semplice_4(testo):
     elenco_batt = testo.split("\n\n")
 
     for batt in elenco_batt:
-        parti = batt.split("\n",1)
-        personaggio = parti[0]
-        battuta = parti[1]
-        #battuta = re.sub(r"\[.*?\]|\(.*?\)", "", battuta, flags=re.DOTALL)
+        if ":" in batt:
+            parti = batt.split(":",1)
+            personaggio = parti[0]
+            battuta = parti[1]
+            battuta = re.sub(r"\[.*?\]|\(.*?\)", "", battuta, flags=re.DOTALL)
 
-        if len(battuta.strip()) > 2:
-            data.append({
-                "text": battuta.strip(),
-                "character": personaggio.strip(),
-            })
+            if len(battuta.strip()) > 2:
+                data.append({
+                    "text": battuta.strip(),
+                    "character": personaggio.strip(),
+                })
     return data
 
 data = parse_commedia_romana_multiline(testo)
 #data = parse_commedia_simple(testo)
-with open(f"../corpus_tesi/napoletano/commedia/{NAME}_processed.json", "w", encoding="utf-8") as out:
+with open(f"../corpus_tesi/siciliano/commedia/{NAME}_processed.json", "w", encoding="utf-8") as out:
     json.dump(data, out, ensure_ascii=False, indent=2)
     
     

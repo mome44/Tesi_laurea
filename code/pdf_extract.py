@@ -1,6 +1,6 @@
 from pdfminer.high_level import extract_text
 
-NAME ="ferri_le_fiabe"
+NAME ="Poesie_Siciliane"
 
 pdf_path = f"{NAME}.pdf"
 text = extract_text(pdf_path)
