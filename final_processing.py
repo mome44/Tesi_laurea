@@ -3,7 +3,7 @@ import pandas as pd
 import os
 import re
 import unicodedata
-DIALECT = "siciliano"
+DIALECT = "napoletano"
 
 List_TIPO = ["wikipedia","prosa", "parafrasi", "opus"]
 
@@ -82,7 +82,7 @@ def refine_siciliano(testo):
     testo = re.sub(r"\b([A-Za-z]{3,})are\b", r"\1ari", testo)
     testo = re.sub(r"\b([A-Za-z]{3,})ere\b", r"\1iri", testo)
     testo = re.sub(r"\b([A-Za-z]{3,})ire\b", r"\1iri", testo)
-    print(testo)
+    
     testo_standardizzato = testo
     return testo_standardizzato
 
@@ -292,11 +292,15 @@ def refine(Dialetto, testo):
 
 def process_fulltext(full_text):
     lines = full_text.split("\n")
+
+    singe_lines = set()
+
     full_text_processed =""
     for line in lines:
         lunghezza = len(line.strip().split())
-        if lunghezza >= 3:
+        if lunghezza >= 3 and line not in singe_lines:
             full_text_processed += "\n" + line
+            singe_lines.add(line)
     return full_text_processed
 
 frasesos = ""

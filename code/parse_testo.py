@@ -2,13 +2,13 @@ import re
 import json
 pattern = r"[A-Za-z]+\. [A-Za-z]+"
 
-NAME = "poesie_salviamo_siciliano"
+NAME = "neapolitan_wikitext"
 
-with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
-    testo = f.read()
+#with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
+#    testo = f.read()
 
-#with open(f"../corpus_tesi/napoletano/wikipedia/originale/{NAME}.json", "r", encoding="utf-8") as f:
-#    testo = json.load(f)
+with open(f"../corpus_tesi/napoletano/wikipedia/originale/{NAME}.json", "r", encoding="utf-8") as f:
+    testo = json.load(f)
 
 def process_opus(testo):
     data =[]
@@ -56,7 +56,7 @@ def parse_wikipedia_sic(data):
     for item in data:
         testo = item["text"]
         #rimuove le citazioni di wikipedia
-        testo = re.sub(r"\[.*?\]", "", testo, flags=re.DOTALL)
+        testo = re.sub(r"\[.*?\]!|·.*?·|•.*?•", "", testo, flags=re.DOTALL)
         #rimuove le frasi che sono presenti moltissime volte
         patterns = [r"^Lu\s+\d+\s*\([IVXLCDM]+\s+a nùmmaru rumanu\)\s+è n'annu\b", r"^L'\d+\s*\([IVXLCDM]+\s+a nùmmaru rumanu\)\s+è n'annu", 
             r"Pì arrìpurtari cchìu immediatamenti i diffìrenzi tra li diversi ordini di grannizza, chista paggina cunteni",
@@ -68,7 +68,11 @@ def parse_wikipedia_sic(data):
             r'Elencu in òrdini (alfabbèticu|crunulòggicu) di li pirsunalità (?:ca foru )?primiati cu lu Nobel pi',
             r"{{Coord}}Categoria:P37 differente su WikidataCategoria:P38 (differente|uguale) su WikidataCategoria:P78 (differente|uguale) su WikidataCategoria:P85 (uguale|differente) su WikidataCategoria:P395 letta da WikidataCategoria:P474 differente su Wikidata",
             r"{{Coord}}Categoria:P37 letta da WikidataCategoria:P38 letta da WikidataCategoria:P78 letta da WikidataCategoria:P85 letta da WikidataCategoria:P395 letta da WikidataCategoria:P474 letta da Wikidata"
-            r"uguale su WikidataCategoria:P474 uguale su Wikidata\n"]
+            r"uguale su WikidataCategoria:P474 uguale su Wikidata\n",
+            r"((un|nu) elencu di distanzi maggiuri di 10[-−]\d+[^:]*:|" \
+            r"Distanzi 'nfiriuri a 10[-−]\d+[^ \n]*|" \
+            r"Distanzi supiriuri a 10[-−]\d+[^ \n]*)",
+            ]
         for p in patterns:
             testo = re.sub(p, "", testo)
         lunghezza = testo.split()
@@ -81,6 +85,7 @@ def parse_wikipedia_sic(data):
 
 def parse_wikipedia_nap(data):
     data_2 =[]
+    visti = set()
     for item in data:
         testo = item["text"]
         #rimuove le citazioni di wikipedia
@@ -94,10 +99,11 @@ def parse_wikipedia_nap(data):
         for p in patterns:
             testo = re.sub(p, "", testo)
         lunghezza = testo.split()
-        if len(lunghezza) > 5:
+        if len(lunghezza) > 5 and testo not in visti:
             data_2.append({
                 "text": testo
             })
+            visti.add(testo)
     return data_2
 
 def remove_numbered_notes(testo, max_blank_after_note=2):
@@ -696,9 +702,9 @@ def process_poesie_tre(testo):
             })
     return data
 
-data =process_testo_semplice(testo)
+data =parse_wikipedia_nap(testo)
 
-with open(f"../corpus_tesi/siciliano/poesia/{NAME}_processed.json", "w", encoding="utf-8") as out:
+with open(f"../corpus_tesi/napoletano/wikipedia/{NAME}_processed.json", "w", encoding="utf-8") as out:
     json.dump(data, out, ensure_ascii=False, indent=2)
     
     
