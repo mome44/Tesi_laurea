@@ -2,12 +2,12 @@ import re
 import json
 pattern = r"[A-Za-z]+\. [A-Za-z]+"
 
-NAME = "neapolitan_wikitext"
+NAME = "sicilian_wikitext"
 
 #with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
 #    testo = f.read()
 
-with open(f"../corpus_tesi/napoletano/wikipedia/originale/{NAME}.json", "r", encoding="utf-8") as f:
+with open(f"../corpus_tesi/siciliano/wikipedia/originale/{NAME}.json", "r", encoding="utf-8") as f:
     testo = json.load(f)
 
 def process_opus(testo):
@@ -62,8 +62,8 @@ def parse_wikipedia_sic(data):
             r"Pì arrìpurtari cchìu immediatamenti i diffìrenzi tra li diversi ordini di grannizza, chista paggina cunteni",
             r"Pì arrìpurtari cchìu immediatamenti i diffìrenzi tra li diversi ordini di grannizza, chista pàggina cunteni",
             r"^\.[a-z]{2}\s+è lu duminiu di Internet assignatu",
-            r"è un cumuni talianu dâ pruvincia",
-            r"è nu cumuni talianu dâ pruvincia",
+            r"è un cumuni talianu dâ pruvincia di",
+            r"è nu cumuni talianu dâ pruvincia di",
             r"Pi favuri, agghiunci na lijami a sta pàggina e scancella st'abbisu.\nPâ lista cumpleta dî pàggini òrfani, vidi a pàggina dâ catigurìa.",
             r'Elencu in òrdini (alfabbèticu|crunulòggicu) di li pirsunalità (?:ca foru )?primiati cu lu Nobel pi',
             r"{{Coord}}Categoria:P37 differente su WikidataCategoria:P38 (differente|uguale) su WikidataCategoria:P78 (differente|uguale) su WikidataCategoria:P85 (uguale|differente) su WikidataCategoria:P395 letta da WikidataCategoria:P474 differente su Wikidata",
@@ -72,9 +72,15 @@ def parse_wikipedia_sic(data):
             r"((un|nu) elencu di distanzi maggiuri di 10[-−]\d+[^:]*:|" \
             r"Distanzi 'nfiriuri a 10[-−]\d+[^ \n]*|" \
             r"Distanzi supiriuri a 10[-−]\d+[^ \n]*)",
+            r"^(.*?) è nu cumuni dâ pruvincia di (.*?)."
+            r"Havi na pupulazzioni di\s*([\d' ]+)\s*abbitanti.",
+            r"^(Distanzi|Accilirazzioni)\s+[^\n]*?(nfiriuri|infiriuri|supiriuri|supìriuri|superiuri|supiriori)\s+a\s+[0-9' ]+(?:m(?:/s²?|/s)?)?\s*$"
             ]
         for p in patterns:
-            testo = re.sub(p, "", testo)
+            testo = re.sub(p, "", testo, flags=re.MULTILINE)
+        if " ete " in testo or " quidd" in testo:
+            #we don't want the texts in salentino
+            continue
         lunghezza = testo.split()
         if len(lunghezza) > 5 and testo not in visti:
             data_2.append({
@@ -95,9 +101,12 @@ def parse_wikipedia_nap(data):
                     r"Elenco aggiornato alla stagione agonistica 2024/2025\n\nReal Puglianello", r'\n.*?\|', r'\d{1,3}°\d{1,2}(\'|′)\d{1,2}(\.\d{1,2})?(\"|″)[NSECW](,)? \d{1,3}°\d{1,2}(\'|′)\d{1,2}(\.\d{1,2})?(\"|″)[NSECW]',r"Mustra 'int' 'a mappa",
                     r"'O\s\d{1,2}\s'e\s[\wàèéìòù'’\s]+\sè\s'o\s\d+°\sjuorno\s'e\sll'anno\ssecunno\s'o\scalannario\sgreguriano(\s\('o\s\d+°\sint’’e\sl'anne\sbisestile\))?(\.\s*Ammancano\s\d+\sjourne\sp’’a\sfine\s'e\sll'anno(\s\('o\s\d+\s'int’’e\sl'anne\sbisestile\))?)?",
                     r"(?:'O\s\d{1,2}\s'e\s[\wàèéìòù'’\s]+\sè\s'o\s\d+°\sjuorno\s'e\sll'anno\ssecunno\s'o\scalannario\sgreguriano(\s\('o\s\d+°\sint’’e\sll'anne\sbisestile\))?\.)?\s*Ammancano\s\d+\sjourne\sp’’a\sfine\s'e\sll'anno\s*(?:\s\(('o|o)\s\d+\s'int’’e\sll'anne\sbisestile\))?",
-                    r"· Comune d''a pruvincia 'e"]
+                    r"· Comune d''a pruvincia 'e", 
+                    r"^[A-ZÀ-Üa-zà-ü'’ \-]+ è nu comune\b.*?pruvincia\b.*\n?",
+                    ]
         for p in patterns:
-            testo = re.sub(p, "", testo)
+            testo = re.sub(p, "", testo, flags=re.MULTILINE)
+
         lunghezza = testo.split()
         if len(lunghezza) > 5 and testo not in visti:
             data_2.append({
@@ -702,9 +711,9 @@ def process_poesie_tre(testo):
             })
     return data
 
-data =parse_wikipedia_nap(testo)
+data =parse_wikipedia_sic(testo)
 
-with open(f"../corpus_tesi/napoletano/wikipedia/{NAME}_processed.json", "w", encoding="utf-8") as out:
+with open(f"../corpus_tesi/siciliano/wikipedia/{NAME}_processed.json", "w", encoding="utf-8") as out:
     json.dump(data, out, ensure_ascii=False, indent=2)
     
     

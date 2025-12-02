@@ -3,7 +3,7 @@ import pandas as pd
 import os
 import re
 import unicodedata
-DIALECT = "napoletano"
+DIALECT = "siciliano"
 
 List_TIPO = ["wikipedia","prosa", "parafrasi", "opus"]
 
@@ -336,8 +336,8 @@ for tipe in List_TIPO:
             if any(s in prima_frase for s in segnali) and "trilussa" in filename:
                 #suspect_sentences.append(prima_frase)
                 testo = testo.replace(prima_frase, "")
-            #testo_nuovo = testo
-            testo_nuovo = refine(Dialetto = DIALECT, testo=testo)
+            testo_nuovo = testo
+            #testo_nuovo = refine(Dialetto = DIALECT, testo=testo)
             full_text += "\n" + testo_nuovo
             if testo_nuovo == "":
                 print("errore dialetto non trovato o altro")
