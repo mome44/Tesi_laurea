@@ -78,9 +78,9 @@ def gemini_api_call(prompt, model_name, API_KEY):
             if response.usage_metadata:
                 usage = response.usage_metadata
                 print("USO DEI TOKEN PER QUESTA CHIAMATA:")
-                print(f"  Token di Input (Prompt): {usage.prompt_token_count}")
-                print(f"  Token di Output (Risposta): {usage.candidates_token_count}")
-                print(f"  Token Totali Consumati: {usage.total_token_count}")
+                print(f"  Token di input (prompt): {usage.prompt_token_count}")
+                print(f"  Token di output (risposta): {usage.candidates_token_count}")
+                print(f"  Token totali consumati: {usage.total_token_count}")
             else:
                 print("ATTENZIONE: Metadati d'uso dei token non disponibili nella risposta.")
 

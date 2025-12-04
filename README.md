@@ -17,8 +17,9 @@ Tesi di laurea magistrale in Engineering in computer science
  - creare il prompt e la funzione per tradurre i malavoglia di verga in romanesco
  - parafrasare altre poesie e sonetti in romanesco
  - Trovare un modo per togliere le scritte di gemini prima delle risposte quando sono presenti
-#### da fare
  - rivedere ortografia e standardizzazione romanesco
+#### da fare
+
 
 ### SICILIANO
 #### fatto
@@ -28,8 +29,9 @@ Tesi di laurea magistrale in Engineering in computer science
  - fare il parsing dei testi di wikipedia, come rimuovere [2]
  - vedere il corpus OPUS
  - rivedere estrazione reddit totu44 e salvarli in un file json normale
-#### da fare
  - estrarre commedie e poesie in siciliano dal link del sito web
+#### da fare
+
  - vedere ortografia e standardizzazione del siciliano
  - fare parafrasi così come napoletano e romano
  - aggiungere delle poesie in siciliano
@@ -47,9 +49,11 @@ Tesi di laurea magistrale in Engineering in computer science
  - estrarre le altre poesie di wikisource e parafrasarle
  - dal file di testo completo, bisogna togliere tutte le righe di una parola 
  - togliere le emoji dall'opus
-#### da fare
  - tradurre anche altri testi, già in italiano
  - rivedere ortografia e standardizzazione napoletano
+#### da fare
+
+
 
 
 
