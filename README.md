@@ -1,6 +1,23 @@
 # Tesi_laurea
 Tesi di laurea magistrale in Engineering in computer science
 
+Strumenti utili:
+- Zotero (e estensione per il browser) per salvare paper
+- asta.allen.ai: chatGPT ma specifico per fare ricerche sulla letteratura di un argomento in modo veloce, ti genera dei summary con references, comodo ma ovviamente va rivisto 
+- connectedpapers.com sito web che ti trova paper collegati ad uno di partenza, hai 3 chiamate al giorno ma sono sufficienti di solito, molto comodo
+
+Literature Review
+- LoRA: come funziona tecnicamente il training (requisiti di token, parametri, etc)
+   - TADA ?
+- Language/Dialect adaptation (in generale e con LoRA), cerca anche come lo fanno per i low-resource languages (basco, finlandese, latino, catalano ...) 
+- Language Model automatic evaluation (soprattutto base models) oltre a perplexity -- vedi Minerva, OLMo (1 e 2 e 3) 
+- Esiste qualcosa in Italiano del genere? Forse sì ma vecchia, senza Minerva probabilmente (probabilmente solo per comparazione)
+
+Prossima volta:
+- categorizzazione dei dati un po' più fine-grained (per la narrativa cerca anche i riassunti)
+- LitReview su quello (quello che riesci) slides 
+
+
 ## CORPUS
  - Vedere quanto corpus serve basandosi su llamantino la versione di llama che ha anche l'italiano
  - Proseguire con la raccolta dei tre corpus e dividere i testi trovati in PROSA PURA, TEATRO, SONETTI, facendo il parsing che già esiste per la prosa pura e il teatro.
