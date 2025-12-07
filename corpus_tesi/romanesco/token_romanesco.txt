@@ -1,6 +1,24 @@
-commedia : 216752
-parafrasi : 1918055
-prosa : 194077
-poesia : 1027228
-totale : 3356112
-totale prosa : 2112132
+battute : 5366
+citazioni : 4041
+narrativa_favole : 141725
+narrativa_storie : 3633
+notizie : 40462
+parafrasi_commedia : 568978
+parafrasi_poesia : 891264
+parafrasi_prosa : 1035691
+poesia_sonetti : 1027228
+commedia : 218280
+
+
+totale prosa pura : 195227
+
+totale prosa: 2691160
+
+totale poesia: 1027228
+
+totale parafrasi: 2495933
+
+-----------------------------
+
+totale : 3936668
+

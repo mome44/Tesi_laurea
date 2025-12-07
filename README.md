@@ -1,10 +1,36 @@
 # Tesi_laurea
 Tesi di laurea magistrale in Engineering in computer science
-
 Strumenti utili:
 - Zotero (e estensione per il browser) per salvare paper
 - asta.allen.ai: chatGPT ma specifico per fare ricerche sulla letteratura di un argomento in modo veloce, ti genera dei summary con references, comodo ma ovviamente va rivisto 
 - connectedpapers.com sito web che ti trova paper collegati ad uno di partenza, hai 3 chiamate al giorno ma sono sufficienti di solito, molto comodo
+
+## Categorie corpus
+ - Commedia: Contiene commedie dal tono popolare
+ - Poesia_sonetti: Poesie popolari
+ - Poesia_formale: Poesie liriche più formali (es. divina commedia)
+ - Narrativa_favole: Contiene storie popolari/leggende, favole (comunque racconti inventati)
+ - Narrativa_storie: Contiene racconti non fiction, come esperienze personali o storie di fatti accaduti realmente.
+ - Incipit_opere: Prologo/introduzione di opere importanti
+ - Descrittiva: Contiene descrizioni di vari campi come cucina, o imparare la lingua stessa, definizioni di parole
+ - Notizie: descrizione di fatti che accadono/accaduti in stile giornalistico
+ - Battute: battute umoristiche
+ - Biografie: storie della vita di persone
+ - Citazioni
+ - Wikipedia
+ - Opus
+ - Parafrasi_commedia: commedie parafrasate in prosa
+ - Parafrasi_poesia: poesie parafrasate in prosa
+ - Traduzioni_testi: testi tradotti in dialetto
+
+
+## COSE DA FARE
+- categorizzazione dei dati un po' più fine-grained (per la narrativa cerca anche i riassunti)
+
+### fatto
+
+### da fare
+
 
 Literature Review
 - LoRA: come funziona tecnicamente il training (requisiti di token, parametri, etc)
@@ -14,7 +40,6 @@ Literature Review
 - Esiste qualcosa in Italiano del genere? Forse sì ma vecchia, senza Minerva probabilmente (probabilmente solo per comparazione)
 
 Prossima volta:
-- categorizzazione dei dati un po' più fine-grained (per la narrativa cerca anche i riassunti)
 - LitReview su quello (quello che riesci) slides 
 
 

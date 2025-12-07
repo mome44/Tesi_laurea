@@ -1,8 +1,22 @@
+descrittiva : 2502
+narrativa_favole : 871840
+narrativa_storie : 24887
+notizie : 59123
+poesia_sonetti : 8141
 commedia : 322036
-parafrasi : 0
-prosa : 1216221
-poesia : 8141
 wikipedia : 4285253
 opus : 1295545
-totale : 7127196
-totale prosa : 6797019
+
+
+totale prosa pura : 958352
+
+totale prosa: 958352
+
+totale poesia: 8141
+
+totale parafrasi: 0
+
+-----------------------------
+
+totale : 6869327
+

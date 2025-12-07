@@ -5,21 +5,25 @@ from transformers import AutoTokenizer
 LISTA_LINGUE = ["romanesco", "napoletano", "siciliano"]
 #tokenizer
 tokenizer = AutoTokenizer.from_pretrained("sapienzanlp/Minerva-7B-base-v1.0", use_fast=True)
-sottocartelle = ["commedia", "parafrasi", "prosa", "poesia", "wikipedia", "opus"]
-
+sottocartelle = ["battute", "biografia","citazioni", "descrittiva", "incipit_opere", "narrativa_favole", "narrativa_storie", "notizie", "parafrasi_commedia", "parafrasi_poesia", "parafrasi_prosa", "poesia_formale", "poesia_sonetti","commedia", "wikipedia", "opus"]
+ 
 for lingua in LISTA_LINGUE:
     LINGUA = lingua
     cartella = f"corpus_tesi/{LINGUA}"
     result = {}
     totale = 0
+    totale_prosa_pura = 0
     totale_prosa = 0
+    totale_parafrasi = 0
+    totale_poesia = 0
+
     for cart in sottocartelle:
-        if cart == "opus" and LINGUA == "romanesco":
-            continue
-        if cart == "wikipedia" and LINGUA == "romanesco":
-            continue
         total_text_num = []
         cartelladet = cartella + "/" + cart
+
+        if not os.path.isdir(cartelladet):
+            continue
+
         for filename in os.listdir(cartelladet):
             if filename.endswith(".json"):
                 percorso_file = os.path.join(cartelladet, filename)
@@ -43,19 +47,38 @@ for lingua in LISTA_LINGUE:
 
         totale+=num_tokens
 
-        if cart ==  "parafrasi" or cart == "prosa" or cart == "wikipedia" or cart == "opus":
-            totale_prosa+=num_tokens
-    #tokens = tokenizer.encode(testo_completo)
+        if cart in ["battute", "biografia", "citazioni", "descrittiva", "narrativa_favole", "narrativa_storie", "notizie"]:
+            totale_prosa_pura+=num_tokens
+        
+        if cart in ["battute", "biografia", "citazioni", "descrittiva", "narrativa_favole", "narrativa_storie", "notizie", "parafrasi_commedia", "parafrasi_poesia", "parafrasi_prosa"]:
+            totale_prosa +=  num_tokens
+        
+        if cart in ["poesia_sonetti", "poesia_formale"]:
+            totale_poesia += num_tokens
 
+        if cart in ["parafrasi_commedia", "parafrasi_poesia", "parafrasi_prosa"]:
+            totale_parafrasi += num_tokens
 
 
     with open (f"{cartella}/token_{LINGUA}.txt", "w", encoding="utf-8") as f:
         for categoria, count in result.items():
             f.write(f"{categoria} : {count}\n")
+        
+        f.write("\n\n")
 
-        f.write(f"totale : {totale}\n")
+        f.write(f"totale prosa pura : {totale_prosa_pura}\n\n")
+        
+        f.write(f"totale prosa: {totale_prosa}\n\n")
 
-        f.write(f"totale prosa : {totale_prosa}\n")
+        f.write(f"totale poesia: {totale_poesia}\n\n")
+
+        f.write(f"totale parafrasi: {totale_parafrasi}\n\n")
+        
+        f.write("-----------------------------\n\n")
+
+        f.write(f"totale : {totale}\n\n")
+
+        
 
 
 

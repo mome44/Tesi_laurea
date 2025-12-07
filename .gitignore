@@ -1,13 +1,22 @@
 corpus_tesi/napoletano/commedia
 corpus_tesi/napoletano/opus
-corpus_tesi/napoletano/parafrasi
-corpus_tesi/napoletano/poesia
-corpus_tesi/napoletano/prosa
+corpus_tesi/napoletano/parafrasi_poesia
+corpus_tesi/napoletano/parafrasi_commedia
+corpus_tesi/napoletano/parafrasi_prosa
+corpus_tesi/napoletano/poesia_sonetti
+corpus_tesi/napoletano/poesia_formale
+corpus_tesi/napoletano/biografia
+corpus_tesi/napoletano/citazioni
+corpus_tesi/napoletano/descrittiva
+corpus_tesi/napoletano/incipit_opere
+corpus_tesi/napoletano/narrativa_favole
+corpus_tesi/napoletano/narrativa_storie
+corpus_tesi/napoletano/notizie
 corpus_tesi/napoletano/verga
 corpus_tesi/napoletano/wikipedia
 corpus_tesi/napoletano/testi_originali
 
-
+corpus_tesi/romanesco/battute
 corpus_tesi/romanesco/commedia
 corpus_tesi/romanesco/opus
 corpus_tesi/romanesco/parafrasi
@@ -15,6 +24,19 @@ corpus_tesi/romanesco/poesia
 corpus_tesi/romanesco/prosa
 corpus_tesi/romanesco/verga
 corpus_tesi/romanesco/testi_originali
+corpus_tesi/romanesco/parafrasi_poesia
+corpus_tesi/romanesco/parafrasi_commedia
+corpus_tesi/romanesco/parafrasi_prosa
+corpus_tesi/romanesco/poesia_sonetti
+corpus_tesi/romanesco/poesia_formale
+corpus_tesi/romanesco/biografia
+corpus_tesi/romanesco/citazioni
+corpus_tesi/romanesco/descrittiva
+corpus_tesi/romanesco/incipit_opere
+corpus_tesi/romanesco/narrativa_favole
+corpus_tesi/romanesco/narrativa_storie
+corpus_tesi/romanesco/notizie
+
 
 corpus_tesi/siciliano/commedia
 corpus_tesi/siciliano/opus
@@ -24,5 +46,17 @@ corpus_tesi/siciliano/prosa
 corpus_tesi/siciliano/verga
 corpus_tesi/siciliano/wikipedia
 corpus_tesi/siciliano/testi_originali
+corpus_tesi/siciliano/parafrasi_poesia
+corpus_tesi/siciliano/parafrasi_commedia
+corpus_tesi/siciliano/parafrasi_prosa
+corpus_tesi/siciliano/poesia_sonetti
+corpus_tesi/siciliano/poesia_formale
+corpus_tesi/siciliano/biografia
+corpus_tesi/siciliano/citazioni
+corpus_tesi/siciliano/descrittiva
+corpus_tesi/siciliano/incipit_opere
+corpus_tesi/siciliano/narrativa_favole
+corpus_tesi/siciliano/narrativa_storie
+corpus_tesi/siciliano/notizie
 
 .venv/

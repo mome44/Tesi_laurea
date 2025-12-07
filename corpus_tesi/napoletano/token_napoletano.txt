@@ -1,8 +1,29 @@
+biografia : 3938
+citazioni : 435
+descrittiva : 114182
+incipit_opere : 5889
+narrativa_favole : 295765
+narrativa_storie : 14529
+notizie : 74237
+parafrasi_commedia : 531552
+parafrasi_poesia : 584160
+parafrasi_prosa : 1135342
+poesia_formale : 209667
+poesia_sonetti : 240435
 commedia : 351011
-parafrasi : 2251054
-prosa : 573749
-poesia : 450102
 wikipedia : 1140282
 opus : 178605
-totale : 4944803
-totale prosa : 4143690
+
+
+totale prosa pura : 503086
+
+totale prosa: 2754140
+
+totale poesia: 450102
+
+totale parafrasi: 2251054
+
+-----------------------------
+
+totale : 4880029
+
