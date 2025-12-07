@@ -25,12 +25,13 @@ Strumenti utili:
 
 
 ## COSE DA FARE
-- categorizzazione dei dati un po' più fine-grained (per la narrativa cerca anche i riassunti)
 
 ### fatto
-
+- categorizzazione dei dati un po' più fine-grained
 ### da fare
-
+- vedere se si trovano riassunti delle opere più importanti di narrativa
+- Scrivere i progressi fino ad adesso
+- trovare altre poesie per il siciliano in caso, e vedere se si riesce a scaricare lo cunto de li cunti in napoletano più moderno
 
 Literature Review
 - LoRA: come funziona tecnicamente il training (requisiti di token, parametri, etc)
@@ -44,10 +45,7 @@ Prossima volta:
 
 
 ## CORPUS
- - Vedere quanto corpus serve basandosi su llamantino la versione di llama che ha anche l'italiano
- - Proseguire con la raccolta dei tre corpus e dividere i testi trovati in PROSA PURA, TEATRO, SONETTI, facendo il parsing che già esiste per la prosa pura e il teatro.
- - Vedere se bisogna fare in modo che tutti e tre i corpus siano di dimensioni comparabili
- - Scrivere i progressi fino ad adesso
+
  - Calcolare le percentuali e statistiche di questi testi "PURI"
  - Vedere se si tratta di un corpus sufficiente utilizzando varie metriche per misurare Quantità e qualità
  - VEDERE SE MANCANO PARTI DELLE TRADUZIONI/PARAFRASI IN ROMANESCO E NAPOLETANO (SONO PARTITE DA UN CERTO NUMERO) 

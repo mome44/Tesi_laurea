@@ -64,7 +64,7 @@ for lingua in LISTA_LINGUE:
         for categoria, count in result.items():
             f.write(f"{categoria} : {count}\n")
         
-        f.write("\n\n")
+        f.write("\n")
 
         f.write(f"totale prosa pura : {totale_prosa_pura}\n\n")
         
