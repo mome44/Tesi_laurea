@@ -1,3 +1,8 @@
+## traduzioni in italiano
+
+https://www.goccediperle.it/terra-di-sicilia/le-antiche-fiabe-siciliane/
+
+
 ## processato
 https://liberliber.it/autori/autori-p/giuseppe-pitre/fiabe-novelle-e-racconti-popolari-siciliani-volume-1/
 
@@ -75,6 +80,9 @@ https://dumps.wikimedia.org/scnwiki/
 ## estratto
 
 ## da fare
+
+https://www.tiraccontounafiaba.it/tag/dialetto
+
 
 https://www.gttempo.it/copioni.htm  U Passiu Santu, 	quelle di AMATO Umberto e di 	ALLOTTA Giovanni
 
