@@ -1,0 +1,31 @@
+Token e task (senza parafrasi):
+- Nap_wikipedia: 1140282
+- Nap_notizie: 194308
+- Nap_racconti: 310294
+- Sic_wikipedia:4285253
+- Sic_narrativa: 896727
+- Sic_news: 61625
+- Rom_narrativa: 145358
+- Rom_news: 40462
+
+TOTALE =  7074309
+NEWS = DESCRITTIVA + NOTIZIE + INCIPIT OPERE
+
+NARRATIVA = FAVOLE + STORIE
+
+
+Ciao Luca, 
+Ho controllato bene il paper di Silvia lilli ed è proprio vero che ha usato solo i sample che abbiamo visto (praticamente 1 per dialetto).
+
+per la generazione dei QA sample ho delle domande su cosa e come devo dividere i dati. 
+1) non ricordo se il numero di sample QA totali era 50 oppure era 50 per dialetto, perché so che devo fare stratified sampling, ma so se per dialetto o totale.
+2) per selezionare questi sample, ho pensato di usare solamente i documenti "originali" cioè quelli che ho direttamente trovato in rete,
+escludendo quelli "parafrasati". Tuttavia, nel caso in cui i sample totali siano 50 in totale, comprendendo tutti i dialetti, il romanesco è molto under-represented. Quindi mi chiedevo se almeno per il romanesco potessi usare dei testi parafrasati.
+Più che altro perché così diamo anche ai linguisti la possibilità di valutare meglio il dialetto.
+3) Hai detto di prendere le prime 5 frasi, ma dato che alcuni documenti possono essere brevi, andrebbero bene anche le prime 3/4?
+4) Il weighted sampling si deve fare sul numero di tokens o di documenti? Essendoci wikipedia che ha un numero di documenti molto elevano propenderei sui tokens.
+
+Visto che ieri non ne abbiamo parlato perché mi sono dimenticato ti mando delle immagini che spiegano il mio numero di tokens e di come ho diviso i domain.
+
+4) In base a questo volevo un tuo parere su quali domain considerare. Ha senso inserire anche le poesie e le commedie come domain?
+

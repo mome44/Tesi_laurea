@@ -6,30 +6,64 @@ Strumenti utili:
 - connectedpapers.com sito web che ti trova paper collegati ad uno di partenza, hai 3 chiamate al giorno ma sono sufficienti di solito, molto comodo
 
 ## Categorie corpus
+Io ho diviso i dati in questo modo
  - Commedia: Contiene commedie dal tono popolare
  - Poesia_sonetti: Poesie popolari
  - Poesia_formale: Poesie liriche più formali (es. divina commedia)
  - Narrativa_favole: Contiene storie popolari/leggende, favole (comunque racconti inventati)
- - Narrativa_storie: Contiene racconti non fiction, come esperienze personali o storie di fatti accaduti realmente.
+ - Narrativa_storie: Contiene racconti non fiction, come esperienze personali ricordi o storie di fatti accaduti realmente, raccontate in prima persona.
  - Incipit_opere: Prologo/introduzione di opere importanti
- - Descrittiva: Contiene descrizioni di vari campi come cucina, o imparare la lingua stessa, definizioni di parole
+ - Descrittiva: Contiene descrizioni di vari campi come cucina, linguistica, definizioni di parole
  - Notizie: descrizione di fatti che accadono/accaduti in stile giornalistico
  - Battute: battute umoristiche
  - Biografie: storie della vita di persone
  - Citazioni
  - Wikipedia
  - Opus
- - Parafrasi_commedia: commedie parafrasate in prosa
- - Parafrasi_poesia: poesie parafrasate in prosa
- - Traduzioni_testi: testi tradotti in dialetto
+ - Parafrasi_commedia: commedie parafrasate in prosa AI
+ - Parafrasi_poesia: poesie parafrasate in prosa AI
+ - Parafrasi_prosa: testi TRADOTTI in dialetto AI
+
+ - Totale prosa pura: battute + biografia + citazioni + descrittiva + narrativa_favole + narrativa_storie +notizie
+ - Totale parafrasi: parafrasi_commedia + parafrasi_prosa + parafrasi_poesia
+ - Totale poesia: poesia_sonetti + poesia_formale
+ - Totale prosa: totale prosa pura + totale parafrasi
+
+Dato che hai detto di dividere tutto in tre domini principali, LIBRI, WIKI, NEWS.
+Andando un po' a logica ho notato che alcune delle mie categorie più specifiche si potevano accorpare perché corrispondevano allo stesso dominio.
+
+Ho fatto questo ragionamento:
+LIBRI = Narrativa_favole + Narrativa_storie + Incipit_opere
+LIBRI + par = LIBRI + (parafrasi_commedia, parafrasi_poesia, parafrasi_prosa)
+LIBRI + par + opus = LIBRI + (parafrasi_commedia, parafrasi_poesia, parafrasi_prosa) + opus
+WIKI = Wikipedia + Descrittiva
+NEWS = Notizie
+
+Solo due domini non hanno corrispondenze, anche perché sono molto piccoli.
+Battute, Citazioni
+
+Domanda
+Le poesie e le commedie (non parafrasate) dove vanno? diventano task a parte oppure finiscono in LIBRI essendo comunque letteratura?
+
+Ti mando l'immagine dove sono presenti tutti i token, catalogati, con anche i raggruppamenti per i tre domini, ho messo in grassetto quelli con i token più elevati.
+
 
 
 ## COSE DA FARE
+### Generazione evaluation samples.
 
-### fatto
-- categorizzazione dei dati un po' più fine-grained
+Prendere le prime frasi di un documento qui dice 5 ma secondo me anche meno forse 3/2. 
+Fare una chiamata a Gemini - 3/2.5 dove gli chiediamo di fare due domande su questo estratto di testo. Ci devono essere 4 coppie domanda risposta, meglio prima fare le due domande e le due risposte in dialetto, successivamente si può chiedere di tradurre in italiano.
+
+Fare stratified sampling per capire quanti Q-A generare
+- Fare una funzione che salva le prima righe 150/200 parole del numero di sample che si deve scegliere per fare q&a in una serie di file json. 
+- Ristrutturare i testi in prosa visto che sono scritti per righe
+- Scrivere il prompt e testarlo
+- Fare standardizzazione dell'ortografia e cercare di cambiare anche da solo lo cunto de li cunti. 
+- Fare una copia del fine della API
+- Capire quale API usare e se conviene pagare oppure no
+
 ### da fare
-- vedere se si trovano riassunti delle opere più importanti di narrativa
 - Scrivere i progressi fino ad adesso
 - trovare altre poesie per il siciliano in caso, e vedere se si riesce a scaricare lo cunto de li cunti in napoletano più moderno
 
