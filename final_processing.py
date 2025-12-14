@@ -3,11 +3,11 @@ import pandas as pd
 import os
 import re
 import unicodedata
-DIALECT = "siciliano"
+DIALECT = "romanesco"
+#, "nap_w", "rom_b", "scn_b", "scn_w"
+List_TIPO = ["scn_b"]
 
-List_TIPO = ["wikipedia","prosa", "parafrasi", "opus"]
-
-OUTPUT_PATH = f"corpus_tesi/{DIALECT}/parafrasi_standard"
+OUTPUT_PATH = f"corpus/raw/"
 
 segnali = [
         "traduzion", "narrativa", "parafras", " il "
@@ -306,59 +306,85 @@ def process_fulltext(full_text):
 frasesos = ""
 full_text = ""
 
-for tipe in List_TIPO:
-    if DIALECT == "romanesco" and (tipe == "opus" or tipe == "wikipedia"):
-        continue
-    TIPO = tipe
-    PATH = f"corpus_tesi/{DIALECT}/{TIPO}"
+with open(f"corpus/raw/scn_wiki.json", "r", encoding="utf-8") as f:
+    data = json.load(f)
+errore = False
+data_refined = []
+suspect_sentences = []
+for item in data:
+    testo = item["text"]
+    prima_frase = testo.split(".",1)
+    if any(s in prima_frase for s in segnali) and "trilussa" in filename:
+        suspect_sentences.append(prima_frase)
+        testo = testo.replace(prima_frase, "")
+    #testo_nuovo = testo
+    testo_nuovo = refine(Dialetto = "siciliano", testo=testo)
+    full_text += "\n" + testo_nuovo
+    if testo_nuovo == "":
+        print("errore dialetto non trovato o altro")
+        errore = True
+        break
+    data_refined.append({
+        "text": testo_nuovo
+    })
+for f in suspect_sentences:
+    frasesos += f +"\n\n"    
+if not errore:
+    with open(f"{OUTPUT_PATH}/scn_wiki_refined.json", "w", encoding="utf-8") as out:
+        json.dump(data_refined, out, ensure_ascii=False, indent=2)
 
-    for filename in os.listdir(PATH):
-        if ".json" not in filename:
-            continue
-        full_path = os.path.join(PATH,filename)
 
-        filename = filename.split(".")[0]
-        print("processing ", filename)
+#for tipe in List_TIPO:
+#    if DIALECT == "romanesco" and (tipe == "opus" or tipe == "wikipedia"):
+#        continue
+#    TIPO = tipe
+#    PATH = f"corpus_tesi/{DIALECT}/{TIPO}"
+#
+#    for filename in os.listdir(PATH):
+#        if ".json" not in filename:
+#            continue
+#        full_path = os.path.join(PATH,filename)
+#
+#        filename = filename.split(".")[0]
+#        print("processing ", filename)
+#
+#        frasesos += "\n" + filename + "\n\n\n"
+#
+#        if os.path.isfile(full_path):
+#            with open(full_path, "r", encoding="utf-8") as f:
+#                data = json.load(f)
+#        errore = False
+#        data_refined = []
+#
+#
+#        suspect_sentences = []
+#        for item in data:
+#            testo = item["text"]
+#            prima_frase = testo.split(".",1)
+#            if any(s in prima_frase for s in segnali) and "trilussa" in filename:
+#                suspect_sentences.append(prima_frase)
+#                testo = testo.replace(prima_frase, "")
+#            #testo_nuovo = testo
+#            testo_nuovo = refine(Dialetto = DIALECT, testo=testo)
+#            full_text += "\n" + testo_nuovo
+#            if testo_nuovo == "":
+#                print("errore dialetto non trovato o altro")
+#                errore = True
+#                break
+#            data_refined.append({
+#                "text": testo_nuovo
+#            })
+#
+#        for f in suspect_sentences:
+#            frasesos += f +"\n\n"    
+#        if not errore:
+#            with open(f"{OUTPUT_PATH}/{filename}_refined.json", "w", encoding="utf-8") as out:
+#                json.dump(data_refined, out, ensure_ascii=False, indent=2)
+#
+#print("processing fulltext")
+#full_text=process_fulltext(full_text)
+#print("finished")
 
-        frasesos += "\n" + filename + "\n\n\n"
+#with open(f"corpus_tesi/{DIALECT}/full_text.txt", "w", encoding="utf-8") as file:
+#    file.write(full_text)
 
-        if os.path.isfile(full_path):
-            with open(full_path, "r", encoding="utf-8") as f:
-                data = json.load(f)
-        errore = False
-        data_refined = []
-
-
-        suspect_sentences = []
-        for item in data:
-            testo = item["text"]
-            prima_frase = testo
-            if any(s in prima_frase for s in segnali) and "trilussa" in filename:
-                #suspect_sentences.append(prima_frase)
-                testo = testo.replace(prima_frase, "")
-            testo_nuovo = testo
-            #testo_nuovo = refine(Dialetto = DIALECT, testo=testo)
-            full_text += "\n" + testo_nuovo
-            if testo_nuovo == "":
-                print("errore dialetto non trovato o altro")
-                errore = True
-                break
-            data_refined.append({
-                "text": testo_nuovo
-            })
-
-        for f in suspect_sentences:
-            frasesos += f +"\n\n"    
-        #if not errore:
-        #    with open(f"{OUTPUT_PATH}/{filename}_refined.json", "w", encoding="utf-8") as out:
-        #        json.dump(data_refined, out, ensure_ascii=False, indent=2)
-
-print("processing fulltext")
-full_text=process_fulltext(full_text)
-print("finished")
-
-with open(f"corpus_tesi/{DIALECT}/full_text.txt", "w", encoding="utf-8") as file:
-    file.write(full_text)
-
-with open(f"frasi_sospette_{DIALECT}.txt", "w", encoding="utf-8") as file:
-    file.write(frasesos)

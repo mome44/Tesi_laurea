@@ -40,6 +40,9 @@ corpus_tesi/romanesco/narrativa_favole
 corpus_tesi/romanesco/narrativa_storie
 corpus_tesi/romanesco/notizie
 
+corpus_tesi
+corpus/old
+corpus/raw
 
 corpus_tesi/siciliano/commedia
 corpus_tesi/siciliano/opus

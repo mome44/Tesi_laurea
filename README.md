@@ -60,7 +60,7 @@ Fare stratified sampling per capire quanti Q-A generare
 - Ristrutturare i testi in prosa visto che sono scritti per righe
 - Scrivere il prompt e testarlo
 - Fare standardizzazione dell'ortografia e cercare di cambiare anche da solo lo cunto de li cunti. 
-- Fare una copia del fine della API
+- Fare una copia del file della API
 - Capire quale API usare e se conviene pagare oppure no
 
 ### da fare

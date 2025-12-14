@@ -2,7 +2,7 @@ import re
 import json
 
 
-NAME = "sicilian_wikitext"
+NAME = "basilico"
 
 #with open(f"{NAME}.txt", "r", encoding="utf-8") as f:
 #    testo = f.read()
