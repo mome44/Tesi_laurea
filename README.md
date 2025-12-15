@@ -59,9 +59,38 @@ Fare stratified sampling per capire quanti Q-A generare
 - Fare una funzione che salva le prima righe 150/200 parole del numero di sample che si deve scegliere per fare q&a in una serie di file json. 
 - Ristrutturare i testi in prosa visto che sono scritti per righe
 - Scrivere il prompt e testarlo
-- Fare standardizzazione dell'ortografia e cercare di cambiare anche da solo lo cunto de li cunti. 
 - Fare una copia del file della API
 - Capire quale API usare e se conviene pagare oppure no
+- Fare standardizzazione dell'ortografia e cercare di cambiare anche da solo lo cunto de li cunti. 
+
+
+- Numero di samples
+
+50 q&a per dialetto
+
+Romanesco -> 25 samples testo
+Siciliano -> 25 samples
+totale 5176K token
+- 82% wiki -> 20 samples
+- 18% testo -> 5 samples
+Napoletano
+totale 1560K
+- 80% wiki -> 20 samples
+- 20% testo -> 5 samples
+
+Metà di questi con gemini 3
+Romanesco: 13   
+Sic wiki: 10
+Sic testo: 3
+Nap wiki: 10
+Nap testo: 3
+
+Gemini 2.5
+Romanesco: 13   
+Sic wiki: 10
+Sic testo: 3
+Nap wiki: 10
+Nap testo: 3
 
 ### da fare
 - Scrivere i progressi fino ad adesso

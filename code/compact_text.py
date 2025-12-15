@@ -5,9 +5,9 @@ import random
 
 
 NAME = "reddit_romano_processed"
-DIALECT = "rom"
+DIALECT = "scn"
 TYPE = "book"
-MAX_PAROLE = 130
+MAX_PAROLE = 150
 OUTPUT_PATH = f"../corpus/samples"
 
 with open(f"../corpus/{DIALECT}_{TYPE}_refined.json", "r", encoding="utf-8") as f:
@@ -46,7 +46,7 @@ def dividi_testo_per_frase(testo, max_parole):
     conteggio_parole = 0
     
     for frase in frasi:
-        parole_frase = len(frase.split())
+        parole_frase = len(frase.split(" "))
         if conteggio_parole + parole_frase > max_parole and blocco_corrente:
             # if the old block + the new sentence exceeds the limit we consider the current block
             blocchi.append(" ".join(blocco_corrente))
@@ -70,13 +70,13 @@ def estrai_qa_sample(data):
         risultato = dividi_testo_per_frase(testo, MAX_PAROLE)
 
         print("\n ", len(risultato))
-        if len(risultato)>= 5:
+        if len(risultato)>= 6:
             numeri = random.sample(range(0, len(risultato)), 2)
             a, b = numeri
             data_2.append({
                 "text": risultato[a]
             })
-            if len(risultato)>= 10:
+            if len(risultato)>= 12:
                 data_2.append({
                     "text": risultato[b]
                 })

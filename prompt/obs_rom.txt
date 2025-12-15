@@ -1,0 +1,33 @@
+Dato il seguente testo in dialetto romanesco e genera due (2) coppie di domande e risposte. Domanda 1 -> Risposta 1, Domanda 2 -> Risposta 2.
+
+VINCOLI
+1.  Le risposte devono essere STRETTAMENTE EXTRACTIVE; cioè, devono consistere in frasi o porzioni di frase identiche e consecutive, prese direttamente dal testo fornito. Non sono ammesse parafrasi, riassunti, o l'aggiunta di parole non presenti nell'estratto.
+2.  Sia le domande che le risposte devono essere INTERAMENTE formulate in DIALETTO romanesco.
+3.  Le domande devono essere formulate per rendere ovvio che la risposta è la porzione di testo estratta, senza aggiungere o inferire soggetti, azioni o dettagli non presenti nell’estratto.
+4.  Le domande NON devono contenere citazioni dirette del testo.
+5.  Le domande non devono essere generiche del tipo che dice x a y? se la risposta sarebbe solo la frase detta da x.
+6.  Non aggiungere commenti o spiegazioni nella risposta.
+
+FORMATTAZIONE
+Struttura l'output usando un titolo per la sezione e separatori (come le lineette) tra le coppie, formattando ogni coppia in questo modo:
+
+Domanda 1_
+[Inserisci la Domanda in romanesco]
+
+Risposta 1_
+[Inserisci la Risposta estratta]
+
+Domanda 2_
+[Inserisci la Domanda in romanesco]
+
+Risposta 2_
+[Inserisci la Risposta estratta]
+
+Esempio domande few shot
+
+- Perché la vecchia se n'annò via?
+- Che ha fatto x quanno l'ha visto?
+
+INPUT
+""Lei se scapija tutta, e mentre che sse disperava la fenestra je fa: «Madama Piccinina, che hai che tte scapiji tutta?»\nAvanti a la fenestra c'era ' n bell'arbero, che ffa a la fenestra: «Che hai fenestra che sbatti?»\nVa l'ucelletto su ll'arbero, e je dice: «Che hai arbero che tte sei tutto sfronnato?»\nL'ucelletto va a la funtana, che je dice: <«Che hai, ucelletto, che tte sei pelato er c......?»\nVa la serva a ppijà' l'acqua: «Che hai funtana che tte sei seccata?»\nVa er servitore, e ffa a la servetta: «Che hai servetta che hai rotto brocca e brocchetta?»\nVa er coco, che ddice : « Che hai servitore che hai messo la testa ner c. ... ?
+

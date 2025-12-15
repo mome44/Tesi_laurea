@@ -1,0 +1,3 @@
+Ciao se ti do questo testo in romanesco puoi generarmi due coppie di domande risposte entrambe in dialetto romanesco, in modo che le risposte siano extractive (devono essere esattamente identiche a una porzione del testo in input) e le domande (non extractive) siano formulate proprio per dare la risposta.
+Formatta il risultato esattamente così [domanda]#risposta#
+
