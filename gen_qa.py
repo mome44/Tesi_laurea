@@ -5,19 +5,30 @@ import random
 import json
 import os
 
-
+API_KEY_LIST = [
+    "AIzaSyDAM3VU2O7RClzARfcjVr-WFtO-oEWsZTE", #prima
+    "AIzaSyCKynyTujWmvIYiOaLxnpuuvUevgFUx5fQ", #Seconda
+    "AIzaSyA5aGoN_UAs6QznnGP8Jpa4bh3vqEV8XYk", #TERZA
+    "AIzaSyAay0PJStTeZxxcuTn97RwmJzifefQEHS8", #QUARTA CAR
+    "AIzaSyAf8vqpLY1mvNf03gvNQ8NDyP8drwXTP6s", #mich
+    "AIzaSyAyS0Or4He8_ByQpINlDWXNKw6yMpdpJ7o", #p1
+    "AIzaSyC9fknqBf7ogCScgSDNRsW0VDGH91PNFLg", #p2
+    "AIzaSyDa0mJS5Bcx-qF3pYQ9mvb2ICTu0BsoPiU", #p3
+    "AIzaSyDMyQo3NAh0DYKEparoxSxtuFO17-kJoZc", #p4
+    "AIzaSyCJQZiXj85Ti3JJOdNHKTQbeURaknnVVqA"  #fedoe
+]
 
 # --- Configurazioni ---
-MODEL_NAME = "gemini-2.5"
+MODEL_NAME = "gemini-2.5-flash"
 
-DIALECT = "nap"
+DIALECT = "scn"
 
 SPLITTING = {"nap_wiki":10, "nap_par":0, "rom_par":0, "nap_book":3, "scn_wiki":10, "scn_book":3, "rom_book":13}
 
 PATH = f"corpus/samples"
 OUTPUT_PATH = f"corpus/q_a"
 LAST_FILE = 0
-api_idx = 0
+api_idx = 1
 
 with open(f"prompt/prompt_gen_{DIALECT}.txt", "r", encoding = "utf-8") as p:
     prompt = p.read()
@@ -101,9 +112,10 @@ for filename in os.listdir(PATH):
             continue
         
         sentence_sample = data_sample[index]
-        print(f"processing {num_api_call} api {api_idx} - {nome_file}: file index {index}/{num}")
+        sentence = sentence_sample["text"]
+        print(f"processing {num_api_call} api {api_idx} - {name}: file index {index}/{num}")
         
-        prompt_input = prompt + sentence_sample + '\"'
+        prompt_input = prompt + '\"' + sentence + '\"'
 
         response = gemini_api_call(prompt_input, MODEL_NAME, API_KEY=api_key)
         if response == 0:
@@ -121,19 +133,18 @@ for filename in os.listdir(PATH):
             api_idx +=1
             continue
         num_api_call+=1
-        if index % 4 == 0:
-            print("saving checkpoint")
-            with open(f"{OUTPUT_PATH}/{name}_qa_{index}.json", "w", encoding="utf-8") as out:
-                json.dump(result_data, out, ensure_ascii=False, indent=2)
+        print("saving checkpoint")
+        with open(f"{OUTPUT_PATH}/{name}_qa_{index}.json", "w", encoding="utf-8") as out:
+            json.dump(result_data, out, ensure_ascii=False, indent=2)
         
     if errore:
         break
     if num_api_call == 20:
         break
-    print(f"finished with {nome_file}\n")
+    print(f"finished with {name}\n")
     
     #saving the paraphrasis
-    with open(f"{OUTPUT_PATH}/{name}_qa_{index}.json", "w", encoding="utf-8") as out:
+    with open(f"{OUTPUT_PATH}/{name}_qa.json", "w", encoding="utf-8") as out:
         json.dump(result_data, out, ensure_ascii=False, indent=2)
     
     
