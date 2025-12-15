@@ -4,7 +4,7 @@ import re
 import csv
 # ====== USO ======
 cartella = "evaluation/parsed/tre"
-output = "tok_dict"
+output = "evaluation/csv_final"
 
 
 def unifica_json(cartella_input, file_output):
@@ -69,7 +69,7 @@ def parse_qa(cartella_input, file_output):
                 print("Risposta:", risposta)
 
                 data.append({
-                    "Dialect" : "Italian",
+                    "Dialect" : dialect,
                     "Domanda": domanda,
                     "Risposta": risposta
                 })
@@ -107,7 +107,7 @@ def convert_csv(cartella_input, file_output):
 
             # Scrivi le righe
             for item in data:
-                writer.writerow(["full","x",item["text"]])
+                writer.writerow([item["Dialect"],item["Domanda"],item["Risposta"]])
 
 def compute_token(cartella_input, file_output):
     vocabulary = dict()
