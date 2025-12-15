@@ -21,14 +21,14 @@ API_KEY_LIST = [
 # --- Configurazioni ---
 MODEL_NAME = "gemini-2.5-flash"
 
-DIALECT = "scn"
+DIALECT = "nap"
 
 SPLITTING = {"nap_wiki":10, "nap_par":0, "rom_par":0, "nap_book":3, "scn_wiki":10, "scn_book":3, "rom_book":13}
 
 PATH = f"corpus/samples"
-OUTPUT_PATH = f"corpus/q_a"
+OUTPUT_PATH = f"corpus/q_a/gemini_3"
 LAST_FILE = 0
-api_idx = 1
+api_idx = 5
 
 with open(f"prompt/prompt_gen_{DIALECT}.txt", "r", encoding = "utf-8") as p:
     prompt = p.read()
@@ -93,6 +93,8 @@ errore = False
 for filename in os.listdir(PATH):
     if ".json" in filename:
         name = filename.split(".")[0]
+    else:
+        continue
     num = SPLITTING[name]
     if num == 0:
         continue
@@ -101,10 +103,14 @@ for filename in os.listdir(PATH):
     if os.path.isfile(full_path):
         with open(full_path, "r", encoding="utf-8") as f:
             data = json.load(f)
-    data_sample = data[:num]
+    #data_sample = data[:num]
+    data_sample =data
+    LAST_FILE = num
 
     result_data = []
     index = 0
+    increase = 1
+    num = len(data)
     while index < num:
         api_key = API_KEY_LIST[api_idx]
         if index < LAST_FILE:
@@ -113,9 +119,18 @@ for filename in os.listdir(PATH):
         
         sentence_sample = data_sample[index]
         sentence = sentence_sample["text"]
+        #question_1 = sentence_sample["Domanda"]
+        #answer_1 = sentence_sample["Risposta"]
+        #sentence_sample = data_sample[index + 1]
+        #question_2 = sentence_sample["Domanda"]
+        #answer_2 = sentence_sample["Risposta"]
+        
         print(f"processing {num_api_call} api {api_idx} - {name}: file index {index}/{num}")
         
         prompt_input = prompt + '\"' + sentence + '\"'
+        #prompt_input = prompt + '\nDomanda: ' + question_1 + '\nRisposta:' + answer_1 + '\nDomanda: ' + question_2 + '\nRisposta:' + answer_2 
+
+        print(prompt_input)
 
         response = gemini_api_call(prompt_input, MODEL_NAME, API_KEY=api_key)
         if response == 0:
@@ -125,16 +140,16 @@ for filename in os.listdir(PATH):
             result_data.append({
                 "text": response.strip()
             })
-            index +=1
+            index +=increase
         if response is None:
             print(f"Errore a step {num_api_call}")
-            with open(f"{OUTPUT_PATH}/{name}_qa_{index-1}.json", "w", encoding="utf-8") as out:
+            with open(f"{OUTPUT_PATH}/{name}_qa_g2_{index-increase}.json", "w", encoding="utf-8") as out:
                 json.dump(result_data, out, ensure_ascii=False, indent=2)
-            api_idx +=1
+            api_idx +=increase
             continue
         num_api_call+=1
         print("saving checkpoint")
-        with open(f"{OUTPUT_PATH}/{name}_qa_{index}.json", "w", encoding="utf-8") as out:
+        with open(f"{OUTPUT_PATH}/{name}_qa_g2_{index}.json", "w", encoding="utf-8") as out:
             json.dump(result_data, out, ensure_ascii=False, indent=2)
         
     if errore:
@@ -144,7 +159,7 @@ for filename in os.listdir(PATH):
     print(f"finished with {name}\n")
     
     #saving the paraphrasis
-    with open(f"{OUTPUT_PATH}/{name}_qa.json", "w", encoding="utf-8") as out:
+    with open(f"{OUTPUT_PATH}/{name}_qa_g2.json", "w", encoding="utf-8") as out:
         json.dump(result_data, out, ensure_ascii=False, indent=2)
     
     
