@@ -21,16 +21,16 @@ API_KEY_LIST = [
 # --- Configurazioni ---
 MODEL_NAME = "gemini-2.5-flash"
 
-DIALECT = "nap"
+DIALECT = "rom"
 
 SPLITTING = {"nap_wiki":20, "nap_par":0, "rom_par":0, "nap_book":5, "scn_wiki":20, "scn_book":5, "rom_book":25}
 
-PATH = f"corpus/evaluation/samples"
-OUTPUT_PATH = f"corpus/evaluation/q_a"
+PATH = f"corpus/evaluation/parsed/tre"
+OUTPUT_PATH = f"corpus/evaluation/parsed/transl"
 LAST_FILE = 0
-api_idx = 0
+api_idx = 3
 
-with open(f"prompt/prompt_gen_{DIALECT}.txt", "r", encoding = "utf-8") as p:
+with open(f"prompt/prompt_trad_{DIALECT}.txt", "r", encoding = "utf-8") as p:
     prompt = p.read()
     print(prompt)
 
@@ -95,9 +95,9 @@ for filename in os.listdir(PATH):
         name = filename.split(".")[0]
     else:
         continue
-    num = SPLITTING[name]
-    if num == 0:
-        continue
+    #num = SPLITTING[name]
+    #if num == 0:
+    #    continue
     
     full_path = os.path.join(PATH,filename)
     if os.path.isfile(full_path):
@@ -105,11 +105,11 @@ for filename in os.listdir(PATH):
             data = json.load(f)
     #data_sample = data[:num]
     data_sample =data
-    LAST_FILE = num
+    #LAST_FILE = num
 
     result_data = []
     index = 0
-    increase = 1
+    increase = 2
     num = len(data)
     while index < num:
         api_key = API_KEY_LIST[api_idx]
@@ -118,17 +118,17 @@ for filename in os.listdir(PATH):
             continue
         
         sentence_sample = data_sample[index]
-        sentence = sentence_sample["text"]
-        #question_1 = sentence_sample["Domanda"]
-        #answer_1 = sentence_sample["Risposta"]
-        #sentence_sample = data_sample[index + 1]
-        #question_2 = sentence_sample["Domanda"]
-        #answer_2 = sentence_sample["Risposta"]
+        #sentence = sentence_sample["text"]
+        question_1 = sentence_sample["Domanda"]
+        answer_1 = sentence_sample["Risposta"]
+        sentence_sample = data_sample[index + 1]
+        question_2 = sentence_sample["Domanda"]
+        answer_2 = sentence_sample["Risposta"]
         
         print(f"processing {num_api_call} api {api_idx} - {name}: file index {index}/{num}")
         
-        prompt_input = prompt + '\"' + sentence + '\"'
-        #prompt_input = prompt + '\nDomanda: ' + question_1 + '\nRisposta:' + answer_1 + '\nDomanda: ' + question_2 + '\nRisposta:' + answer_2 
+        #prompt_input = prompt + '\"' + sentence + '\"'
+        prompt_input = prompt + '\nDomanda: ' + question_1 + '\nRisposta:' + answer_1 + '\nDomanda: ' + question_2 + '\nRisposta:' + answer_2 
 
         print(prompt_input)
 
@@ -145,7 +145,7 @@ for filename in os.listdir(PATH):
             print(f"Errore a step {num_api_call}")
             with open(f"{OUTPUT_PATH}/{name}_qa_g2_{index-increase}.json", "w", encoding="utf-8") as out:
                 json.dump(result_data, out, ensure_ascii=False, indent=2)
-            api_idx +=increase
+            api_idx +=1
             continue
         num_api_call+=1
         print("saving checkpoint")

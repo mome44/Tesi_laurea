@@ -3,7 +3,7 @@ import json
 import re
 import csv
 # ====== USO ======
-cartella = "evaluation/parsed/tre"
+cartella = "evaluation/translated"
 output = "evaluation/csv_final"
 
 
@@ -69,7 +69,7 @@ def parse_qa(cartella_input, file_output):
                 print("Risposta:", risposta)
 
                 data.append({
-                    "Dialect" : dialect,
+                    "Dialect" : "italian",
                     "Domanda": domanda,
                     "Risposta": risposta
                 })
