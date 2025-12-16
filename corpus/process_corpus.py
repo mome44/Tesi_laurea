@@ -3,8 +3,8 @@ import json
 import re
 import csv
 # ====== USO ======
-cartella = "evaluation/translated"
-output = "evaluation/csv_final"
+cartella = "evaluation/parsed/done"
+output = "tok_dict"
 
 
 def unifica_json(cartella_input, file_output):
@@ -143,6 +143,7 @@ def compute_token(cartella_input, file_output):
         json.dump(vocabulary_json, f, ensure_ascii=False, indent=2)
 
 def compute_token_similarity():
+    total_string = ""
     with open("tok_dict/generated_word_dictionary.json", "r", encoding="utf-8") as f:
         gen_word_data = json.load(f)
     with open("tok_dict/word_dictionary.json", "r", encoding="utf-8") as f:
@@ -154,7 +155,9 @@ def compute_token_similarity():
     total_scn_word = set()
     total_rom_word = set()
     for domain, gen_word_list in gen_word_data.items():
-        word_list = word_data[domain]
+        pattern = r"(.*qa).*"
+        domain_2 = re.sub(pattern, r"\1", domain)
+        word_list = word_data[domain_2]
         gen_word_set = set(gen_word_list)
         word_set = set(word_list)
         intersezione = gen_word_set.intersection(word_set)
@@ -177,45 +180,51 @@ def compute_token_similarity():
         
         #print(s)
         percentuale = (len(intersezione) / len(gen_word_set)) * 100 if word_set else 0
+        total_string += f"Percentuale di tokens generati in comune per {domain} : {percentuale:.2f}%\n"
         print(f"Percentuale di tokens generati in comune per {domain} : {percentuale:.2f}%")
     
+    total_string += "\n"
     intersezione_nap = total_nap_gen_word.intersection(total_nap_word)
     percentuale_nap = (len(intersezione_nap) / len(total_nap_gen_word)) * 100 if total_nap_word else 0
-    
+    total_string += f"\nTotale nap: {percentuale_nap:.2f}%\n"
     print(f"\nTotale nap: {percentuale_nap:.2f}%")
     not_in_word_vocabulary = total_nap_gen_word - intersezione_nap
     s=""
     for i in not_in_word_vocabulary:
         s+=i + " | "
-    
+    total_string += "Nap not in dictionary\n" + s + "\n"
     print("Nap not in dictionary\n", s)
     
     intersezione_rom = total_rom_gen_word.intersection(total_rom_word)
     percentuale_rom = (len(intersezione_rom) / len(total_rom_gen_word)) * 100 if total_rom_word else 0
-
+    total_string += f"\nTotale rom: {percentuale_rom:.2f}%\n"
     print(f"\nTotale rom: {percentuale_rom:.2f}%")
     not_in_word_vocabulary = total_rom_gen_word - intersezione_rom
     s=""
     for i in not_in_word_vocabulary:
         s+=i + " | "
-    
+    total_string += "Rom not in dictionary\n" + s + "\n"
     print("Rom not in dictionary\n", s)
     
     intersezione_scn = total_scn_gen_word.intersection(total_scn_word)
     percentuale_scn = (len(intersezione_scn) / len(total_scn_gen_word)) * 100 if total_scn_word else 0
-
+    total_string += f"\nTotale scn: {percentuale_scn:.2f}%\n"
     print(f"\nTotale scn: {percentuale_scn:.2f}%")
     not_in_word_vocabulary = total_scn_gen_word - intersezione_scn
     s=""
     for i in not_in_word_vocabulary:
         s+=i + " | "
-    
+    total_string += "Scn not in dictionary\n" + s + "\n"
     print("Scn not in dictionary\n", s)
 
-#compute_token(cartella, output)
-#compute_token_similarity()
 
-convert_csv(cartella, output)
+    with open("tok_dict/token_stats.txt", "w", encoding = "utf-8") as f:
+        f.write(total_string)
+
+#compute_token(cartella, output)
+compute_token_similarity()
+
+#convert_csv(cartella, output)
 
 #parse_qa(cartella, output)
 
