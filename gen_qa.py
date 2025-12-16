@@ -6,6 +6,7 @@ import json
 import os
 
 API_KEY_LIST = [
+    "AIzaSyAYc4Xm0mXy-UBiFG1d315cpdrhmNhVXQw", #gemini 3 pro
     "AIzaSyDAM3VU2O7RClzARfcjVr-WFtO-oEWsZTE", #prima
     "AIzaSyCKynyTujWmvIYiOaLxnpuuvUevgFUx5fQ", #Seconda
     "AIzaSyA5aGoN_UAs6QznnGP8Jpa4bh3vqEV8XYk", #TERZA
