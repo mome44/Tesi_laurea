@@ -5,6 +5,10 @@ Strumenti utili:
 - asta.allen.ai: chatGPT ma specifico per fare ricerche sulla letteratura di un argomento in modo veloce, ti genera dei summary con references, comodo ma ovviamente va rivisto 
 - connectedpapers.com sito web che ti trova paper collegati ad uno di partenza, hai 3 chiamate al giorno ma sono sufficienti di solito, molto comodo
 
+## Considerazioni e cose fatte
+- Per poter approvare e usare il metodo di evaluation bisogna usare dei metodi tradizionali cioè chiedere ausilio ai linguisti. Un altro aspetto è quello dei token, bisogna verificare che il modello gemini sia in grado di generare parole che siano nel nostro vocabolario, questo perché se genera altre cose che non corrispondono, vuol dire che generano in un'altra lingua o in dialetto non corretto. In questo una cosa importante è quella di non considerare i simboli di punteggiatura che NON hanno valenza grammaticale o linguistica. es. ?!,.;: possono essere tolti mentre ' non può perché si usa prima di articoli o preposizioni. Questo permette di dare validità alle nostre conclusioni. 
+
+
 ## Categorie corpus
 Io ho diviso i dati in questo modo
  - Commedia: Contiene commedie dal tono popolare
@@ -62,8 +66,6 @@ Fare stratified sampling per capire quanti Q-A generare
 - Fare una copia del file della API
 - Capire quale API usare e se conviene pagare oppure no
 - Fare standardizzazione dell'ortografia e cercare di cambiare anche da solo lo cunto de li cunti. 
-
-
 - Numero di samples
 
 50 q&a per dialetto
@@ -78,19 +80,18 @@ totale 1560K
 - 80% wiki -> 20 samples
 - 20% testo -> 5 samples
 
-Metà di questi con gemini 3
-Romanesco: 13   
-Sic wiki: 10
-Sic testo: 3
-Nap wiki: 10
-Nap testo: 3
+Tutti con gemini 2.5-flash
 
-Gemini 2.5
-Romanesco: 13   
-Sic wiki: 10
-Sic testo: 3
-Nap wiki: 10
-Nap testo: 3
+provare un sottosegmento con gemini 3 pro per vedere la differenza.
+
+Romanesco 5 samp
+Nap wiki 4 samp
+Nap testo 1
+Scn wiki 4
+Scn testo 1
+
+totale 15 chiamate per 30 samples, 10 per dialetto.
+
 
 ### da fare
 - Scrivere i progressi fino ad adesso

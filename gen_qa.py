@@ -23,14 +23,12 @@ MODEL_NAME = "gemini-2.5-flash"
 
 DIALECT = "nap"
 
-SPLITTING = {"nap_wiki":10, "nap_par":0, "rom_par":0, "nap_book":3, "scn_wiki":10, "scn_book":3, "rom_book":13}
-
-LAST = {"nap_wiki":20, "nap_par":0, "rom_par":0, "nap_book":5, "scn_wiki":20, "scn_book":5, "rom_book":25}
+SPLITTING = {"nap_wiki":20, "nap_par":0, "rom_par":0, "nap_book":5, "scn_wiki":20, "scn_book":5, "rom_book":25}
 
 PATH = f"corpus/evaluation/samples"
 OUTPUT_PATH = f"corpus/evaluation/q_a"
 LAST_FILE = 0
-api_idx = 9
+api_idx = 0
 
 with open(f"prompt/prompt_gen_{DIALECT}.txt", "r", encoding = "utf-8") as p:
     prompt = p.read()
