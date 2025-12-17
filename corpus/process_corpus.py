@@ -3,7 +3,7 @@ import json
 import re
 import csv
 # ====== USO ======
-cartella = "evaluation/parsed/done"
+cartella = "refined"
 output = "tok_dict"
 
 
@@ -29,6 +29,9 @@ def unifica_json(cartella_input, file_output):
             data.append({
                 "text": testo
             })
+    with open(f"{file_output}/nap_par.json", "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+        
 
 def parse_qa(cartella_input, file_output):
     #loop per i file in una cartella
@@ -126,8 +129,8 @@ def compute_token(cartella_input, file_output):
             vocabulary[nome] = set()
 
         for item in data:
-            #testo = item["text"]
-            testo = item["Domanda"] + " " + item["Risposta"]
+            testo = item["text"]
+            #testo = item["Domanda"] + " " + item["Risposta"]
             testo = re.sub(r"[!?.,:;]", "", testo)
             
             testo = testo.lower()
@@ -139,7 +142,7 @@ def compute_token(cartella_input, file_output):
         nome: sorted(list(words))
         for nome, words in vocabulary.items()
     }
-    with open(f"{file_output}/generated_word_dictionary.json", "w", encoding="utf-8") as f:
+    with open(f"{file_output}/word_dictionary.json", "w", encoding="utf-8") as f:
         json.dump(vocabulary_json, f, ensure_ascii=False, indent=2)
 
 def compute_token_similarity():
@@ -157,6 +160,7 @@ def compute_token_similarity():
     for domain, gen_word_list in gen_word_data.items():
         pattern = r"(.*qa).*"
         domain_2 = re.sub(pattern, r"\1", domain)
+        
         word_list = word_data[domain_2]
         gen_word_set = set(gen_word_list)
         word_set = set(word_list)
@@ -225,7 +229,7 @@ def compute_token_similarity():
 compute_token_similarity()
 
 #convert_csv(cartella, output)
-
+#unifica_json(cartella, output)
 #parse_qa(cartella, output)
 
 #with open(file_output, "w", encoding="utf-8") as f:

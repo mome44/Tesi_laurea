@@ -1,0 +1,28 @@
+Percentuale di tokens generati in comune per nap_book_qa : 93.94%
+Percentuale di tokens generati in comune per nap_book_qa_g2_6 : 87.32%
+Percentuale di tokens generati in comune per nap_book_qa_g3 : 91.67%
+Percentuale di tokens generati in comune per nap_wiki_qa : 94.97%
+Percentuale di tokens generati in comune per nap_wiki_qa_g2_21 : 95.83%
+Percentuale di tokens generati in comune per nap_wiki_qa_g3 : 95.74%
+Percentuale di tokens generati in comune per rom_book_qa : 88.02%
+Percentuale di tokens generati in comune per rom_book_qa_g2 : 90.85%
+Percentuale di tokens generati in comune per rom_book_qa_g3 : 94.44%
+Percentuale di tokens generati in comune per scn_book_qa : 96.55%
+Percentuale di tokens generati in comune per scn_book_qa_g2 : 92.41%
+Percentuale di tokens generati in comune per scn_book_qa_g3 : 100.00%
+Percentuale di tokens generati in comune per scn_wiki_qa : 97.26%
+Percentuale di tokens generati in comune per scn_wiki_qa_g2_21 : 98.21%
+Percentuale di tokens generati in comune per scn_wiki_qa_g3 : 98.87%
+
+
+Totale nap: 95.61%
+Nap not in dictionary
+sventura | l'ultra-auta-definnizzione | ddiventaje | grazi'a | ripartì | cumbattere | cómmo | ambito | abraham | s'accucchiaje | int''ô | "fino" | cconzunante | ascenzione | riturnato | ammonimento | trasmettere | scemenza | parlanne | ll'ammulante | dumanaje | cos'è | secondo | viaggiaie | ’a | comm'aggia | rripigliaje | particolarità | p'organizazzà | rraporta | egliosa | soccorso | èva | carattere | descriveva | l'ascenzione | ll'origgena | rimette | 
+
+Totale rom: 88.52%
+Rom not in dictionary
+l'arma | jje | ornitocefalo | c'aveva | tizio | ddentro | abitava | l'omo | alla | matrimonio | cominciato | previsione | aspettà | liberarse | grande | lungo | voluto | l'ammonizzione | bevande | l'artri | quell'omone | impastà' | intoppo | vegniva | problema | maledizione | spedizione | pecché | giudicato | move | scrocchiarelle | fecero | avé | "stronzo" | potere | risolveva | carattere | bbussava | levà | cibo | spiegazione | lagnasse | n'artro | preoccupata | quarcosa | j'offrì | quegli | riparà' | precise | bevuta | straccione | tornò | particolarità | descritto | c'avrà | "ornitocefalo" | funzionò | reagì | vojeva | istruzzioni | indove | testo | affissi | preparà | st'affatatura | stracannava | disastro | regge | prence | stavano | parla | misero | fia | 
+
+Totale scn: 97.59%
+Scn not in dictionary
+abbinimintu | "tie | down" | dummannau | lamentàu | "laissez | tê' | "l'uriggini" | elevatu | rispunnirunu | manutenzioni | agiu | limpiadum | magic" | cunvirtuti | raggiùnciri | l'asinu | faire" | parivu | menziona | ch'animali | 

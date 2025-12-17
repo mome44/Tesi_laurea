@@ -7,7 +7,7 @@ DIALECT = "romanesco"
 #, "nap_w", "rom_b", "scn_b", "scn_w"
 List_TIPO = ["scn_b"]
 
-OUTPUT_PATH = f"corpus/raw/"
+OUTPUT_PATH = f"corpus/refined"
 
 segnali = [
         "traduzion", "narrativa", "parafras", " il "
@@ -306,7 +306,7 @@ def process_fulltext(full_text):
 frasesos = ""
 full_text = ""
 
-with open(f"corpus/raw/scn_wiki.json", "r", encoding="utf-8") as f:
+with open(f"corpus/raw/rom_par.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 errore = False
 data_refined = []
@@ -318,7 +318,7 @@ for item in data:
         suspect_sentences.append(prima_frase)
         testo = testo.replace(prima_frase, "")
     #testo_nuovo = testo
-    testo_nuovo = refine(Dialetto = "siciliano", testo=testo)
+    testo_nuovo = refine(Dialetto = "romanesco", testo=testo)
     full_text += "\n" + testo_nuovo
     if testo_nuovo == "":
         print("errore dialetto non trovato o altro")
@@ -330,7 +330,7 @@ for item in data:
 for f in suspect_sentences:
     frasesos += f +"\n\n"    
 if not errore:
-    with open(f"{OUTPUT_PATH}/scn_wiki_refined.json", "w", encoding="utf-8") as out:
+    with open(f"{OUTPUT_PATH}/rom_par_refined.json", "w", encoding="utf-8") as out:
         json.dump(data_refined, out, ensure_ascii=False, indent=2)
 
 
