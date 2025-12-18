@@ -1,4 +1,5 @@
 ## Introduction
+*definition of corpus*
 Extracting the corpus is one of the most important aspects that have to be considered when dealing with LLMs. Since the quality of the corpus is related also to the performance of the model.
 
 In our case, the one of “teaching” Minerva some Italian regional languages, we have to understand that there are some limitations, that wouldn’t be there when considering widespread and official languages.
@@ -7,12 +8,19 @@ The first thing is the lack of huge quantities of corpus. Usually regional langu
 
 The other aspect is the orthography and standardization, since regional languages often do not have a standardized spelling and orthography, neither an organization that regulates them. The way of representing the language is left to the individual speakers. So there is a lot more variations when it comes to even writing a single word, this depends on the structure of the language itself and also on the official language in which it coexists with. E.g the way in which italian dialects are usually written will tend to resemble italian orthography.
 
-## Kind of corpus
+## Corpus subdivision
 Kinds of corpus
 
-When extracting the corpus for language tuning we have different kinds of texts online.
+When extracting the corpus for language fine tuning we have different kinds of texts online. The main categorization divides them based on two criteria:
+- Format
+- Domain
 
-Prose texts
+### Format
+This indicates the way in which the text is written, in literature the most common styles are, prose poetry and comedy. 
+
+*definition of prose, poetry and comedy*
+
+#### Prose texts
 
 They are found on the web, especially on free website, like the gutenberg project and the manuzio/liber liber website.
 
@@ -28,7 +36,7 @@ This process is done using parsing with specific rules.
 
 Prose text according to standard practince in large llm fine tuning techniques can be divided into different _domains_. Each domain has its own characteristics, in this scenario two main domains can be identified.
 
-Comedies
+#### Comedies
 
 They are texts made by a continuos dialogue, where each speaker is identified and there are also brief description of the scenario and the action that the actor is performing. The Italian “dialectal” comedies and theater, contains usually funny or comical language, the description of the scenario is usually in Italian.
 
@@ -38,9 +46,17 @@ The results are saved in a json file containing “actor” and “text”.
 
 However there is a problem with this kind of texts because they contain battute so they cannot be directly used for language training, so there needs to be paraphrasing.
 
-Poetry and lyrics
+#### Poetry and lyrics
 
 These were extracted from popular local authors and they still represent the majority of the texts in these regional languages. The major problem here is that they rime and the words are not rearranged in the natural way in which people speak. So also here we need to paraphrasize the text, while maintaining the same language.
+
+### Domain
+
+#### Literature
+
+#### Encyclopedical
+
+#### News
 
 ## Methods
 
@@ -55,6 +71,7 @@ These were extracted from popular local authors and they still represent the maj
 ### Generating more text
 Paraphrasis
 
+*cite papers about paraphrasis and data augmentation using llms*
 This important step was implemented by first creating a prompt to perform this paraphrasis, I tried different API and the best open LLM to do this was __
 
 The structure of the prompt was this:
@@ -85,6 +102,8 @@ The prompt was structured this way,
 
 
 ## Standardization
+
+*describe the problem of finding a standardized version of these languages*
 ### Roman
 ### Neapolitan
 ### Sicilian

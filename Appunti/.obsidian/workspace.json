@@ -11,10 +11,14 @@
             "id": "3f61e30276a309cf",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Tesi/Capitolo 1 - Corpus.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Capitolo 1 - Corpus"
             }
           }
         ]
@@ -181,8 +185,8 @@
   },
   "active": "3f61e30276a309cf",
   "lastOpenFiles": [
-    "Evaluation.md",
     "Riassunto language adaptation.md",
+    "Evaluation.md",
     "Pasted image 20251218100128.png",
     "Pasted image 20251218001815.png",
     "Notes for Lora.md",
