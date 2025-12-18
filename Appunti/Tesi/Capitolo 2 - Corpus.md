@@ -1,6 +1,10 @@
 ## Introduction
-*definition of corpus*
-Extracting the corpus is one of the most important aspects that have to be considered when dealing with LLMs. Since the quality of the corpus is related also to the performance of the model.
+
+_A corpus can be defined as a collection of machine-readable authentic texts (including transcripts of spoken data) that is sampled to be representative of a particular natural language or language variety.’_     (McEnery et al. 2006: 5)
+
+[https://www.lancaster.ac.uk/fass/projects/corpus/ZJU/xpapers/Xiao_corpus_creation.pdf]
+
+Creating, and extracting the corpus is one of the most important aspects that have to be considered when dealing with LLMs. Since the quality of the corpus is related also to the performance of the model.
 
 In our case, the one of “teaching” Minerva some Italian regional languages, we have to understand that there are some limitations, that wouldn’t be there when considering widespread and official languages.
 
@@ -10,6 +14,7 @@ The other aspect is the orthography and standardization, since regional language
 
 ## Corpus subdivision
 Kinds of corpus
+
 
 When extracting the corpus for language fine tuning we have different kinds of texts online. The main categorization divides them based on two criteria:
 - Format

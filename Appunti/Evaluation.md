@@ -30,10 +30,9 @@ Una repo dove si trova un codice che traduce dall'italiano a un dialetto della c
 https://github.com/Tommaso-Sgroi/VojoLe-LM
 
 ----
-## Other kinds of evaluation
+## _GRDD+: An Extended Greek Dialectal Dataset with  Cross-Architecture Fine-tuning Evaluation_
 
-_GRDD+: An Extended Greek Dialectal Dataset with  Cross-Architecture Fine-tuning Evaluation_
-
+They say that LLms struggle with dialectal variations in lower resourced languages, like in POS tagging
 Dataset:
 they propose an extended version of the GRDD+ dataset that includes texts from different greek dialects. The dataset size is a total of 6M words, for all the dialects combined, so the dimensions are pretty comparable.
 
@@ -63,19 +62,32 @@ In general some of the metrics that are used specifically for dialects in the ca
 ----
 _AL-QASIDA: Analyzing LLM Quality and Accuracy Systematically in  Dialectal Arabic_
 
-They want to evaluate the text generation and understanding of arabic dialect.
+They want to evaluate the text generation and understanding of arabic dialect. DA is dialectal arabic. 
 
-Dataset:
-To create the questions they used an existing english question dataset, and replaced the language name with the arabic variety. Es. can you give me a text in \__ ?
-They used a monolingual dialectal text to create prompt, turning sentences into realistic instructions.
+
+Dataset for evaluation
+1) cross lingual prompts or user english input requesting specific DA varieties;
+2) Monolingual prompts so user in dialect requesting various DA varieties.
+3) Bitextual prompts to ask for translation
+The cross-lingual promptswere adapted from Marchisio et al an english llm prompts by replacing the language name with the arabic variety. Es. can you give me a text in \__ ?
+The monolingual evaluation is used to measure how well the llm matches the user's input DA variety, so it must be composed of prompt.
+They used a monolingual dialectal text to create prompt, tuning sentences into realistic instructions.
+
+For the *fidelity* they require a NADI (the task of identifying the arabic variety) model to identify a llm outputs. Then there is the definition of the Nadi score, since for classification if there is a "wrong label" before it din't take distance into account. 
+
+Understanding: DA -> english translation, they use metrics such as bleu chrF. In addition they asked annotators to evaluet the understanding by evaluating directly how much the fidelity task responces fulfilled the requests. 
 
 Task:
+
+They used Command R+ base, LLama 3.1 both instruct and base models. Command R base. 
+
 They did instruction tuning using different prompts.
 The dialects have to satisfy the following criteria:
 - Fidelity: can llm identify and produce the correct DA variety, when asked?
 - Understanding: Can it understand prompts in the DA variety?
 - Quality: this encompass the fluency and also the semantic accuracy.
 - Diglossia: translating between msa and dialects.
+
 Evaluation:
 
 For fidelity they did classification
@@ -84,6 +96,8 @@ For understanding they did this, if the model is able to translate the generated
 
 For the quality they asked for translation from english to dialect. They used human evaluation, they judged adherence of the response to the requeste, the adequacy of translation, also the fluency and dialectal fidelity. 
 50 responses in random order.
+
+They concluded that base models followed better dialectal fidelity than the base models.
 
 ![[Pasted image 20251218100128.png]]
 
