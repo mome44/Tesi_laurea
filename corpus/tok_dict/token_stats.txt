@@ -17,12 +17,12 @@ Percentuale di tokens generati in comune per scn_wiki_qa_g3 : 98.87%
 
 Totale nap: 95.61%
 Nap not in dictionary
-sventura | l'ultra-auta-definnizzione | ddiventaje | grazi'a | ripartì | cumbattere | cómmo | ambito | abraham | s'accucchiaje | int''ô | "fino" | cconzunante | ascenzione | riturnato | ammonimento | trasmettere | scemenza | parlanne | ll'ammulante | dumanaje | cos'è | secondo | viaggiaie | ’a | comm'aggia | rripigliaje | particolarità | p'organizazzà | rraporta | egliosa | soccorso | èva | carattere | descriveva | l'ascenzione | ll'origgena | rimette | 
+cumbattere | trasmettere | grazi'a | ripartì | ’a | ll'ammulante | p'organizazzà | l'ultra-auta-definnizzione | s'accucchiaje | l'ascenzione | rraporta | ammonimento | ascenzione | particolarità | cos'è | riturnato | rimette | carattere | viaggiaie | ll'origgena | cómmo | scemenza | parlanne | cconzunante | abraham | egliosa | dumanaje | ambito | èva | comm'aggia | soccorso | ddiventaje | sventura | secondo | "fino" | descriveva | rripigliaje | int''ô | 
 
 Totale rom: 88.52%
 Rom not in dictionary
-l'arma | jje | ornitocefalo | c'aveva | tizio | ddentro | abitava | l'omo | alla | matrimonio | cominciato | previsione | aspettà | liberarse | grande | lungo | voluto | l'ammonizzione | bevande | l'artri | quell'omone | impastà' | intoppo | vegniva | problema | maledizione | spedizione | pecché | giudicato | move | scrocchiarelle | fecero | avé | "stronzo" | potere | risolveva | carattere | bbussava | levà | cibo | spiegazione | lagnasse | n'artro | preoccupata | quarcosa | j'offrì | quegli | riparà' | precise | bevuta | straccione | tornò | particolarità | descritto | c'avrà | "ornitocefalo" | funzionò | reagì | vojeva | istruzzioni | indove | testo | affissi | preparà | st'affatatura | stracannava | disastro | regge | prence | stavano | parla | misero | fia | 
+maledizione | st'affatatura | c'avrà | jje | "ornitocefalo" | l'ammonizzione | avé | j'offrì | quegli | scrocchiarelle | n'artro | parla | l'arma | istruzzioni | bevande | tornò | "stronzo" | vegniva | riparà' | grande | previsione | particolarità | intoppo | affissi | alla | disastro | spedizione | testo | prence | problema | carattere | straccione | precise | indove | move | tizio | risolveva | quarcosa | quell'omone | preoccupata | lagnasse | pecché | bevuta | vojeva | spiegazione | fia | potere | lungo | fecero | stavano | bbussava | cibo | l'omo | aspettà | c'aveva | preparà | matrimonio | voluto | levà | liberarse | ornitocefalo | giudicato | impastà' | misero | l'artri | abitava | reagì | stracannava | cominciato | funzionò | descritto | regge | ddentro | 
 
 Totale scn: 97.59%
 Scn not in dictionary
-abbinimintu | "tie | down" | dummannau | lamentàu | "laissez | tê' | "l'uriggini" | elevatu | rispunnirunu | manutenzioni | agiu | limpiadum | magic" | cunvirtuti | raggiùnciri | l'asinu | faire" | parivu | menziona | ch'animali | 
+menziona | faire" | "l'uriggini" | tê' | "tie | raggiùnciri | rispunnirunu | agiu | abbinimintu | l'asinu | dummannau | limpiadum | down" | cunvirtuti | "laissez | parivu | elevatu | manutenzioni | ch'animali | lamentàu | magic" | 
