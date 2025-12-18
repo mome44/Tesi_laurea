@@ -1,0 +1,199 @@
+{
+  "main": {
+    "id": "ec65da85beb00e9e",
+    "type": "split",
+    "children": [
+      {
+        "id": "5ac5f1edc57f3ccf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3f61e30276a309cf",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e1b306f096f9984a",
+    "type": "split",
+    "children": [
+      {
+        "id": "9b09000559ea093d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "194cc523858d41e9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "956f52231301deec",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#Low-Resourcetag:#Low-Resource",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "a1a1ebab9be6b3b3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "f7c67d2bfaf9b46c",
+    "type": "split",
+    "children": [
+      {
+        "id": "765f0d63666e25be",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "77d7cdec107afa59",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Notes for language dialect adaptation.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Notes for language dialect adaptation"
+            }
+          },
+          {
+            "id": "a17e78dd41be4048",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Notes for language dialect adaptation.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Notes for language dialect adaptation"
+            }
+          },
+          {
+            "id": "2733e73169e1081e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "997adf5560f602eb",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "971e6d065ace2f7a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Notes for language dialect adaptation.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Notes for language dialect adaptation"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "3f61e30276a309cf",
+  "lastOpenFiles": [
+    "Evaluation.md",
+    "Riassunto language adaptation.md",
+    "Pasted image 20251218100128.png",
+    "Pasted image 20251218001815.png",
+    "Notes for Lora.md",
+    "Notes for language dialect adaptation.md",
+    "Tesi/Capitolo 1 - Corpus.md",
+    "Tesi/Capitolo 3 - Training with Lora.md",
+    "Tesi/Capitolo 4 - Evaluation.md",
+    "Tesi/Capitolo 2 - The model.md",
+    "Tesi",
+    "E2E eval metrics.md",
+    "Dataset GLUE.md",
+    "Welcome.md"
+  ]
+}
