@@ -99,6 +99,8 @@ For the quality they asked for translation from english to dialect. They used hu
 
 They concluded that base models followed better dialectal fidelity than the base models.
 
+Also that llms understand better than they can generate,  
+
 ![[Pasted image 20251218100128.png]]
 
 ----
