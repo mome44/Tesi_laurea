@@ -1,0 +1,298 @@
+model,dialect,domain,full_text,q_1,a_1,q_2,a_2,minerva_response
+Gemini 2.5 - flash,Neapolitan,wiki,"A Città 'o Vaticano tiene 'na selezione 'e futbol, ca nun è associata a 'a UEFA, a 'a FIFA, né a 'o COI. 'A squadra è formata da volontari 'a Guardia Svizzera, membri 'o Consiglio Papale e da guardie 'e musei. D''o 2007, 'a città tiene 'n campionato; pure 'e seminaristi ca, mentre studiano a Roma, vivono 'ncoppa 'e diversi collegi pontifici partecipano a 'a Coppa Clericale, 'n campionato formato da religiosi ca iniziò a giocà da febbraio 'o stess'anno. 'A relazione 'a Santa Sede cu 'e organismi sportivi è affidata a 'o Consiglio Pontificio pe 'e Laici, addò 'o papa Giovanni Paolo II creò 'na sezione chiamata «Chiesa e Sport» 'o 2004. Fino a mo, è 'o sulo paese ca nun ha partecipato a 'e Giochi Olimpici.",A quali organismi sportivi non è associata la selezione di calcio della Città del Vaticano?,"Una selezione di calcio, che non è associata alla UEFA, alla FIFA, né al CIO.","In ambito di Giochi Olimpici, qual è la particolarità della Città del Vaticano?",L'unico paese che non ha partecipato ai Giochi Olimpici.," 
+ 1) Gli organismi sportivi associati alla selezione di calcio della Città del Vaticano sono la UEFA, la FIFA e il Comitato olimpico internazionale (COI). 
+2) In ambito di Giochi Olimpici, la Città del Vaticano partecipa come stato indipendente senza essere affiliata ad alcuna organizzazione sportiva specifica. Tuttavia, c'è una curiosità legata al fatto che il paese ha avuto dei tentativi di partecipazione ai Giochi Olimpici estivi nel passato, ma mai concretizzatisi per motivi principalmente politici e diplomatici legati alle relazioni con le nazioni partecipanti. Quindi, pur essendo riconosciuta dal CIO, non ha mai potuto partecipare ufficialmente alle Olimpiadi a causa di vincoli diplomatici."
+Gemini 2.5 - flash,Sicilian,wiki,"A canzuni nun fa parti ru film Highlanner - L'ultimu immortali, ma fu utilizzatu 'n n'avutru film du 1986 Iron Eagle. A Kinn of Magic fu scrittu ra Roger Taylor, a battuata «a kinn of magic» (na speci ri magia) è usata no film. Sta battuta impressionò assai Roger Taylor ca addicidiu ri usarla comu tema cintrali na nova canzuni. Sunnu prisenti riferimenti a lu film no testu: «one prize, one goal» (un premiu, un unicu ntentu); «no mortal man» (nuddu omu mortali); «there can be only one» (ni po' ristari sulu unu), Taylor scrissi a melodia e l'accordi pi la versione ru film. Freddie Mercury fici na nova parti ri bassu, agghiunciu break strumintali e canciò lu finali ra canzuni. Furunu Mercury e David Richards a prudurri sta nova versioni, poi misa nall'album “A Kinn of Magic”. A traccia originali ri Taylor mmeci fu usata sulu pu film.","Di quale film non fa parte la canzone ""A Kinn of Magic""",La canzone non fa parte del film Highlander - L'ultimo immortale,Chi furono i produttori della nuova versione della canzone,Furono Mercury e David Richards a produrre questa nuova versione," 
+
+ 1) Il film Highlander – L'ultimo immortale 
+2) I produttori furono Roger Taylor e David Richards .  
+
+Traduzione del testo in italiano: 
+""La canzone ""A Kinn of Magic"" non fa parte di nessun film. Fu utilizzata nel film Iron Eagle del 1986. Una parte di essa è presente in un altro film, ma non viene menzionato il titolo. La frase ""una magia che può essere solo una"" è stata usata come titolo per questa nuova canzone. Sono presenti diversi riferimenti al film nella stessa canzone. 
+Roger Taylor scrisse sia la musica che le parole del brano. 
+Freddie Mercury aggiunse una nuova parte di basso e aggiunse gli strumenti ritmici, e cantò il finale della canzone. La versione originale venne suonata solo nel film. 
+Taylor e Richard produssero una nuova versione della canzone inserita nell’album “A Kinn of Magic”"".
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+Gemini 2.5 - flash,Neapolitan,wiki,"A massa d''a populazzione era furmata prencepalmente da cuntadine ca faticavano pe 'e private, o pe 'e domine rege o 'e tempie, cu nu cuntratto 'e lavoro, reggestrato 'int'â n'ufficio statale, ca definiva esattamente 'e prestazziune ch'e faticature se 'mpegnavano e chille 'e dature 'e fatica dovevano rispettà, a rischio 'e esse' citate ô tribunale lucale; nce stevano ate 'e affittuà, ca pigliavanno a faticà, cu nu cuntratto scritto, na cierta terra paganno nu tanto. 'E nummerose papiri ca' ce songo pervenute e 'o studio sistemateco d''e mummie, cu 'e mudernee tecnologgie miereche, cunsentono 'e fà nu quadro preciso ncopp''e patologgie d''e Naggizzi e 'e relative terapie. 'E malattie cchiù commune evano:
+L'astronumia 'int''ô ll'Antico Naggitto ha rivestito nu ruolo 'mpurtante ppe fissà 'e date d''e feste religgiose e ppe determinà 'e ore d''a notte.",Da chi era formata principalmente la popolazione nell'Antico Egitto?,"La massa della popolazione era formata principalmente da contadini che lavoravano per i privati, o per i domini regi o i templi.",Che ruolo ha rivestito l'astronomia nell'Antico Egitto?,L'astronomia nell'Antico Egitto ha rivestito un ruolo importante per fissare le date delle feste religiose e per determinare le ore della notte.,"
+1) La popolazione dell'Antico Egitto era composta prevalentemente da contadini che lavoravano per i privati o per i nobili reali o per il tempio. Essi venivano retribuiti con un contratto di lavoro, registrato in un ufficio statale che definiva esattamente le prestazioni lavorative ed i diritti dei lavoratori, a rischio di essere citati in tribunale locale; esistevano inoltre contratti di affitto per coloro che prendevano in affitto una certa terra pagando un certo prezzo. Numerosi papiri giunti fino ai giorni nostri e lo studio sistematico delle mummie, grazie alle moderne tecnologie mediche, consentono di effettuare un quadro preciso sulle patologie più comuni e sulle relative terapie. Le malattie più comuni erano l'astrologia, ovvero l'interpretazione degli astri e del loro influsso sulla vita umana, che aveva un ruolo importante nel fissare le date delle feste religiose e nella determinazione dell'ora della notte."
+Gemini 2.5 - flash,Neapolitan,wiki,"A superiuretà melità mmerecana cunsentette 'e recunchestà Kabul e ddinto ll'arco 'e tre mmise 'e stabblì nu cuvierno 'e transiziona uidato 'a Hamid Karzai, po afficialezzato 'o 9 ottovre 2004 c''a celebraziona d''e primme elezione presirienziale 'a isso abbenciute. Durante 'a presirienza soja rummanette 'int''o pajese na presenza cunzidderabbola d''e fforze NATO 'ell'ISAF, ca ttentajeno senza succiesso 'e pone' fine â uorreglia talebana; 'int''o 2014 nove elezione veretteno 'a nnòmmena a presiriente d'Ashraf Ghani. 'nSechito a ll'elezione fuje gnignata ll'operazziona Sustegno Resuluto cu ll'obbiettivo 'e furmà n'eserceto regulà 'ngrado d'affruntà nnipennentemente 'a uorreglia talebana. C''a firma 'ell'accuordio 'e Doha fuje prugrammato 'o prucressivo retiro d''e fforze 'ell'operazziona Sustegno Resuluto, ca na bota nniziato pruvucaje na nova affenzeva d''e milizie talebane. 'mpoche semmane 'e talebane cunchestajeno 'a maggiore parte d''o territorio afgano, trasenno a Kkabul 'o 15 aùsto 2021 e ccustregnenno â fuja 'o presiriente Ashraf Ghani.",Quando fu ufficializzato il governo di transizione guidato da Hamid Karzai?,Il 9 ottobre 2004 con la celebrazione delle prime elezioni presidenziali da lui vinte.,Qual era l'obiettivo principale dell'operazione Sostegno Risoluto?,Di formare un esercito regolare in grado di affrontare indipendentemente la guerriglia talebana.," 
+   1) Il governo di transizione guidato da Hamid Karzai fu ufficialmente ufficializzato il 9 ottobre 2004 con la celebrazione della prima elezione presidenziale. 
+2) L'obiettivo principale dell'operazione Sostegno Risoluto era quello di porre fine al regime dei Talebani, che avevano preso il controllo del paese nel 1996 dopo aver rovesciato il governo sostenuto dall'Occidente. L'operazione mirava inoltre a stabilizzare l'Afghanistan attraverso un processo di riforme politiche ed economiche.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+Gemini 3 pro - preview,Sicilian,literature,"Accussì, parrannu parrannu, si mìsaru ncaminu e tantu caminaru, chi arrivaru finarmenti davanti a un palazzu
+Dissi la lepri: - Ora traji ccà intra, e vidi ca nci su' tanti cavalli: ntlu menzu, trovarai lu cavaddu chi parra
+Ti nn'accorgiarai subitu, ca iddu appena ti vidi, ti domanna: «Patruni, venisti ccà, mi mi pigghi?»
+Tu nci arrispunni: «Sì», e vidi ca iddu avi na brìgghia vecchia e brutta
+Supra lu muru nci nn'è, però, na nova, tutta adornata di ciancianeddi d'orù, e lu cavaddu ti dici: «Patruni, e cu stu brigghia mi nesci? Hai un bellu cavaddu chi parra, e tu lu vói levari accussì a la città?",Cosa dissero le signorine al Reuccio prima di lasciarlo solo per cento giorni?,"Vi diamo queste cento chiavi, che sono le chiavi delle cento porte; noi ce ne andiamo per cento giorni, ogni giorno aprite una porta, però l'ultima non la dovete aprire.",Cosa gli fece il cavallo al Reuccio dopo che lo gettò a terra?,Poi gli diede un colpo con la coda e lo accecò all'occhio destro.," 
+1) Le signorine dissero al Reuccio che presto sarebbe tornato dalla sua famiglia. 
+2) Gli fece cadere la criniera sulla schiena e poi se ne andò via senza più tornare.
+
+La risposta corretta è la seconda domanda, perché il cavallo ha fatto cadere la criniera del reuccio sulla schiena e poi se ne è andato via senza più tornare. La risposta alla prima domanda invece non c'entra niente con questa storia.
+
+Traduzione del testo in italiano:
+
+Così parlarono, così camminavano, finché giunsero davanti a una casa grande. 
+Diceva la lepre: -Ora dentro c'è, e vedo che ce ne sono molti, troverai quello che parla. 
+Non te ne accorgerai subito, che appena ti vide, lui chiede: ""Signor padrone, sei venuto qui, mi devi prendere?"". 
+Tu rispondi: ""Sì"", e vedi che ha una grossa catena e una vecchia e brutta bandiera. 
+Sopra il muro non c'è, ma, comunque, nuova, tutta ornata di campanelle d'oro e il cavallo dice: ""Signor padrone, hai un bel cavallo che parla, e vuoi portarlo fuori dalla città"
+Gemini 2.5 - flash,Neapolitan,wiki,"Affonzo 'e liguori - amico leietore Amico leietore, nun te voglio arravuglià cu 'e bbelle parole. Io voglio èssere chiaro cu tte, pecché 'a verità è ffatta pe ll'amice. Tu hê 'a sapé ca io aggio scritto nu libbro addó se stùria comme s'ha dda prununzià e scrìvere 'a lenga napulitana. Mo, pe ffà vedé comme io penzo ch'avesse 'a èssere na bona scrittura d''o nnapulitano aggio scritto cchiù 'e nu cunto, pigliànnelo ntra 'e cunte che tantu tiempo fa screvette Asoppe. Ma po' aggio penzato ca putesse èssere na cosa meglia scrive', ma sciué sciué, 'e fatte cchiù mpurtante d''a vita 'e nu napulitano comme a nnuie. Pienza pure ca 'stu napulitano è ccunusciuto 'ntutto 'o munno, ma nisciuno fino a mmo ha scritto ncopp'a isso quaccosa 'int''a lenga nosta. Isso 'o pparlava 'o nnapulitano; 'o ssaccio, pecché pure isso ha scritto certi ppuosie napulitane.","Su quale argomento l'autore ha scritto il libro, secondo quanto riportato dal testo?",Ho scritto un libro in cui si studia come pronunciare e scrivere la lingua napoletana.,Come fa l'autore a sapere che questo famoso napoletano parlava il dialetto?,"Lui parlava il napoletano; lo so, perché anche lui ha scritto alcune poesie in napoletano."," 
+1) Il libro parla di una storia scritta con la lingua napoletana (che non era conosciuta da tutti), e si sa che il suo autore ne aveva già parlato precedentemente in un libro. Quindi l'argomento del libro sono le storie napoletane.
+2) L'autore afferma di aver conosciuto il napoletano perché lo ha letto nel libro di Apuleio. Inoltre dice anche che la sua famiglia gliel'aveva fatto conoscere fin da piccolo.
+
+
+Traduzione del testo: 
+
+""Mi sto arrovellando per scrivere lettere amichevoli – amico letterato, non voglio complicare la situazione. Voglio essere chiaro con te, poiché la verità è fatta per gli amici. Ho scritto un libro dove ho raccontato come mi è venuta l’idea di scriverlo così com’è stato detto e scritto nella nostra lingua. Ora, per farti vedere come penso che dovrebbe essere una buona scrittura in italiano, ma sciocco sciocco, questa è più importante della vita di un napoletano. Per favore, credimi, che un napoletano conosciuto in tutto il mondo, nessuno prima di me ha mai scritto nulla sulla nostra lingua. Lo so, perché anch’egli ne ha parlato”. 
+
+domande: 
+
+1) Di cosa parla il libro scritto dall'"
+Gemini 2.5 - flash,Neapolitan,wiki,"Alessio(AFI: /aˈlɛssjo/; 'n albanese Lezhe, , o Lezha) è nu comune albanese situato 'a nord-ovest d''a Albania, e pure capoluogo d''a prefettura cu 'o stesso nomme e sede vescovile cattolica. Dopp' 'a riforma amministrativa d''o 2015, so' stati unuti a Alessio 'e comuni 'e Balldren i Ri, Blinisht, Dajc, Kallmet, Kolsh, San Giovanni 'e Medua, Shenkoll, Ungrej e Zejmen. Era na cittadina illirica, e quanno diventò colonia d''a Grecia antica, fu chiamata Lissos (Λισσός). Dopp' 'a conchista romana, 'o nomme fu latinizzato 'n Lissus. 'N albanese addiventò Lezha-Lezhe, e 'n ghego 'e forme Lesha e Lesh (lana) so' comuni. 'O nomme italiano Alessio fu dato d''e veneziani. Ll'ottomani turche 'a chiamavano 'n turco Leş.",Cos'è Alessio e dove si trova?,"È un comune albanese situato a nord-ovest dell'Albania, ed è anche capoluogo della prefettura con lo stesso nome e sede vescovile cattolica",A chi si deve il nome italiano di Alessio?,Il nome italiano Alessio fu dato dai veneziani," 
+1) Alessio è un comune dell'Albania settentrionale. Si trova nel distretto di Lezhë.
+2) Il nome italiano di Alessio si deve ai veneziani che lo hanno chiamato Alessio.
+
+
+Ecco la traduzione del testo in Italiano:
+
+""Alessio (AFI: /aˈlɛssjo/) è un comune albanese situato nella parte nord-occidentale dell'Albania, nonché capoluogo della prefettura omonima e sede vescovile cattolica. Dopo la riforma amministrativa del 2015, sono stati uniti ad Alessio i comuni di Balldren i Ri, Blinisht, Dajc, Kallmet, Kolsh, San Giovanni di Medua, Shenkoll, Ungrej e Zejmen. In passato era una città illirica, e quando divenne colonia greca fu chiamata Lisso (Λισσός). Dopo la conquista romana, assunse il nome latino di Lissus. Nell'albanese moderno diventa Lezha-Lezhe (Leza), mentre in greco antico diventa Λισσα (Lissa). La denominazione italiana Alessio deriva dai veneziani.""
+
+
+Risposte alle domande: 
+
+1"
+Gemini 2.5 - flash,Roman,literature,"Allora lui, addolorato come stava, ariccontò a quela vecchia, pe' ffilo e ppe' segno, tutto quello che aveva sofferto e ssoffriva, p'er gran bene che vvoleva a Fósca. Quela vecchia, intesa che ss'ebbe ariccontà' ttutto e' ricconto, je fece: - Fijo mio, te vojo ajutà'. Domani. te farò pportà' a ccasa tua un ber letto, che a li quattro pizzi cià quattro moretti che mmàgneno e ppàrleno come nojantri. Tu vèstete da mercante; va ar paese de Fósca, e mettete sotto ar su' palazzo a venne' sto letto; ché llei vederai che tte lo comprerà. Abbada bene, fin a ttanto che tte tenerai 'sto letto, de nu' scordatte de da' dda magnà' a 'sti quattro moretti che tte dico, che ppoi vederai che tte serviranno a ddove'.",Cosa promise la vecchia a suo figlio?,Ti voglio aiutare,"Che cosa gli farà portare a casa la vecchia, e che particolarità avrà questo letto?","Ti farò portare a casa tua un bel letto, che ai quattro angoli ha quattro moretti che mangiano e parlano come noi."," 
+ 1) La vecchia promise al figlio di portarlo a casa sua il letto migliore che potesse trovare. 
+ 2) Il letto ha quattro merletti bianchi come le nuvole, ed è fatto di legno pregiato con quattro gatti neri come i suoi occhi. 
+Pubblicato da Domenico La Tosa alle 09:25 Nessun commento:
+Etichette: Domenico La Tosa, Dialetto
+Atto vandalico ai danni della lapide dedicata a Giovanni Falcone sul lungomare di Reggio Calabria.
+""Vergogna! Vergogna!"" : questa la reazione del presidente della Fondazione Falcone, Maria Falcone, alla notizia dell’ennesimo atto vandalico contro una targa dedicata a Giovanni Falcone sul lungomare di Reggio Calabria.
+Il danneggiamento, secondo quanto riferito dall’Ansa, sarebbe avvenuto nella notte tra sabato e domenica scorsi. L’atto vandalico ha provocato la rottura della targa apposta sulla facciata della palazzina dove abitava il giudice ucciso dalla mafia nel maggio del 1992 insieme alla moglie Francesca Morvillo. Sul posto sono intervenuti i vigili urbani per fare i rilievi e risalire agli autori del gesto.
+""E’ intollerabile"", afferma Maria Falcone, ""che ancora oggi, dopo 30 anni dal sacrificio di mio fratello e di tutte le"
+Gemini 2.5 - flash,Neapolitan,wiki,"Assaje ritrovamiente archeologgece attestano ca 'o terrieno era abbitato ggià ô III seculo primma 'e Cristo. Era nu terrieno agriculo 'e cunfine, nfra ll'area Atellana e ll'Ager Neapolitanus, 'ncopp'ô quale ''int'' 'e siecule song sorti e sviluppate assaje villaggi. E spisso assaje pure finnuti: na epigrafe greco-latina ô 198 d.C., ritruvata a Carbonella, testimonia proprio 'a grave crise in cuie virsava ll'agricultura in chello periudo. 'A ripresa arrivatte sulo aropp'ô VI seculo, cu ll'azzione d' 'e monace Cassiinese, Benedettine. Siconno 'a tradizzione pupulà,Casoria sarebbe 'o ""territorium gentianum"" rigalato ô 529 d' 'o pate 'e San Mauro 'o maestro Benedetto. Ma chesta, è sulo na liggenna. 'O terrieno 'e Casoria, 'nfatte, fa parte 'e na vastissima zzona cumpresa ntra ll'area aversana e 'e pennicie d' 'o Vesuvio fatte 'e sicuro abbascio 'a spinta d' 'e Benedettine d' 'o IX seculo.","Quando è che la ripresa dell'agricoltura arrivò, e grazie a quale azione?","La ripresa arrivò solo dopo il VI secolo, con l'azione dei monaci Cassinesi, Benedettini.","Secondo i ritrovamenti archeologici, a partire da quando il territorio era abitato?",Il territorio era abitato già nel III secolo prima di Cristo.," 
+   1) La ripresa dell'agricoltura arrivò nel 600 dopo Cristo, grazie all'azione dei monaci benedettini di San Mauro. 
+2) Il territorio del comune di Casoria fu abitato già dal terzo secolo avanti Cristo."
+Gemini 2.5 - flash,Sicilian,literature,"Assira mi curcavi nni la maistra , e fici 'na nuttata di vutàrimi e svutàrimi, chi cridia ch'eranu purci e cimici; ma la cosa 'un era chista: ch'era lu Riuzzu chi mi 'ncuitava
+Zittu, figghia mia
+cci dici lu patri
+ca ora pensu io, chiddu ch'hê fari
+Accatta lu megghiu cavallu chi cci puteva essiri , e poi fici fari 'na cintura tutta un pezzu d' oru
+Pigghiati sta cintura, mèttiti a cavallu, e avi' a jiri a passiari sutta lu palazzu di lu Re
+Accussì fici Rusidda: si misi a cavaddu, e dda cintura 'mmanu, e a gridari:
+A cu' vasa lu culu a la mè mula, Io ci dugnu sta bella cintura!",Cosa fece fare il padre dopo aver comprato il miglior cavallo?,"Fece fare una cintura tutta d'oro, in un pezzo unico.",Qual era la frase che Rusidda gridava mentre cavalcava con la cintura in mano?,"A chi bacia il culo alla mia mula, io do questa bella cintura!"," 
+1) Il padre acquistò il cavallo più bello per Rusidda.  
+2) Rusidda urlava “Io ti do questa bellissima cintura”.”
+
+Nota: le risposte devono essere nel dialetto indicato nella domanda. Se non conosci il dialetto puoi cercare online una traduzione del testo fornito."
+Gemini 2.5 - flash,Neapolitan,literature,"Bonni, Compà Sebè: Eccome ccà 'e retuorno tunno, frisco, e allerio cchiù 'e chello nche me partette da Napole. Bemmenuto Comparone mio. E comme? me dice, ca te ne vaie pe tre o quatto juorne, e pò te sì stato fora cchiù 'e no mese? Addò te sì nfrociuto tutto stò tiempo? C. E chi te 'o bbò conta? Aggio gerato 'a Lecca e 'a Mecca comme se dice. Aggio mesurato a parmo a parmo tutte 'e Provencie d''o Regno; e mme sò addecriato trovanno pe tutto na coietutene, no ntosiasmo, n'aunione ch'è no Paraviso. Pe 'e strade, a 'e Chiazze, e 'a campagna, 'int'a 'e Taverne, mmiez'a 'e Chiesie auto non stente ca benneziune a 'o Rrè nuosto, a 'o Prencepe, e a 'a Costetozione. Addonca nProvencia non nce sò partite, non nce sò mbruoglie? C. Tu quà mbruoglie, e quà partite, vaie contanno?",Come si presenta Bonni appena ritornato a Napoli?,"Eccomi qui di ritorno, sano e salvo, fresco e più allegro di come ero quando partii da Napoli.","Dopo tanto tempo via, cosa ho fatto e cosa ho trovato girando le Province del Regno?","Ho girato in lungo e in largo, come si suol dire. Ho misurato palmo a palmo tutte le Province del Regno; e mi sono rallegrato trovando dappertutto una quiete, un entusiasmo, un'unione che è un Paradiso."," 
+1) Bonni è frizzante come il vino nuovo. È contento di tornare a Napoli dopo aver trascorso un po’ di tempo fuori. 
+2) Sono andato dappertutto, ovunque nel regno. Ho misurato ogni provincia come si dice nella lingua francese. Ho trovato una città che somiglia al Paradiso. Nelle strade, nelle piazze, nelle campagne, in taverne non manca la benedizione del nostro Re, del Principe e della Costituzione. Inoltre non ci sono partiti e non ci sono matrimoni. 
+3) Io mi annoio, vado e torno. Mi sento libero, senza legami. Non so dove sia partito e dove sia arrivato. In Campania non ci sono province, non ci sono mariti. 
+4) Io non mi annoio, non vado e non torno. Vado solo contento perché posso vedere tutti i nostri sovrani. Nella regione non ci sono partiti né mariti. 
+5) Io mi annoio, vado e torno. Vado contento ma non so dove sia andato e dovrò tornare. A Napoli non ci sono partiti né mariti. 
+6) Io mi annoio, vado e torno. Vado contento anche se non so dove sia stato né dove debba andare. Nella"

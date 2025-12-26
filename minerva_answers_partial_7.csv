@@ -1,0 +1,74 @@
+model,dialect,domain,full_text,q_1,a_1,q_2,a_2,minerva_response
+Gemini 2.5 - flash,Neapolitan,wiki,"A Città 'o Vaticano tiene 'na selezione 'e futbol, ca nun è associata a 'a UEFA, a 'a FIFA, né a 'o COI. 'A squadra è formata da volontari 'a Guardia Svizzera, membri 'o Consiglio Papale e da guardie 'e musei. D''o 2007, 'a città tiene 'n campionato; pure 'e seminaristi ca, mentre studiano a Roma, vivono 'ncoppa 'e diversi collegi pontifici partecipano a 'a Coppa Clericale, 'n campionato formato da religiosi ca iniziò a giocà da febbraio 'o stess'anno. 'A relazione 'a Santa Sede cu 'e organismi sportivi è affidata a 'o Consiglio Pontificio pe 'e Laici, addò 'o papa Giovanni Paolo II creò 'na sezione chiamata «Chiesa e Sport» 'o 2004. Fino a mo, è 'o sulo paese ca nun ha partecipato a 'e Giochi Olimpici.",A quali organismi sportivi non è associata la selezione di calcio della Città del Vaticano?,"Una selezione di calcio, che non è associata alla UEFA, alla FIFA, né al CIO.","In ambito di Giochi Olimpici, qual è la particolarità della Città del Vaticano?",L'unico paese che non ha partecipato ai Giochi Olimpici.," 
+ 1) Gli organismi sportivi associati alla selezione di calcio della Città del Vaticano sono la UEFA, la FIFA e il Comitato olimpico internazionale (COI). 
+2) In ambito di Giochi Olimpici, la Città del Vaticano partecipa come stato indipendente senza essere affiliata ad alcuna organizzazione sportiva specifica. Tuttavia, c'è una curiosità legata al fatto che il paese ha avuto dei tentativi di partecipazione ai Giochi Olimpici estivi nel passato, ma mai concretizzatisi per motivi principalmente politici e diplomatici legati alle relazioni con le nazioni partecipanti. Quindi, pur essendo riconosciuta dal CIO, non ha mai potuto partecipare ufficialmente alle Olimpiadi a causa di vincoli diplomatici."
+Gemini 2.5 - flash,Sicilian,wiki,"A canzuni nun fa parti ru film Highlanner - L'ultimu immortali, ma fu utilizzatu 'n n'avutru film du 1986 Iron Eagle. A Kinn of Magic fu scrittu ra Roger Taylor, a battuata «a kinn of magic» (na speci ri magia) è usata no film. Sta battuta impressionò assai Roger Taylor ca addicidiu ri usarla comu tema cintrali na nova canzuni. Sunnu prisenti riferimenti a lu film no testu: «one prize, one goal» (un premiu, un unicu ntentu); «no mortal man» (nuddu omu mortali); «there can be only one» (ni po' ristari sulu unu), Taylor scrissi a melodia e l'accordi pi la versione ru film. Freddie Mercury fici na nova parti ri bassu, agghiunciu break strumintali e canciò lu finali ra canzuni. Furunu Mercury e David Richards a prudurri sta nova versioni, poi misa nall'album “A Kinn of Magic”. A traccia originali ri Taylor mmeci fu usata sulu pu film.","Di quale film non fa parte la canzone ""A Kinn of Magic""",La canzone non fa parte del film Highlander - L'ultimo immortale,Chi furono i produttori della nuova versione della canzone,Furono Mercury e David Richards a produrre questa nuova versione," 
+
+ 1) Il film Highlander – L'ultimo immortale 
+2) I produttori furono Roger Taylor e David Richards .  
+
+Traduzione del testo in italiano: 
+""La canzone ""A Kinn of Magic"" non fa parte di nessun film. Fu utilizzata nel film Iron Eagle del 1986. Una parte di essa è presente in un altro film, ma non viene menzionato il titolo. La frase ""una magia che può essere solo una"" è stata usata come titolo per questa nuova canzone. Sono presenti diversi riferimenti al film nella stessa canzone. 
+Roger Taylor scrisse sia la musica che le parole del brano. 
+Freddie Mercury aggiunse una nuova parte di basso e aggiunse gli strumenti ritmici, e cantò il finale della canzone. La versione originale venne suonata solo nel film. 
+Taylor e Richard produssero una nuova versione della canzone inserita nell’album “A Kinn of Magic”"".
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+Gemini 2.5 - flash,Neapolitan,wiki,"A massa d''a populazzione era furmata prencepalmente da cuntadine ca faticavano pe 'e private, o pe 'e domine rege o 'e tempie, cu nu cuntratto 'e lavoro, reggestrato 'int'â n'ufficio statale, ca definiva esattamente 'e prestazziune ch'e faticature se 'mpegnavano e chille 'e dature 'e fatica dovevano rispettà, a rischio 'e esse' citate ô tribunale lucale; nce stevano ate 'e affittuà, ca pigliavanno a faticà, cu nu cuntratto scritto, na cierta terra paganno nu tanto. 'E nummerose papiri ca' ce songo pervenute e 'o studio sistemateco d''e mummie, cu 'e mudernee tecnologgie miereche, cunsentono 'e fà nu quadro preciso ncopp''e patologgie d''e Naggizzi e 'e relative terapie. 'E malattie cchiù commune evano:
+L'astronumia 'int''ô ll'Antico Naggitto ha rivestito nu ruolo 'mpurtante ppe fissà 'e date d''e feste religgiose e ppe determinà 'e ore d''a notte.",Da chi era formata principalmente la popolazione nell'Antico Egitto?,"La massa della popolazione era formata principalmente da contadini che lavoravano per i privati, o per i domini regi o i templi.",Che ruolo ha rivestito l'astronomia nell'Antico Egitto?,L'astronomia nell'Antico Egitto ha rivestito un ruolo importante per fissare le date delle feste religiose e per determinare le ore della notte.,"
+1) La popolazione dell'Antico Egitto era composta prevalentemente da contadini che lavoravano per i privati o per i nobili reali o per il tempio. Essi venivano retribuiti con un contratto di lavoro, registrato in un ufficio statale che definiva esattamente le prestazioni lavorative ed i diritti dei lavoratori, a rischio di essere citati in tribunale locale; esistevano inoltre contratti di affitto per coloro che prendevano in affitto una certa terra pagando un certo prezzo. Numerosi papiri giunti fino ai giorni nostri e lo studio sistematico delle mummie, grazie alle moderne tecnologie mediche, consentono di effettuare un quadro preciso sulle patologie più comuni e sulle relative terapie. Le malattie più comuni erano l'astrologia, ovvero l'interpretazione degli astri e del loro influsso sulla vita umana, che aveva un ruolo importante nel fissare le date delle feste religiose e nella determinazione dell'ora della notte."

@@ -1,6 +1,11 @@
 import pandas as pd
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
+
+from datetime import datetime
+
+print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Starting script")
+
 #from huggingface_hub import snapshot_download
 #
 #snapshot_download(
@@ -26,6 +31,7 @@ print(df.columns)
 
 df_grouped = df.groupby("Full text")
 results = []
+LAST_I=20
 i = 0
 for full_text, dfs in df_grouped:
     rows = dfs[["AI model", "Dialect", "Domain", "Italian question", "Italian answer", "Dialectal question", "Dialectal answer"]].to_dict("records")
@@ -45,8 +51,13 @@ for full_text, dfs in df_grouped:
     answer_1 = row1["Italian answer"]
     answer_2 = row2["Italian answer"]
     
-    prompt = f"Dato questo testo in dialetto: \n\n \"{full_text}\" \n\n rispondi a queste domande: \n 1) {question_1} \n 2) {question_2}"
+    prompt = f"Dato questo testo in dialetto: \n\n \"{full_text}\" \n\n rispondi a queste due domande: \n 1) {question_1} \n 2) {question_2} \n\n risposte:"
     print(prompt)
+
+    if i<LAST_I:
+        i+=1
+        
+        continue
     inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
 
     # generazione
@@ -58,7 +69,7 @@ for full_text, dfs in df_grouped:
             top_p=0.9,
             do_sample=True
         )
-    print(f"------ {i} -------")
+    print(f"------ {i} -------[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}]")
     response = tokenizer.decode(
         outputs[0][inputs["input_ids"].shape[-1]:],
         skip_special_tokens=True
@@ -77,9 +88,9 @@ for full_text, dfs in df_grouped:
     })
     i+=1
 
-    if i%5 == 0 :
-        out_df = pd.DataFrame(results)
-        out_df.to_csv(f"minerva_answers_partial_{i}.csv", index=False)
+    
+    out_df = pd.DataFrame(results)
+    out_df.to_csv(f"minerva_answers_partial_{i}.csv", index=False)
     
 out_df = pd.DataFrame(results)
 out_df.to_csv("minerva_answers.csv", index=False)
