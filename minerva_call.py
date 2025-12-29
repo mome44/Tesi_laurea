@@ -1,30 +1,34 @@
 import pandas as pd
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
-
+from peft import LoraConfig, get_peft_model, TaskType, PeftModel
 from datetime import datetime
 
 print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Starting script")
 
-#from huggingface_hub import snapshot_download
-#
-#snapshot_download(
-#    repo_id="sapienzanlp/Minerva-7B-instruct-v1.0",
-#    local_dir="minerva-7b-instruct",
-#    local_dir_use_symlinks=False
-#)
-#token = "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"
+from huggingface_hub import snapshot_download
 
-MODEL_PATH = "minerva-7b-instruct"  # path locale
+MODEL_PATH = "minerva-350M"
+#df = pd.read_csv("minerva_answers_partial_20.csv")
+#print(df.columns)
 
-tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
-model = AutoModelForCausalLM.from_pretrained(
+base_model = AutoModelForCausalLM.from_pretrained(
     MODEL_PATH,
-    torch_dtype=torch.float16,
+    dtype=torch.float16,
     device_map="auto"
 )
 
+model = PeftModel.from_pretrained(
+    base_model,
+    "./minerva-lora"
+)
+
 model.eval()
+
+#MODEL_PATH = "minerva-7b-instruct"  # path locale
+
+tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
+
 
 df = pd.read_csv("Q&A dialect thesis - Q&A.csv")
 print(df.columns)

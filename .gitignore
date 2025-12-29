@@ -1,5 +1,12 @@
 minerva-7b-instruct
+minerva-350M
+minerva-lora
 
+results/rom_book
+results/scn_book
+results/scn_wiki
+results/nap_book
+results/nap_wiki
 corpus_tesi/napoletano/commedia
 corpus_tesi/napoletano/opus
 corpus_tesi/napoletano/parafrasi_poesia
