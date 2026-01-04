@@ -116,7 +116,7 @@ def refine_romano(testo):
     #testo = re.sub(r"l\b", "r", testo)
 
     testo = re.sub(r"\bdi\b", "de", testo)
-    testo = re.sub(r"\bmi\b", "me", testo)
+    #testo = re.sub(r"\bmi\b", "me", testo)
     testo = re.sub(r"\bti\b", "te", testo)
     testo = re.sub(r"\b(quel)\b", "quer", testo)
     testo = re.sub(r"\b(quer')", "quell'", testo)
@@ -134,10 +134,6 @@ def refine_romano(testo):
     testo = re.sub(r"\bartr([aeio])\b", r"antr\1", testo)
     testo = re.sub(r"gli(?=[aeou])", "j", testo)
     testo = re.sub(r"\br'(?=[aeoiu])", "l'", testo)
-    
-    testo = re.sub(r"\b([A-Za-z]{3,})are\b", r"\1à", testo)
-    testo = re.sub(r"\b([A-Za-z]{3,})ere\b", r"\1e'", testo)
-    testo = re.sub(r"\b([A-Za-z]{3,})ire\b", r"\1ì", testo)
 
     testo = re.sub(r"ngi(?=[aou])", "gn", testo)
     testo = re.sub(r"ng(?=[ie])", "gn", testo)
@@ -240,10 +236,6 @@ def refine_napoletano(testo):
     testo = re.sub(r"qu(?=[e,i])", "ch", testo)
     testo = re.sub(r"(?<!(q|g))ue(?!\b)", "uo", testo)
 
-    testo = re.sub(r"\b([A-Za-z]{3,})are\b", r"\1à", testo)
-    testo = re.sub(r"\b([A-Za-z]{3,})ere\b", r"\1e'", testo)
-    testo = re.sub(r"\b([A-Za-z]{3,})ire\b", r"\1ì", testo)
-
     testo = re.sub(r"ngi(?=[aou])", "gn", testo)
     testo = re.sub(r"ng(?=[ie])", "gn", testo)
     testo = re.sub(r"([ctvmpds])\"([aeiou]\b)", r"\1''\2", testo)
@@ -306,7 +298,7 @@ def process_fulltext(full_text):
 frasesos = ""
 full_text = ""
 
-with open(f"corpus/raw/rom_par.json", "r", encoding="utf-8") as f:
+with open(f"corpus/raw/rom_book.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 errore = False
 data_refined = []
@@ -330,7 +322,7 @@ for item in data:
 for f in suspect_sentences:
     frasesos += f +"\n\n"    
 if not errore:
-    with open(f"{OUTPUT_PATH}/rom_par_refined.json", "w", encoding="utf-8") as out:
+    with open(f"{OUTPUT_PATH}/rom_book_refined.json", "w", encoding="utf-8") as out:
         json.dump(data_refined, out, ensure_ascii=False, indent=2)
 
 

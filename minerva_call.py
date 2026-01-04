@@ -1,46 +1,45 @@
 import pandas as pd
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
-from peft import LoraConfig, get_peft_model, TaskType, PeftModel
+
 from datetime import datetime
 
 print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Starting script")
 
-from huggingface_hub import snapshot_download
+#from huggingface_hub import snapshot_download
+#
+#snapshot_download(
+#    repo_id="sapienzanlp/Minerva-7B-instruct-v1.0",
+#    local_dir="minerva-7b-instruct",
+#    local_dir_use_symlinks=False
+#)
+#token = "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"
 
-MODEL_PATH = "minerva-350M"
-#df = pd.read_csv("minerva_answers_partial_20.csv")
-#print(df.columns)
+MODEL_PATH = "minerva-7b-instruct"  # path locale
 
-base_model = AutoModelForCausalLM.from_pretrained(
+tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
+model = AutoModelForCausalLM.from_pretrained(
     MODEL_PATH,
-    dtype=torch.float16,
+    torch_dtype=torch.float16,
     device_map="auto"
 )
 
-model = PeftModel.from_pretrained(
-    base_model,
-    "./minerva-lora"
-)
-
 model.eval()
-
-#MODEL_PATH = "minerva-7b-instruct"  # path locale
-
-tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
-
 
 df = pd.read_csv("Q&A dialect thesis - Q&A.csv")
 print(df.columns)
 
 df_grouped = df.groupby("Full text")
 results = []
-LAST_I=20
+LAST_I=66
 i = 0
 for full_text, dfs in df_grouped:
     rows = dfs[["AI model", "Dialect", "Domain", "Italian question", "Italian answer", "Dialectal question", "Dialectal answer"]].to_dict("records")
 
-    row1, row2 = rows
+    if len(rows) == 4:
+        row1, row2, _, _ = rows
+    else:
+        row1, row2 = rows
 
     #question_1 = row1["Dialectal question"]
     #question_2 = row2["Dialectal question"]
