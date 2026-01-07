@@ -8,6 +8,15 @@ from datasets import load_dataset
 from peft import LoraConfig, get_peft_model, TaskType, PeftModel
 from itertools import product
 
+#per scaricare minerva 350M o altro modello
+#from huggingface_hub import snapshot_download
+#
+#snapshot_download(
+#    repo_id="sapienzanlp/Minerva-350M-base-v1.0",
+#    local_dir="minerva-350M",
+#    local_dir_use_symlinks=False
+#)
+
 #global variables
 path_folder = ""    #change this when using cineca   has to end in /
 path_corpus = "corpus/refined/"
@@ -74,7 +83,7 @@ tokenized_dataset = tokenized_dataset.select(range(5))
 
 model = AutoModelForCausalLM.from_pretrained(
     f"{path_folder}{model_name}",
-    dtype=torch.float16 
+    torch_dtype=torch.float16 
 #    device_map="auto"
 )
 
@@ -113,7 +122,6 @@ trainer = Trainer(
     model=model,
     args=training_args,
     train_dataset=tokenized_dataset,
-    processing_class=tokenizer,
     data_collator=data_collator
 )
 
