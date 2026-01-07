@@ -25,12 +25,13 @@ model_name = "minerva-350M"
 #lr_list = [1e-3, 1e-4]
 #batch_list = [16, 32]
 #epochs_list = [5, 10]
-#
+
+#Put here the loop for iterating the combination of hyperparameters
 #for lr, batch, epochs in product(lrs, batches, epochs_list):
 
 #hyperparameters
 token_max_length = 128
-r = 8
+r = 8 #lora rank
 alpha = 16
 lora_drop = 0.05
 dev_batch_size=1
@@ -45,7 +46,7 @@ print(f"starting to train {training_name} with {hyper_name}")
 tokenizer = AutoTokenizer.from_pretrained(f"{path_folder}{model_name}")
 tokenizer.pad_token = tokenizer.eos_token
 
-
+#create the dataset by loading the json file
 dataset = load_dataset(
     "json",
     data_files=f"{path_folder}{path_corpus}{training_name}_refined.json",
@@ -79,7 +80,7 @@ model = AutoModelForCausalLM.from_pretrained(
 
 
 lora_config = LoraConfig(
-    r=r,                        # rank LoRA
+    r=r,                       
     lora_alpha=alpha,
     lora_dropout=lora_drop,
     bias="none",

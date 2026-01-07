@@ -9,7 +9,7 @@ import pandas as pd
 from transformers import AutoTokenizer, AutoModelForCausalLM, Trainer, TrainingArguments, DataCollatorForLanguageModeling
 import torch
 import json
-from peft import LoraConfig, get_peft_model, TaskType, PeftModel
+#from peft import LoraConfig, get_peft_model, TaskType, PeftModel
 
 from datetime import datetime
 from datasets import load_dataset
@@ -18,21 +18,27 @@ import pandas as pd
 import re
 
 MODEL_PATH = "minerva-350M"
-df = pd.read_csv("minerva_answers_partial_20.csv")
-print(df.columns)
+FILENAME = "minerva_answers_partial_66"
+path_folder = ""    #change this when using cineca   has to end in /
+path_corpus = "corpus/refined/"
+training_name = "rom_book"
+output_path = "results/"
+model_name = "minerva-350M"
 
-base_model = AutoModelForCausalLM.from_pretrained(
-    MODEL_PATH,
-    dtype=torch.float16,
-    device_map="auto"
-)
+df = pd.read_csv(f"results/minerva_answers/{FILENAME}.csv")
 
-model = PeftModel.from_pretrained(
-    base_model,
-    "./minerva-lora"
-)
-
-model.eval()
+#base_model = AutoModelForCausalLM.from_pretrained(
+#    MODEL_PATH,
+#    dtype=torch.float16,
+#    device_map="auto"
+#)
+#
+#model = PeftModel.from_pretrained(
+#    base_model,
+#    "./minerva-lora"
+#)
+#
+#model.eval()
 
 def parse_response(text):
     #pattern = r'\d\)\s.*?(?=\n\d\)|$)'
@@ -68,7 +74,8 @@ for idx, row in df.iterrows():
     print("index -----------", idx)
     answer_1, answer_2 = parse_response(response_raw)
 
-    
+    df.at[idx, "min_answer_1"] = answer_1
+    df.at[idx, "min_answer_2"] = answer_2
 
     ref_1_tokens = [word_tokenize(italiano_ref_1, language="italian")]
     ref_2_tokens = [word_tokenize(italiano_ref_2, language="italian")]
@@ -85,6 +92,16 @@ for idx, row in df.iterrows():
     chrf_2 = sacrebleu.sentence_chrf(answer_2, [italiano_ref_2])
 
     print(chrf_1, chrf_2)
+
+    df.at[idx, "meteor_1"] = meteor_1
+    df.at[idx, "meteor_2"] = meteor_2
+
+    df.at[idx, "chrf_1"] = chrf_1
+    df.at[idx, "chrf_2"] = chrf_2
+
+df.to_csv(f"results/eval/{FILENAME}.csv", index=False)
+
+
 
 
 

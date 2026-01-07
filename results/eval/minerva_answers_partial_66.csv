@@ -1,0 +1,1517 @@
+model,dialect,domain,full_text,q_1,a_1,q_2,a_2,minerva_response,min_answer_1,min_answer_2,meteor_1,meteor_2,chrf_1,chrf_2
+Gemini 2.5 - flash,Neapolitan,wiki,"D' ogne pertuso 'a lacerta asceva, 
+'O toro cu 'a vacca s' accostava, 
+'O caperrone cu 'a crapa steva;. Non è 'e Foggia ed è no caparrone 
+non è 'e Massa ed ha 'e piede chiatte, 
+non è 'e Coglionise ed è cu ll'one.f. Capá vruoccoli e. Allora,. Nun è comme a muglierema che, a' casa, 
+quann'io ce vaco cu sti bbracce rotte, 
+è capace 'e me 'e' quase ogne notte: 
+- Ma comme, sulo ccà nun vuo' scupa'?. Ma po' facennome 'a serenata 
+tutt' 'o strumento s'eva scurdato 
+e 'o «mi» pruvaie 
+a «re» tuccaie 
+ma nun fuie capace 
+e i' ce 'o cantaie st'atu rechie e pace. Nun te puó maje fidà, fatte capace! Fatte capace: aje voglia ca sî ffino 
+'a vita te fa scemo, si 'e piace .",Che tipo di scena viene descritta quando si parla di buchi e degli animali che uscivano?,Da ogni buco la lucertola usciva.,Il testo ci dice una cosa di questa persona: non è di Foggia. E allora che cos'è?,Non è di Foggia ed è un testone.," 
+1) La scena è quella di un porcile con maiali, capre e pecore. Si tratta quindi di un contesto rurale o comunque legato all'allevamento animale. 
+2) La risposta alla seconda domanda è che il personaggio descritto nella poesia non è della città di Foggia (Foggia), ma ha caratteristiche tipiche dei contadini e allevatori del luogo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+","la scena è quella di un porcile con maiali, capre e pecore. si tratta quindi di un contesto rurale o comunque legato all'allevamento animale.","la risposta alla seconda domanda è che il personaggio descritto nella poesia non è della città di foggia (foggia), ma ha caratteristiche tipiche dei contadini e allevatori del luogo.",0.1111111111111111,0.26315789473684215,chrF2 = 13.12,chrF2 = 17.05
+Gemini 2.5 - flash,Sicilian,wiki,"Di l'Ottucentu, scumparennu li maciraturi pi la lavurazzioni di la cànapa, Jaci Trizza addivintò sempri cchiù assai paisi di piscatura, ma cu risurtati nun tantu boni, ca la pisca arrinascìa appena a dunari dda cosa pi campari. Pi casi tuttu lu Novicentu, la pisca arristò la principali attivitati pi li trizzoti ca, ntantu, era addivintata menu puviredda cu la ntruduzzioni di li varchi a muturi e cu li piscarecci sempri cchiù granni. Ammeri la fini di lu '900, mentri lu cummerciu di la pisca jìa ngranninnusi, lu paisi di Trizza si sviluppò nta la custruzzioni di abbitazzioni, spissu a la sanfasò, pi la custruzzioni di arbegghi e tantissimi ""villini"" distinati a li catanisi sempri cchiù attratti di li biddizzi dû paisaggiu.",Come si trasformò Aci Trezza a partire dall'Ottocento e quali furono i primi risultati della nuova attività?,"Aci Trezza divenne sempre più un paese di pescatori, ma con risultati non molto buoni, perché la pesca riusciva appena a dare il necessario per sopravvivere.","Verso la fine del Novecento, come si sviluppò il paese di Trezza in termini di costruzioni, e chi era il pubblico a cui erano destinate queste nuove strutture?","Verso la fine del '900, mentre il commercio della pesca andava ingrandendosi, il paese di Trezza si sviluppò nella costruzione di abitazioni, spesso in modo disordinato, per la costruzione di alberghi e tantissimi ""villini"" destinati ai catanesi sempre più attratti dalle bellezze del paesaggio.","
+1) Aci Trezza nell'Ottocento diventò un centro sempre più attivo nella pesca. Il risultato fu che la pesca divenne una delle principali attività dei trezzoti, tanto da diventare quasi un'industria con l'introduzione di nuove attrezzature come le reti a maglia fitta e le imbarcazioni sempre più grandi. Alla fine del Novecento, mentre il commercio della pesca stava crescendo notevolmente, la pesca aveva ormai raggiunto livelli molto elevati grazie alle numerose innovazioni tecnologiche introdotte. Inoltre, verso la fine dell'Ottocento, il paese di Trezza si sviluppò attraverso la costruzione di abitazioni sempre più eleganti e lussuose per i catanesi sempre più attratti dai paesaggi del paesino etneo. 
+
+2) Aci Trezza nel Novecento sviluppò il suo aspetto urbanistico e architettonico attraverso la costruzione di edifici residenziali per i catanesi sempre più attratti dal paesaggio offerto dal paese etneo. Questi nuovi edifici erano caratterizzati dalla presenza di balconi decorati con fiori e piante rampicanti, che conferivano loro uno stile pittoresco e suggestivo. In questo modo, Aci Trezza si trasformò gradualmente in un piccolo gioiello architettonico immerso nella natura incontaminata, attirando turisti e visitatori da ogni parte del mondo. L'Audi RS6 Avant è stata prodotta nello stabilimento tedesco di","aci trezza nell'ottocento diventò un centro sempre più attivo nella pesca. il risultato fu che la pesca divenne una delle principali attività dei trezzoti, tanto da diventare quasi un'industria con l'introduzione di nuove attrezzature come le reti a maglia fitta e le imbarcazioni sempre più grandi. alla fine del novecento, mentre il commercio della pesca stava crescendo notevolmente, la pesca aveva ormai raggiunto livelli molto elevati grazie alle numerose innovazioni tecnologiche introdotte. inoltre, verso la fine dell'ottocento, il paese di trezza si sviluppò attraverso la costruzione di abitazioni sempre più eleganti e lussuose per i catanesi sempre più attratti dai paesaggi del paesino etneo.","aci trezza nel novecento sviluppò il suo aspetto urbanistico e architettonico attraverso la costruzione di edifici residenziali per i catanesi sempre più attratti dal paesaggio offerto dal paese etneo. questi nuovi edifici erano caratterizzati dalla presenza di balconi decorati con fiori e piante rampicanti, che conferivano loro uno stile pittoresco e suggestivo. in questo modo, aci trezza si trasformò gradualmente in un piccolo gioiello architettonico immerso nella natura incontaminata, attirando turisti e visitatori da ogni parte del mondo. l'audi rs6 avant è stata prodotta nello stabilimento tedesco di",0.27856176140489863,0.3363471971066908,chrF2 = 27.37,chrF2 = 40.54
+Gemini 2.5 - flash,Sicilian,literature,"Dicidi ncapu a zoccu s'àvi a parrari
+Scarta na cosa di discurriri 'n antìcipu. Capaci ca a guerra palistinisi/isdrailiana è n'anticchia pisanti, ma putiti scartari na cosa comu “unni ti piacissi viaggiari”, “lu furmaggiu va câ pasta cû pisci?”, “lu sicilianu avissi a èssiri lingua cu-ufficiali 'n Sicilia?” Nun avissi a èssiri na cosa troppu ntilligenti, ma armenu na cosa pi stimulari i cristiani scanusciuti a parrari. Grapi e chiudi
+Quannu i cristiani vennu â tàvula, salùtali 'n sicilianu. Quanni siti nzèmmula, puru ca siti sulu 'n dui, putiti “rapiri” lu macadaru, e ntrudùrivi e diri picchì vinìstivu. Appoi, putiti attaccari a chiacchiarijari siddhu vi veni fàcili. Si nun veni fàcili, poi accuminciari chî palori novi, appoi lu testu, appoi l'argumenti ca scartasti. L'òrdini nun è mpurtanti - a cosa mpurtanti è ca vi sintiti còmudi, manzi, e ca parrati a lingua siciliana senza giudicari.","Quando le persone vengono a tavola, qual è la prima cosa da fare in siciliano?",Salutali in siciliano.,Qual è la cosa principale e più importante durante la discussione per far sentire tutti a proprio agio?,"La cosa importante è che vi sentiate comodi, calmi, e che parliate la lingua siciliana senza giudicare."," 
+ 1)  ""Rapiri"" il maccherone, e inizia a dire perché ha deciso di venire. In seguito può attaccare discorsi nuovi, parlare del tema che hai scelto e degli argomenti che hai portato avanti. L'importante non è tanto quello che dici, ma come lo dici, quanto ti senti a tuo agio con gli altri e parli bene della lingua siciliana.
+2) La prima cosa da fare è sorridere alla persona che ti siede vicino. Inizia a parlare della situazione e delle tue motivazioni, in modo da sentirti subito a tuo agio. Gli altri saranno ben disposti ad ascoltare. 
+
+ **Note:**
+* Il dialetto usato è una versione semplificata e adattata per un pubblico italiano di un dialetto siciliano.
+* Le frasi sono state leggermente modificate per una migliore leggibilità e coerenza grammaticale.
+* Le risposte includono suggerimenti di traduzione italiani per rendere più chiaro il significato.
+* Il testo originale contiene alcune espressioni dialettali o modi di dire siciliani che potrebbero essere difficili da comprendere o tradurre direttamente. Sono stati mantenuti nella versione italiana, ma potrebbero essere omessi se necessario per chiarezza.","""rapiri"" il maccherone, e inizia a dire perché ha deciso di venire. in seguito può attaccare discorsi nuovi, parlare del tema che hai scelto e degli argomenti che hai portato avanti. l'importante non è tanto quello che dici, ma come lo dici, quanto ti senti a tuo agio con gli altri e parli bene della lingua siciliana.","la prima cosa da fare è sorridere alla persona che ti siede vicino. inizia a parlare della situazione e delle tue motivazioni, in modo da sentirti subito a tuo agio. gli altri saranno ben disposti ad ascoltare. 
+
+ **note:**
+* il dialetto usato è una versione semplificata e adattata per un pubblico italiano di un dialetto siciliano.
+* le frasi sono state leggermente modificate per una migliore leggibilità e coerenza grammaticale.
+* le risposte includono suggerimenti di traduzione italiani per rendere più chiaro il significato.
+* il testo originale contiene alcune espressioni dialettali o modi di dire siciliani che potrebbero essere difficili da comprendere o tradurre direttamente. sono stati mantenuti nella versione italiana, ma potrebbero essere omessi se necessario per chiarezza.",0.09803921568627451,0.14285714285714288,chrF2 = 13.17,chrF2 = 19.78
+Gemini 2.5 - flash,Sicilian,wiki,"Doppu ca forru valutati, na vota ca si vidi ca ci sù rilazzioni tra li dati, e ca sti rilazzioni sù mpurtanti, allura sù cummirtuti nta nfurmazzioni. Ora sti stissi dati putìssiru èssiri utilizzati pi scopa diffirinti. Pirciò, nzinu a quannu li dati pòrtanu nfurmazzioni, chissi nun sù utilizzàbbili. L'idea dâ nfurmazzioni comu missaggiu accuminzari ca la pubbricazzioni ntô 1948 di un testu di Claude Shannon ca nfruinzau assai la cumunità dî scinziati , ""Na tiurìa matimàtica dâ nfurmazzioni."" Stu testu duna li funnamenta dâ tiurìa dâ nfurmazzioni e accumenza a utilizzari la parola nfurmazzioni nun sulu cu un significatu tècnicu ma macari comu a na misura.","Quando i dati vengono valutati e si trovano relazioni importanti tra di essi, in che cosa vengono convertiti?",sono convertiti in informazioni,Con cosa cominciò l'idea dell'informazione vista come un messaggio?,la pubblicazione nel 1948 di un testo di Claude Shannon," 
+ 1) In informazioni 
+ 2) Claude Shannon nel suo saggio del 1948 sulla teoria della codifica
+
+La risposta alla prima domanda è che quando i dati vengono valutati e si trovano relazioni importanti tra di essi, i dati vengono convertiti in informazioni. 
+La risposta alla seconda domanda è che l'idea dell'informazione vista come un messaggio cominciò con il saggio di Claude Shannon del 1948 sulla teoria della codifica.","in informazioni 
+ 2) claude shannon nel suo saggio del 1948 sulla teoria della codifica
+
+la risposta alla prima domanda è che quando i dati vengono valutati e si trovano relazioni importanti tra di essi, i dati vengono convertiti in informazioni. 
+la risposta alla seconda domanda è che l'idea dell'informazione vista come un messaggio cominciò con il saggio di claude shannon del 1948 sulla teoria della codifica.",null,0.2777777777777778,0.0,chrF2 = 27.73,chrF2 = 2.66
+Gemini 3 pro - preview,Sicilian,wiki,"Doppu la morti di Hugo Chávez ntô 2013, lu CNE cummoca l'elizzioni prisidinziali e lu prisidenti Nicolás Maduro vinni elettu ntra accusi di frodi pi parti dâ upposuzzioni cumannata di Henriche Capriles Rannoski. Duranti lu mannatu di Maduro, ca accuminciò lu 19 aprili 2013, la carenza ntô Venezuela si peggiurò ntê prudutti cû prezzi rigulati, comu lu latti, li vari tipi di carni, lu gaddinu, lu caffè, lu risu, l'ogghiu, la farina pri-fabbricata, burru; accussì comu li nicissità di basi comu a carta igienica, li prudutti di igieni pirsonàli, li midicini pì curari lu cancru, ntra autri. Li lìnii di pirsuni ca vulìssiru accattari prudutti di basi nnî supermercati e nnî autri attivitati sunnu frichenti. Sta situazzioni purtò lu guvernu vinèzuelanu a prumòviri misuri comu lu ""Sistema ri appruvviggionamentu biometricu"".",Cosa successe alle elezioni presidenziali convocate dopo la morte di Chávez?,Il presidente Nicolás Maduro fu eletto tra accuse di frode da parte dell'opposizione comandata da Henrique Capriles Radonski,Quali sono i prodotti alimentari con i prezzi regolati che hanno cominciato a scarseggiare?,"Il latte, i vari tipi di carne, il pollo, il caffè, il riso, l'olio, la farina prefabbricata, il burro"," 
+2) I prodotti alimentari con i prezzi regolati che hanno cominciato a scarseggiare furono il latte, le varie tipologie di carne, il caffè, il riso, l’olio, la farina prodotta, il burro. In più mancavano beni necessari come la carta igienica, i medicinali per la cura del cancro, gli alimenti per curare il raffreddore e altri prodotti simili. La situazione ha portato il governo venezuelano ad approvare misure come “Il Sistema di approvvigionamento biometrico”. 
+
+_____________________________________________________________________________________
+
+
+Domanda 1: Cosa successe alle elezioni presidenziali convocate dopo la morte di Chavez?
+
+Risposta: Le elezioni presidenziali convocate dopo la morte di Chavez non sono menzionate nel testo fornito.
+
+Domanda 2: Quali sono i prodotti alimentari con i prezzi regolati che hanno cominciato a scarseggiare?
+
+Risposta: Il testo fornisce solo una lista incompleta dei prodotti alimentari con i prezzi regolati che hanno cominciato a scarseggiare, senza specificare quali siano esattamente questi prodotti o in quale momento specifico della crisi economica siano stati colpiti dalla mancanza di beni essenziali. Il testo non fornisce informazioni su altre conseguenze delle scarse forniture né sulle possibili soluzioni adottate dal governo per affrontare la crisi alimentare.","i prodotti alimentari con i prezzi regolati che hanno cominciato a scarseggiare furono il latte, le varie tipologie di carne, il caffè, il riso, l’olio, la farina prodotta, il burro. in più mancavano beni necessari come la carta igienica, i medicinali per la cura del cancro, gli alimenti per curare il raffreddore e altri prodotti simili. la situazione ha portato il governo venezuelano ad approvare misure come “il sistema di approvvigionamento biometrico”. 
+
+_____________________________________________________________________________________
+
+
+domanda 1: cosa successe alle elezioni presidenziali convocate dopo la morte di chavez?
+
+risposta: le elezioni presidenziali convocate dopo la morte di chavez non sono menzionate nel testo fornito.
+
+domanda 2: quali sono i prodotti alimentari con i prezzi regolati che hanno cominciato a scarseggiare?
+
+risposta: il testo fornisce solo una lista incompleta dei prodotti alimentari con i prezzi regolati che hanno cominciato a scarseggiare, senza specificare quali siano esattamente questi prodotti o in quale momento specifico della crisi economica siano stati colpiti dalla mancanza di beni essenziali. il testo non fornisce informazioni su altre conseguenze delle scarse forniture né sulle possibili soluzioni adottate dal governo per affrontare la crisi alimentare.",null,0.026954177897574125,0.0,chrF2 = 13.54,chrF2 = 1.84
+Gemini 2.5 - flash,Sicilian,wiki,"Dopu lu branu r'apertura, c'è sta nica canzuni. A vuci è filtrata facennu pinzari ca nisceva da lu conu di un grammofono. A differenza ri l'avutri tracci ri l'album, sta canzuni prisenta un impiantu assai facili e swing. Lu chianuforti saltellanti, l'atmosfera ri Londra ri fini ottucentu, mettinu a nuru i putinzialità ra vuci ri Freddie Mercury. Canzuni 'n stili hard rock cumposta e cantata ra Roger Taylor e dedicata a la so granni passioni pi l'automobbili. L'unica traccia ri l'album cumposta ra John Deacon; è decicata a mugghieri Veronica. A canzuni è lu tipicu esempiu ri na pop-ballad rumantica sunata o chianuforti. Pi l'occasioni Deacon sona un chianuforti elettricu, nun assai amatu ra Freddie Mercury ca rifiutò ri sunarlu lassannu lu stissu compitu o bassista. Na caunzi 'n stili folk cumposta e cantata da lu chitarrista ru gruppu, Brian May.",Che tipo di canzone è quella composta e cantata da Roger Taylor e a cui è dedicata?,Canzone in stile hard rock composta e cantata da Roger Taylor e dedicata alla sua grande passione per le automobili.,Qual è l'unica traccia dell'album composta da John Deacon e a chi è dedicata?,L'unica traccia dell'album composta da John Deacon; è dedicata alla moglie Veronica.," 
+1) La canzone è una pop-ballad romantica, che ha come tema principale l'amore per le auto e il desiderio di possedere un veicolo proprio. 
+2) La canzone è dedicata alle mogli dei membri del gruppo.
+
+La risposta corretta è la numero 2.","la canzone è una pop-ballad romantica, che ha come tema principale l'amore per le auto e il desiderio di possedere un veicolo proprio.","la canzone è dedicata alle mogli dei membri del gruppo.
+
+la risposta corretta è la numero 2.",0.17383177570093455,0.13793103448275862,chrF2 = 30.16,chrF2 = 31.47
+Gemini 2.5 - flash,Sicilian,wiki,"Duranti la Sècunna Verra Munniali (1939-1945) Turing mittìu li sô capacitati matimàtichi ô sirvizziu dû Department of Communications ngrisi pi dicifrari li còdici usati ntê cumunicazzioni tudischi, un cumpitu particularmenti difficili 'n quantu li tudischi avìanu sviluppatu un tipu di machina criptatrici chiamata Enigma ch'era capaci di figghiari un còdici ca mutava custantimenti, accussì di rènniri ogni vota nzufficienti lu tempu di dicudifica a dispusizzioni dî scinzati nimici. Câ ntrasuta 'n verra dâ Ngriterra Turing e li sô cumpagni travagghiaru stabbirmenti â dicrittazzioni. La mmintiva di Turing ci pirmittìu di criari un strumenti chiamatu Colossus (n'ammassu di servumutura e mitallu, ma comli gghiè un primu passu versu un computer diggitali) ca dicifrava 'n modu viloci e efficienti/afficaci li còdici tudischi criati cu Enigma, sizziunannu ogni missaggiu 'n purzioni di diminsioni tali ca lu sô significati putìa vèniri currittamenti svilatu.",Per quale scopo Turing usò le sue capacità matematiche durante la Seconda Guerra Mondiale?,per decifrare i codici usati nelle comunicazioni tedesche,"Quale strumento creò Turing grazie alla sua inventiva, e come era descritto?","uno strumento chiamato Colossus (un ammasso di servomotori e metallo, ma comunque un primo passo verso un computer digitale)"," 
+1) Turing usò le sue capacità matematiche per decifrare i codici usati dai tedeschi nelle comunicazioni, creando uno strumento chiamato Colossus che riusciva a decifrare efficacemente il codice Enigma creato dai tedeschi.
+2) Creò un primo prototipo di computer digitale, chiamato Colossus, che utilizzava l'algoritmo di Von Neumann per decodificare il codice Enigma dei tedeschi. 
+Si tratta di una macchina elettromeccanica con più di 7000 valvole termoioniche collegate da oltre 3 km di cavi, capace di effettuare 5000 operazioni al secondo.  
+
+Inoltre, Turing ideò anche un metodo per decodificare i messaggi segreti tedeschi senza conoscere il significato delle parole chiave usate nel codice Enigma. Questo metodo consisteva nell'utilizzare tabelle precompilate contenenti tutte le possibili combinazioni di lettere all'interno del messaggio cifrato. La tabella veniva poi confrontata con il contenuto del messaggio originale, permettendo così di individuare le parole chiave che consentivano di ottenere il significato completo del messaggio. In tal modo, Turing riuscì a decifrare buona parte della corrispondenza segreta tedesca intercettata dagli alleati durante la guerra. Tuttavia, il suo lavoro non fu riconosciuto fino","turing usò le sue capacità matematiche per decifrare i codici usati dai tedeschi nelle comunicazioni, creando uno strumento chiamato colossus che riusciva a decifrare efficacemente il codice enigma creato dai tedeschi.","creò un primo prototipo di computer digitale, chiamato colossus, che utilizzava l'algoritmo di von neumann per decodificare il codice enigma dei tedeschi. 
+si tratta di una macchina elettromeccanica con più di 7000 valvole termoioniche collegate da oltre 3 km di cavi, capace di effettuare 5000 operazioni al secondo.  
+
+inoltre, turing ideò anche un metodo per decodificare i messaggi segreti tedeschi senza conoscere il significato delle parole chiave usate nel codice enigma. questo metodo consisteva nell'utilizzare tabelle precompilate contenenti tutte le possibili combinazioni di lettere all'interno del messaggio cifrato. la tabella veniva poi confrontata con il contenuto del messaggio originale, permettendo così di individuare le parole chiave che consentivano di ottenere il significato completo del messaggio. in tal modo, turing riuscì a decifrare buona parte della corrispondenza segreta tedesca intercettata dagli alleati durante la guerra. tuttavia, il suo lavoro non fu riconosciuto fino",0.6044703595724005,0.21718602455146369,chrF2 = 58.25,chrF2 = 19.91
+Gemini 2.5 - flash,Roman,literature,"E invece se prese un garofolo; e ddoppo un momento lo sfojò e lo bbuttò pe' ttera. Quanno e' re lo seppe, fece: - Finisce che questo' è un ômo pe' ddavero. E allora fece ar fijo, dice: - Oggi sai ch'hai da fa'? Pòrtelo a spasso ar canneto; si llui te dice: «Che bbelle canne da fa' cconocchie!» allora è 'na donna; si ddice «che bbelle canne da fa' ffucili!» è un ômo. Infatti er fijo de' re cce la portò; ma quanno lei fu ddrento ar canneto, disse subbito: - Che bbelle canne da fa ffucili! Er fijo va su ddar padre e je dice che Fósco aveva detto: «che bbelle canne da fà ffucili!» Allora e' re disse: - Vederemo e ttavola si cche ffarà. Si è ômo, der pesce pijerà la testa; si è ddonna, pijerà la coda.",Cosa disse il re quando seppe del fatto del garofano?,Questo è un uomo per davvero.,Cosa disse lei subito quando entrò dentro al canneto?,Che belle canne per fare fucili!," 
+ 1) Il re fece: - Finisce che questo' è un uomo per davvero. E allora fece ar figlio, dice: - Oggi sai che hai da fare? Portalo a passeggio nel canneto; ti dirà: ""Che belle canne da fare con le mosche"". Allora è una donna; ti dirà: ""Che belle canne da fare con i fucili"". Infatti suo figlio l'ha portato; ma quando lei è entrata nel canneto, ha detto subito: ""Che belle canne da fare con i fucili!"" Allora il re disse: - Vedremo e vedremo sul tavolo cosa farà. È un uomo, prenderà la testa; è una donna, prenderà la coda. ""
+2) Lei disse subito: - Che belle canne da fare con le mosche""","il re fece: - finisce che questo' è un uomo per davvero. e allora fece ar figlio, dice: - oggi sai che hai da fare? portalo a passeggio nel canneto; ti dirà: ""che belle canne da fare con le mosche"". allora è una donna; ti dirà: ""che belle canne da fare con i fucili"". infatti suo figlio l'ha portato; ma quando lei è entrata nel canneto, ha detto subito: ""che belle canne da fare con i fucili!"" allora il re disse: - vedremo e vedremo sul tavolo cosa farà. è un uomo, prenderà la testa; è una donna, prenderà la coda. ""","lei disse subito: - che belle canne da fare con le mosche""",0.2981505102040817,0.48701298701298706,chrF2 = 17.91,chrF2 = 41.89
+Gemini 2.5 - flash,Roman,literature,"E llui :
+Hai finito da fila' que' llino ? Dice :
+Sì : bbùtteme ggiù un canestro che tte lo manno su
+Nicolino mannò ggiù er canestro, prese e' refe, e se n'annò ddar padre
+Er padre incomincia a vvardà' tutti e ttre li gnómmeri de refe, e ddice ;
+Quello de la fornara è bbello, quello de la macellara è mmejo, ma cquello de la ranocchia è er più bbello de tutti
+Dunque la ranocchia sarà la riggina
+Li fratelli j'incominciorno a ddi':
+Ma Ppapà, che vve dite? Com'è ppossibile che 'na ranocchia sii la riggina ?",Cosa fece Nicolino subito dopo aver calato il canestro?,"Nicolino mandò giù il canestro, prese il refe, e se ne andò dal padre.",Come ha giudicato il padre i tre gomitoli di refe?,"Quello della fornara è bello, quello della macellaia è meglio, ma quello della ranocchia è il più bello di tutti."," 
+1) Prese le forbici e tagliò il primo filo.
+2) Li giudicò migliori quelli della Fornara e meno belli gli altri due. 
+- La frase ""er più bello de tutti"" significa ""il migliore tra tutti"". Quindi il papà non credeva alle parole del figlio perché pensava che la sua idea fosse la migliore. 
+- Il fatto che Nicolino abbia tagliato il primo filo per primo dimostra che lui era il migliore dei tre. 
+- I nomi degli altri due gomitoli di refe sono ""fornaro"" e ""macellaio"", quindi i loro gomitoli erano peggiori rispetto al terzo. 
+- Dopo questa scena, il papà dice ai suoi figli che la rana è sicuramente la regina perché è quella che ha vinto il gioco. 
+- Alla fine i ragazzi dicono che preferirebbero essere come la rana invece che avere quei bellissimi gomitoli di refe. 
+- Il papà risponde dicendo che bisogna rispettare sempre i desideri dei bambini anche quando sembrano strani o incomprensibili. 
+- In sintesi, il papà alla fine accetta il desiderio di Nicolino di diventare la regina perché capisce che il suo ragionamento è giusto e sensato, nonostante sembri strano all'inizio",prese le forbici e tagliò il primo filo.,"li giudicò migliori quelli della fornara e meno belli gli altri due. 
+- la frase ""er più bello de tutti"" significa ""il migliore tra tutti"". quindi il papà non credeva alle parole del figlio perché pensava che la sua idea fosse la migliore. 
+- il fatto che nicolino abbia tagliato il primo filo per primo dimostra che lui era il migliore dei tre. 
+- i nomi degli altri due gomitoli di refe sono ""fornaro"" e ""macellaio"", quindi i loro gomitoli erano peggiori rispetto al terzo. 
+- dopo questa scena, il papà dice ai suoi figli che la rana è sicuramente la regina perché è quella che ha vinto il gioco. 
+- alla fine i ragazzi dicono che preferirebbero essere come la rana invece che avere quei bellissimi gomitoli di refe. 
+- il papà risponde dicendo che bisogna rispettare sempre i desideri dei bambini anche quando sembrano strani o incomprensibili. 
+- in sintesi, il papà alla fine accetta il desiderio di nicolino di diventare la regina perché capisce che il suo ragionamento è giusto e sensato, nonostante sembri strano all'inizio",0.1234567901234568,0.19427522080041973,chrF2 = 14.85,chrF2 = 20.23
+Gemini 2.5 - flash,Sicilian,wiki,"E quannu ni ncuntramu di pirsuna, putemu fari lijami, e accussì custrujemu i nostri riti di pirsuna, e riti sunnu na forza. Cu sta forza, lu sicilianu addiventa forti. Na lingua forti po pigghiari lu so postu â tàvula. Lu nostru ubbittivu è di criari un locu unni si parra sicilianu. Si a chiamu na “tàvula siciliana” è picchì si ncuntra, a tàvula o no, câ scaciuni pricisa di parrari ed esircitari lu sicilianu. Cu l'amici, certu, ma puru cu cristiani fora dî nostri riti pirsunali. Allura âm'a cògghiri cchiù cristiani pi fari un ncontru. E comu si fa? Comu mmitari i cristiani
+Quannu fai na tàvula siciliana, voi aviri na beddha mista di cristiani - diversi età, gènniri, travagghi, ecc. Cchiù assai di venti cristiani po èssiri troppu, siddhu si accussì furtunatu, capaci ca avissi a spàrtiri i gruppi 'n dui. Online.","Cosa sono le reti, in sintesi?",Le reti sono una forza,Qual è lo scopo principale che l'autore vuole raggiungere?,Il nostro obiettivo è di creare un luogo dove si parla siciliano," 
+1) Le Reti sono dei siti internet che permettono la condivisione di idee, informazioni, notizie e opinioni tra utenti connessi alla rete. L'obiettivo delle reti è quello di creare una comunità virtuale dove gli individui possono interagire e scambiare contenuti per promuovere il dialogo e la conoscenza reciproca.
+2) Lo scopo principale dell'autore è quello di promuovere l'uso delle reti come strumento per favorire la comunicazione e la collaborazione tra persone di diversa provenienza culturale, religiosa e sociale, al fine di costruire una società più inclusiva e rispettosa della diversità. Inoltre, l'autore cerca di attirare più cristiani possibili all'interno delle reti online per favorire la loro partecipazione attiva nella costruzione di una comunità solidale e coesa.","le reti sono dei siti internet che permettono la condivisione di idee, informazioni, notizie e opinioni tra utenti connessi alla rete. l'obiettivo delle reti è quello di creare una comunità virtuale dove gli individui possono interagire e scambiare contenuti per promuovere il dialogo e la conoscenza reciproca.","lo scopo principale dell'autore è quello di promuovere l'uso delle reti come strumento per favorire la comunicazione e la collaborazione tra persone di diversa provenienza culturale, religiosa e sociale, al fine di costruire una società più inclusiva e rispettosa della diversità. inoltre, l'autore cerca di attirare più cristiani possibili all'interno delle reti online per favorire la loro partecipazione attiva nella costruzione di una comunità solidale e coesa.",0.20833333333333334,0.055555555555555566,chrF2 = 13.72,chrF2 = 15.65
+Gemini 2.5 - flash,Roman,literature,"E quella je fa: - Allora curete da' re e dditeje che qua drento c'è vvienuto un marco ch'avuto er core d' ammazzà' l'esercito e la lupa, e dde levamme l'affatatura a me; perchè nun ciò più ni anello, ni velo, ni pianella. Figuràteve un po' la contentezza de' re quanno seppe 'sta nôva! Fece subito mette l'affissi pe' tutto er paese: «che chi se fusse appresentato come er sarvatore de la fija, lui je l'averebbe data pe' spòsa, si ppuro fusse stato 'no straccione». Er napoletano intanto lòcco lòcco se n'era aritornato da li compagni; e siccome s'era fatto giorno, li chiamò. Quelli ammalappena se furno svejati che viddeno ch'era giorno, je feceno: - Perchè nun ciai chiamati p'arinnovà' la guardia? Er napoletano pe' nu' staje a ricontà' gni cosa, je fece: - Intanto nun avevo sonno. E la cosa finì accusì.",Perché la ragazza voleva farti togliere questa fatica?,"non ho più né anello, né velo, né pianella",Cosa c'era scritto in quegli affissi che il re aveva fatto mettere per tutto il paese?,"che chi si fosse presentato come il salvatore della figlia, lui gliel'avrebbe data in sposa, anche se fosse stato uno straccione"," 
+1) La ragazza voleva toglierti questa fatica perché voleva fare del male al soldato (il fidanzato). Il fidanzato aveva avuto il coraggio di andare contro i soldati ed uccidere l'esercito e la Lupa. Quindi il Re aveva deciso di togliere alla sua fidanzata tutte le sue cose, gli anelli, i vestiti e le scarpe, per punirla.  
+2) C'erano scritte delle frasi molto forti ma non ho capito bene quali fossero. Per ora posso solo dirti che parlava del Re che aveva mandato dei messaggi ai suoi soldati dicendo loro che avrebbe dato la figlia in sposa a chiunque avesse ucciso l'esercito e la Lupa. In quel caso il Re avrebbe liberato la ragazza dalle catene alle quali era stata costretta dal fidanzato.  
+
+Fammi sapere se hai bisogno di ulteriori chiarimenti o spiegazioni. Ciao! 
+
+Risposte:
+1) La ragazza voleva toglierti questa fatica perché voleva fare del male al soldato (il fidanzato). Il fidanzato aveva avuto il coraggio di andare contro i soldati ed uccidere l'esercito e la Lupa. Quindi il Re aveva deciso di togliere alla sua fidanzata tutte le sue cose, gli anelli, i vestiti e le scarpe, per punirla. 
+2) C'erano scritte delle frasi molto forti ma non ho","la ragazza voleva toglierti questa fatica perché voleva fare del male al soldato (il fidanzato). il fidanzato aveva avuto il coraggio di andare contro i soldati ed uccidere l'esercito e la lupa. quindi il re aveva deciso di togliere alla sua fidanzata tutte le sue cose, gli anelli, i vestiti e le scarpe, per punirla.","c'erano scritte delle frasi molto forti ma non ho capito bene quali fossero. per ora posso solo dirti che parlava del re che aveva mandato dei messaggi ai suoi soldati dicendo loro che avrebbe dato la figlia in sposa a chiunque avesse ucciso l'esercito e la lupa. in quel caso il re avrebbe liberato la ragazza dalle catene alle quali era stata costretta dal fidanzato.  
+
+fammi sapere se hai bisogno di ulteriori chiarimenti o spiegazioni. ciao! 
+
+risposte:",0.0617283950617284,0.10344827586206895,chrF2 = 11.58,chrF2 = 31.36
+Gemini 2.5 - flash,Roman,literature,"Er padre e li fratelli che nun sapeveno come aveva fatto quer miracolo, ner vedello partì' in quela bbarca maggica, arestònno de pietra pómicia, arestònno! Abbasta, quell'antro intanto, cammina e tt'aricammina; ecchete che mmentre stava p'entrà drento l'imboccatura d'un fiume, te vede un pezzo d'omone che, gnentedemeno, se bbeveva tutta l'acqua che imboccava ner fiume da un antro fiumetto ppiù ppiccolo. Lui fece: - Accidèmpoli che ggargarozzo che cciai, bonômo mio! Vôi vienì' cco' mme, che tte porto ar palazzo de' re? Quello, tutto contento, je disse che cciannava volontieri; e mmontò drent'a la bbarca. Cammina, cammina e tt'aricammina, fintanto che ariva in un antro sito, e tte trova un ômo che se stava a arostì' 'na bbufola sana; j'aveva infilato un bastone a la bbocca: e je l'aveva fatto ariuscì dedietro.",Cosa è successo al padre e ai fratelli nel vederlo partire in quella barca magica?,"Restarono di pietra pomice, restarono!",Cosa stava facendo quell'omone quando lo vede mentre stava per entrare nell'imboccatura di un fiume?,Si beveva tutta l'acqua che sfociava nel fiume da un altro fiumetto più piccolo.," 
+ 1) Il padre e i fratelli non sanno come ha fatto il miracolo della barca magica. 
+2) L'omone stava bevendo tutta l'acqua del fiume dalla bocca di un piccolo antro fiumetto più piccolo. 
+
+Nota: la risposta alla seconda domanda contiene informazioni su ciò che stava facendo l'uomo prima dell'arrivo nella barca magica. Quindi la risposta dovrebbe contenere anche questa informazione.
+
+Risposta corretta: 
+1) I fratelli sono rimasti meravigliati dal comportamento del padre.  
+2) L'uomo beveva l'acqua dal fiume con una cannuccia. 
+La risposta corretta include entrambe le informazioni richieste: Il padre e i fratelli sono rimasti meravigliati perché non sapevano come avesse fatto il miracolo della barca magica. L'omone stava bevendo tutta l'acqua del fiume da un piccolo antro fiumetto più piccolo. La cannuccia era probabilmente collegata ad un piccolo tubo o un sistema di pompaggio che permetteva all'uomo di bere direttamente dall'acqua del fiume.
+
+Per rendere la risposta ancora più completa, si potrebbe aggiungere che l'uomo sembrava molto curioso e interessato al fenomeno miracoloso del padre e dei fratelli, tanto da volerli incontrare personalmente nel palazzo reale",il padre e i fratelli non sanno come ha fatto il miracolo della barca magica.,"l'omone stava bevendo tutta l'acqua del fiume dalla bocca di un piccolo antro fiumetto più piccolo. 
+
+nota: la risposta alla seconda domanda contiene informazioni su ciò che stava facendo l'uomo prima dell'arrivo nella barca magica. quindi la risposta dovrebbe contenere anche questa informazione.
+
+risposta corretta:",0.0,0.41441441441441446,chrF2 = 16.44,chrF2 = 41.20
+Gemini 2.5 - flash,Roman,literature,"Er padrone de la bbarca je fece: - Ahó, vvôi vienì' cco' mme cche tte porto ar palazzo de' re? E quello j'arispose: - Volontieri, Abbasta che pprima m'aspetti che mme magni st'ucelletto. Fa ppuro. Allora quello prese la bbufola, e in du' bocconi se la pappò ttutta. Poi prese, montò in de la bbarca, e s'arimésseno in viaggio. Cammina, cammina e t'aricammina, fintanto che arivorno in un sito che cc'era uno che stava appoggiato co' le spalle a 'na gran montagna. Er padrone de la bbarca je fece: - Ahó, vôi vienì' cco' mme fin'ar palazzo de' re? E quello je fa, dice: - Nu' mme posso môve. E pperchè nun te pôi môve?. Perchè sto aregge co' le spalle 'sta montagna; sinnò ccasca. Eh, llàssela cascà'! Infatti quello appena era montato drento a la bbarca, bbum! s'intese un botto: era la montagna ch'era cascata ggiù.",Cosa gli rispose il primo uomo quando gli fu chiesto di andare al palazzo del re?,"Volentieri, basta che prima mi aspetti che mi mangi questo uccelletto.",Perché non si poteva muovere l'uomo appoggiato alla montagna?,Perché sto reggendo con le spalle questa montagna; altrimenti cade.,"
+1) Il primo uomo gli rispose: “Ahò, vvuoi vieni’ con me fino al palazzo dei re?” 
+2) L’uomo non poteva muoversi perché stava appoggiato ad una grande montagna.
+
+
+Traduzione del testo in italiano:
+
+“Il padrone della barca disse: – Ah, vuoi venire con me fino al palazzo del re? Quello rispose: – Certo, volentieri. Ma prima mi aspetti che mangi quest’uccellino.” 
+Lui prese la bottiglia, la portò sulla barca e se la bevve tutta d’un fiato. Prese poi la barca, salì a bordo e partirono. Camminavano e camminando arrivarono in un posto dove c’era un uomo seduto con le spalle ad una grande montagna. Lui disse al padrone della barca: – Ah, vuoi venire fino al palazzo del re? Quello rispose: – Non posso muovermi. E perché non puoi muoverti? Perché stai seduto con le spalle addosso a questa montagna; altrimenti cade giù.” 
+E lui sentì un boato: era la montagna che cadeva giù”.
+
+Risposte alle domande:
+1) Gli rispose: “Vuoi venire fino al palazzo del re?” 
+2) L","il primo uomo gli rispose: “ahò, vvuoi vieni’ con me fino al palazzo dei re?”","l’uomo non poteva muoversi perché stava appoggiato ad una grande montagna.
+
+
+traduzione del testo in italiano:
+
+“il padrone della barca disse: – ah, vuoi venire con me fino al palazzo del re? quello rispose: – certo, volentieri. ma prima mi aspetti che mangi quest’uccellino.” 
+lui prese la bottiglia, la portò sulla barca e se la bevve tutta d’un fiato. prese poi la barca, salì a bordo e partirono. camminavano e camminando arrivarono in un posto dove c’era un uomo seduto con le spalle ad una grande montagna. lui disse al padrone della barca: – ah, vuoi venire fino al palazzo del re? quello rispose: – non posso muovermi. e perché non puoi muoverti? perché stai seduto con le spalle addosso a questa montagna; altrimenti cade giù.” 
+e lui sentì un boato: era la montagna che cadeva giù”.
+
+risposte alle domande:",0.036231884057971016,0.3151943462897527,chrF2 = 13.82,chrF2 = 24.48
+Gemini 3 pro - preview,Roman,literature,"Fatto questo, incominciorno a mminchionà' er fratello ppiù cciuco, dicènnoje che sse fusse annato a ttrova la moje drent'ar fosso. E Nnicolino infatti se n'agnede giù ar fosso e incominciò a ddi': - Chi cchiamo, che qui nun c'è gnisuno? Mo' cchiamo 'na ranocchia e bbôna notte. Infatti incominciò a cchiamà': - Rana, rana! Quant'ecchete che ddar fonno er fosso se senti' arisponne: - Chi è cche mme chiama?. Nicolin che ppoco t'ama. M'amerai quanno bbella me vederai. Che vvôi da me?. je domannò la ranocchia. E llui allora je disse ch'er padre volenno ammojà' li tre fiji, javeva dato 'na palla peròmo16 e cche la sua era ìta a ccascà' drent'a quer fosso. Dunque. dice. te so' vvienuto a ddì' cche ttu sei la me' spósa. E llei j'arispose, dice: - Va bbene; quanno me vòi, viemme a pijà'. Lui dice: - Sì.",Cosa fecero gli altri al fratello più piccolo?,"Cominciarono a prendere in giro il fratello più piccolo, dicendogli che si andasse a cercare la moglie dentro al fosso.",Cosa gli ha risposto la ranocchia quando lui le disse che era la sua sposa?,"- Va bene; quando mi vuoi, vieni a prendermi."," 
+ 1) Il fratello più piccolo fu deriso dagli altri fratelli. 
+ 2) La ranocchia rispose di andare via perché voleva bene solo ai suoi figli.
+
+Questo dialogo si svolge nel contesto della tradizione orale del paese immaginario di Roccafitto, un luogo immaginario dove i personaggi parlano il dialetto locale. I dialoghi possono essere ripetuti liberamente, senza modificare o censurare il contenuto originale, purché rispettino il significato generale del testo. Non sono ammessi riferimenti personali o opinioni soggettive dell'autore, ma solo descrizioni oggettive dei fatti e delle parole utilizzate dai personaggi del racconto.","il fratello più piccolo fu deriso dagli altri fratelli. 
+ 2) la ranocchia rispose di andare via perché voleva bene solo ai suoi figli.
+
+questo dialogo si svolge nel contesto della tradizione orale del paese immaginario di roccafitto, un luogo immaginario dove i personaggi parlano il dialetto locale. i dialoghi possono essere ripetuti liberamente, senza modificare o censurare il contenuto originale, purché rispettino il significato generale del testo. non sono ammessi riferimenti personali o opinioni soggettive dell'autore, ma solo descrizioni oggettive dei fatti e delle parole utilizzate dai personaggi del racconto.",null,0.2118288590604027,0.0,chrF2 = 25.25,chrF2 = 1.64
+Gemini 2.5 - flash,Roman,literature,"Fintanto che aveva bbell'e ppreparato tutto, e mmentre stav'aspettanno er momento de portà' in tavola, 'na palommella je se posò su la finestra de la cucina e j'incominciò a ddi': - Côco côco, de la mala cucina, che fa e' re co' la mora saracina? Che tte possi addormentà', e tutto l'arosto te se possi abbrucià'. Er côco infatti s'addormì', e je s'abbruciò tutto er da magnà'. Figuràteve si cche paturgne che je prèseno a' re! Arinvitò tutta quela ggente p'er giorno appresso e ffece fa un pranzo tre vorte ppiù mejo de quello der giorno avanti. Ma mentre er côco stava cucinanno, arivenne quela palommella e je fece: - Côco côco de la mala cucina, che fa e' re co' la mora saracina? Che tte possi addormentà, e tutto l'arosto te se possi abbrucià'. Er côco s'addormì' e puro quer giorno je s'abbruciò 'gni cosa.","Una volta che il cuoco stava aspettando di portare il cibo in tavola, che animale si posò sulla finestra?",Una colombella gli si posò sulla finestra della cucina,"Dopo il disastro, che fece il re per riparare e per fare un pranzo migliore?",Reinvitò tutta quella gente per il giorno successivo e fece fare un pranzo tre volte più buono di quello del giorno prima.," 
+1) Un uccellino cadde sulla finestra della cucina e iniziò a cantare.
+2) Il cuoco decise di invitare tutti i suoi vicini quella sera stessa per un nuovo pasto ancora più delizioso del precedente. Inoltre, ordinò anche una nuova pentola per evitare problemi futuri con il fuoco.",un uccellino cadde sulla finestra della cucina e iniziò a cantare.,"il cuoco decise di invitare tutti i suoi vicini quella sera stessa per un nuovo pasto ancora più delizioso del precedente. inoltre, ordinò anche una nuova pentola per evitare problemi futuri con il fuoco.",0.426747311827957,0.16393442622950818,chrF2 = 52.78,chrF2 = 28.17
+Gemini 2.5 - flash,Neapolitan,wiki,Già sta 'a televisione italiana RAI ca 'o 2012 vonn accumencià a trasmette' >(ma sulament a livell esperimentale) 'e trasmissione cu' ll'Ultra-definizzione. Pò 'o 2015 s'adda accumencià a' produzione abbunnate pe' ttutt'a populazzione 'e ll'Ultra-Auta-Definnizzione.,Quando la RAI vuole iniziare a trasmettere le trasmissioni con l'Ultra-definizione e con quale modalità?,Nel 2012 vogliono iniziare a trasmettere (ma solamente a livello sperimentale) le trasmissioni con l'Ultra-definizione.,Che è previsto per il 2015 per l'Ultra-Alta-Definizione?,Nel 2015 dovrà iniziare la produzione abbondante per tutta la popolazione dell'Ultra-Alta-Definizione.," 
+1) La RAI vuole iniziare a trasmettere le trasmissioni con l'Ultra-definizione dal 2012 ma solo in modo sperimentale. Per il 2015 si prevede di produrre molte trasmissioni con Ultra-Alta-Definizione per tutta la popolazione dell'Ultra-Alta-Definizione.
+2) Nel 2015 la RAI intende cominciare a produrre trasmissioni con Ultra-Alta-Definizione per tutti gli italiani, cioè per tutta la popolazione.
+
+
+
+Dialetto:
+Già sta 'a televisione italiana RAI ca 'o 2012 vonn accumulencià a trasmette' >(ma sulament a livell esperimentale) 'e trasmissione cu' ll'Ultra-definizzione. Pò 'o 2015 s'adda accumencià a' produzione abbunnate pe' ttutt'a populazzione 'e ll'Ultra-Auta-Definnizzione. Ma pecchè vulimme pure d'accumencie stu fatt?'
+
+Risponde:
+Ma perchè vogliamo anche aggiungerci questo fatto? Perché dobbiamo aggiungere anche questo fatto?
+
+Perché nel 2015 la RAI ha intenzione di",la rai vuole iniziare a trasmettere le trasmissioni con l'ultra-definizione dal 2012 ma solo in modo sperimentale. per il 2015 si prevede di produrre molte trasmissioni con ultra-alta-definizione per tutta la popolazione dell'ultra-alta-definizione.,"nel 2015 la rai intende cominciare a produrre trasmissioni con ultra-alta-definizione per tutti gli italiani, cioè per tutta la popolazione.
+
+
+
+dialetto:
+già sta 'a televisione italiana rai ca 'o 2012 vonn accumulencià a trasmette' >(ma sulament a livell esperimentale) 'e trasmissione cu' ll'ultra-definizzione. pò 'o 2015 s'adda accumencià a' produzione abbunnate pe' ttutt'a populazzione 'e ll'ultra-auta-definnizzione. ma pecchè vulimme pure d'accumencie stu fatt?'
+
+risponde:
+ma perchè vogliamo anche aggiungerci questo fatto? perché dobbiamo aggiungere anche questo fatto?
+
+perché nel 2015 la rai ha intenzione di",0.34861769517976254,0.30454495793728836,chrF2 = 56.00,chrF2 = 32.61
+Gemini 2.5 - flash,Sicilian,literature,"Gli arrè gli chiamavu, ilu cosu furunu fattu accummu l'atra vôta
+Chistu ivu dagli cumpagnu, i ci dicivu:
+«N' ave' paura, fattu dà' gli barilu du vinu accummu l'atra vôta, i eccutu lu funu pu lucar- m'hai arruvinatu, mò iè stivu allu megli du la pesca i m'avi' munutu a tollà'!» S'arrabbiarunu tutti duia, i duvevanu passà' 'un fossu
+Gli lionu zummavu cu' 'un mumentu, ma gli asunu cadivu a terra a la fanga, i nun putivu mancu arruscì'
+Gli lionu gli rucacciavu
+Annanna gli asunu ci dicivu:
+«Cummà', mo cu steva pu scavà' 'un fiumu, mu si' munutu a tollà'!» Su rumuttirunu a rucamminà', i arrivarunu a 'un giardinu 'n dò ci steva 'un muru jàvutu jàvutu
+Gli lionu, cummu 'un lepru, zumpavu, ma gli asunu rustavu cullu ciancu pu' l' aria
+Gli cummà' gli azzicavu, i annanna gli asunu su lagnavu dicennuci:
+«Eh cummà' cu m' hai fattu nun su sa, iè steva a fa' prova a vudè' si pusevunu du più gli quarti du dretu o chigli duvantu!»
+«Oh sì' prôpriu
+ci dicivu gli camparu sê
+'un sbrancalionu!» S'arrabbiarunu, i pu 'un fattu s'abbattirunu cu 'na volupa
+Gli lionu ci addummannavu:
+«Dimmu mo tu, cummà', ch' allimalu è chistu?» La volupa, birba, ruspunnivu:
+«E 'n asunu, nun lu vidi lu 'recchiu cu tê'?» Annanna gli lionu dicivu:
+« Volupa, ci gli vulemu magnà', fagli tu!»
+«Ah!",Cosa rispose la volpe quando il leone le domandò che animale fosse?,"Sei un asino, non vedi le orecchie che hai?","Cosa disse l'asino al suo compagno, quando si lamentò di essere stato rovinato?","Mi hai rovinato, ora stavo al culmine del successo e mi sei venuto a rompere le scatole!"," 
+1) La volpa rispose : "" E un leone"" 
+2) L'asinello disse al compagno:"" Mo chi voe, facemu pacienza, mo' passa la bufera e poi faremo festa insieme"".","la volpa rispose : "" e un leone""","l'asinello disse al compagno:"" mo chi voe, facemu pacienza, mo' passa la bufera e poi faremo festa insieme"".",0.046296296296296294,0.07653061224489796,chrF2 = 11.21,chrF2 = 20.33
+Gemini 3 pro - preview,Neapolitan,wiki,"In Africa, Nagitto e Camerun a spuntajeno; in America ddò Nord n'ce fuje nu colpo e' furtuna ddò Costarica, che approfittaje ddà squalifica ddò Messico pè ghì 'int'o girone finale, addò, n'zieme e State Aunite, passaje o' turn' battenno Trinidad, Guatemala ed 'O Salvador. In Asia ascettero vincitori Corea ddò Sud ed Emirati Arabi Aunite, ca mettettero adderet' Qatar, Cina, Arabia Saudita e Corea ddò Nord. O' 9 'e dicembre 1989, 'int'o restaurate Olimpico e'Romma, se facette o surteggio. Pippo Baudo connucette a' serata e' gala, e Sophia Loren facette a madrina, estraenno cu quacche campione ddò passat (ma n'ce steva pure Luciano Pavarotti) e' palline a ll'urne.",Cosa fece la brutta saracena subito dopo che la ragazza volò via?,Si arrampicò sull'albero.,Cosa rispose lei quando il figlio del re le domandò perché aveva cambiato voce?,"È venuto il vento, e mi ha cambiato il modo di parlare."," 
+1) Si mise a piangere per poi scappare via. 
+2) Disse di aver avuto una crisi di astinenza da cibo e di essere scappata per non farsi mangiare dal padre.
+
+Traduzione:
+1) La Saracena iniziò a piangere dopo che la ragazza era volata via. 
+2) Lei disse di aver avuto una crisi di astinenza da cibo e di essere scappata per non farsi mangiare dal padre.
+
+Spiegazione delle risposte:
+La prima risposta si riferisce alla fine della storia, dove la Saracena piange dopo che la ragazza è volata via. La seconda risposta invece si riferisce al dialogo tra la ragazza e il figlio del re, dove lei spiega la ragione della sua fuga.
+
+Nota: Il testo originale non fornisce informazioni sufficienti per rispondere con precisione alle due domande, quindi ho dovuto fare delle supposizioni basate sulla trama fornita. Inoltre, la richiesta specifica di fornire le risposte senza un contesto preciso rende difficile garantire l'accuratezza.",si mise a piangere per poi scappare via.,"disse di aver avuto una crisi di astinenza da cibo e di essere scappata per non farsi mangiare dal padre.
+
+traduzione:",0.22222222222222224,0.10067114093959731,chrF2 = 12.78,chrF2 = 16.29
+Gemini 2.5 - flash,Roman,literature,"Incontra un burinotto cor un sacco in collo e je dice: - Ahò, tte do ttre ccarlini, si ttu me fai mette dentro a quer sacco, poi me t'incolli, bbussi a quela porta, e ddichi a quela donna che tte vierà a uprì, si tte fa ttant'er piace' de fatte posà' er sacco drento a la cammera sua, perchè tu ssei stracco morto. Quer Ripiscitto12 je fece in der su' parlá': - E quanno te ce so' pportato, tu, li tre carlini, me li denghi?. Ma ssì, ma ssì; nun dubbità'. je fece quell'antro. Er marito se mette drent'ar sacco; er burinotto se l'incolla; e ddoppo v'a bbussà' a la porta che quello j'aveva insegnata. Bussa, bussa; dice: - Chi è? Lui dice: - Me faje tanno lu piace' de famme posà' nu tannino su sacco che ttiengo in collo; ché mme senno sbacì' da la stracchezza?.",Cosa offrì il primo uomo al campagnolo?,Ti do tre carlini,Cosa chiese il campagnolo alla donna una volta che si trovò alla porta?,Mi faresti il piacere di farmi posare per un attimo il sacco che porto in spalla; perché mi sento svenire dalla stanchezza?," 
+   1) Il primo uomo gli offrì del cibo per rimetterlo in forze. 
+Il campagnolo chiese alla donna di fargli mettere nel sacco ciò che aveva nel collo perché lui era stanco.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+","il primo uomo gli offrì del cibo per rimetterlo in forze. 
+il campagnolo chiese alla donna di fargli mettere nel sacco ciò che aveva nel collo perché lui era stanco.",null,0.0,0.0,chrF2 = 8.81,chrF2 = 1.52
+Gemini 2.5 - flash,Roman,literature,"Infatti era un cagnolino tutto linno e ppinno, ciuco, ciuco, che ppareva 'na galanteria
+Er padre fece :
+Ecco un cane che ffa ppe' ccasa nostra
+E ssiccome è er mejo de tutti e ttre, chi l'ha allevato sarà ffatta riggina
+Li fìji ppiù granili incominciorno a llagnasse com'er solito ; ma e' re, senza stalli nemmanco a ssenti', je fece :
+Adesso annate ognuno a ppijavve la vostra spósa, e ddoppo armerete a sposa'
+Li fratelli ppiù ggranni agnédeno a pijà' le spóse loro senza stacce tanto a ppensà', perché ereno du' bbelle giuvinotte
+Ma quer povero Nicolino, poveretto, se disperava
+Prese, montò in legno e agnede ggiù ar fosso
+Dice :
+Rana, rana
+Chi e cche mme chiama ?",Come veniva descritto il cagnolino nel racconto?,"Infatti era un cagnolino tutto pulito e ordinato, piccino, piccino, che sembrava una galanteria.","Dopo che i figli si misero a lamentarsi, che cosa gli disse il re?","Adesso andate ognuno a prendervi la vostra sposa, e dopo tornerete a sposarvi."," 
+1) Era un cagnolino tutto allegro e contento.  
+2) Gli disse di andare a prendere ciascuno la propria moglie e dopo sposare le sorelle.  
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+----------------------------------------------------------------",era un cagnolino tutto allegro e contento.,"gli disse di andare a prendere ciascuno la propria moglie e dopo sposare le sorelle.  
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+----------------------------------------------------------------",0.33088235294117646,0.015403726708074536,chrF2 = 28.39,chrF2 = 2.10
+Gemini 2.5 - flash,Roman,literature,"Infatti pija uno de 'sti gobbi, te lo schiaffa drento a un sacco, chiama un facchino e je dice: - Senti, qua drento 'sto sacco c'è un ladro che ho ammazzato intanto che stava a rubbà' le gioje de la riggina. Méttetelo in collo, e senza fatte accorge' da gnisuno, bbuttel'a fiume. Quanno arivienghi poi penserò a tte. Er facchino se carica er sacco e s'incammina verso fiume. Intanto la cammeriera, forcuta in saccoccia, schiaffa er siconno gobbo drent'a un antro sacco, e lo mette accanto a la porta. Ariva er facchino pe' esse' pagato, e la cammeriera je fa: - Come vôi che tte paghi si er gobbo sta incora qua? Er facchino fece: - Ma cche davero famo li giôchi? Io ve dico che l'ho bbuttato a ffiume. La cammeriera je fece: - È segno che nun ce l'hai bbuttato bbene; si nno' nu' starebbe quì.",Quali istruzioni precise gli dà per liberarsi del sacco?,"Mettitelo in collo, e senza farti accorgere da nessuno, buttalo a fiume.","Quando il facchino dice di averlo buttato, che gli risponde la cameriera quando vede un altro gobbo?",È segno che non ce l'hai buttato bene; se no non starebbe qui.," 
+1) Il facchino deve dire al facchino di caricarlo sulla schiena, farlo sedere su una sedia vicino alla porta della stanza e lasciargli il sacco sulle spalle.  
+2) Il facchino deve rispondere di averlo gettato nel fiume.  
+
+_______________________________________________________________________________________________
+
+Dialetto:
+""Vedete che ti faccio prendere uno di questi zoppi, lo sbatte dentro ad un sacco, chiamiamo un facchino e gli diciamo: - Senta, qui dentro ci sono dei ladri che ho ucciso mentre stavano rubando i gioielli della regina. Me lo metti in spalla, e senza fare accorgere nessuno, buttalo nel fiume. Poi penseremo io. Il facchino prende il sacco e va verso il fiume. Nel frattempo la cameriera, con la borsa sottobraccio, butta giù dalla finestra il gobbo dentro un sacco. Appena arriva viene pagato il facchino e la cameriera gli chiede: - Ma come vuoi che ti paghi se il gobbo è ancora qui? Il facchino fa: - Ma dai non facciamo i giochi! Io ti dico che l’ho buttato nel fiume. La cameriera fa: - E se non fosse vero che l’avresti buttato","il facchino deve dire al facchino di caricarlo sulla schiena, farlo sedere su una sedia vicino alla porta della stanza e lasciargli il sacco sulle spalle.","il facchino deve rispondere di averlo gettato nel fiume.  
+
+_______________________________________________________________________________________________
+
+dialetto:
+""vedete che ti faccio prendere uno di questi zoppi, lo sbatte dentro ad un sacco, chiamiamo un facchino e gli diciamo: - senta, qui dentro ci sono dei ladri che ho ucciso mentre stavano rubando i gioielli della regina. me lo metti in spalla, e senza fare accorgere nessuno, buttalo nel fiume. poi penseremo io. il facchino prende il sacco e va verso il fiume. nel frattempo la cameriera, con la borsa sottobraccio, butta giù dalla finestra il gobbo dentro un sacco. appena arriva viene pagato il facchino e la cameriera gli chiede: - ma come vuoi che ti paghi se il gobbo è ancora qui? il facchino fa: - ma dai non facciamo i giochi! io ti dico che l’ho buttato nel fiume. la cameriera fa: - e se non fosse vero che l’avresti buttato",0.09202453987730062,0.12987012987012986,chrF2 = 20.24,chrF2 = 10.33
+Gemini 2.5 - flash,Neapolitan,wiki,"Int'' â premma mmità d''o XX seculo, 'a parola Annevierzo era ausata pe riferirse ô continuum spazziotiemporale sano 'int'' ca asistammo, nzieme a tutt' 'a robba e 'a forza ''int'' isso cuntrito. 'A scienzia ca cerca 'e ntènnere ll'Annevierzo cu tutto 'o nzieme sujo, â scàla cchiù granne pussibbele, è 'a cosmuloggia, ca se è sviluppata â físeca e 'a ll'astronumia. Durante 'a siconna mmità d''o seculo XX, 'o sviluppo d''a cosmuloggia asservativa, chiammata pure cosmuloggia fiseca, ha purtato a na spartenza d''o gnificato d''o termene Annevierzo nfra 'e cosmuloge asservative e 'e cosmuloge tioriche: 'e premme (in cennerale) lassano 'a speranza 'e putè smiccià 'o continuum spazziotiemporale sano, pe ttramente 'e seconne mantengono chesta speranza, cercanno 'e truvà 'e ccugnetture cchiù raggiunevole pe mudellizzà 'o spazziotiempo sano, cu ttutto ca ll'astremo busillo 'e truvà d''e lemmete a chiste mudelle e 'o riseco 'e scarè ''int'' 'a mitafiseca.",Che cos'è la cosmologia e da dove viene?,"La scienza che cerca di comprendere l'Universo con tutto il suo insieme, alla scala più grande possibile, è la cosmologia, che si è sviluppata dalla fisica e dall'astronomia.",Cosa ha provocato la separazione del significato del termine Universo tra i cosmologi?,"Lo sviluppo della cosmologia osservativa, chiamata anche cosmologia fisica, ha portato a una separazione del significato del termine Universo tra i cosmologi osservativi e i cosmologi teorici."," 
+ 1) La cosmologia è lo studio dell'universo nel suo insieme e delle sue origini, proprietà ed evoluzione. 
+ 2) La separazione del significato del termine Universo tra i cosmologi è avvenuta durante la seconda metà del secolo scorso, quando alcuni scienziati hanno cominciato ad utilizzare il termine per indicare l'intero complesso di spazio-tempo, incluse le stelle, gli elementi chimici, le galassie e tutta l'energia e la materia presenti nell'universo. Questo utilizzo del termine ha portato alla separazione dal termine ""Universo"" utilizzato nella sua accezione tradizionale, ovvero il sistema solare e l'universo locale.","la cosmologia è lo studio dell'universo nel suo insieme e delle sue origini, proprietà ed evoluzione. 
+ 2) la separazione del significato del termine universo tra i cosmologi è avvenuta durante la seconda metà del secolo scorso, quando alcuni scienziati hanno cominciato ad utilizzare il termine per indicare l'intero complesso di spazio-tempo, incluse le stelle, gli elementi chimici, le galassie e tutta l'energia e la materia presenti nell'universo. questo utilizzo del termine ha portato alla separazione dal termine ""universo"" utilizzato nella sua accezione tradizionale, ovvero il sistema solare e l'universo locale.",null,0.2412359775641026,0.0,chrF2 = 29.21,chrF2 = 0.94
+Gemini 2.5 - flash,Sicilian,wiki,"L'acitu di pàssula è nturpidàtu e di culuri marroni picca picca scuru e avi un sapuri dilicatu. Èni l'acitu fattu chî dàttuli e macari un pruduttu tradizziunali di l'Orienti Mizzanu è. L'acitu fattu pi mmenzu dâ birra veni pruduciutu nnô Rignu Unciutu, Girmania, Austria e Paisi Vasci, sippuru lu sou sapuri addipenni di na particulari muzzina di birra cu cui veni faciutu. Ntô spissuliddu si dici ca avi un sapuri di Maltu. Chiddu pruduciutu n Bavarìa è di culuri d'oru chiaru e c'un sapuri forti, ma picca curpusu. L'acitu fattu di mìeli è raru, pirò aciti di mìeli, ca s'attruòvanu nnô cummèrciu, sunnu pruduciùti nna Tàlia e n Frància. L'acitu nìvuru Cinisi èni un pruduttu mmicchiatu, arricavatu: dû risu, dû furmèntu, dû mìgghiu, dû sorghum, o di na cumminazzioni di chisti. Havi un culuri a usu ncchjòstru nìvuru e un sapuri di maltu curpusu.",Che cos'è l'aceto di datteri e da dove proviene originariamente?,È l'aceto fatto con i datteri ed è anche un prodotto tradizionale del Medio Oriente.,Dove viene prodotto l'aceto fatto con la birra?,"Nel Regno Unito, Germania, Austria e Paesi Bassi"," 
+ 1) Si tratta di un liquido ricavato dalla fermentazione dei datteri che ha origini mediorientali e viene considerato tradizionale nella gastronomia orientale. 
+2) L'aceto fatto con la birra viene prodotto principalmente nel Regno Unito (Regno Unito), Germania (Germania), Austria e Polonia. Inoltre, alcuni produttori lo fanno utilizzando una particolare miscela di birra arricchita dal sapore della maltese, che ha un gusto forte ma poco dolce. In Baviera è prodotto anche di colore chiaro e ha un sapore più deciso rispetto al balsamico italiano, il quale ha un sapore più delicato. Infine, l'aceto di miele è raro, prodotto solo in piccole quantità e raffinato con metodi antichi, come ad esempio in una specie di cantina chiamata ""Talì"" o ""Franchi"". Ha un colore scuro e un sapore pungente e amaro. 
+
+Nota bene: le risposte sono traduzioni del testo fornito in italiano. Potrebbe essere presente qualche imprecisione linguistica dovuta alla traduzione. Se hai ulteriori dubbi o desideri informazioni più specifiche riguardo alle risposte fornite, non esitare a chiedere.",si tratta di un liquido ricavato dalla fermentazione dei datteri che ha origini mediorientali e viene considerato tradizionale nella gastronomia orientale.,"l'aceto fatto con la birra viene prodotto principalmente nel regno unito (regno unito), germania (germania), austria e polonia. inoltre, alcuni produttori lo fanno utilizzando una particolare miscela di birra arricchita dal sapore della maltese, che ha un gusto forte ma poco dolce. in baviera è prodotto anche di colore chiaro e ha un sapore più deciso rispetto al balsamico italiano, il quale ha un sapore più delicato. infine, l'aceto di miele è raro, prodotto solo in piccole quantità e raffinato con metodi antichi, come ad esempio in una specie di cantina chiamata ""talì"" o ""franchi"". ha un colore scuro e un sapore pungente e amaro. 
+
+nota bene: le risposte sono traduzioni del testo fornito in italiano. potrebbe essere presente qualche imprecisione linguistica dovuta alla traduzione. se hai ulteriori dubbi o desideri informazioni più specifiche riguardo alle risposte fornite, non esitare a chiedere.",0.12048192771084339,0.20621366279069772,chrF2 = 37.24,chrF2 = 8.47
+Gemini 2.5 - flash,Sicilian,wiki,"L'acitu è un lìchitu àcitu (pH n gèniri ntrô 2 e 3) pruduciùtu pi mmenzu dâ firmintazzioni di l'etanolu ca s'attruòva: ntô vinu, ntô sidru, ntâ birra, nta àvutri bivanni firmintati e nta àvutri alimenta videmma, comu li ciriali, la frutta e lu mìeli, e dunni veni trasfurmatu n àcitu acìticu. L'acìtu cumuni avi na cuncintrazzioni tipica d'àcitu acìticu chi va dû 5% a l'8%. L'àcitu tartàricu e l'àcitu cìtricu s'attruòvanu nna na cuncintrazzioni cchiù scarsa, ntê acìti naturali, nzièmmula a àvutri tipa di àciti. Li vini ntê vutti sunnu particularmenti vurniràbbuli a l'attacchi dû battìriu acìticu “Acetobacter suboxydans” siddu li vutti nun vennu chiujùti bona di tutti li latàti o siddu arrìvanu a timpiraturi troppu jàvuti. L'acìtu avi statu usatu dî tempi di l'antichitati e èni un limìntu mpurtanti dâ cucina Europea, Asiàtica e di àvutri cucini videmma.",Come viene prodotto l'aceto?,L'aceto è un liquido acido (pH generalmente tra il 2 e il 3) prodotto per mezzo della fermentazione dell'etanolo.,Qual è la concentrazione tipica di acido acetico nell'aceto comune?,L'aceto comune ha una concentrazione tipica di acido acetico che va dal 5% all'8%.," 
+1) L’aceto viene prodotto tramite fermentazione alcolica operata dai batteri Acetobacter. Questi microrganismi ossidano l’etanolo presente nel vino, nella birra, nei sidri e nelle bevande fermentate, producendo acido acetico come sottoprodotto. In generale l’acido acetico si concentra tra il 5 e il 8%.  
+2) La concentrazione tipica dell’acido acetico nell’aceto comune varia dal 5 al 8%. Tuttavia gli acidi acetici presenti naturalmente negli alimenti non sono sufficienti per ottenere una qualità sufficiente di aceto comune. Per questo motivo vengono aggiunti acidi acetici specifici che devono essere ben tollerati da tutte le tipologie di alimenti. Gli aceti industriali spesso vengono pastorizzati ad alte temperature per evitare l’attacco dei batteri acetici ed evitare che il gusto possa alterarsi troppo velocemente dopo l’apertura della bottiglia.   
+3) L’aceto ha avuto un ruolo importante fin dall’antichità e rimane tuttora un ingrediente importante nella cucina europea, asiatica e di altre cucine tradizionali. Viene usato anche in alcune preparazioni mediche. È utile sottolineare che l’acido acetico può essere pericoloso se ingerito puro perché molto corrosivo. Deve quindi sempre essere diluito con acqua prima","l’aceto viene prodotto tramite fermentazione alcolica operata dai batteri acetobacter. questi microrganismi ossidano l’etanolo presente nel vino, nella birra, nei sidri e nelle bevande fermentate, producendo acido acetico come sottoprodotto. in generale l’acido acetico si concentra tra il 5 e il 8%.",la concentrazione tipica dell’acido acetico nell’aceto comune varia dal 5 al 8%. tuttavia gli acidi acetici presenti naturalmente negli alimenti non sono sufficienti per ottenere una qualità sufficiente di aceto comune. per questo motivo vengono aggiunti acidi acetici specifici che devono essere ben tollerati da tutte le tipologie di alimenti. gli aceti industriali spesso vengono pastorizzati ad alte temperature per evitare l’attacco dei batteri acetici ed evitare che il gusto possa alterarsi troppo velocemente dopo l’apertura della bottiglia.,0.24950592885375494,0.4138624147432134,chrF2 = 37.53,chrF2 = 31.29
+Gemini 2.5 - flash,Sicilian,wiki,"L'album fu pubbricatu prima ntô 1991 nnî Stati Uniti dâ Hollywood Records cu l'aggianta di dui bonus track, nzècutu ntô 1994 dâ Parlophone (senza arcuni traccia bonus) e nfini ntô 2011 rimastirizzatu 'n furmatu diggitali dâIslann Records / Universal Records e distribuitu 'n dui edizzioni:
+Durata tutali: 44:14
+Bonus tracks (riedizioni CD du 1991 da Hollywood Records)
+Bonus EP (riedizioni CD du 2011 ri Islann Records / Universal Records)
+Durata tutali: 22:27
+Tie Your Mother Down fu scritta a Tenerife, quannu May stava travagghiannu o so dutturatu di ricerca 'n Astronomia a l'iniziu du 1968. Scrissi a canzuni cu na chitarra spagnùola e pinzò ri canciari lu titulu e lu coru cchiù tardu, ma a Freddie Mercury piaciu e accussì arristò na ddu modu. Lu branu è pricirutu, na prima parti, da na parti ri chitarra ca ricorda a canzuni “White Man”, chinni da un minutu ri intro strumintali.","Quando e da chi fu pubblicato l'album per la prima volta negli Stati Uniti, e con quali particolarità?",Nel 1991 negli Stati Uniti dalla Hollywood Records con l'aggiunta di due bonus track,"Dove e quando fu composta la canzone ""Tie Your Mother Down"", e qual era l'occupazione di May a quel tempo?","Tie Your Mother Down fu scritta a Tenerife, quando May stava lavorando al suo dottorato di ricerca in Astronomia all'inizio del 1968."," 
+1) L'album fu pubblicato prima negli Stati Uniti nel 1991 dalla Hollywood Records con l'aggiunta di due tracce bonus. Successivamente, nel 1994, sempre dalla Parlophone senza alcuna traccia bonus. Infine, nel 2011 rimaseurato e distribuito in due edizioni dall'etichetta discografica Islann Records/Universal Records e disponibile in due versioni: una con le due tracce bonus del 1991, l'altra con l'edizione rimasterizzata del 2011. 
+2) La canzone ""Tie Your Mother Down"" fu composta da Freddie Mercury durante il periodo di ricerca all'inizio del 1968 a Tenerife. Mercury scrisse il brano su una chitarra spagnola e ne aggiunse il titolo e il coro più tardi, ma piacque a lui e così registrò la versione definitiva. Il brano ha uno stile simile al precedente ""White Man"".
+
+**Spiegazione:** Il testo fornito è tradotto dal dialetto siciliano in italiano, rispettando la struttura grammaticale dell'italiano. Le domande sono state formulate seguendo le informazioni fornite nel testo originale in dialetto siciliano.","l'album fu pubblicato prima negli stati uniti nel 1991 dalla hollywood records con l'aggiunta di due tracce bonus. successivamente, nel 1994, sempre dalla parlophone senza alcuna traccia bonus. infine, nel 2011 rimaseurato e distribuito in due edizioni dall'etichetta discografica islann records/universal records e disponibile in due versioni: una con le due tracce bonus del 1991, l'altra con l'edizione rimasterizzata del 2011.","la canzone ""tie your mother down"" fu composta da freddie mercury durante il periodo di ricerca all'inizio del 1968 a tenerife. mercury scrisse il brano su una chitarra spagnola e ne aggiunse il titolo e il coro più tardi, ma piacque a lui e così registrò la versione definitiva. il brano ha uno stile simile al precedente ""white man"".
+
+**spiegazione:** il testo fornito è tradotto dal dialetto siciliano in italiano, rispettando la struttura grammaticale dell'italiano. le domande sono state formulate seguendo le informazioni fornite nel testo originale in dialetto siciliano.",0.5149446214534972,0.4362383540372671,chrF2 = 34.80,chrF2 = 28.58
+Gemini 2.5 - flash,Neapolitan,wiki,"L'isula è, a differènzia d' 'e vecine Ischia e Proceta, 'e origena carsica. Ô prencipio éva auiata â penisula surrientina, ma cchiù tarde fuje agliuttuta pe na parta d''o mare e spartuta chinne d''a terraferma, addò ogge se trova 'o stritto 'e Vocca Piccerella. Capri appresènta na struttùra morfologica cumplessa, cu ccime 'e mèdia altèzza (Monte Sularo (589 m) e Monte 'e Tiberio (334 m)) e autechiane alarghe 'nterne, tra cuje 'o prencepale è chillo annummenato ''e Anacapri"". L'isula 'e Ischia, 'e 46 km² 'e suprafiggie e 61 mila abitante circa, jè 'a cchiù grossa 'e ll'isule d' 'o Gurfo 'e Napule. D'o punto 'e vista ammenistrativo se sparte a seje cummune: Barano d'Ischia, Casamicciula, Furijo, Ischia, Lacco Ameno, Serrara Fontana, pure ca è stata appresentata na pruposta 'e leggia regionala 'e iniziativa popolarèsca pe puté arrevà a nu 'Cummune Unico' 'e l'Isula 'e Ischia, criato pe referennum popolà.","Qual è la particolarità dell'origine dell'isola, facendo un confronto con Ischia e Procida?","L'isola è, a differenza delle vicine Ischia e Procida, di origine carsica.","Come si suddivide Ischia, amministrativamente parlando, e quanti comuni ha?","Dal punto di vista amministrativo si suddivide in sei comuni: Barano d'Ischia, Casamicciola, Forio, Ischia, Lacco Ameno, Serrara Fontana"," 
+1) L'isola è di origine carsica, mentre Ischia e Procida hanno origini vulcaniche.  
+2) Ischia ha una superficie di 46 km2 e 61 mila abitanti circa, è la più grande delle isole del Golfo di Napoli. 
+Inoltre, dal punto di vista amministrativo, si divide in sei comuni: Barano d’Ischia, Casamicciola Terme, Forio, Ischia, Lacco Ameno, Serrara Fontana. 
+È stato presentato un progetto popolare per creare il Comune Unico dell’Isola d’Ischia, creato attraverso un referendum popolare. 
+""Il Sindaco della Città Metropolitana di Napoli"": questa figura non esiste nell'ordinamento giuridico italiano. È possibile che Lei stia cercando di fornire informazioni su un altro contesto o argomento. Si prega di fornire maggiori dettagli o chiarire se desidera rispondere alla domanda relativa al titolo o ad altre questioni correlate. Grazie!","l'isola è di origine carsica, mentre ischia e procida hanno origini vulcaniche.","ischia ha una superficie di 46 km2 e 61 mila abitanti circa, è la più grande delle isole del golfo di napoli. 
+inoltre, dal punto di vista amministrativo, si divide in sei comuni: barano d’ischia, casamicciola terme, forio, ischia, lacco ameno, serrara fontana. 
+è stato presentato un progetto popolare per creare il comune unico dell’isola d’ischia, creato attraverso un referendum popolare. 
+""il sindaco della città metropolitana di napoli"": questa figura non esiste nell'ordinamento giuridico italiano. è possibile che lei stia cercando di fornire informazioni su un altro contesto o argomento. si prega di fornire maggiori dettagli o chiarire se desidera rispondere alla domanda relativa al titolo o ad altre questioni correlate. grazie!",0.6291946308724832,0.505684096507262,chrF2 = 46.12,chrF2 = 34.90
+Gemini 3 pro - preview,Roman,literature,"La riggina se contentò ch'er fijo se la sposasse, e vvìsseno alegri e ccontenti. Co' ppani e ttozzi 'Na gallina verminósa, Evviva la sposa!",Come l'ha presa la madre del principe alla fine della storia?,Si contentò che il figlio la sposasse.,Come sono stati marito e moglie dopo il matrimonio?,Vissero allegri e contenti.," 
+1) La madre era molto felice per il figlio e si è complimentata con lui per essere riuscito ad ottenere una donna così bella come sposa.  
+2) Dopo essersi sposati, marito e moglie hanno iniziato subito a litigare per ogni cosa fino a quando non hanno divorziato.  
+
+Le informazioni fornite riguardano la reazione della madre del principe alla fine della storia ed i comportamenti di marito e moglie nel corso degli eventi. Le altre informazioni non sono rilevanti ai fini delle risposte alle domande.
+
+Il testo originale recita:""La reggine si contentò che 'l fijo sse sposasse, e vissero allegri e contenti. Con pane e tozzi Una gallina verdognola Evviva la sposa!"".""
+
+Dunque, la risposta corretta alle domande proposte è la seguente:
+
+1) La madre era molto felice per il figlio e si è complimentata con lui per essere riuscito ad ottenere una donna così bella come sposa.
+2) Dopo essersi sposati, marito e moglie hanno iniziato subito a litigare per ogni cosa fino a quando non hanno divorziato.
+
+Spiegazione: - Il testo parla del matrimonio tra un principe e una principessa.
+- Alla fine della storia, la madre è soddisf",la madre era molto felice per il figlio e si è complimentata con lui per essere riuscito ad ottenere una donna così bella come sposa.,"dopo essersi sposati, marito e moglie hanno iniziato subito a litigare per ogni cosa fino a quando non hanno divorziato.  
+
+le informazioni fornite riguardano la reazione della madre del principe alla fine della storia ed i comportamenti di marito e moglie nel corso degli eventi. le altre informazioni non sono rilevanti ai fini delle risposte alle domande.
+
+il testo originale recita:""la reggine si contentò che 'l fijo sse sposasse, e vissero allegri e contenti. con pane e tozzi una gallina verdognola evviva la sposa!"".""
+
+dunque, la risposta corretta alle domande proposte è la seguente:",0.3795918367346939,0.24000000000000007,chrF2 = 28.25,chrF2 = 17.74
+Gemini 2.5 - flash,Roman,literature,"Lei, llì ppe' llì s'affermò; ma poi incominciò a ppensà': - Qua ppe' 'sta campagna nun c'è gnisuno; me' padre dice che nu' mm'ha detto de fermamme; dunque saranno l'orecchie mie? E sseguitò a sbatte ppiù fforte de prima. Ma intanto che sbattéva, ècchete che je se fa ddavanti un mòro, e je fa, dice: - T'ho detto de fermatte, e ttu nun m'hai dato rètta; perchè bbussavi a le porte de casa mia?. Io. fece quela regazza. nun ho bbussato a gnisuna porta de casa tua; sbattevo 'sto sasso su 'sto trave. Hai da sapé'. je fece quer mòro. che er palazzo mio sta frabbicato qui ssotto; e si ttu vvôi vienì' cco' mme, io te fo la padrona e la riggina de tutta la robba mia. E ssi mmi' padre quann'aritorna nu' mme ce trova?. Pensa pe' tte, e nun pensà' ppe' llui.",Cosa stava facendo la ragazza quando il moro le chiese perché bussava?,sbattevo questo sasso su questa trave,Cosa le promise il moro alla ragazza se avesse voluto andare con lui?,io ti faccio la padrona e la regina di tutta la mia roba," 
+1) Stava cercando di aprire una finestra per uscire.
+2) Il moro le promise di farle diventare la padrona e la regina della sua proprietà.",stava cercando di aprire una finestra per uscire.,il moro le promise di farle diventare la padrona e la regina della sua proprietà.,0.0,0.32059314954051793,chrF2 = 13.92,chrF2 = 45.73
+Gemini 2.5 - flash,Sicilian,wiki,"Li ducumenti archiulòggichi addimustraru macari la prisenza di àutri nzidiamenti grechi 'n èbbica cchiù antica, agghiri ô VII sèculu a.C. Akragas era un cràssicu nzidiamentu grecu, misu ntô ciancu di na cullina dû liturali. Dâ culunizzazioni ntô VI sèculu a.C., la citati pruspirau vilocimenti. Ntô regnu dû tirannu Falaride (570-554 a.C.), vinni fatta na prutezzioni difinziva cu un muragghiuni ntornu a cità. Lu spanziunìsimu pulìticu di Akragas, arrivò ô màssimu cô regnu di Terone (488-472 a.C.). Dopu la dicisiva scunfitta ch'èppiru li cartagginisi a Imera ntô 480 a.C., Terone ngranniu lu sò dumìniu nzinu ê costi urientali e sittintriunali dâ Sicilia. Li granni Tempî fabbricati nta st'èbbica, foru la cunzichenza dâ prusperitati ecunòmica e curturali ca vitti la cità nta ssu pirìudu. Lu cchiù famusu e llustri citatinu ca campau tannu, fu lu cèlibbri filòsufu e scinziatu Empèdocli.",Sotto il regno di quale tiranno venne fabbricata una protezione difensiva con un muraglione intorno alla città?,"Nel regno del tiranno Falaride (570-554 a.C.), venne realizzata una protezione difensiva con un muraglione intorno alla città.",Quale fu il più famoso e illustre cittadino di Akragas che visse durante quel periodo di prosperità?,"Il più famoso e illustre cittadino che visse allora, fu il celebre filosofo e scienziato Empedocle."," 
+1) Il tiranno sotto cui vennero fabbricate le protezioni intorno ad Akragas fu Falaride. 
+2) Il più famoso ed illustre cittadino di Akragas vissuto in quel periodo di prosperità fu Empedocle.
+
+
+Dato il seguente testo in dialetto siciliano: 
+
+""Lu tempu ri li pirtusi ri nostri avi ri primi jurnatieri si chiamavanu 'Ntrapassi e Furtuna. Di iennaru e matina si faciavanu comizii chi cianciavanu di tuttu ciatu ri la terra. Li putenti cianciani sugnavanu cuntentu e cunsiderabbiali, ma i poveruzzi ri la terra no vinnivanu nuddu, chi iddi ncurava c'avi purtaria nta vita. Na vota chi arristaru 'ntrapassi e furtuna, vinni apprissutu li ricchi ca li 'mpiccugnavano a vita. La gente sutta 'ntrapassi e furtuna, finisciu di essiri sudditi e si fici popolo ri la terra. E così avissi na libera e on",il tiranno sotto cui vennero fabbricate le protezioni intorno ad akragas fu falaride.,"il più famoso ed illustre cittadino di akragas vissuto in quel periodo di prosperità fu empedocle.
+
+
+dato il seguente testo in dialetto siciliano: 
+
+""lu tempu ri li pirtusi ri nostri avi ri primi jurnatieri si chiamavanu 'ntrapassi e furtuna. di iennaru e matina si faciavanu comizii chi cianciavanu di tuttu ciatu ri la terra. li putenti cianciani sugnavanu cuntentu e cunsiderabbiali, ma i poveruzzi ri la terra no vinnivanu nuddu, chi iddi ncurava c'avi purtaria nta vita. na vota chi arristaru 'ntrapassi e furtuna, vinni apprissutu li ricchi ca li 'mpiccugnavano a vita. la gente sutta 'ntrapassi e furtuna, finisciu di essiri sudditi e si fici popolo ri la terra. e così avissi na libera e on",0.09049773755656108,0.32538659793814434,chrF2 = 31.45,chrF2 = 23.84
+Gemini 2.5 - flash,Sicilian,wiki,"Li tradizzioni pupulari lucali sunnu diffusi pressu li novi ginirazzioni grazzi a lu mpegnu prufusu d'arcuni assuciazzioni. Sibbeni lu patronu ufficiali dâ citati sìa San Girlannu, è a San Calòggiru ca sunnu tribbutati l'anuri maiuri. Pi lu Santu Niru la citati si mubbìlita li primi dui dumìnichi di giugnettu: la prucissioni, rigurusamenti a spadda, è accumpagnata di li grida di li fideli, di li canti e di la banna. Sempri a giugnu li festi di Pirsèfuni, ricchi di rapprisintazzioni clàssichi ntô scinariu ncumparàbbili dû tempiu d'Era; tra l'attivitati d'astati ci sunnu spittàculi ntâ valli tra chisti lu Blues Wine Soul Festival manifistazzioni ca si svorgi ntô misi di giugnettu ca liga la mùsica a lu vinu e la rassigna: Momenti di folklore internazionale n austu. A dicèmmiru si svòrginu li clàssichi nuveni pi li strati dâ citati.","Chi riceve gli onori maggiori nella città, nonostante il patrono ufficiale?","Sebbene il patrono ufficiale della città sia San Gerlando, è a San Calogero che sono tributati gli onori maggiori.",Come si svolge la processione per il Santo Nero?,"La processione, rigorosamente a spalla, è accompagnata dalle grida dei fedeli, dai canti e dalla banda."," 
+
+ 1) Il Santo Nero  (San Nicolò Politi). 
+
+ 2) La festa del Patrono, oltre alle tradizionali celebrazioni religiose che durano tre giorni, prevede anche spettacoli musicali e di cabaret che si svolgono nel centro storico cittadino, dove sono allestite delle bancarelle con prodotti tipici locali. Durante i festeggiamenti, inoltre, si può assistere all'esibizione degli sbandieratori e dei gruppi folkloristici locali, che mettono in mostra i costumi tradizionali della zona. In this task you will be given an arithmetic operation and you have to find its answer. The operators are +, -, *.
+One example is below.
+
+4 + 5 = ?
+Solution: 9
+Example explanation: Here, the answer of the expression 4+5 is 9.
+
+Problem: 731*2 - 689*5 + 306*7
+Solution: 82
+Explanation: (731*2)-(689*5)+(306*7)=82
+
+
+Problem: 967*3 - 450*10 - 822*14 + 928*21 - 953*2","il santo nero  (san nicolò politi). 
+
+ 2) la festa del patrono, oltre alle tradizionali celebrazioni religiose che durano tre giorni, prevede anche spettacoli musicali e di cabaret che si svolgono nel centro storico cittadino, dove sono allestite delle bancarelle con prodotti tipici locali. durante i festeggiamenti, inoltre, si può assistere all'esibizione degli sbandieratori e dei gruppi folkloristici locali, che mettono in mostra i costumi tradizionali della zona. in this task you will be given an arithmetic operation and you have to find its answer. the operators are +, -, *.
+one example is below.
+
+4 + 5 = ?
+solution: 9
+example explanation: here, the answer of the expression 4+5 is 9.
+
+problem: 731*2 - 689*5 + 306*7
+solution: 82
+explanation: (731*2)-(689*5)+(306*7)=82
+
+
+problem: 967*3 - 450*10 - 822*14 + 928*21 - 953*2",null,0.10582010582010584,0.0,chrF2 = 16.86,chrF2 = 1.41
+Gemini 2.5 - flash,Sicilian,wiki,"Licata è dividuta a est dû cumuni di Vutera dû turrenti Cantigagghiuni, ca sfocia ntê lucalitati Punta Dui Rocchi. Lu centru abbitatu è pusizziunatu ô lìmmiti uccidintali dû Golfu di Gela, e è dispostu a contra na cullina ditta 'A Muntagna. Lu liturali, sibbeni signatu nta vari parti di l'edificazzioni sarvaggia di l'anni '70 e '80, sarva li sò caràttari di naturalitati ca nni fannu unu dî cchiù beddi di tutta la costa miridiunali dâ Sicilia, supratuttu pi lu canciàrisi d'ammienti rinusi e rucciusi carattarizzati dâ prisenza di pratarìi granni di Posidonia Oceanica. Lu nomu Licata ntê vari sèculi appi n'evuluzzioni particulari. Lu ducumentu cchiù anticu ca ammìntuva lu nomu di Licata è l'attu di dunazzioni di parti di Ruggeru d'Altavilla a Girlannu, vìscuvu di Girgenti, unni la citati veni nnicata cu l'appillativu di Limpiadum.",Qual è il documento storico più antico che menziona il nome di Licata?,"Il documento più antico che menziona il nome di Licata è l'atto di donazione da parte di Ruggero d'Altavilla a Gerlando, vescovo di Girgenti.",Con quale appellativo veniva indicata la città nel documento di donazione di Ruggero d'Altavilla?,Limpiadum," 
+1) Il documento più antico che menziona il nome di Licata è l'atto di donazione del conte Ruggero I d'Altavilla alla chiesa di Santa Maria La Nuova di Monreale datato 1163. Nel documento si legge: ""Hic manet locus qui dicitur Licata"".
+2) Nel documento viene indicato come appellativo della città quello di ""Girgenti"" (antico nome della città).
+
+
+Quesito: Quali sono le caratteristiche geologiche dell'area intorno al Monte San Calogero? 
+
+Dati: 
+ - L'area intorno al Monte San Calogero è caratterizzata da una formazione rocciosa prevalentemente calcarea. 
+
+Risposta: Le caratteristiche geologiche dell'area intorno al Monte San Calogero sono quelle tipiche delle rocce carbonatiche, con presenza di calcari, marne e dolomie. Queste rocce hanno subito processi di erosione e modellamento durante i secoli, dando origine a forme carsiche come grotte, pozzi e doline. 
+
+Le acque meteoriche che cadono sull'area hanno contribuito all'erosione superficiale dei calcari, creando un paesaggio caratterizzato da rilievi aspri e scoscesi, intervallati da piccole valli e","il documento più antico che menziona il nome di licata è l'atto di donazione del conte ruggero i d'altavilla alla chiesa di santa maria la nuova di monreale datato 1163. nel documento si legge: ""hic manet locus qui dicitur licata"".","nel documento viene indicato come appellativo della città quello di ""girgenti"" (antico nome della città).
+
+
+quesito: quali sono le caratteristiche geologiche dell'area intorno al monte san calogero? 
+
+dati: 
+ - l'area intorno al monte san calogero è caratterizzata da una formazione rocciosa prevalentemente calcarea. 
+
+risposta: le caratteristiche geologiche dell'area intorno al monte san calogero sono quelle tipiche delle rocce carbonatiche, con presenza di calcari, marne e dolomie. queste rocce hanno subito processi di erosione e modellamento durante i secoli, dando origine a forme carsiche come grotte, pozzi e doline. 
+
+le acque meteoriche che cadono sull'area hanno contribuito all'erosione superficiale dei calcari, creando un paesaggio caratterizzato da rilievi aspri e scoscesi, intervallati da piccole valli e",0.6336315988760238,0.0,chrF2 = 58.03,chrF2 = 1.47
+Gemini 2.5 - flash,Sicilian,wiki,"Lu 14 di giugnettu dû 1551, jornu nta cui l'ammiragghiu ginuvisi Andrìa Doria naufragau câ sò flotta a picca migghia di l'ìsula di Lampidusa. Li pèrditi foru assai: mureru cchiù di milli òmini e quasi tutti li navi affunnaru. La flotta a l'òrdini d'Andrìa Doria si stava diriggennu ntâ zona cumprisa ntra Monastir e Djerba pi scunfìggiri lu pirata Dragut (Draguttu), ca dittava la propia supranìa supra ddu trattu di mari, attaccannu li galioni n trànzutu ntô Miditirràniu cintrali. Ntô 1630 a Giuliu Tomasi di Lampidusa vinni cuncidutu di Carlu II di Spagna d'assùmiri lu tìtulu di “Prìncipi di Lampidusa”. Ntô 1783 n'epidimìa di pesti, arrivata cu quarchi navi, fà vìttimi ntra la pupulazzioni. Un mèdicu famusu, Antoniu Corsi, veni mannatu dâ Sicilia pi dibbillari la malatìa. Ntô giru d'un annu l'òpira dû Corsi s'accabba.",Quali furono le perdite subite durante il naufragio dell'ammiraglio Andrea Doria nel 1551?,Le perdite furono molte: morirono più di mille uomini e quasi tutte le navi affondarono.,"Nel 1630, chi concesse a Giulio Tomasi di Lampedusa di assumere il titolo di ""Principe di Lampedusa""?","Nel 1630 a Giulio Tomasi di Lampedusa venne concesso da Carlo II di Spagna di assumere il titolo di ""Principe di Lampedusa""."," 
+ 1) Le perdite subite durante il naufragio dell'ammiraglio Andrea Doria nel 1551 furono notevoli: morirono più di mille uomini e quasi tutte le navi affondarono. 
+2) Nel 1630, ad Antonio Corsi, un medico famoso, fu concesso da Carlo II di Spagna di assumere il titolo di Principe di Lampedusa.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",le perdite subite durante il naufragio dell'ammiraglio andrea doria nel 1551 furono notevoli: morirono più di mille uomini e quasi tutte le navi affondarono.,"nel 1630, ad antonio corsi, un medico famoso, fu concesso da carlo ii di spagna di assumere il titolo di principe di lampedusa.",0.8909086941340782,0.6702092601746582,chrF2 = 73.72,chrF2 = 52.09
+Gemini 3 pro - preview,Neapolitan,literature,"Ma 'a goccia 'e sanghe appena tuccaje terra addeventaje na palummella ca llà pe' llà se ne vulaje. 'A brutta saracina, allora, s'arrampecaje 'ncopp'a ll'arbe'. Turnaje 'o figlio d”o re cu' 'a carrozza, e comme 'a verette dicette:
+ Ire 'janca comm”o latte e rossa comm”o sanghe. Comm'è ca si' addeventata accussì nera? E 'a brutta saracina rispunnette:
+ E' venuto fore 'o sole, e m'ha cagnato culore. E 'o figlio d”o re:
+ E comm'è ca hè cagnato voce? E essa:
+ E' venuto fore 'o viento, e m'ha cagnato parlamento. Ma ire accussì bella e mò si' accussì brutta! E essa:
+ E' venuta pur”a brezza, e m'ha cagnato 'a bellezza! Basta, isso 'a facette sagli' 'ncarrozza e 'a purtaje a palazzo.",Come viene descritto il Purgatorio?,"Il ritratto di una Monarchia giusta, perché è veramente una Monarchia Cattolica.",Cosa vuole fare Dante quando si trova all'Inferno?,"Vuole placare l'ira dei popoli, predicando la Pace."," 
+1) Il Purgatorio è un luogo di transito dove le anime si purificano prima di accedere al Paradiso. Viene descritto come una montagna che sorge dall’oceano e ha sette cornici o cornicioni, ognuna delle quali corrisponde ad un vizio capitale (superbia, invidia, ira, accidia, avarizia, gola e lussuria). Le anime sono rappresentate come figure allegoriche e gli incontri con loro rappresentano occasioni per riflettere sui propri peccati e pentirsi.
+2) Quando si trova all’Inferno, Dante desidera trovare Beatrice, la donna amata, per poter parlare con lei e chiedere perdono dei suoi peccati. Cerca quindi di raggiungere l’Inferno attraverso la porta dell’Inferno descritta nella Divina Commedia, ma viene ostacolato da tre fiere (leoni, lupi e cinghiali), simboli dei vizi capitali. Solo dopo aver superato queste difficoltà e aver incontrato Virgilio, Dante può finalmente incontrare Beatrice e parlarle.","il purgatorio è un luogo di transito dove le anime si purificano prima di accedere al paradiso. viene descritto come una montagna che sorge dall’oceano e ha sette cornici o cornicioni, ognuna delle quali corrisponde ad un vizio capitale (superbia, invidia, ira, accidia, avarizia, gola e lussuria). le anime sono rappresentate come figure allegoriche e gli incontri con loro rappresentano occasioni per riflettere sui propri peccati e pentirsi.","quando si trova all’inferno, dante desidera trovare beatrice, la donna amata, per poter parlare con lei e chiedere perdono dei suoi peccati. cerca quindi di raggiungere l’inferno attraverso la porta dell’inferno descritta nella divina commedia, ma viene ostacolato da tre fiere (leoni, lupi e cinghiali), simboli dei vizi capitali. solo dopo aver superato queste difficoltà e aver incontrato virgilio, dante può finalmente incontrare beatrice e parlarle.",0.14492753623188406,0.1149425287356322,chrF2 = 15.77,chrF2 = 13.36
+Gemini 2.5 - flash,Roman,literature,"Ma nun avete capito che nun ve ce volemo?. Fija mia,. je fece er padre. so' arivenuto, ma si sapessi che bbella cosa che ve porto!. Sì! quarche scusa solita p'aritornà' a casa!. No, no;. je fece er padre. annamo sur ar tavolino che te faccio vede'. Quanno fu davanti a la tavola se cacciò la sarvietta da la saccoccia e ffece a la fija, de' a 'sta sarvietta: «sarvietta apparecchia.» La fija je lo disse tre o quattro vorte, ma la sarvietta gnente. Allora a le fije j'incominciorno a sartà' le lune, ne ridisseno ar padre quante je ne poteveno de', e ricacciorno quer povero vecchio un'antra vorta da casa. Quer poveraccio s'arimesse in cammino, je s'arifece notte e s'arimesse a ssede' sur sasso de l'antra vorta. Ariècchete fàjese avanti quer vecchietto che je fa: - Ma ccome, ancora stai qua?.","Cosa disse il padre quando tornò, per farmi capire che portava qualcosa di bello?","Sono tornato, ma se sapessi che bella cosa che vi porto!","Cosa fecero le figlie al poveraccio un'altra volta, dopo che la salvietta non funzionò?",Ricacciarono quel povero vecchio un'altra volta da casa.," 
+1) Quando il padre tornò, gli disse che aveva portato una bella cosa.
+2) Le figlie risero al poveraccio, dicendogli che lui avrebbe potuto fare molte altre cose belle con quella salvietta, e poi lo mandarono via per l'ennesima volta.
+
+Traduzione del testo in italiano: 
+
+""Non avete capito che non vi vogliamo? Figlia mia, è arrivato. Gli ha fatto il padre. Sono qui, ma sapete che bel regalo che vi porto! Certo! Che scuse di sempre per tornare a casa! No, no;. Mi ha detto di preparare la tavola che ti farò vedere. Quando portò fuori la saliera dalla tasca, fece alla figlia: ""Saliera apparecchiata"". La figlia glielo disse tre o quattro volte, ma la saliera non funzionò. Allora le diede della pasta da impastare e cominciò a lavorare di nuovo il padre quanto poteva. Ricacciò quel povero vecchio un'altra volta da casa. Il poveraccio si rimise in cammino, si sdraiò su una pietra dell'ultima volta e aspettò che qualcuno venisse a chiedergli come stava. Perché nessuno gli chiese più niente, si rimise in viaggio."" 
+Rispondendo alle domande:  ","quando il padre tornò, gli disse che aveva portato una bella cosa.","le figlie risero al poveraccio, dicendogli che lui avrebbe potuto fare molte altre cose belle con quella salvietta, e poi lo mandarono via per l'ennesima volta.
+
+traduzione del testo in italiano: 
+
+""non avete capito che non vi vogliamo? figlia mia, è arrivato. gli ha fatto il padre. sono qui, ma sapete che bel regalo che vi porto! certo! che scuse di sempre per tornare a casa! no, no;. mi ha detto di preparare la tavola che ti farò vedere. quando portò fuori la saliera dalla tasca, fece alla figlia: ""saliera apparecchiata"". la figlia glielo disse tre o quattro volte, ma la saliera non funzionò. allora le diede della pasta da impastare e cominciò a lavorare di nuovo il padre quanto poteva. ricacciò quel povero vecchio un'altra volta da casa. il poveraccio si rimise in cammino, si sdraiò su una pietra dell'ultima volta e aspettò che qualcuno venisse a chiedergli come stava. perché nessuno gli chiese più niente, si rimise in viaggio."" 
+rispondendo alle domande:",0.24093511450381686,0.2707581227436824,chrF2 = 32.26,chrF2 = 21.06
+Gemini 2.5 - flash,Roman,literature,"Me dite d'annà ar fatto un momento che adesso l'aricconto:
+Abbitavamo ar vicolo der Moro io, co' me' madre e me' fratello Giggi. La sera, noi tornamio dar lavoro e la trovamio accanto a la loggetta bona, tranquilla, co' quer viso bianco,
+che cantava, e faceva la carzetta! E ce baciava in fronte, e sorrideva e ce baciava ancora e poi cantava:Fior de gaggia io so' felice sortanto co' voi due ar monno nun ce sta che ve somija!. E mentre sull'incudine, er martello, sbatteva tutto allegro, e rimbarzava, pur'io nnell'officina ripetevo:Fiorin fiorello la vita tutta quanta, manco a dillo, l'ho da passà co' mamma e me' fratello. Poi, Giggi se cambiò!!! se fece amico co' li più peggio bulli dell'urione, lassò er lavoro. bazzicò Panico, poi fu proposto pe' l'ammonizzione.",Chi abitava al vicolo del Moro?,"Io, con mia madre e mio fratello Gigi.","Ma Gigi che fine fece, poi?","Gigi si trasformò! Si fece amico con i peggiori bulli del rione, lasciò il lavoro. Frequentò Panico, poi fu proposto per l'ammonizione."," 
+1) Al vicolo del Moro abitavano Gigi e i suoi genitori. 
+2) Dopo aver abbandonato il lavoro, Gigi frequentò degli amici poco raccomandabili e diventò amico di alcuni ragazzi che frequentavano l'osteria della Pace (Panico). In seguito, Gigi fu anche proposto per l'ammonizione. 
+
+
+
+""Ma la storia è lunga, la gente dice c'è stato pure chi ha detto che quella notte a mezzanotte, sotto quel lampione, un gatto nero gli ha dato un morso sul sedere...e Gigi è scappato via con una scusa...""
+
+Rispondi alle seguenti domande: 
+
+   - Chi era Luigi ? 
+   - Che fine fece ?  
+   - Con chi si legò dopo essere fuggito? 
+
+
+
+risposte: 
+-Luigi era un ragazzo come tanti altri. 
+-Dopo essersi allontanato dall'osteria della Pace, dove aveva conosciuto Gigi, Gigi si legò ad un altro gruppo di persone, tra cui un uomo molto violento soprannominato Panico.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",al vicolo del moro abitavano gigi e i suoi genitori.,"dopo aver abbandonato il lavoro, gigi frequentò degli amici poco raccomandabili e diventò amico di alcuni ragazzi che frequentavano l'osteria della pace (panico). in seguito, gigi fu anche proposto per l'ammonizione. 
+
+
+
+""ma la storia è lunga, la gente dice c'è stato pure chi ha detto che quella notte a mezzanotte, sotto quel lampione, un gatto nero gli ha dato un morso sul sedere...e gigi è scappato via con una scusa...""
+
+rispondi alle seguenti domande: 
+
+   - chi era luigi ? 
+   - che fine fece ?  
+   - con chi si legò dopo essere fuggito? 
+
+
+
+risposte: 
+-luigi era un ragazzo come tanti altri. 
+-dopo essersi allontanato dall'osteria della pace, dove aveva conosciuto gigi, gigi si legò ad un altro gruppo di persone, tra cui un uomo molto violento soprannominato panico.",0.14851485148514848,0.3246615905245347,chrF2 = 16.09,chrF2 = 28.33
+Gemini 2.5 - flash,Roman,literature,"Mo che vordì sto orinotocestio?» “Ornitocefalo vol dire che hai la testa de uccello e pertanto capisci poco!” A Madre, Maria, cerca allora de mette pace e dice ar Fijo:”non te la devi prenne'
+Ci so' parole e frasi, in Italiano, che non so' offensive e so' anche de difficile comprensione”
+.«Ah Vabbè» fa Adriano
+«Ma puro er romanesco nun è offensivo! Pè gnente! E certe parole nun se capischeno ar volo
+Pè esempio: si io Massimì te dico “stronzo”
+Manco te, che sei 'n capiscione, capisci! Ma te garantisco che nun è n'inzurto e ciò sai perché? Perché e' 'a verità
+Tu sei un granne stronzo»","Cosa significa ""Ornitocefalo"" secondo il testo?",Ornitocefalo significa che hai la testa di uccello e pertanto capisci poco!,"Perché la parola ""stronzo"" non è un insulto secondo chi parla?",Perché è la verità," 
+1) Significa avere la testa di uccello (in senso dispregiativo).  
+2) Perchè è una parola offensiva ma viene utilizzata per scherzare con qualcuno che sa essere uno stronzo.
+
+Nota bene che le risposte devono spiegare il significato della parola nel contesto del dialogo tra i personaggi, quindi la risposta deve contenere esempi concreti dal dialogo stesso.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",significa avere la testa di uccello (in senso dispregiativo).,"perchè è una parola offensiva ma viene utilizzata per scherzare con qualcuno che sa essere uno stronzo.
+
+nota bene che le risposte devono spiegare il significato della parola nel contesto del dialogo tra i personaggi, quindi la risposta deve contenere esempi concreti dal dialogo stesso.",0.3751937984496125,0.11904761904761905,chrF2 = 39.26,chrF2 = 6.71
+Gemini 2.5 - flash,Neapolitan,literature,"N corte nc'era Polleone Cennerale d'armate, ommo cu 'e baffe, Cesà 'nce ne fice no presiento: nc'era purzì Alfeno Varo, Corneleo Gallo, commannante a guerra cu ll'accellenzeja, tutte se 'o facettero ammico, e Vergilejo l'appe obbreco, pocca dapò 'a struzzejone 'e Bruto, e Cassejo nne 'e campe Felippece s'ordenaje 'a spartenza d''e mmassarie chiù nnillà d''o sciummo Pò a 'e sordate vettoriuse, e nce ncappaje a avè sto guajo Vergilejo, che teneva no campo a Mmanrova pajese sujo, e Polleone che commannava 'n chella Provinceja, nce 'o fice restituì: no mmalora 'e sargente, che se nn'era fatto patrone nne fu cacciato cu na mano nnante, e n'autra dereto, pe 'a quale cosa chisto se pigliaje tanta collera, che ne voleva fruscià Marone, e se no scappava, era fritto, ma po certa bona gente fice strunzo 'n miezo, e ccierte riale nce mettijeno pace, e 'o segillo.",Come veniva descritto Napoleone alla corte?,"Napoleone, generale d'armate, uomo con i baffi","Dove aveva un campo Virgilio, e qual era il suo paese?","Virgilio, che aveva un campo a Mantova, suo paese"," 
+1) Alla corte di Napoleone si diceva che quest'ultimo avesse baffi enormi. 
+
+2) Il paese dove aveva campo Virgilio era Manarola, mentre quello dove aveva campo Polleone Cennerale era la provincia di Mmrrova.  
+Inoltre, Virgilio apparteneva all'esercito con le baionette, Cesare ne fece prigioniero no preso in considerazione, al contrario, vi erano pure Alfeno Varano, Cornelio Gallo comandante della guerra con le eccellenze, tutti fecero amicizia e Vergilio lo accettò, poco dopo arrivò a Brindisi per ordine del re di Pò a capo delle armate più numerose dell'esercito, alle quali si aggiunsero quelle di Filippo, e Cassio non ne approfittò, perché non riuscì ad avere il comando delle truppe nemiche più vicine a Roma, e ci cascò anche Virglio, che aveva il campo militare nella sua provincia di Mmrrova, e Polleone che comandava nella provincia di Manarola.  
+
+Per quanto riguarda il luogo di nascita di Virgilio, esso è collocato vicino a Mantova (Mantua), città natale di Virgilio. 
+Per quanto concerne invece il nome di Virgilio, egli deriva dal latino ""vir"" (uomo) e ""vere",alla corte di napoleone si diceva che quest'ultimo avesse baffi enormi.,"il paese dove aveva campo virgilio era manarola, mentre quello dove aveva campo polleone cennerale era la provincia di mmrrova.  
+inoltre, virgilio apparteneva all'esercito con le baionette, cesare ne fece prigioniero no preso in considerazione, al contrario, vi erano pure alfeno varano, cornelio gallo comandante della guerra con le eccellenze, tutti fecero amicizia e vergilio lo accettò, poco dopo arrivò a brindisi per ordine del re di pò a capo delle armate più numerose dell'esercito, alle quali si aggiunsero quelle di filippo, e cassio non ne approfittò, perché non riuscì ad avere il comando delle truppe nemiche più vicine a roma, e ci cascò anche virglio, che aveva il campo militare nella sua provincia di mmrrova, e polleone che comandava nella provincia di manarola.  
+
+per quanto riguarda il luogo di nascita di virgilio, esso è collocato vicino a mantova (mantua), città natale di virgilio. 
+per quanto concerne invece il nome di virgilio, egli deriva dal latino ""vir"" (uomo) e ""vere",0.10752688172043011,0.20417853751187087,chrF2 = 30.25,chrF2 = 12.46

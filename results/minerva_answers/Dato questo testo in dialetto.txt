@@ -22,23 +22,12 @@ s'è appiccicáto cu na femmina..""
  2) Cosa è successo in mezzo alla piazzetta, durante una rissa?
 Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
 ------ 0 -------
- 
- 3) Qual'era la funzione del Bacalaju (Baccalà)?
-4) Chi ha avuto la sfortuna di morire madre e padre?
-5) Perché si dice "mannaccia"?
-6) Cosa significa "puore" nel dialetto napoletano?
- 7) Che cosa si intende con "vuoto": "svuotato" ?
-8) Come si chiama la salamoia in cui vengono immersi i pesci sotto sale per farli diventare secchi?
-9) In quale periodo dell'anno venivano preparate le zeppole?
-10) Quali sono gli ingredienti principali delle zeppole napoletane?
-
 Risposte:
 1) Il bacante di natica è un tipo di pesce essiccato al sole e successivamente salato, usato come cibo povero, soprattutto nella tradizione napoletana.
 2) Durante una rissa scoppiata tra due persone all'interno della piazza, qualcuno ha perso la vita.
-3) Il bacalaju veniva utilizzato principalmente nelle cucine dei poveri per insaporire i piatti senza spendere troppo denaro.
-4) I genitori del narratore sono morti e quindi non esistono più.
-5) L'espressione "mannaccia" indica che qualcosa di negativo sta per accadere.
-Dato questo testo in dialetto: 
+
+||||||||||||||||||||||||||||||||||||
+
 
  "- arrispunnìu lu granni
 - Quannu mi partìa di casa, mi vegnu ccàni, pe la strata vitti un puzzu
@@ -55,19 +44,11 @@ Caminaru caminaru e, arrivati a lu puzzu, ficiaru comu avianu cuncertatu
 Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
 ------ 1 -------
  
-3) Chi incontreranno lungo il cammino?
-4) Cosa faranno con loro una volta che saranno giunti al Puzzo?
- 5) A quale conclusione giungerà alla fine del racconto?
-
 Le risposte sono le seguenti:
 1) Arriveranno finalmente davanti ad una fontana.
 2) Troveranno un cavallo.
-3) Incontraranno Don Chisciotte ed i suoi scudieri.
-4) Fanno riposare gli animali.
-5) Giungono alla fine della storia senza essere riusciti a portare a termine il viaggio a causa delle troppe difficoltà incontrate durante il percorso.
 
-Nota bene: ho volutamente lasciato i punti interrogativi finali per far capire meglio come va interpretata la narrazione. I punti esclamativi indicano invece la presenza di un punto interrogativo all'interno della risposta data. In alcuni casi ho dovuto modificare alcune frasi poiché presentavano errori grammaticali o sintattici (vedi le ultime due domande). Il testo è scritto in modo tale da rendere difficile comprendere l'ordine esatto degli avvenimenti narrati. Un anno prima del suo decimo compleanno, Léo Moulin viene rapito. La polizia inizia subito a indagare ma nessuno sembra sapere qualcosa. Le indagini vengono affidate a Raphaël
-Dato questo testo in dialetto:
+|||||||||||||||||||||||||||||||||||
 
  "14 C'era 'na vorta in un paese un frate che sse chiamava padre Bbattimèla. 'Sto padre Bbattiméla dice che era 'na lana canèrcia un galoppino, che nun ve ne dico. Fra l'antri bbelli vizzi che cciaveva, ciaveva quello d'annà' a ttormentà' 'na donna maritata. Quella, dice, che pperò nu' ne voleva sapè' gnente; ma er frate daje oggi, daje domani, nu' la finiva mai de staje intorno. Fintanto che quella stufa de vedesse cusì pperseguitata da quer frataccio, un giorno ariccontò ttutto ar marito. Er marito, doppo ch'ebbe inteso l'affà, je fece: - Quanto sei cardèa! me lo potevi de' pprima. Abbasta: si er frate oggi te dice quarche ccosa, tu ddaje puro l'appuntamento pe' 'sta notte, intanto dije che io nun ce starò."
 
@@ -76,23 +57,12 @@ Dato questo testo in dialetto:
  2) Cosa disse il marito alla moglie, dopo che ebbe capito l'affare?
 Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
 ------ 2 -------
- 
-3) Quale fu la risposta della moglie al marito?
-4) Di cosa è accusato il marito?
-5) Chi fa riferimento ai vizzi del prete e alla sua condizione di frate?
-6) In che modo viene accusata la moglie dal marito?
-7) Quali sono le conseguenze per il marito se non riesce a ottenere ciò che vuole dalla moglie?
-8) Cosa farà il marito con la moglie per evitare ulteriori problemi?
-9) Qual è la frase conclusiva del racconto?
 
 Risposte:
 1) Padre Battimila
 2) Abbasta: si er frate oggi te dice quarche ccosa, tu ddaje puro l'appuntamento pe' 'sta notte, intanto dije che io nun ce starrò."
-3) La moglie gli rispose:"Quanto sei cardinale!"
-4) Il marito le chiede di andare insieme all'appuntamento notturno col prete.
-5) Il marito si riferisce ad altri vizi del prete e alla sua condizione di frate.
-6) Il marito accusa la moglie di essere troppo curiosa e di voler sapere troppe cose sul suo conto.
-7) Se il marito non ottiene ciò che vuole dalla moglie, verrà cacciato via di casa.
+||||||||||||||||||||||||||||
+
 
 Dato questo testo in dialetto:
 
@@ -103,22 +73,9 @@ Dato questo testo in dialetto:
  2) La Campania, la sua densità di popolazione com'è rispetto alle altre regioni italiane?
 Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
 ------ 3 -------
- 
-3) A quale regione italiana la Campania è seconda per numero di abitanti?
-4) Quali sono i comuni che compongono la provincia di Napoli?
-
 Risposte:
 1) Il capoluogo della Campania è Napoli.
 2) La Campania ha una densità di popolazione più alta delle altre regioni italiane.
-3) La Campania è seconda per numero di abitanti solo alla Lombardia.
-4) I comuni che compongono la provincia di Napoli sono Giugliano in Campania, Acerra, Afragola, Caivano, Cardito, Casalnuovo di Napoli, Casavatore, Casoria, Castello di Cisterna, Crispano, Ercolano, Frattamaggiore, Frattaminore, Giugliano in Campania, Gricignano di Aversa, Grumo Nevano, Ischia, Marano di Napoli, Mugnano di Napoli, Melito di Napoli, Mugnano, Pomigliano d'Arco, Pozzuoli, Quarto, San Giorgio a Cremano, San Giuseppe Vesuviano, Sant'Antimo, Somma Vesuviana, Sorrento, Terzigno, Torre Annunziata, Torre del Greco, Trentola Ducenta, Villaricca, Visciano, Volla.
- Pozzuoli, Quarto, San Giorgio a Cremano, San Giuseppe Vesuviano, Sant'Antimo, Somma Vesuviana, Sorrento, Terzigno, Torre Annunziata, Torre del Greco, Trentola Ducenta, Villaricca, Visciano, Volla.
+
 
 Nota: le
-Dato questo testo in dialetto:
-A relazione 'a Santa Sede cu 'e organismi sportivi è affidata a 'o Consiglio Pontificio pe 'e Laici, addò 'o papa Giovanni Paolo II creò 'na sezione chiamata «Chiesa e Sport» 'o 2004. Fino a mo, è 'o sulo paese ca nun ha partecipato a 'e Giochi Olimpici."
-
- rispondi a queste domande:
- 1) A quali organismi sportivi non è associata la selezione di calcio della Città del Vaticano?
- 2) In ambito di Giochi Olimpici, qual è la particolarità della Città del Vaticano?
-Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
