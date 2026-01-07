@@ -13,7 +13,7 @@ print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Starting script")
 #    local_dir="minerva-7b-instruct",
 #    local_dir_use_symlinks=False
 #)
-#token = "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"
+
 
 MODEL_PATH = "minerva-7b-instruct"  # path locale
 
