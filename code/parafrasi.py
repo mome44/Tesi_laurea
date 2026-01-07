@@ -6,16 +6,6 @@ import json
 import os
 
 API_KEY_LIST = [
-    "AIzaSyDAM3VU2O7RClzARfcjVr-WFtO-oEWsZTE", #prima
-    "AIzaSyCKynyTujWmvIYiOaLxnpuuvUevgFUx5fQ", #Seconda
-    "AIzaSyA5aGoN_UAs6QznnGP8Jpa4bh3vqEV8XYk", #TERZA
-    "AIzaSyAay0PJStTeZxxcuTn97RwmJzifefQEHS8", #QUARTA CAR
-    "AIzaSyAf8vqpLY1mvNf03gvNQ8NDyP8drwXTP6s", #mich
-    "AIzaSyAyS0Or4He8_ByQpINlDWXNKw6yMpdpJ7o", #p1
-    "AIzaSyC9fknqBf7ogCScgSDNRsW0VDGH91PNFLg", #p2
-    "AIzaSyDa0mJS5Bcx-qF3pYQ9mvb2ICTu0BsoPiU", #p3
-    "AIzaSyDMyQo3NAh0DYKEparoxSxtuFO17-kJoZc", #p4
-    "AIzaSyCJQZiXj85Ti3JJOdNHKTQbeURaknnVVqA"  #fedoe
 ]
 
 # --- Configurazioni ---
