@@ -1,7 +1,7 @@
 minerva-7b-instruct
 minerva-350M
 minerva-lora
-
+.env
 results/rom_book
 results/scn_book
 results/scn_wiki

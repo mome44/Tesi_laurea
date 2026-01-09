@@ -10,6 +10,10 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, Trainer, TrainingA
 import torch
 import json
 #from peft import LoraConfig, get_peft_model, TaskType, PeftModel
+import os
+from dotenv import load_dotenv
+load_dotenv()
+api_key = os.getenv("huggingface_token")
 
 from datetime import datetime
 from datasets import load_dataset
