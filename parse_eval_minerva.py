@@ -22,7 +22,7 @@ import pandas as pd
 import re
 
 MODEL_PATH = "minerva-350M"
-FILENAME = "minerva_answers_partial_66"
+FILENAME = "minerva_answers_partial_93"
 path_folder = ""    #change this when using cineca   has to end in /
 path_corpus = "corpus/refined/"
 training_name = "rom_book"
@@ -50,7 +50,8 @@ def parse_response(text):
     #pattern = r'(\d\)\s.*?)(?=\n\d\)|$)'
     #pattern = r'\d\)\s.*?(?=\r?\n\d\)|$)'
     #pattern = r'(\d\)\s.*?)(?=(?:\r?\n\d\)|$))'
-    pattern = r"\d\)\s*(.*?)(?=\r?\n\d\)|$)"
+    pattern = r"\d[.)]\s*(.*?)(?=\r?\n\d[.)]|$)"
+
 
     risposte = re.findall(pattern, text, flags=re.S)
     risposte = [r.strip() for r in risposte]
@@ -76,6 +77,7 @@ for idx, row in df.iterrows():
 
     response_raw = row["minerva_response"]
     print("index -----------", idx)
+    print(response_raw)
     answer_1, answer_2 = parse_response(response_raw)
 
     df.at[idx, "min_answer_1"] = answer_1
