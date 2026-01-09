@@ -49,7 +49,7 @@ lr=2e-4
 num_epochs=1
 
 hyper_name = f"r_{r}_alpha_{alpha}_lr_{lr}_ep_{num_epochs}"
-
+ 
 print(f"starting to train {training_name} with {hyper_name}")
 
 tokenizer = AutoTokenizer.from_pretrained(f"{path_folder}{model_name}")

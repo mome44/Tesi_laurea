@@ -22,7 +22,7 @@ import pandas as pd
 import re
 
 MODEL_PATH = "minerva-350M"
-FILENAME = "minerva_answers_partial_93"
+FILENAME = "total"
 path_folder = ""    #change this when using cineca   has to end in /
 path_corpus = "corpus/refined/"
 training_name = "rom_book"
@@ -30,6 +30,8 @@ output_path = "results/"
 model_name = "minerva-350M"
 
 df = pd.read_csv(f"results/minerva_answers/{FILENAME}.csv")
+
+
 
 #base_model = AutoModelForCausalLM.from_pretrained(
 #    MODEL_PATH,
@@ -70,10 +72,25 @@ def parse_response(text):
     #print(f"{answer_1} \n\n{answer_2}")
     return answer_1, answer_2
 
+total_meteor_1_romanesco = []
+total_meteor_2_romanesco = []
+
+total_meteor_1_napoletano = []
+total_meteor_2_napoletano = []
+
+total_meteor_1_siciliano = []
+total_meteor_2_siciliano = []
+
+
+i= 0
 for idx, row in df.iterrows():
 
     italiano_ref_1 = row["a_1"]
     italiano_ref_2 = row["a_2"]
+
+    dialect = row["dialect"]
+
+
 
     response_raw = row["minerva_response"]
     print("index -----------", idx)
@@ -86,6 +103,8 @@ for idx, row in df.iterrows():
     ref_1_tokens = [word_tokenize(italiano_ref_1, language="italian")]
     ref_2_tokens = [word_tokenize(italiano_ref_2, language="italian")]
 
+    print(word_tokenize(italiano_ref_1, language="italian"))
+
     ans_1_tokens = word_tokenize(answer_1, language="italian")
     ans_2_tokens = word_tokenize(answer_2, language="italian")
 
@@ -93,6 +112,18 @@ for idx, row in df.iterrows():
     meteor_1 = meteor_score(ref_1_tokens, ans_1_tokens)
     meteor_2 = meteor_score(ref_2_tokens, ans_2_tokens)
     print(meteor_1, meteor_2)
+
+    if dialect == "Roman":
+        total_meteor_1_romanesco.append(meteor_1)
+        total_meteor_2_romanesco.append(meteor_2)
+    elif dialect == "Neapolitan":
+        total_meteor_1_napoletano.append(meteor_1)
+        total_meteor_2_napoletano.append(meteor_2)
+    elif dialect == "Sicilian":
+        total_meteor_1_siciliano.append(meteor_1)
+        total_meteor_2_siciliano.append(meteor_2)
+
+    i+=1
 
     chrf_1 = sacrebleu.sentence_chrf(answer_1, [italiano_ref_1])
     chrf_2 = sacrebleu.sentence_chrf(answer_2, [italiano_ref_2])
@@ -104,6 +135,14 @@ for idx, row in df.iterrows():
 
     df.at[idx, "chrf_1"] = chrf_1
     df.at[idx, "chrf_2"] = chrf_2
+
+
+print(f"total meteor 1 romanesco {sum(total_meteor_1_romanesco) / len(total_meteor_1_romanesco)}")
+print(f"total meteor 2 romanesco {sum(total_meteor_2_romanesco) / len(total_meteor_2_romanesco)}")
+print(f"total meteor 1 napoletano {sum(total_meteor_1_napoletano) / len(total_meteor_1_napoletano)}")
+print(f"total meteor 2 napoletano {sum(total_meteor_2_napoletano) / len(total_meteor_2_napoletano)}")
+print(f"total meteor 1 siciliano {sum(total_meteor_1_siciliano) / len(total_meteor_1_siciliano)}")
+print(f"total meteor 2 sicilaino {sum(total_meteor_2_siciliano) / len(total_meteor_2_siciliano)}")
 
 df.to_csv(f"results/eval/{FILENAME}.csv", index=False)
 
