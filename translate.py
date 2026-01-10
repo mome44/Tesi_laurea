@@ -1,29 +1,34 @@
 from google import genai
 from google.genai.errors import APIError
+import pandas as pd
 import time
 import random
 import json
 import os
+from dotenv import load_dotenv
+import os
 
-API_KEY_LIST = [
-]
-
-# --- Configurazioni ---
-MODEL_NAME = "gemini-2.5-flash"
-
-DIALECT = "rom"
-
-SPLITTING = {"nap_wiki":20, "nap_par":0, "rom_par":0, "nap_book":5, "scn_wiki":20, "scn_book":5, "rom_book":25}
+load_dotenv()
+k1 = os.getenv("GEM_API_1")
+k2 = os.getenv("GEM_API_2")
+k3 = os.getenv("GEM_API_3")
+k4 = os.getenv("GEM_API_4")
+k5 = os.getenv("GEM_API_5")
+k6 = os.getenv("GEM_API_6")
+k7 = os.getenv("GEM_API_7")
+k8 = os.getenv("GEM_API_8")
+k9 = os.getenv("GEM_API_9")
+k10 = os.getenv("GEM_API_10")
+k11 = os.getenv("GEM_API_11")
 
 PATH = f"corpus/evaluation/parsed/tre"
 OUTPUT_PATH = f"corpus/evaluation/parsed/transl"
-LAST_FILE = 126
+API_KEY_LIST = [k1,k2,k3,k4,k5,k6,k7,k8,k9,k10,k11]
+MODEL_NAME = "gemini-2.5-flash"
+df = pd.read_csv("Q&A dialect thesis - Q&A.csv")
+
+LAST_FILE = 0
 api_idx = 1
-
-with open(f"prompt/prompt_trad_{DIALECT}.txt", "r", encoding = "utf-8") as p:
-    prompt = p.read()
-    print(prompt)
-
 
 def gemini_api_call(prompt, model_name, API_KEY):
     max_retries = 5
@@ -80,80 +85,47 @@ def gemini_api_call(prompt, model_name, API_KEY):
 num_api_call=0
 errore = False
 
-for filename in os.listdir(PATH):
-    if ".json" in filename:
-        name = filename.split(".")[0]
-    else:
+i = 126
+total_length = len(df) #dataset delle domande
+
+df["Translation"] = None
+print(df.columns)
+
+results=[]
+
+total_length = len(df)
+
+while i < total_length:
+    api_key = API_KEY_LIST[api_idx]
+
+    row = df.iloc[i] 
+    print(f"Question ------ {i+1}/{total_length} -------")
+    dialect = row["Dialect"]
+    full_text = row["Full text"]
+
+    with open(f"prompt/prompt_trad_{dialect}.txt", "r", encoding = "utf-8") as p:
+        prompt = p.read()
+
+    prompt_input = prompt + "\n\n" + full_text
+    print(prompt_input)
+    response = gemini_api_call(prompt_input, MODEL_NAME, API_KEY=api_key)
+    if response == 0:
+        print("Retrying due to server issues")
         continue
-    #num = SPLITTING[name]
-    #if num == 0:
-    #    continue
-    
-    full_path = os.path.join(PATH,filename)
-    if os.path.isfile(full_path):
-        with open(full_path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-    #data_sample = data[:num]
-    data_sample =data
-    #LAST_FILE = num
-
-    result_data = []
-    index = 0
-    increase = 2
-    num = len(data)
-    while index < num:
-        api_key = API_KEY_LIST[api_idx]
-        if index < LAST_FILE:
-            index=LAST_FILE
-            continue
-        
-        sentence_sample = data_sample[index]
-        #sentence = sentence_sample["text"]
-        question_1 = sentence_sample["Domanda"]
-        answer_1 = sentence_sample["Risposta"]
-        sentence_sample = data_sample[index + 1]
-        question_2 = sentence_sample["Domanda"]
-        answer_2 = sentence_sample["Risposta"]
-        
-        print(f"processing {num_api_call} api {api_idx} - {name}: file index {index}/{num}")
-        
-        #prompt_input = prompt + '\"' + sentence + '\"'
-        prompt_input = prompt + '\nDomanda: ' + question_1 + '\nRisposta:' + answer_1 + '\nDomanda: ' + question_2 + '\nRisposta:' + answer_2 
-
-        print(prompt_input)
-
-        response = gemini_api_call(prompt_input, MODEL_NAME, API_KEY=api_key)
-        if response == 0:
-            print("Retrying due to server issues")
-            continue
-        if response:
-            result_data.append({
-                "text": response.strip()
-            })
-            index +=increase
-        if response is None:
-            print(f"Errore a step {num_api_call}")
-            with open(f"{OUTPUT_PATH}/{name}_qa_g2_{index-increase}.json", "w", encoding="utf-8") as out:
-                json.dump(result_data, out, ensure_ascii=False, indent=2)
-            api_idx +=1
-            continue
+    if response:
+        df.at[i, "Translation"] = response.strip()
+        df.at[i+1, "Translation"] = response.strip()
+        i +=2
         num_api_call+=1
-        print("saving checkpoint")
-        with open(f"{OUTPUT_PATH}/{name}_qa_g2_{index}.json", "w", encoding="utf-8") as out:
-            json.dump(result_data, out, ensure_ascii=False, indent=2)
-        
-    if errore:
-        break
-    if num_api_call == 20:
-        break
-    print(f"finished with {name}\n")
     
-    #saving the paraphrasis
-    with open(f"{OUTPUT_PATH}/{name}_qa_g2.json", "w", encoding="utf-8") as out:
-        json.dump(result_data, out, ensure_ascii=False, indent=2)
+    if response is None:
+        print(f"Errore a step {num_api_call}")
+        df.to_csv(f"results/transl/Q&A dialect thesis translated - Q&A_partial_{i}.csv", index=False)
+        api_idx +=1
+        continue
     
+    print("saving checkpoint")
+    df.to_csv(f"results/transl/Q&A dialect thesis translated - Q&A_partial_{i}.csv", index=False)
     
-    
-
-
-    
+#saving the translation
+df.to_csv("Q&A dialect thesis translated - Q&A.csv", index=False)

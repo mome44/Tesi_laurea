@@ -3,5 +3,6 @@ ho scaricato in locale il modello di minerva da huggingface come si vede nel cod
 Ho usato transformers e Automodel for causal LLMs
 se vuoi cambiare gli hyperparameters per la risposta sono messi come variabili all'inizio del file.
 
-Il codice fa due chiamate una per la low baseline (solo domanda) e una per l'experiment cioè testo in dialetto + domanda
+Il codice fa tre chiamate una per la low baseline (solo domanda), una per l'experiment cioè testo in dialetto + domanda e una per
+l'upper baseline testo in italiano + domanda.
 il risultato è salvato ogni 5 iterazioni nella cartella checkpoint, alla fine è salvato il file csv completo.
